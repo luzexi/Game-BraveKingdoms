@@ -28,3 +28,6 @@
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DTable"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DTable
 	url = https://github.com/luzexi/Unity3DTable.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DSublime2Project"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DSublime2Project
+	url = https://github.com/luzexi/Unity3DSublime2Project.git
