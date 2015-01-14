@@ -1,0 +1,10 @@
+#Ignore files
+.DS_Store
+u3d/Library
+u3d/Temp
+u3d/obj
+u3d/*.pidb
+u3d/*.unityproj
+u3d/*.csproj
+u3d/*.sln
+u3d/*.userprefs
