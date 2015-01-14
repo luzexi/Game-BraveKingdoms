@@ -1,0 +1,33 @@
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DDefineTool"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DDefineTool
+	url = https://github.com/luzexi/Unity3DDefineTool.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3dSublime2Project"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3dSublime2Project
+	url = https://github.com/luzexi/Unity3dSublime2Project.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DUtil"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DUtil
+	url = https://github.com/luzexi/Unity3DUtil.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unit3DTable"]
+	path = u3d/Assets/App/Scripts/submodule/Unit3DTable
+	url = https://github.com/luzexi/Unit3DTable.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DEncrypt"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DEncrypt
+	url = https://github.com/luzexi/Unity3DEncrypt.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DPushMessage"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DPushMessage
+	url = https://github.com/luzexi/Unity3DPushMessage.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DWebView"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DWebView
+	url = https://github.com/luzexi/Unity3DWebView.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DMedia"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DMedia
+	url = https://github.com/luzexi/Unity3DMedia.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DGameResource"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DGameResource
+	url = https://github.com/luzexi/Unity3DGameResource.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http
+	url = https://github.com/luzexi/Unity3DNetwork-http.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3DMVC"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3DMVC
+	url = https://github.com/luzexi/Unity3DMVC.git
