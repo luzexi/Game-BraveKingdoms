@@ -7,9 +7,6 @@
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DUtil"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DUtil
 	url = https://github.com/luzexi/Unity3DUtil.git
-[submodule "u3d/Assets/App/Scripts/submodule/Unit3DTable"]
-	path = u3d/Assets/App/Scripts/submodule/Unit3DTable
-	url = https://github.com/luzexi/Unit3DTable.git
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DEncrypt"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DEncrypt
 	url = https://github.com/luzexi/Unity3DEncrypt.git
