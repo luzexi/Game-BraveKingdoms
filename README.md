@@ -1,9 +1,9 @@
 pstage client
 
-客户端目录结构
+客户端目录结构<br>
 
--root
-----tool	工具
-----u3d		u3d项目
+-root<br>
+----tool	工具<br>
+----u3d		u3d项目<br>
 
 
