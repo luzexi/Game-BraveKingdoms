@@ -1,0 +1,222 @@
+Version 1.6.5a
+- Fixed errors in examples after upgrading to a newer version.
+
+Version 1.6.5
+- Action Browser
+- Condition Browser
+- Added more input conditions
+
+Version 1.6.4
+- Reset transition index to zero when removing a transition
+- uScript compatibility
+- Fixed bug getting List using GetProperty
+- List actions support System.object
+- Fixed harmless warnings when an action has SystemObjectParameter or ListParameter
+- New action System.GetObjectProperty, you can grab any property/field from any class even if it does not derive from MonoBehaviour.
+
+
+Version 1.6.3
+- Fixed folout in GlobalParameterEditor after reload.
+- Copy/Paste/Replace for whole condition list when right clicking on header.
+- Refresh condition list, when removing a transition
+- SendEvent accepts parameters of type float, int, string and UnityEngine.Object, which makes it very powerful receivable "SendMessage" action. 
+- Transform.Parent sets the default target parameter to Owner
+- Group popup for existing groups in GlobalParameterEditor
+- You can change group afterwards in GlobalParameterEditor
+- Movable parameteres in GlobalParameterEditor
+- Fixed bug when setting a Vector3 to a global parameter
+
+Version 1.6.2
+- MainToolbar selecting menu picked up the asset in play mode and not the current executed state machine.
+- GetProperty does not require "CanWrite" access anymore. 
+- Get and SetProperty action had no option to get/set UnityEngine.Object,i still need to add generic System.object.
+- SetParameter has an option to create the parameter if none exist.
+- Inspector panel tabs for FSM, State and Layers(coming soon) settings
+- States can have diffrent colors(except AnyState and DefaultState)
+- Improved StateMachineGUI performance using simple cache dictionaries.
+
+Version 1.6.1
+- AssetCreator helper class
+- Copy/Paste whole state machines
+- Prefereces icon instead of label
+- Custom inspector toggle moved to preferences 
+- Fixed transition selected color in light skin
+- Replaced FieldInfoAttribute with DefaultValueAttribute, InspectorLabelAttribute,RequiredFieldAttribute and TooltipAttribute
+- Added ObjectTypeAttribute, you can specify which type the ObjectParameter should have.
+- Removed IsFinished condition
+- Removed Refactoring fixing tool.
+- Updated all addons with the new custom attributes.
+- Cleanup StateMachineUtility class and comments
+- GetProperty and SetProperty support custom namespaces
+-Fixed InterruptMathTarget and MatchTarget action
+
+Version 1.6.0
+- Fixed bug when dragging transitions
+- Improved selection of states using Ctrl for selecting/deselecting
+- StateAction and StateCondition inherit from base class Node
+- Changed property name disabled in StateAction and StateCondition to enabled
+- Improved editor and inspector performance
+- Copy/Paste states including other state machines
+- Changed shortcuts because of the new selection using Ctrl
+- Mouse instruction when making a transition using shortcut
+- Added statistic info
+- More functionality in action/condition settings(Enable/Disable, Find Script/Edit Script, Copy/Paste/Paste After/Paste Before/Replace,Remove)
+- Lock option when selecting hierarchy game objects
+- Create State Machine is now in child menu of selecting state machine menu
+- Undo/redo
+- Editor code cleanup(still requires work)
+- Better visualization when an action or condition is enabled/disabled 
+- Improved dragging of actions and conditions
+- Custom Inspector Beta 
+- When binding a state machine, it will be loaded into the editor.
+
+
+Version 1.5.9
+- New state machines are starting at the center of the canvas scroll
+- Scroll to the center of states
+- Shortcuts
+- Improved ReorderableList drag
+- Enabled multi state dragging.
+- Or - transitions are now shown with three arrows
+- Fixed transition mute color 
+- Groups for GlobalParameterEditor.
+
+Version 1.5.8
+- Mute/Unmute transitions
+- GetProperty and SetProperty accepts Lists now.
+- Visual Tween editor and state machine actions.
+
+Version 1.5.7
+- BroadcastMessage accepts parameters similiar to SendMessage
+- GameObject.Find can find optional inactive GameObjects
+- AI For Mecanim logo on Hierarchy items with StateMachineBehaviour
+- Easy Touch Support can be downloaded at http://zerano-unity3d.com/AIDocumentation/navigation/add-ons/
+- OffMeshLink actions
+- Updated Follow scene in default examples with jumping.
+- Fixed: Binded state machines reseted GameObject parameter to owner
+- GameObject.Distance, second GameObject is optional now
+
+Version 1.5.6
+- Improved UFPS Example
+- A few actions accept optional a gameObject as target position now(SetDestination,Instantiate,SetIKPosition...)
+- Added randomization actions( InstantiateRandom, PlayRandom(Sound), SetRandomMaterial...)
+- Improved state machine selection when switching to playmode.
+- Moved Third Party Integrations to http://zerano-unity3d.com/AIDocumentation/navigation/add-ons/
+- Moved not commonly used actions to http://zerano-unity3d.com/AIDocumentation/navigation/add-ons/
+- Time actions
+- OnUnityEvent condition handles all Trigger,Collision and Mouse messages.
+- Zoom to Default State/Any State, when opening the state machine.
+- More string actions.
+- String actions have their own category.
+- List actions(Currently with error without side effects)
+- More actions for A* Pathfinding project, still a few to add.
+
+Version 1.5.5
+- More audio actions.
+- Unity GUI Beta(Usable only with unity 4.6)
+- RenderSettings actions
+- Material actions
+- More camera actions
+- More Mathf actions
+- More Rigidbody actions 
+
+Version 1.5.4
+- Fixed Transform.Parent action
+- Added MonoBehaviour.Invoke
+- Changed GetFloat, GetInt, GetBool condition names to CompareFloat, CompareInt, CompareBool
+- Turn on/off debug label
+- Scroll for local parameters
+- Apex Path 1.2 fix
+
+Version 1.5.3
+- Completed animation and animator actions
+- Added camera actions 
+- Apex Path Support
+
+Version 1.5.2
+- Legacy animation actions
+- Attributes extension(Handles attributes like health using actions)
+- Simple NavMeshAgent AI actions(Wander, Seek, Flee, Patrol)
+- Updated online documentation
+- SetState(Sets the current state by name) in StateMachineBehaviour
+- SetDefaultState(Sets the current state to the default state) in StateMachineBehaviour
+
+Version 1.5.1
+- Custom Events
+- Fixed when transition from AnyState to normal state using events.(Event was not resetting)
+- Windows App Store support
+- Touch actions
+- CoreGameKit Support
+- Global Parameters
+- Presets for creating custom actions/conditions
+- MasterAudio Support
+
+Version 1.5
+- Debug messages with instructions on NullReference error
+- Optimization for execution
+- Refactoring -> Follow instructions in the Update Instructions.pdf 
+
+Version 1.4.5b
+- UMA Support
+
+Version 1.4.5a
+- Made Preferences global
+- Bug Fixes
+- Removed Examples from the project, they can be downloaded from my website.
+- Removed Ratkin Slave, Ratkin Mage and the animation collection from the project.(Make a backup if you need those)
+
+Version 1.4.5
+- Behaviour Designer Support
+- Zoom Graph
+- Removed StateMachineTool(Integrated in graph window)
+- Fixed actions running not in order
+- Preferences
+- Improved workflow with descriptions
+- Debug shows correct now
+
+Version 1.4.4
+- Space 2D example
+- Platfomrer 2D example
+
+Version 1.4.3
+- Extended Photon support
+- More diffrent actions added
+- ListParameter, SystemObjectParameter
+
+Version 1.4.2d
+- StateMachine Tool(Displays state machines in a scene)
+- Merged examples to reduce size.
+- Gizmo state debug in scene.
+
+Version 1.4.2a
+- Unity 4.5 support
+
+Version 1.4.2
+- Bind the state machine to a GameObject->Scene. This allows you to use scene GameObjects in action and condition fields.
+- Improved GetProperty and SetProperty actions. Works now also with components. You have to enter the name of the component.
+- NGUI callbacks support in conditions. SetProperty allows you to change text or other properties and fields.
+- Warnings if a required component is missing.
+
+Version 1.4
+- Tooltips for the action and condition fields.
+- You will not need to drag the AIRuntimeController script on the game object, just drag the new called "StateMachine" asset(AIController renamed to StateMachine).
+- Predefined StateMachines that you can just drag into the working editor window and it will place the states, paramerer... into the working StateMachine.(So no need to create same states for diffrent StateMachines).
+- Global and local(action fields, condition fields) parameters will be clean (Not more defined by a string and attribute).
+- Easy to extend actions, conditions and parameters.
+- You can use it not just for the ai but also for other things like character control, rts unit control, game control. So it is not longer only an AI System, but still more focused on that.
+- ObjectParameter for diffrent kinds of assets(AudioClips, GameObject, Transform, Materials...).
+- Conditions for all global parameters.
+- No diffrent states anymore, all states can be converted into actions.
+- No WaitForSeconds action anymore, same results can be achieved using a transition and a ExitTime condition.
+- State parameter error check(still needs to be improved, only in editor, no checks for runtime right now).
+- Support for Photon Cloud, all parameters except ObjectParameter can be synced.
+- Support for SoundManagerPro
+- New easy to understand examples, which give same result as the old.
+- Extended action and condition library(2d actions are still missing).
+- Removed Animator popups for now.
+- Easy custom script interaction using GetProperty and SetProperty.
+- SetStateMachine method to add a new state machine at runtime.
+- SetParameter method to set a value of a parameter outside of the state machine editor.
+- New tutorial videos(still missing some)
+- Unity trigger and collision events can be used in conditions
+- Examples moved back inside the package. No download manager any more.

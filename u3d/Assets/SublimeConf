@@ -1,0 +1,12 @@
+*.cs
+*.js
+*.txt
+*.shader
+*.json
+*.mm
+*.m
+*.xml
+*.csv
+App
+MyPlugins
+Plugins

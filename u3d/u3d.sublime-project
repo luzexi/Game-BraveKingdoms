@@ -1,0 +1,63 @@
+{
+    "folders": [
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/"
+        },
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/"
+        },
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/Plugins/"
+        }
+    ],
+
+    "settings": {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "default_encoding": "UTF-8 with BOM",
+        "default_line_ending": "windows",
+        "completesharp_assemblies": [
+			"/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll",
+			"/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/../Library/ScriptAssemblies/Assembly-CSharp.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/../Library/ScriptAssemblies/Assembly-CSharp-Editor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DGameResource/src/zip/ICSharpCode.SharpZipLib.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Model/LitJson.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Editor/FreeType.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Editor/FreeType64.dll"
+        ]
+    }
+}
