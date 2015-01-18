@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"Title",
+				"TitleScene"
+			],
+			[
+				"ON",
+				"OnExit"
+			],
+			[
+				"over",
+				"override"
+			],
+			[
 				"Challen",
 				"Challenge_List_Item"
 			],
@@ -502,23 +514,123 @@
 			[
 				"Gameobj",
 				"GameObjectParameter"
-			],
-			[
-				"Vec",
-				"Vector3"
-			],
-			[
-				"tran",
-				"transform"
-			],
-			[
-				"cha",
-				"cha"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "Assets/App/Scripts/Manager/MyApplaction.cs",
+			"settings":
+			{
+				"buffer_size": 560,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Scene/GameScene.cs",
+			"settings":
+			{
+				"buffer_size": 304,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CScene.cs",
+			"settings":
+			{
+				"buffer_size": 696,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Scene/LoginScene.cs",
+			"settings":
+			{
+				"buffer_size": 307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Scene/TitleScene.cs",
+			"settings":
+			{
+				"buffer_size": 306,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Manager/UIManager.cs",
+			"settings":
+			{
+				"buffer_size": 195,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
+			"settings":
+			{
+				"buffer_size": 357,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/03_AccessingLuaVariables/AccessingLuaVariables.cs",
+			"settings":
+			{
+				"buffer_size": 1276,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/02_CreateGameObject/CreateGameObject.cs",
+			"settings":
+			{
+				"buffer_size": 563,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/01_HelloWorld/HelloWorld.cs",
+			"settings":
+			{
+				"buffer_size": 308,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/04_ScriptsFromFile.lua.txt",
+			"settings":
+			{
+				"buffer_size": 41,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/ScriptsFromFile.cs",
+			"settings":
+			{
+				"buffer_size": 331,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/05_CallLuaFunction/CallLuaFunction.cs",
+			"settings":
+			{
+				"buffer_size": 918,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
+			"settings":
+			{
+				"buffer_size": 2184,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"command_palette":
@@ -592,6 +704,11 @@
 	},
 	"file_history":
 	[
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Editor/InspectorTool.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Scripts/Internal/UIDrawCall.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Reporter/Editor/ReporterEditor.cs",
+		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Message/Common_msg.csv",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/State/PlayerStateAction.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Network/Model/DownloadListModel.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/UI/UI_Download_reward.cs",
@@ -657,7 +774,6 @@
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/NGUI/Scripts/Interaction/UIButtonMessage.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Network/Model/DownloadFinishModel.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Network/Model/VipModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Message/Common_msg.csv",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/UI/Atlases/DL_Atlas.png.meta",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Stage/StageObject.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Manager/CNLocalStream.cs",
@@ -715,11 +831,7 @@
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Manager/TimeManager.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Editor/iOSBuilder.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Editor/BatchBuild.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/System/UIManager.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/SoulBoard/UI_UnitEnhanceTree.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Manager/PvpOpposite.cs",
-		"/Users/luzexi/Desktop/work/wcat/android_client/WcatUnity/Assets/App/ExternalResources/_Version/a/Data.txt",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/Status/CharacterStatusBurning.cs"
+		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/System/UIManager.cs"
 	],
 	"find":
 	{
@@ -738,6 +850,17 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"DrawScale",
+			"DrawRotation",
+			"FloatField",
+			"DrawRotation",
+			"NGUIEditorTools",
+			"NGUITransformInspector",
+			"NGUIEditorTools",
+			"NGUITransformInspector",
+			"SHOW_HIDDEN_OBJECTS",
+			"hideflags",
+			"hidflags",
 			"OnTouchDown",
 			" ",
 			"pvp_interval",
@@ -854,18 +977,7 @@
 			"getversion",
 			"_Version",
 			"CN_DEVELOP",
-			"IsVersionCached",
-			"GetAssetVersion",
-			"m_AssetVersionInfos",
-			"UpdateAssetBundleVersionRequest",
-			"onFatal",
-			"SetSleepTimeOutEnable",
-			"Screen.sleep",
-			"iphonesetting",
-			"screen",
-			"HEAD",
-			"99999",
-			"DL_QUIT1"
+			"IsVersionCached"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -886,6 +998,387 @@
 		{
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "Assets/App/Scripts/Manager/MyApplaction.cs",
+					"settings":
+					{
+						"buffer_size": 560,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								328,
+								328
+							]
+						],
+						"settings":
+						{
+							"auto_name": "",
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 107.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/App/Scripts/Scene/GameScene.cs",
+					"settings":
+					{
+						"buffer_size": 304,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								206,
+								206
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CScene.cs",
+					"settings":
+					{
+						"buffer_size": 696,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								327,
+								333
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 163.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/App/Scripts/Scene/LoginScene.cs",
+					"settings":
+					{
+						"buffer_size": 307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								203,
+								203
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/App/Scripts/Scene/TitleScene.cs",
+					"settings":
+					{
+						"buffer_size": 306,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								100,
+								100
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "Assets/App/Scripts/Manager/UIManager.cs",
+					"settings":
+					{
+						"buffer_size": 195,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								192,
+								192
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
+					"settings":
+					{
+						"buffer_size": 357,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								90
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 62.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "Assets/MyPlugins/uLua/Examples/03_AccessingLuaVariables/AccessingLuaVariables.cs",
+					"settings":
+					{
+						"buffer_size": 1276,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								503,
+								503
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/MyPlugins/uLua/Examples/02_CreateGameObject/CreateGameObject.cs",
+					"settings":
+					{
+						"buffer_size": 563,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								264,
+								264
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/MyPlugins/uLua/Examples/01_HelloWorld/HelloWorld.cs",
+					"settings":
+					{
+						"buffer_size": 308,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/04_ScriptsFromFile.lua.txt",
+					"settings":
+					{
+						"buffer_size": 41,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/ScriptsFromFile.cs",
+					"settings":
+					{
+						"buffer_size": 331,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Assets/MyPlugins/uLua/Examples/05_CallLuaFunction/CallLuaFunction.cs",
+					"settings":
+					{
+						"buffer_size": 918,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								694,
+								694
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
+					"settings":
+					{
+						"buffer_size": 2184,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1317,
+								1317
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 563.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -906,6 +1399,12 @@
 				0,
 				1,
 				1
+			],
+			[
+				0,
+				1,
+				1,
+				2
 			]
 		],
 		"cols":
@@ -916,6 +1415,7 @@
 		"rows":
 		[
 			0.0,
+			0.5,
 			1.0
 		]
 	},
@@ -930,6 +1430,10 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"csing",
+				"App/Scripts/submodule/Unity3DUtil/CSingleton.cs"
+			],
 			[
 				"gesture",
 				"Plugins/InputTouches/Gesture.cs"
@@ -1437,10 +1941,6 @@
 			[
 				"ui_",
 				"Scripts/UI/UI_Menu.cs"
-			],
-			[
-				"ui_op",
-				"Scripts/UI/UI_Opinion.cs"
 			]
 		],
 		"width": 0.0

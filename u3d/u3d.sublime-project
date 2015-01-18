@@ -10,7 +10,8 @@
 				"*.mm",
 				"*.m",
 				"*.xml",
-				"*.csv"
+				"*.csv",
+				"*.lua"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/"
         },
@@ -24,7 +25,8 @@
 				"*.mm",
 				"*.m",
 				"*.xml",
-				"*.csv"
+				"*.csv",
+				"*.lua"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/"
         },
@@ -38,7 +40,8 @@
 				"*.mm",
 				"*.m",
 				"*.xml",
-				"*.csv"
+				"*.csv",
+				"*.lua"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/Plugins/"
         }
@@ -56,8 +59,18 @@
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/../Library/ScriptAssemblies/Assembly-CSharp-Editor.dll",
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DGameResource/src/zip/ICSharpCode.SharpZipLib.dll",
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Model/LitJson.dll",
-			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Editor/FreeType.dll",
-			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Editor/FreeType64.dll"
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/Clipper/Pathfinding.ClipperLib.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween43.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween46.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/Editor/DOTweenEditor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dExternal.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dSkin.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Plugins/x86/ulua.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Plugins/x86_64/ulua.dll"
         ]
     }
 }

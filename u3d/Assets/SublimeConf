@@ -7,6 +7,7 @@
 *.m
 *.xml
 *.csv
+*.lua
 App
 MyPlugins
 Plugins
