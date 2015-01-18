@@ -4,6 +4,14 @@
 		"selected_items":
 		[
 			[
+				"Exception",
+				"LuaException"
+			],
+			[
+				"Excep",
+				"Exception"
+			],
+			[
 				"Title",
 				"TitleScene"
 			],
@@ -506,14 +514,6 @@
 			[
 				"nowAtk",
 				"nowAtk"
-			],
-			[
-				"normal",
-				"normalAtkId"
-			],
-			[
-				"Gameobj",
-				"GameObjectParameter"
 			]
 		]
 	},
@@ -523,111 +523,97 @@
 			"file": "Assets/App/Scripts/Manager/MyApplaction.cs",
 			"settings":
 			{
-				"buffer_size": 560,
+				"buffer_size": 2374,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Scene/GameScene.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/coroutineWrap.cs",
 			"settings":
 			{
-				"buffer_size": 304,
+				"buffer_size": 2109,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CScene.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaState.cs",
 			"settings":
 			{
-				"buffer_size": 696,
+				"buffer_size": 6774,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Scene/LoginScene.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ObjectWrap.cs",
 			"settings":
 			{
-				"buffer_size": 307,
+				"buffer_size": 9416,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Scene/TitleScene.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/LuaWrap.cs",
 			"settings":
 			{
-				"buffer_size": 306,
+				"buffer_size": 1059,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Manager/UIManager.cs",
+			"contents": "Searching 1344 files for \" LuaCSFunction\" (case sensitive)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs:\n  554      }\n  555  \n  556:     public static void RegisterFunc(IntPtr L, string libName, LuaCSFunction func, string name)\n  557      {\n  558          CreateTable(L, libName);\n  ...\n  977      }\n  978  \n  979:     public static void Push(IntPtr L, LuaCSFunction func)\n  980      {\n  981          if (func == null)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/LuaWrap.cs:\n    7  {\n    8      public string name;\n    9:     public LuaCSFunction func;\n   10  \n   11:     public LuaMethod(string str, LuaCSFunction f)\n   12      {\n   13          name = str;\n   ..\n   19  {\n   20      public string name;\n   21:     public LuaCSFunction getter;\n   22:     public LuaCSFunction setter;\n   23  \n   24:     public LuaField(string str, LuaCSFunction g, LuaCSFunction s)\n   25      {\n   26          name = str;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/Lua.cs:\n   21          public IntPtr L;\n   22  \n   23:         internal LuaCSFunction tracebackFunction;\n   24          internal ObjectTranslator translator;\n   25  \n   26: 		internal LuaCSFunction panicCallback;\n   27  \n   28          // Overrides\n   29:         internal LuaCSFunction printFunction;\n   30:         internal LuaCSFunction loadfileFunction;\n   31:         internal LuaCSFunction loaderFunction;\n   32:         internal LuaCSFunction dofileFunction;\n   33  \n   34          public LuaState()\n   ..\n   61  \n   62              // We need to keep this in a managed reference so the delegate doesn't get garbage collected\n   63: 			panicCallback = new LuaCSFunction(LuaStatic.panic);\n   64              LuaDLL.lua_atpanic(L, panicCallback);\n   65  \n   66:             printFunction = new LuaCSFunction(LuaStatic.print);\n   67              LuaDLL.lua_pushstdcallcfunction(L, printFunction);\n   68              LuaDLL.lua_setfield(L, LuaIndexes.LUA_GLOBALSINDEX, \"print\");\n   69  \n   70:             loadfileFunction = new LuaCSFunction(LuaStatic.loadfile);\n   71              LuaDLL.lua_pushstdcallcfunction(L, loadfileFunction);\n   72              LuaDLL.lua_setfield(L, LuaIndexes.LUA_GLOBALSINDEX, \"loadfile\");\n   73  \n   74:             dofileFunction = new LuaCSFunction(LuaStatic.dofile);\n   75              LuaDLL.lua_pushstdcallcfunction(L, dofileFunction);\n   76              LuaDLL.lua_setfield(L, LuaIndexes.LUA_GLOBALSINDEX, \"dofile\");\n   77  \n   78              // Insert our loader FIRST\n   79:             loaderFunction = new LuaCSFunction(LuaStatic.loader);\n   80              LuaDLL.lua_pushstdcallcfunction(L, loaderFunction);\n   81              int loaderFunc = LuaDLL.lua_gettop( L );\n   ..\n   96  \n   97              DoString(LuaStatic.init_luanet);            \n   98:             tracebackFunction = new LuaCSFunction(LuaStatic.traceback);\n   99          }\n  100  \n  ...\n  529          {\n  530              object obj=this[fullPath];\n  531:             return (obj is LuaCSFunction ? new LuaFunction((LuaCSFunction)obj,this) : (LuaFunction)obj);\n  532          }\n  533          /*\n  ...\n  794  \n  795              LuaMethodWrapper wrapper=new LuaMethodWrapper(translator,target,function.DeclaringType,function);\n  796:             translator.push(L,new LuaCSFunction(wrapper.call));\n  797  \n  798              this[path]=translator.getObject(L,-1);\n  ...\n  810  \n  811              LuaMethodWrapper wrapper=new LuaMethodWrapper(translator,target,function.DeclaringType,function);\n  812:             translator.push(L,new LuaCSFunction(wrapper.call));\n  813  			\n  814  			object obj = translator.getObject(L,-1);\n  815: 			LuaFunction f = (obj is LuaCSFunction ? new LuaFunction((LuaCSFunction)obj,this) : (LuaFunction)obj);\n  816  \n  817              LuaDLL.lua_settop(L, oldTop);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaDLL.cs:\n   65  	}\n   66  \n   67: 	public delegate int LuaCSFunction(IntPtr luaState);\n   68  	public delegate string LuaChunkReader(IntPtr luaState,ref ReaderInfo data,ref uint size);\n   69  \n   ..\n  304  		public static extern void lua_pushstdcallcfunction(IntPtr luaState, IntPtr wrapper);\n  305  \n  306: 		public static void lua_pushstdcallcfunction(IntPtr luaState, LuaCSFunction function)\n  307  		{\n  308  			IntPtr fn = Marshal.GetFunctionPointerForDelegate(function);\n  ...\n  340  \n  341          [DllImport(LUADLL, CallingConvention = CallingConvention.Cdecl)]\n  342: 		public static extern void lua_atpanic(IntPtr luaState, LuaCSFunction panicf);\n  343  \n  344  		[DllImport(LUADLL,CallingConvention=CallingConvention.Cdecl)]\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaFunction.cs:\n    7      public class LuaFunction : LuaBase\n    8      {        \n    9:         internal LuaCSFunction function;        \n   10          ObjectTranslator translator = null;\n   11          IntPtr L;        \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaTable.cs:\n  155              object obj = _Interpreter.rawGetObject(_Reference, field);\n  156  \n  157:             if (obj is LuaCSFunction)\n  158                  return new LuaFunction((LuaCSFunction)obj, _Interpreter);\n  159              else\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/Metatables.cs:\n   41  		private ObjectTranslator translator;\n   42  		private Hashtable memberCache = new Hashtable();\n   43: 		internal LuaCSFunction gcFunction, indexFunction, newindexFunction,\n   44  		baseIndexFunction, classIndexFunction, classNewindexFunction,\n   45  		execDelegateFunction, callConstructorFunction, toStringFunction;\n   ..\n   48  		{\n   49  			this.translator = translator;\n   50: 			gcFunction = new LuaCSFunction(collectObject);\n   51: 			toStringFunction = new LuaCSFunction(toString);\n   52: 			indexFunction = new LuaCSFunction(getMethod);\n   53: 			newindexFunction = new LuaCSFunction(setFieldOrProperty);\n   54: 			baseIndexFunction = new LuaCSFunction(getBaseMethod);\n   55: 			callConstructorFunction = new LuaCSFunction(callConstructor);\n   56: 			classIndexFunction = new LuaCSFunction(getClassMethod);\n   57: 			classNewindexFunction = new LuaCSFunction(setClassFieldOrProperty);\n   58: 			execDelegateFunction = new LuaCSFunction(runFunctionDelegate);\n   59  		}\n   60  		\n   ..\n  302  			object cachedMember = checkMemberCache(memberCache, objType, methodName);\n  303  			//object cachedMember=null;\n  304: 			if (cachedMember is LuaCSFunction)\n  305  			{\n  306  				translator.pushFunction(luaState, (LuaCSFunction)cachedMember);\n  ...\n  401  					{\n  402  						// Member type must be 'method'\n  403: 						LuaCSFunction wrapper = new LuaCSFunction((new LuaMethodWrapper(translator, objType, methodName, bindingType)).call);\n  404  						\n  405  						if (cachedMember == null) setMemberCache(memberCache, objType, methodName, wrapper);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/ObjectTranslator.cs:\n   46  		public MetaFunctions metaFunctions;\n   47  		public List<Assembly> assemblies;\n   48: 		private LuaCSFunction registerTableFunction,unregisterTableFunction,getMethodSigFunction,\n   49  		getConstructorSigFunction,importTypeFunction,loadAssemblyFunction, ctypeFunction, enumFromIntFunction;\n   50  		\n   ..\n   71  			assemblies.Add(Assembly.GetExecutingAssembly());\n   72  \n   73: 			importTypeFunction=new LuaCSFunction(importType);\n   74: 			loadAssemblyFunction=new LuaCSFunction(loadAssembly);\n   75: 			registerTableFunction=new LuaCSFunction(registerTable);\n   76: 			unregisterTableFunction=new LuaCSFunction(unregisterTable);\n   77: 			getMethodSigFunction=new LuaCSFunction(getMethodSignature);\n   78: 			getConstructorSigFunction=new LuaCSFunction(getConstructorSignature);\n   79  			\n   80: 			ctypeFunction = new LuaCSFunction(ctype);\n   81: 			enumFromIntFunction = new LuaCSFunction(enumFromInt);                        \n   82  			\n   83  			createLuaObjectList(luaState);\n   ..\n  425  				MethodInfo method=klass.GetMethod(methodName,BindingFlags.Public | BindingFlags.Static |\n  426  				                                  BindingFlags.Instance | BindingFlags.FlattenHierarchy | BindingFlags.IgnoreCase, null, signature, null);\n  427: 				translator.pushFunction(luaState,new LuaCSFunction((new LuaMethodWrapper(translator,target,klass,method)).call));\n  428  			}\n  429  			catch(Exception e)\n  ...\n  458  			{\n  459  				ConstructorInfo constructor=klass.UnderlyingSystemType.GetConstructor(signature);\n  460: 				translator.pushFunction(luaState,new LuaCSFunction((new LuaMethodWrapper(translator,null,klass,constructor)).call));\n  461  			}\n  462  			catch(Exception e)\n  ...\n  543           * Pushes a delegate into the stack\n  544           */\n  545: 		internal void pushFunction(IntPtr luaState, LuaCSFunction func)\n  546  		{\n  547  			pushObject(luaState,func,\"luaNet_function\");\n\n53 matches across 8 files\n\n\nSearching 1344 files for \"PushArray\" (case sensitive)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs:\n 1630      }\n 1631  \n 1632:     public static void PushArray(IntPtr L, object o)\n 1633      {\n 1634  #if MULTI_STATE\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimationCurveWrap.cs:\n   85  \n   86  		AnimationCurve obj = (AnimationCurve)o;\n   87: 		LuaScriptMgr.PushArray(L, obj.keys);\n   88  		return 1;\n   89  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimatorOverrideControllerWrap.cs:\n   94  \n   95  		AnimatorOverrideController obj = (AnimatorOverrideController)o;\n   96: 		LuaScriptMgr.PushArray(L, obj.clips);\n   97  		return 1;\n   98  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimatorWrap.cs:\n 1904  		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n 1905  		AnimationInfo[] o = obj.GetCurrentAnimationClipState(arg0);\n 1906: 		LuaScriptMgr.PushArray(L, o);\n 1907  		return 1;\n 1908  	}\n ....\n 1915  		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n 1916  		AnimationInfo[] o = obj.GetNextAnimationClipState(arg0);\n 1917: 		LuaScriptMgr.PushArray(L, o);\n 1918  		return 1;\n 1919  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AssetBundleWrap.cs:\n  172  			AssetBundle obj = LuaScriptMgr.GetNetObject<AssetBundle>(L, 1);\n  173  			Object[] o = obj.LoadAll();\n  174: 			LuaScriptMgr.PushArray(L, o);\n  175  			return 1;\n  176  		}\n  ...\n  180  			Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  181  			Object[] o = obj.LoadAll(arg0);\n  182: 			LuaScriptMgr.PushArray(L, o);\n  183  			return 1;\n  184  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/CameraWrap.cs:\n  794  	static int get_allCameras(IntPtr L)\n  795  	{\n  796: 		LuaScriptMgr.PushArray(L, Camera.allCameras);\n  797  		return 1;\n  798  	}\n  ...\n  849  \n  850  		Camera obj = (Camera)o;\n  851: 		LuaScriptMgr.PushArray(L, obj.layerCullDistances);\n  852  		return 1;\n  853  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ClothWrap.cs:\n  293  \n  294  		Cloth obj = (Cloth)o;\n  295: 		LuaScriptMgr.PushArray(L, obj.vertices);\n  296  		return 1;\n  297  	}\n  ...\n  317  \n  318  		Cloth obj = (Cloth)o;\n  319: 		LuaScriptMgr.PushArray(L, obj.normals);\n  320  		return 1;\n  321  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Collision2DWrap.cs:\n  168  \n  169  		Collision2D obj = (Collision2D)o;\n  170: 		LuaScriptMgr.PushArray(L, obj.contacts);\n  171  		return 1;\n  172  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/CollisionWrap.cs:\n  194  \n  195  		Collision obj = (Collision)o;\n  196: 		LuaScriptMgr.PushArray(L, obj.contacts);\n  197  		return 1;\n  198  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ComponentWrap.cs:\n  608  			Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  609  			Component[] o = obj.GetComponentsInChildren(arg0);\n  610: 			LuaScriptMgr.PushArray(L, o);\n  611  			return 1;\n  612  		}\n  ...\n  617  			bool arg1 = LuaScriptMgr.GetBoolean(L, 3);\n  618  			Component[] o = obj.GetComponentsInChildren(arg0,arg1);\n  619: 			LuaScriptMgr.PushArray(L, o);\n  620  			return 1;\n  621  		}\n  ...\n  649  			Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  650  			Component[] o = obj.GetComponentsInParent(arg0);\n  651: 			LuaScriptMgr.PushArray(L, o);\n  652  			return 1;\n  653  		}\n  ...\n  658  			bool arg1 = LuaScriptMgr.GetBoolean(L, 3);\n  659  			Component[] o = obj.GetComponentsInParent(arg0,arg1);\n  660: 			LuaScriptMgr.PushArray(L, o);\n  661  			return 1;\n  662  		}\n  ...\n  676  		Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  677  		Component[] o = obj.GetComponents(arg0);\n  678: 		LuaScriptMgr.PushArray(L, o);\n  679  		return 1;\n  680  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/CrashReportWrap.cs:\n   91  	static int get_reports(IntPtr L)\n   92  	{\n   93: 		LuaScriptMgr.PushArray(L, CrashReport.reports);\n   94  		return 1;\n   95  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/CubemapWrap.cs:\n  116  			CubemapFace arg0 = LuaScriptMgr.GetNetObject<CubemapFace>(L, 2);\n  117  			Color[] o = obj.GetPixels(arg0);\n  118: 			LuaScriptMgr.PushArray(L, o);\n  119  			return 1;\n  120  		}\n  ...\n  125  			int arg1 = (int)LuaScriptMgr.GetNumber(L, 3);\n  126  			Color[] o = obj.GetPixels(arg0,arg1);\n  127: 			LuaScriptMgr.PushArray(L, o);\n  128  			return 1;\n  129  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/DisplayWrap.cs:\n   47  	static int get_displays(IntPtr L)\n   48  	{\n   49: 		LuaScriptMgr.PushArray(L, Display.displays);\n   50  		return 1;\n   51  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/EdgeCollider2DWrap.cs:\n  118  \n  119  		EdgeCollider2D obj = (EdgeCollider2D)o;\n  120: 		LuaScriptMgr.PushArray(L, obj.points);\n  121  		return 1;\n  122  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/FontWrap.cs:\n  106  \n  107  		Font obj = (Font)o;\n  108: 		LuaScriptMgr.PushArray(L, obj.fontNames);\n  109  		return 1;\n  110  	}\n  ...\n  130  \n  131  		Font obj = (Font)o;\n  132: 		LuaScriptMgr.PushArray(L, obj.characterInfo);\n  133  		return 1;\n  134  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/GameObjectWrap.cs:\n  810  		Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  811  		Component[] o = obj.GetComponents(arg0);\n  812: 		LuaScriptMgr.PushArray(L, o);\n  813  		return 1;\n  814  	}\n  ...\n  824  			Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  825  			Component[] o = obj.GetComponentsInChildren(arg0);\n  826: 			LuaScriptMgr.PushArray(L, o);\n  827  			return 1;\n  828  		}\n  ...\n  833  			bool arg1 = LuaScriptMgr.GetBoolean(L, 3);\n  834  			Component[] o = obj.GetComponentsInChildren(arg0,arg1);\n  835: 			LuaScriptMgr.PushArray(L, o);\n  836  			return 1;\n  837  		}\n  ...\n  854  			Type arg0 = LuaScriptMgr.GetTypeObject(L, 2);\n  855  			Component[] o = obj.GetComponentsInParent(arg0);\n  856: 			LuaScriptMgr.PushArray(L, o);\n  857  			return 1;\n  858  		}\n  ...\n  863  			bool arg1 = LuaScriptMgr.GetBoolean(L, 3);\n  864  			Component[] o = obj.GetComponentsInParent(arg0,arg1);\n  865: 			LuaScriptMgr.PushArray(L, o);\n  866  			return 1;\n  867  		}\n  ...\n  921  		string arg0 = LuaScriptMgr.GetLuaString(L, 1);\n  922  		GameObject[] o = GameObject.FindGameObjectsWithTag(arg0);\n  923: 		LuaScriptMgr.PushArray(L, o);\n  924  		return 1;\n  925  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/GeometryUtilityWrap.cs:\n   60  			Matrix4x4 arg0 = LuaScriptMgr.GetNetObject<Matrix4x4>(L, 1);\n   61  			Plane[] o = GeometryUtility.CalculateFrustumPlanes(arg0);\n   62: 			LuaScriptMgr.PushArray(L, o);\n   63  			return 1;\n   64  		}\n   ..\n   67  			Camera arg0 = LuaScriptMgr.GetNetObject<Camera>(L, 1);\n   68  			Plane[] o = GeometryUtility.CalculateFrustumPlanes(arg0);\n   69: 			LuaScriptMgr.PushArray(L, o);\n   70  			return 1;\n   71  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/GradientWrap.cs:\n   70  \n   71  		Gradient obj = (Gradient)o;\n   72: 		LuaScriptMgr.PushArray(L, obj.colorKeys);\n   73  		return 1;\n   74  	}\n   ..\n   94  \n   95  		Gradient obj = (Gradient)o;\n   96: 		LuaScriptMgr.PushArray(L, obj.alphaKeys);\n   97  		return 1;\n   98  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/HumanDescriptionWrap.cs:\n   65  \n   66  		HumanDescription obj = (HumanDescription)o;\n   67: 		LuaScriptMgr.PushArray(L, obj.human);\n   68  		return 1;\n   69  	}\n   ..\n   89  \n   90  		HumanDescription obj = (HumanDescription)o;\n   91: 		LuaScriptMgr.PushArray(L, obj.skeleton);\n   92  		return 1;\n   93  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/HumanTraitWrap.cs:\n   66  	static int get_MuscleName(IntPtr L)\n   67  	{\n   68: 		LuaScriptMgr.PushArray(L, HumanTrait.MuscleName);\n   69  		return 1;\n   70  	}\n   ..\n   80  	static int get_BoneName(IntPtr L)\n   81  	{\n   82: 		LuaScriptMgr.PushArray(L, HumanTrait.BoneName);\n   83  		return 1;\n   84  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/InputWrap.cs:\n  148  	static int get_accelerationEvents(IntPtr L)\n  149  	{\n  150: 		LuaScriptMgr.PushArray(L, Input.accelerationEvents);\n  151  		return 1;\n  152  	}\n  ...\n  162  	static int get_touches(IntPtr L)\n  163  	{\n  164: 		LuaScriptMgr.PushArray(L, Input.touches);\n  165  		return 1;\n  166  	}\n  ...\n  409  		LuaScriptMgr.CheckArgsCount(L, 0);\n  410  		string[] o = Input.GetJoystickNames();\n  411: 		LuaScriptMgr.PushArray(L, o);\n  412  		return 1;\n  413  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/LightmapSettingsWrap.cs:\n   53  	static int get_lightmaps(IntPtr L)\n   54  	{\n   55: 		LuaScriptMgr.PushArray(L, LightmapSettings.lightmaps);\n   56  		return 1;\n   57  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/LightProbeGroupWrap.cs:\n   67  \n   68  		LightProbeGroup obj = (LightProbeGroup)o;\n   69: 		LuaScriptMgr.PushArray(L, obj.probePositions);\n   70  		return 1;\n   71  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/LightProbesWrap.cs:\n   71  \n   72  		LightProbes obj = (LightProbes)o;\n   73: 		LuaScriptMgr.PushArray(L, obj.positions);\n   74  		return 1;\n   75  	}\n   ..\n   95  \n   96  		LightProbes obj = (LightProbes)o;\n   97: 		LuaScriptMgr.PushArray(L, obj.coefficients);\n   98  		return 1;\n   99  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/LightWrap.cs:\n  838  		int arg1 = (int)LuaScriptMgr.GetNumber(L, 2);\n  839  		Light[] o = Light.GetLights(arg0,arg1);\n  840: 		LuaScriptMgr.PushArray(L, o);\n  841  		return 1;\n  842  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/LODWrap.cs:\n  100  \n  101  		LOD obj = (LOD)o;\n  102: 		LuaScriptMgr.PushArray(L, obj.renderers);\n  103  		return 1;\n  104  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/MaterialWrap.cs:\n  285  \n  286  		Material obj = (Material)o;\n  287: 		LuaScriptMgr.PushArray(L, obj.shaderKeywords);\n  288  		return 1;\n  289  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/MeshWrap.cs:\n  120  \n  121  		Mesh obj = (Mesh)o;\n  122: 		LuaScriptMgr.PushArray(L, obj.vertices);\n  123  		return 1;\n  124  	}\n  ...\n  144  \n  145  		Mesh obj = (Mesh)o;\n  146: 		LuaScriptMgr.PushArray(L, obj.normals);\n  147  		return 1;\n  148  	}\n  ...\n  168  \n  169  		Mesh obj = (Mesh)o;\n  170: 		LuaScriptMgr.PushArray(L, obj.tangents);\n  171  		return 1;\n  172  	}\n  ...\n  192  \n  193  		Mesh obj = (Mesh)o;\n  194: 		LuaScriptMgr.PushArray(L, obj.uv);\n  195  		return 1;\n  196  	}\n  ...\n  216  \n  217  		Mesh obj = (Mesh)o;\n  218: 		LuaScriptMgr.PushArray(L, obj.uv2);\n  219  		return 1;\n  220  	}\n  ...\n  240  \n  241  		Mesh obj = (Mesh)o;\n  242: 		LuaScriptMgr.PushArray(L, obj.uv1);\n  243  		return 1;\n  244  	}\n  ...\n  288  \n  289  		Mesh obj = (Mesh)o;\n  290: 		LuaScriptMgr.PushArray(L, obj.colors);\n  291  		return 1;\n  292  	}\n  ...\n  312  \n  313  		Mesh obj = (Mesh)o;\n  314: 		LuaScriptMgr.PushArray(L, obj.colors32);\n  315  		return 1;\n  316  	}\n  ...\n  336  \n  337  		Mesh obj = (Mesh)o;\n  338: 		LuaScriptMgr.PushArray(L, obj.triangles);\n  339  		return 1;\n  340  	}\n  ...\n  408  \n  409  		Mesh obj = (Mesh)o;\n  410: 		LuaScriptMgr.PushArray(L, obj.boneWeights);\n  411  		return 1;\n  412  	}\n  ...\n  432  \n  433  		Mesh obj = (Mesh)o;\n  434: 		LuaScriptMgr.PushArray(L, obj.bindposes);\n  435  		return 1;\n  436  	}\n  ...\n  832  		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  833  		int[] o = obj.GetTriangles(arg0);\n  834: 		LuaScriptMgr.PushArray(L, o);\n  835  		return 1;\n  836  	}\n  ...\n  854  		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  855  		int[] o = obj.GetIndices(arg0);\n  856: 		LuaScriptMgr.PushArray(L, o);\n  857  		return 1;\n  858  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/MicrophoneWrap.cs:\n   55  	static int get_devices(IntPtr L)\n   56  	{\n   57: 		LuaScriptMgr.PushArray(L, Microphone.devices);\n   58  		return 1;\n   59  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/NavMeshPathWrap.cs:\n   69  \n   70  		NavMeshPath obj = (NavMeshPath)o;\n   71: 		LuaScriptMgr.PushArray(L, obj.corners);\n   72  		return 1;\n   73  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/NavMeshTriangulationWrap.cs:\n   59  \n   60  		NavMeshTriangulation obj = (NavMeshTriangulation)o;\n   61: 		LuaScriptMgr.PushArray(L, obj.vertices);\n   62  		return 1;\n   63  	}\n   ..\n   83  \n   84  		NavMeshTriangulation obj = (NavMeshTriangulation)o;\n   85: 		LuaScriptMgr.PushArray(L, obj.indices);\n   86  		return 1;\n   87  	}\n   ..\n  107  \n  108  		NavMeshTriangulation obj = (NavMeshTriangulation)o;\n  109: 		LuaScriptMgr.PushArray(L, obj.layers);\n  110  		return 1;\n  111  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ParticleAnimatorWrap.cs:\n  267  \n  268  		ParticleAnimator obj = (ParticleAnimator)o;\n  269: 		LuaScriptMgr.PushArray(L, obj.colorAnimation);\n  270  		return 1;\n  271  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ParticleEmitterWrap.cs:\n  447  \n  448  		ParticleEmitter obj = (ParticleEmitter)o;\n  449: 		LuaScriptMgr.PushArray(L, obj.particles);\n  450  		return 1;\n  451  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ParticleRendererWrap.cs:\n  292  \n  293  		ParticleRenderer obj = (ParticleRenderer)o;\n  294: 		LuaScriptMgr.PushArray(L, obj.uvTiles);\n  295  		return 1;\n  296  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Physics2DWrap.cs:\n  447  			Vector2 arg1 = LuaScriptMgr.GetNetObject<Vector2>(L, 2);\n  448  			RaycastHit2D[] o = Physics2D.LinecastAll(arg0,arg1);\n  449: 			LuaScriptMgr.PushArray(L, o);\n  450  			return 1;\n  451  		}\n  ...\n  456  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n  457  			RaycastHit2D[] o = Physics2D.LinecastAll(arg0,arg1,arg2);\n  458: 			LuaScriptMgr.PushArray(L, o);\n  459  			return 1;\n  460  		}\n  ...\n  466  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n  467  			RaycastHit2D[] o = Physics2D.LinecastAll(arg0,arg1,arg2,arg3);\n  468: 			LuaScriptMgr.PushArray(L, o);\n  469  			return 1;\n  470  		}\n  ...\n  477  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n  478  			RaycastHit2D[] o = Physics2D.LinecastAll(arg0,arg1,arg2,arg3,arg4);\n  479: 			LuaScriptMgr.PushArray(L, o);\n  480  			return 1;\n  481  		}\n  ...\n  616  			Vector2 arg1 = LuaScriptMgr.GetNetObject<Vector2>(L, 2);\n  617  			RaycastHit2D[] o = Physics2D.RaycastAll(arg0,arg1);\n  618: 			LuaScriptMgr.PushArray(L, o);\n  619  			return 1;\n  620  		}\n  ...\n  625  			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);\n  626  			RaycastHit2D[] o = Physics2D.RaycastAll(arg0,arg1,arg2);\n  627: 			LuaScriptMgr.PushArray(L, o);\n  628  			return 1;\n  629  		}\n  ...\n  635  			int arg3 = (int)LuaScriptMgr.GetNumber(L, 4);\n  636  			RaycastHit2D[] o = Physics2D.RaycastAll(arg0,arg1,arg2,arg3);\n  637: 			LuaScriptMgr.PushArray(L, o);\n  638  			return 1;\n  639  		}\n  ...\n  646  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n  647  			RaycastHit2D[] o = Physics2D.RaycastAll(arg0,arg1,arg2,arg3,arg4);\n  648: 			LuaScriptMgr.PushArray(L, o);\n  649  			return 1;\n  650  		}\n  ...\n  658  			float arg5 = (float)LuaScriptMgr.GetNumber(L, 6);\n  659  			RaycastHit2D[] o = Physics2D.RaycastAll(arg0,arg1,arg2,arg3,arg4,arg5);\n  660: 			LuaScriptMgr.PushArray(L, o);\n  661  			return 1;\n  662  		}\n  ...\n  816  			Vector2 arg2 = LuaScriptMgr.GetNetObject<Vector2>(L, 3);\n  817  			RaycastHit2D[] o = Physics2D.CircleCastAll(arg0,arg1,arg2);\n  818: 			LuaScriptMgr.PushArray(L, o);\n  819  			return 1;\n  820  		}\n  ...\n  826  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n  827  			RaycastHit2D[] o = Physics2D.CircleCastAll(arg0,arg1,arg2,arg3);\n  828: 			LuaScriptMgr.PushArray(L, o);\n  829  			return 1;\n  830  		}\n  ...\n  837  			int arg4 = (int)LuaScriptMgr.GetNumber(L, 5);\n  838  			RaycastHit2D[] o = Physics2D.CircleCastAll(arg0,arg1,arg2,arg3,arg4);\n  839: 			LuaScriptMgr.PushArray(L, o);\n  840  			return 1;\n  841  		}\n  ...\n  849  			float arg5 = (float)LuaScriptMgr.GetNumber(L, 6);\n  850  			RaycastHit2D[] o = Physics2D.CircleCastAll(arg0,arg1,arg2,arg3,arg4,arg5);\n  851: 			LuaScriptMgr.PushArray(L, o);\n  852  			return 1;\n  853  		}\n  ...\n  862  			float arg6 = (float)LuaScriptMgr.GetNumber(L, 7);\n  863  			RaycastHit2D[] o = Physics2D.CircleCastAll(arg0,arg1,arg2,arg3,arg4,arg5,arg6);\n  864: 			LuaScriptMgr.PushArray(L, o);\n  865  			return 1;\n  866  		}\n  ...\n 1031  			Vector2 arg3 = LuaScriptMgr.GetNetObject<Vector2>(L, 4);\n 1032  			RaycastHit2D[] o = Physics2D.BoxCastAll(arg0,arg1,arg2,arg3);\n 1033: 			LuaScriptMgr.PushArray(L, o);\n 1034  			return 1;\n 1035  		}\n ....\n 1042  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n 1043  			RaycastHit2D[] o = Physics2D.BoxCastAll(arg0,arg1,arg2,arg3,arg4);\n 1044: 			LuaScriptMgr.PushArray(L, o);\n 1045  			return 1;\n 1046  		}\n ....\n 1054  			int arg5 = (int)LuaScriptMgr.GetNumber(L, 6);\n 1055  			RaycastHit2D[] o = Physics2D.BoxCastAll(arg0,arg1,arg2,arg3,arg4,arg5);\n 1056: 			LuaScriptMgr.PushArray(L, o);\n 1057  			return 1;\n 1058  		}\n ....\n 1067  			float arg6 = (float)LuaScriptMgr.GetNumber(L, 7);\n 1068  			RaycastHit2D[] o = Physics2D.BoxCastAll(arg0,arg1,arg2,arg3,arg4,arg5,arg6);\n 1069: 			LuaScriptMgr.PushArray(L, o);\n 1070  			return 1;\n 1071  		}\n ....\n 1081  			float arg7 = (float)LuaScriptMgr.GetNumber(L, 8);\n 1082  			RaycastHit2D[] o = Physics2D.BoxCastAll(arg0,arg1,arg2,arg3,arg4,arg5,arg6,arg7);\n 1083: 			LuaScriptMgr.PushArray(L, o);\n 1084  			return 1;\n 1085  		}\n ....\n 1216  			Ray arg0 = LuaScriptMgr.GetNetObject<Ray>(L, 1);\n 1217  			RaycastHit2D[] o = Physics2D.GetRayIntersectionAll(arg0);\n 1218: 			LuaScriptMgr.PushArray(L, o);\n 1219  			return 1;\n 1220  		}\n ....\n 1224  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 2);\n 1225  			RaycastHit2D[] o = Physics2D.GetRayIntersectionAll(arg0,arg1);\n 1226: 			LuaScriptMgr.PushArray(L, o);\n 1227  			return 1;\n 1228  		}\n ....\n 1233  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n 1234  			RaycastHit2D[] o = Physics2D.GetRayIntersectionAll(arg0,arg1,arg2);\n 1235: 			LuaScriptMgr.PushArray(L, o);\n 1236  			return 1;\n 1237  		}\n ....\n 1340  			Vector2 arg0 = LuaScriptMgr.GetNetObject<Vector2>(L, 1);\n 1341  			Collider2D[] o = Physics2D.OverlapPointAll(arg0);\n 1342: 			LuaScriptMgr.PushArray(L, o);\n 1343  			return 1;\n 1344  		}\n ....\n 1348  			int arg1 = (int)LuaScriptMgr.GetNumber(L, 2);\n 1349  			Collider2D[] o = Physics2D.OverlapPointAll(arg0,arg1);\n 1350: 			LuaScriptMgr.PushArray(L, o);\n 1351  			return 1;\n 1352  		}\n ....\n 1357  			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);\n 1358  			Collider2D[] o = Physics2D.OverlapPointAll(arg0,arg1,arg2);\n 1359: 			LuaScriptMgr.PushArray(L, o);\n 1360  			return 1;\n 1361  		}\n ....\n 1367  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n 1368  			Collider2D[] o = Physics2D.OverlapPointAll(arg0,arg1,arg2,arg3);\n 1369: 			LuaScriptMgr.PushArray(L, o);\n 1370  			return 1;\n 1371  		}\n ....\n 1490  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 2);\n 1491  			Collider2D[] o = Physics2D.OverlapCircleAll(arg0,arg1);\n 1492: 			LuaScriptMgr.PushArray(L, o);\n 1493  			return 1;\n 1494  		}\n ....\n 1499  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n 1500  			Collider2D[] o = Physics2D.OverlapCircleAll(arg0,arg1,arg2);\n 1501: 			LuaScriptMgr.PushArray(L, o);\n 1502  			return 1;\n 1503  		}\n ....\n 1509  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n 1510  			Collider2D[] o = Physics2D.OverlapCircleAll(arg0,arg1,arg2,arg3);\n 1511: 			LuaScriptMgr.PushArray(L, o);\n 1512  			return 1;\n 1513  		}\n ....\n 1520  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n 1521  			Collider2D[] o = Physics2D.OverlapCircleAll(arg0,arg1,arg2,arg3,arg4);\n 1522: 			LuaScriptMgr.PushArray(L, o);\n 1523  			return 1;\n 1524  		}\n ....\n 1647  			Vector2 arg1 = LuaScriptMgr.GetNetObject<Vector2>(L, 2);\n 1648  			Collider2D[] o = Physics2D.OverlapAreaAll(arg0,arg1);\n 1649: 			LuaScriptMgr.PushArray(L, o);\n 1650  			return 1;\n 1651  		}\n ....\n 1656  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n 1657  			Collider2D[] o = Physics2D.OverlapAreaAll(arg0,arg1,arg2);\n 1658: 			LuaScriptMgr.PushArray(L, o);\n 1659  			return 1;\n 1660  		}\n ....\n 1666  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n 1667  			Collider2D[] o = Physics2D.OverlapAreaAll(arg0,arg1,arg2,arg3);\n 1668: 			LuaScriptMgr.PushArray(L, o);\n 1669  			return 1;\n 1670  		}\n ....\n 1677  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n 1678  			Collider2D[] o = Physics2D.OverlapAreaAll(arg0,arg1,arg2,arg3,arg4);\n 1679: 			LuaScriptMgr.PushArray(L, o);\n 1680  			return 1;\n 1681  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/PhysicsWrap.cs:\n  364  			Ray arg0 = LuaScriptMgr.GetNetObject<Ray>(L, 1);\n  365  			RaycastHit[] o = Physics.RaycastAll(arg0);\n  366: 			LuaScriptMgr.PushArray(L, o);\n  367  			return 1;\n  368  		}\n  ...\n  372  			Vector3 arg1 = LuaScriptMgr.GetNetObject<Vector3>(L, 2);\n  373  			RaycastHit[] o = Physics.RaycastAll(arg0,arg1);\n  374: 			LuaScriptMgr.PushArray(L, o);\n  375  			return 1;\n  376  		}\n  ...\n  380  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 2);\n  381  			RaycastHit[] o = Physics.RaycastAll(arg0,arg1);\n  382: 			LuaScriptMgr.PushArray(L, o);\n  383  			return 1;\n  384  		}\n  ...\n  389  			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);\n  390  			RaycastHit[] o = Physics.RaycastAll(arg0,arg1,arg2);\n  391: 			LuaScriptMgr.PushArray(L, o);\n  392  			return 1;\n  393  		}\n  ...\n  398  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n  399  			RaycastHit[] o = Physics.RaycastAll(arg0,arg1,arg2);\n  400: 			LuaScriptMgr.PushArray(L, o);\n  401  			return 1;\n  402  		}\n  ...\n  408  			int arg3 = (int)LuaScriptMgr.GetNumber(L, 4);\n  409  			RaycastHit[] o = Physics.RaycastAll(arg0,arg1,arg2,arg3);\n  410: 			LuaScriptMgr.PushArray(L, o);\n  411  			return 1;\n  412  		}\n  ...\n  483  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 2);\n  484  			Collider[] o = Physics.OverlapSphere(arg0,arg1);\n  485: 			LuaScriptMgr.PushArray(L, o);\n  486  			return 1;\n  487  		}\n  ...\n  492  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 3);\n  493  			Collider[] o = Physics.OverlapSphere(arg0,arg1,arg2);\n  494: 			LuaScriptMgr.PushArray(L, o);\n  495  			return 1;\n  496  		}\n  ...\n  722  			Vector3 arg3 = LuaScriptMgr.GetNetObject<Vector3>(L, 4);\n  723  			RaycastHit[] o = Physics.CapsuleCastAll(arg0,arg1,arg2,arg3);\n  724: 			LuaScriptMgr.PushArray(L, o);\n  725  			return 1;\n  726  		}\n  ...\n  733  			float arg4 = (float)LuaScriptMgr.GetNumber(L, 5);\n  734  			RaycastHit[] o = Physics.CapsuleCastAll(arg0,arg1,arg2,arg3,arg4);\n  735: 			LuaScriptMgr.PushArray(L, o);\n  736  			return 1;\n  737  		}\n  ...\n  745  			int arg5 = (int)LuaScriptMgr.GetNumber(L, 6);\n  746  			RaycastHit[] o = Physics.CapsuleCastAll(arg0,arg1,arg2,arg3,arg4,arg5);\n  747: 			LuaScriptMgr.PushArray(L, o);\n  748  			return 1;\n  749  		}\n  ...\n  771  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 2);\n  772  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1);\n  773: 			LuaScriptMgr.PushArray(L, o);\n  774  			return 1;\n  775  		}\n  ...\n  780  			float arg2 = (float)LuaScriptMgr.GetNumber(L, 3);\n  781  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1,arg2);\n  782: 			LuaScriptMgr.PushArray(L, o);\n  783  			return 1;\n  784  		}\n  ...\n  789  			Vector3 arg2 = LuaScriptMgr.GetNetObject<Vector3>(L, 3);\n  790  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1,arg2);\n  791: 			LuaScriptMgr.PushArray(L, o);\n  792  			return 1;\n  793  		}\n  ...\n  799  			float arg3 = (float)LuaScriptMgr.GetNumber(L, 4);\n  800  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1,arg2,arg3);\n  801: 			LuaScriptMgr.PushArray(L, o);\n  802  			return 1;\n  803  		}\n  ...\n  809  			int arg3 = (int)LuaScriptMgr.GetNumber(L, 4);\n  810  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1,arg2,arg3);\n  811: 			LuaScriptMgr.PushArray(L, o);\n  812  			return 1;\n  813  		}\n  ...\n  820  			int arg4 = (int)LuaScriptMgr.GetNumber(L, 5);\n  821  			RaycastHit[] o = Physics.SphereCastAll(arg0,arg1,arg2,arg3,arg4);\n  822: 			LuaScriptMgr.PushArray(L, o);\n  823  			return 1;\n  824  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/PolygonCollider2DWrap.cs:\n   72  \n   73  		PolygonCollider2D obj = (PolygonCollider2D)o;\n   74: 		LuaScriptMgr.PushArray(L, obj.points);\n   75  		return 1;\n   76  	}\n   ..\n  155  		int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  156  		Vector2[] o = obj.GetPath(arg0);\n  157: 		LuaScriptMgr.PushArray(L, o);\n  158  		return 1;\n  159  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ProceduralMaterialWrap.cs:\n  417  		ProceduralMaterial obj = LuaScriptMgr.GetNetObject<ProceduralMaterial>(L, 1);\n  418  		ProceduralPropertyDescription[] o = obj.GetProceduralPropertyDescriptions();\n  419: 		LuaScriptMgr.PushArray(L, o);\n  420  		return 1;\n  421  	}\n  ...\n  627  		ProceduralMaterial obj = LuaScriptMgr.GetNetObject<ProceduralMaterial>(L, 1);\n  628  		Texture[] o = obj.GetGeneratedTextures();\n  629: 		LuaScriptMgr.PushArray(L, o);\n  630  		return 1;\n  631  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ProceduralPropertyDescriptionWrap.cs:\n  268  \n  269  		ProceduralPropertyDescription obj = (ProceduralPropertyDescription)o;\n  270: 		LuaScriptMgr.PushArray(L, obj.enumOptions);\n  271  		return 1;\n  272  	}\n  ...\n  292  \n  293  		ProceduralPropertyDescription obj = (ProceduralPropertyDescription)o;\n  294: 		LuaScriptMgr.PushArray(L, obj.componentLabels);\n  295  		return 1;\n  296  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ProceduralTextureWrap.cs:\n  118  		int arg3 = (int)LuaScriptMgr.GetNumber(L, 5);\n  119  		Color32[] o = obj.GetPixels32(arg0,arg1,arg2,arg3);\n  120: 		LuaScriptMgr.PushArray(L, o);\n  121  		return 1;\n  122  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/QualitySettingsWrap.cs:\n   70  	static int get_names(IntPtr L)\n   71  	{\n   72: 		LuaScriptMgr.PushArray(L, QualitySettings.names);\n   73  		return 1;\n   74  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/RendererWrap.cs:\n  280  \n  281  		Renderer obj = (Renderer)o;\n  282: 		LuaScriptMgr.PushArray(L, obj.sharedMaterials);\n  283  		return 1;\n  284  	}\n  ...\n  304  \n  305  		Renderer obj = (Renderer)o;\n  306: 		LuaScriptMgr.PushArray(L, obj.materials);\n  307  		return 1;\n  308  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ResourcesWrap.cs:\n   60  		Type arg0 = LuaScriptMgr.GetTypeObject(L, 1);\n   61  		Object[] o = Resources.FindObjectsOfTypeAll(arg0);\n   62: 		LuaScriptMgr.PushArray(L, o);\n   63  		return 1;\n   64  	}\n   ..\n  101  			string arg0 = LuaScriptMgr.GetLuaString(L, 1);\n  102  			Object[] o = Resources.LoadAll(arg0);\n  103: 			LuaScriptMgr.PushArray(L, o);\n  104  			return 1;\n  105  		}\n  ...\n  109  			Type arg1 = LuaScriptMgr.GetTypeObject(L, 2);\n  110  			Object[] o = Resources.LoadAll(arg0,arg1);\n  111: 			LuaScriptMgr.PushArray(L, o);\n  112  			return 1;\n  113  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/RigidbodyWrap.cs:\n 1562  			Vector3 arg0 = LuaScriptMgr.GetNetObject<Vector3>(L, 2);\n 1563  			RaycastHit[] o = obj.SweepTestAll(arg0);\n 1564: 			LuaScriptMgr.PushArray(L, o);\n 1565  			return 1;\n 1566  		}\n ....\n 1571  			float arg1 = (float)LuaScriptMgr.GetNumber(L, 3);\n 1572  			RaycastHit[] o = obj.SweepTestAll(arg0,arg1);\n 1573: 			LuaScriptMgr.PushArray(L, o);\n 1574  			return 1;\n 1575  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/ScreenWrap.cs:\n   65  	static int get_resolutions(IntPtr L)\n   66  	{\n   67: 		LuaScriptMgr.PushArray(L, Screen.resolutions);\n   68  		return 1;\n   69  	}\n   ..\n   72  	static int get_GetResolution(IntPtr L)\n   73  	{\n   74: 		LuaScriptMgr.PushArray(L, Screen.GetResolution);\n   75  		return 1;\n   76  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/SkinnedClothWrap.cs:\n   70  \n   71  		SkinnedCloth obj = (SkinnedCloth)o;\n   72: 		LuaScriptMgr.PushArray(L, obj.coefficients);\n   73  		return 1;\n   74  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/SkinnedMeshRendererWrap.cs:\n   75  \n   76  		SkinnedMeshRenderer obj = (SkinnedMeshRenderer)o;\n   77: 		LuaScriptMgr.PushArray(L, obj.bones);\n   78  		return 1;\n   79  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Texture2DWrap.cs:\n  307  			Texture2D obj = LuaScriptMgr.GetNetObject<Texture2D>(L, 1);\n  308  			Color[] o = obj.GetPixels();\n  309: 			LuaScriptMgr.PushArray(L, o);\n  310  			return 1;\n  311  		}\n  ...\n  315  			int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  316  			Color[] o = obj.GetPixels(arg0);\n  317: 			LuaScriptMgr.PushArray(L, o);\n  318  			return 1;\n  319  		}\n  ...\n  326  			int arg3 = (int)LuaScriptMgr.GetNumber(L, 5);\n  327  			Color[] o = obj.GetPixels(arg0,arg1,arg2,arg3);\n  328: 			LuaScriptMgr.PushArray(L, o);\n  329  			return 1;\n  330  		}\n  ...\n  338  			int arg4 = (int)LuaScriptMgr.GetNumber(L, 6);\n  339  			Color[] o = obj.GetPixels(arg0,arg1,arg2,arg3,arg4);\n  340: 			LuaScriptMgr.PushArray(L, o);\n  341  			return 1;\n  342  		}\n  ...\n  358  			Texture2D obj = LuaScriptMgr.GetNetObject<Texture2D>(L, 1);\n  359  			Color32[] o = obj.GetPixels32();\n  360: 			LuaScriptMgr.PushArray(L, o);\n  361  			return 1;\n  362  		}\n  ...\n  366  			int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  367  			Color32[] o = obj.GetPixels32(arg0);\n  368: 			LuaScriptMgr.PushArray(L, o);\n  369  			return 1;\n  370  		}\n  ...\n  465  			int arg1 = (int)LuaScriptMgr.GetNumber(L, 3);\n  466  			Rect[] o = obj.PackTextures(objs0,arg1);\n  467: 			LuaScriptMgr.PushArray(L, o);\n  468  			return 1;\n  469  		}\n  ...\n  475  			int arg2 = (int)LuaScriptMgr.GetNumber(L, 4);\n  476  			Rect[] o = obj.PackTextures(objs0,arg1,arg2);\n  477: 			LuaScriptMgr.PushArray(L, o);\n  478  			return 1;\n  479  		}\n  ...\n  486  			bool arg3 = LuaScriptMgr.GetBoolean(L, 5);\n  487  			Rect[] o = obj.PackTextures(objs0,arg1,arg2,arg3);\n  488: 			LuaScriptMgr.PushArray(L, o);\n  489  			return 1;\n  490  		}\n  ...\n  535  		Texture2D obj = LuaScriptMgr.GetNetObject<Texture2D>(L, 1);\n  536  		byte[] o = obj.EncodeToPNG();\n  537: 		LuaScriptMgr.PushArray(L, o);\n  538  		return 1;\n  539  	}\n  ...\n  545  		Texture2D obj = LuaScriptMgr.GetNetObject<Texture2D>(L, 1);\n  546  		byte[] o = obj.EncodeToJPG();\n  547: 		LuaScriptMgr.PushArray(L, o);\n  548  		return 1;\n  549  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Texture3DWrap.cs:\n  113  			Texture3D obj = LuaScriptMgr.GetNetObject<Texture3D>(L, 1);\n  114  			Color[] o = obj.GetPixels();\n  115: 			LuaScriptMgr.PushArray(L, o);\n  116  			return 1;\n  117  		}\n  ...\n  121  			int arg0 = (int)LuaScriptMgr.GetNumber(L, 2);\n  122  			Color[] o = obj.GetPixels(arg0);\n  123: 			LuaScriptMgr.PushArray(L, o);\n  124  			return 1;\n  125  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/TypeWrap.cs:\n  156  	static int get_EmptyTypes(IntPtr L)\n  157  	{\n  158: 		LuaScriptMgr.PushArray(L, Type.EmptyTypes);\n  159  		return 1;\n  160  	}\n  ...\n 1143  		object[] objs0 = LuaScriptMgr.GetArrayObject<object>(L, 1);\n 1144  		Type[] o = Type.GetTypeArray(objs0);\n 1145: 		LuaScriptMgr.PushArray(L, o);\n 1146  		return 1;\n 1147  	}\n ....\n 1292  		object arg1 = LuaScriptMgr.GetVarObject(L, 3);\n 1293  		Type[] o = obj.FindInterfaces(arg0,arg1);\n 1294: 		LuaScriptMgr.PushArray(L, o);\n 1295  		return 1;\n 1296  	}\n ....\n 1343  		Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1344  		Type[] o = obj.GetInterfaces();\n 1345: 		LuaScriptMgr.PushArray(L, o);\n 1346  		return 1;\n 1347  	}\n ....\n 1428  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1429  			EventInfo[] o = obj.GetEvents();\n 1430: 			LuaScriptMgr.PushArray(L, o);\n 1431  			return 1;\n 1432  		}\n ....\n 1436  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1437  			EventInfo[] o = obj.GetEvents(arg0);\n 1438: 			LuaScriptMgr.PushArray(L, o);\n 1439  			return 1;\n 1440  		}\n ....\n 1486  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1487  			FieldInfo[] o = obj.GetFields();\n 1488: 			LuaScriptMgr.PushArray(L, o);\n 1489  			return 1;\n 1490  		}\n ....\n 1494  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1495  			FieldInfo[] o = obj.GetFields(arg0);\n 1496: 			LuaScriptMgr.PushArray(L, o);\n 1497  			return 1;\n 1498  		}\n ....\n 1525  			string arg0 = LuaScriptMgr.GetLuaString(L, 2);\n 1526  			MemberInfo[] o = obj.GetMember(arg0);\n 1527: 			LuaScriptMgr.PushArray(L, o);\n 1528  			return 1;\n 1529  		}\n ....\n 1534  			BindingFlags arg1 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 3);\n 1535  			MemberInfo[] o = obj.GetMember(arg0,arg1);\n 1536: 			LuaScriptMgr.PushArray(L, o);\n 1537  			return 1;\n 1538  		}\n ....\n 1544  			BindingFlags arg2 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 4);\n 1545  			MemberInfo[] o = obj.GetMember(arg0,arg1,arg2);\n 1546: 			LuaScriptMgr.PushArray(L, o);\n 1547  			return 1;\n 1548  		}\n ....\n 1564  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1565  			MemberInfo[] o = obj.GetMembers();\n 1566: 			LuaScriptMgr.PushArray(L, o);\n 1567  			return 1;\n 1568  		}\n ....\n 1572  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1573  			MemberInfo[] o = obj.GetMembers(arg0);\n 1574: 			LuaScriptMgr.PushArray(L, o);\n 1575  			return 1;\n 1576  		}\n ....\n 1669  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1670  			MethodInfo[] o = obj.GetMethods();\n 1671: 			LuaScriptMgr.PushArray(L, o);\n 1672  			return 1;\n 1673  		}\n ....\n 1677  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1678  			MethodInfo[] o = obj.GetMethods(arg0);\n 1679: 			LuaScriptMgr.PushArray(L, o);\n 1680  			return 1;\n 1681  		}\n ....\n 1727  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1728  			Type[] o = obj.GetNestedTypes();\n 1729: 			LuaScriptMgr.PushArray(L, o);\n 1730  			return 1;\n 1731  		}\n ....\n 1735  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1736  			Type[] o = obj.GetNestedTypes(arg0);\n 1737: 			LuaScriptMgr.PushArray(L, o);\n 1738  			return 1;\n 1739  		}\n ....\n 1755  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1756  			PropertyInfo[] o = obj.GetProperties();\n 1757: 			LuaScriptMgr.PushArray(L, o);\n 1758  			return 1;\n 1759  		}\n ....\n 1763  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1764  			PropertyInfo[] o = obj.GetProperties(arg0);\n 1765: 			LuaScriptMgr.PushArray(L, o);\n 1766  			return 1;\n 1767  		}\n ....\n 1913  			Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1914  			ConstructorInfo[] o = obj.GetConstructors();\n 1915: 			LuaScriptMgr.PushArray(L, o);\n 1916  			return 1;\n 1917  		}\n ....\n 1921  			BindingFlags arg0 = LuaScriptMgr.GetNetObject<BindingFlags>(L, 2);\n 1922  			ConstructorInfo[] o = obj.GetConstructors(arg0);\n 1923: 			LuaScriptMgr.PushArray(L, o);\n 1924  			return 1;\n 1925  		}\n ....\n 1938  		Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 1939  		MemberInfo[] o = obj.GetDefaultMembers();\n 1940: 		LuaScriptMgr.PushArray(L, o);\n 1941  		return 1;\n 1942  	}\n ....\n 1952  		object arg3 = LuaScriptMgr.GetVarObject(L, 5);\n 1953  		MemberInfo[] o = obj.FindMembers(arg0,arg1,arg2,arg3);\n 1954: 		LuaScriptMgr.PushArray(L, o);\n 1955  		return 1;\n 1956  	}\n ....\n 2025  		Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 2026  		Type[] o = obj.GetGenericArguments();\n 2027: 		LuaScriptMgr.PushArray(L, o);\n 2028  		return 1;\n 2029  	}\n ....\n 2056  		Type obj = LuaScriptMgr.GetTypeObject(L, 1);\n 2057  		Type[] o = obj.GetGenericParameterConstraints();\n 2058: 		LuaScriptMgr.PushArray(L, o);\n 2059  		return 1;\n 2060  	}\n ....\n 2142  			bool arg0 = LuaScriptMgr.GetBoolean(L, 2);\n 2143  			object[] o = obj.GetCustomAttributes(arg0);\n 2144: 			LuaScriptMgr.PushArray(L, o);\n 2145  			return 1;\n 2146  		}\n ....\n 2151  			bool arg1 = LuaScriptMgr.GetBoolean(L, 3);\n 2152  			object[] o = obj.GetCustomAttributes(arg0,arg1);\n 2153: 			LuaScriptMgr.PushArray(L, o);\n 2154  			return 1;\n 2155  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/WebCamTextureWrap.cs:\n  231  	static int get_devices(IntPtr L)\n  232  	{\n  233: 		LuaScriptMgr.PushArray(L, WebCamTexture.devices);\n  234  		return 1;\n  235  	}\n  ...\n  451  			WebCamTexture obj = LuaScriptMgr.GetNetObject<WebCamTexture>(L, 1);\n  452  			Color[] o = obj.GetPixels();\n  453: 			LuaScriptMgr.PushArray(L, o);\n  454  			return 1;\n  455  		}\n  ...\n  462  			int arg3 = (int)LuaScriptMgr.GetNumber(L, 5);\n  463  			Color[] o = obj.GetPixels(arg0,arg1,arg2,arg3);\n  464: 			LuaScriptMgr.PushArray(L, o);\n  465  			return 1;\n  466  		}\n  ...\n  482  			WebCamTexture obj = LuaScriptMgr.GetNetObject<WebCamTexture>(L, 1);\n  483  			Color32[] o = obj.GetPixels32();\n  484: 			LuaScriptMgr.PushArray(L, o);\n  485  			return 1;\n  486  		}\n  ...\n  490  			Color32[] objs0 = LuaScriptMgr.GetArrayObject<Color32>(L, 2);\n  491  			Color32[] o = obj.GetPixels32(objs0);\n  492: 			LuaScriptMgr.PushArray(L, o);\n  493  			return 1;\n  494  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/WWWFormWrap.cs:\n   95  \n   96  		WWWForm obj = (WWWForm)o;\n   97: 		LuaScriptMgr.PushArray(L, obj.data);\n   98  		return 1;\n   99  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/WWWWrap.cs:\n  169  \n  170  		WWW obj = (WWW)o;\n  171: 		LuaScriptMgr.PushArray(L, obj.bytes);\n  172  		return 1;\n  173  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ObjectWrap.cs:\n  261          Type arg0 = LuaScriptMgr.GetNetObject<Type>(L, 1);\n  262          Object[] o = Object.FindObjectsOfType(arg0);\n  263:         LuaScriptMgr.PushArray(L, o);\n  264          return 1;\n  265      }\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ToLua.cs:\n  499          else if (t.IsArray)\n  500          {\n  501:             return \"PushArray\";\n  502          }\n  503  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaFunction.cs:\n  218              if (type.IsArray)\n  219              {\n  220:                 LuaScriptMgr.PushArray(L, o);\n  221              }\n  222              else if (type.IsEnum)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/ObjectTranslator.cs:\n 1002              else if (t.IsArray)\n 1003              {\n 1004:                 LuaScriptMgr.PushArray(luaState, o);\n 1005              }\n 1006              else if (t.IsPrimitive)\n\n191 matches across 57 files\n\n\nSearching 1344 files for \"PushCSharpFunction\" (case sensitive)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/MyApplaction.cs:\n   76          // insert `traceback' function\n   77          var b = Lua.GetTop();\n   78:         Lua.PushCSharpFunction( Traceback );\n   79          Lua.Insert(b);\n   80  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs:\n   84  		void PushUnsigned( uint n );\n   85  		string PushString( string s );\n   86: 		void PushCSharpFunction( CSharpFunctionDelegate f );\n   87  		void PushCSharpClosure( CSharpFunctionDelegate f, int n );\n   88  		void PushValue( int index );\n   ..\n 1235  		}\n 1236  \n 1237: 		void ILuaAPI.PushCSharpFunction( CSharpFunctionDelegate f )\n 1238  		{\n 1239  			API.PushCSharpClosure( f, 0 );\n ....\n 1629  		// private void RegisterGlobalFunc( string name, CSharpFunctionDelegate f )\n 1630  		// {\n 1631: 		// 	API.PushCSharpFunction( f );\n 1632  		// 	API.SetGlobal( name );\n 1633  		// }\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAuxLib.cs:\n  583  		public void L_RequireF( string moduleName, CSharpFunctionDelegate openFunc, bool global )\n  584  		{\n  585: 			API.PushCSharpFunction( openFunc );\n  586  			API.PushString( moduleName );\n  587  			API.Call( 1, 1 );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaBaseLib.cs:\n  356  			{\n  357  				lua.L_CheckType( 1, LuaType.LUA_TTABLE );\n  358: 				lua.PushCSharpFunction( iter );\n  359  				lua.PushValue( 1 );\n  360  				if( isZero )\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaPkgLib.cs:\n   62  			// lua.L_GetSubTable( LuaDef.LUA_REGISTRYINDEX, CLIBS );\n   63  			// lua.CreateTable( 0, 1 ); // metatable for CLIBS\n   64: 			// lua.PushCSharpFunction\n   65  			\n   66  			// create `package' table\n\n7 matches across 5 files\n",
 			"settings":
 			{
-				"buffer_size": 195,
+				"buffer_size": 52615,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs",
+			"settings":
+			{
+				"buffer_size": 36542,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaDLL.cs",
 			"settings":
 			{
-				"buffer_size": 357,
+				"buffer_size": 17704,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/MyPlugins/uLua/Examples/03_AccessingLuaVariables/AccessingLuaVariables.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaFunction.cs",
 			"settings":
 			{
-				"buffer_size": 1276,
+				"buffer_size": 7291,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/MyPlugins/uLua/Examples/02_CreateGameObject/CreateGameObject.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaBase.cs",
 			"settings":
 			{
-				"buffer_size": 563,
+				"buffer_size": 2564,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/MyPlugins/uLua/Examples/01_HelloWorld/HelloWorld.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimationClipPairWrap.cs",
 			"settings":
 			{
-				"buffer_size": 308,
+				"buffer_size": 3281,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/04_ScriptsFromFile.lua.txt",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs",
 			"settings":
 			{
-				"buffer_size": 41,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/ScriptsFromFile.cs",
-			"settings":
-			{
-				"buffer_size": 331,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/MyPlugins/uLua/Examples/05_CallLuaFunction/CallLuaFunction.cs",
-			"settings":
-			{
-				"buffer_size": 918,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
-			"settings":
-			{
-				"buffer_size": 2184,
+				"buffer_size": 49441,
 				"line_ending": "Unix"
 			}
 		}
@@ -704,6 +690,45 @@
 	},
 	"file_history":
 	[
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/Tools/CompilerMain.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/Tools/LuaCompiler.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/Dump.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/uLua/Core/Lua.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/LuaScriptMgr.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaFile.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Main.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/TitleScene.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaAPI.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/Util.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaState.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/Debugger.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/LuaWrap/GameObjectWrap.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/Client.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/uLua/Core/LuaDLL.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/LuaWrap/Base/ToLua.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/LuaDLL.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/Lua.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/LuaStatic.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/ObjectTranslator.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/README.txt",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaPkgLib.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/LuaFunction.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/Tools/LuaCompiler.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/MyApplaction.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/UIManager.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/03_AccessingLuaVariables/AccessingLuaVariables.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/02_CreateGameObject/CreateGameObject.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/01_HelloWorld/HelloWorld.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/04_ScriptsFromFile.lua.txt",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/ScriptsFromFile.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/05_CallLuaFunction/CallLuaFunction.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/Title.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DUtil/CFile.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Scene/GameScene.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CScene.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Scene/LoginScene.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Scene/TitleScene.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Editor/InspectorTool.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/NGUI/Scripts/Internal/UIDrawCall.cs",
@@ -792,46 +817,7 @@
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Manager/CNFeatureManager.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/Character.cs",
 		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/Table/ActionSkillTable.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/AI System/Scripts/Actions/SelectTarget/SelConditionTarget.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Network/Model/QuestModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Editor/AndroidBuilder.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/FieldCamera.cs",
-		"/Users/luzexi/Downloads/blog_ysn.sql",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Manager/TransitionManager.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Network/Model/UnitModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Network/Model/CardModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/Table/Refer.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Manager/PvpCardProperty.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/ExternalResources/Data/PvpCardProperty.txt",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/UI/Challenge_List_Item.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Controller/Bullet/BulletController.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/State/UI_InnState.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/SoulBoard/UI_UnitEnhanceTreeMenu.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Network/Model/DeckExceedModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/State/CharacterStateBreakAndResurrection.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/Status/CharacterStatusRegen.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Controller/UserController.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/UI/PVP_Charts.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Graphics/HealFont.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Graphics/ImageNumberText.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/UI_ItemSale.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Controller/PvpAIController.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Network/Model/PVPModel.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/AttackCollision.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/Manager/PvpCardProperty.cs.meta",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/DamageData.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/AI System/Scripts/States/Triggers/OnDamage.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/System/OrderingAction.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Character/State/CharacterStateAction.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Table/PvpCardProperty.csv.meta",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/Plugins/Testin_Plugins/TestinInit.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/combinTest.cs",
-		"/Users/luzexi/Desktop/PvpCardProperty.csv",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Table/PvpCardProperty.csv",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/Manager/TimeManager.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Editor/iOSBuilder.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Editor/BatchBuild.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Scripts/UI/System/UIManager.cs"
+		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/AI System/Scripts/Actions/SelectTarget/SelConditionTarget.cs"
 	],
 	"find":
 	{
@@ -839,7 +825,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -847,9 +833,91 @@
 	},
 	"find_state":
 	{
-		"case_sensitive": false,
+		"case_sensitive": true,
 		"find_history":
 		[
+			"PushCSharpFunction",
+			"PushArray",
+			"CreateTable",
+			"PushLuaFunction",
+			"PushLuaTable",
+			" LuaCSFunction",
+			"LuaCSFunction",
+			"LuaBase",
+			"refGCList",
+			"Loader",
+			"set_name",
+			"LuaCSFunction",
+			"class LuaCSFunction",
+			" LuaCSFunction",
+			"class LuaCSFunction",
+			"OnUpdate",
+			"coroutineWrap",
+			"Timer",
+			"LuaScriptMgr",
+			"DumpingToFile",
+			"DumpVector",
+			"DumpItemDelegate",
+			"dumpItem",
+			"DumpVector",
+			"DumpCode",
+			"DumpFunction",
+			"DumpBlock",
+			"DumpHeader",
+			"Dump",
+			"luaopen_pb",
+			"class LuaState",
+			" L",
+			" L ",
+			"L ",
+			"L",
+			"DoFile",
+			"CreateTable",
+			"Instance",
+			"Debugger",
+			"Timer",
+			"Debugger",
+			"return",
+			"IsTable",
+			"streamingasset",
+			"streamasset",
+			"assetstream",
+			"assetsstream",
+			"assetstream",
+			"Compiler",
+			"luaL_loadbuffer",
+			"ThrowExceptionFromError",
+			"luaL_loadbuffer",
+			"loadAssembly",
+			"loadAssemblyFunction",
+			"loadfileluaFunction",
+			"loadAssemblyFunction",
+			"loadAssembly",
+			"loadAssemblyFunction",
+			"load_assembly",
+			" load_assembly(",
+			"load_assembly",
+			"require(",
+			"FindLoader",
+			"require(",
+			"require",
+			"LuaStatic.dofile",
+			"dofile(",
+			"dofile",
+			"loadfileluaFunction",
+			"loadfileFunction",
+			"init_luanet",
+			"SearchPath",
+			"FindFile",
+			"loadfile",
+			"loader",
+			"include",
+			"MonoPInvokeCallbackAttribute",
+			"searchers",
+			"FindLoader",
+			"require(",
+			"require '",
+			"require",
 			"DrawScale",
 			"DrawRotation",
 			"FloatField",
@@ -895,89 +963,7 @@
 			"GetZoomValue",
 			"moveZoomSpeed",
 			"UpdateCameraTarget",
-			"moveZoomSpeed",
-			"wheel",
-			"OnPinch",
-			"onPinchE",
-			"IsEnableCameraControl",
-			"OnPinch",
-			"onPinchE",
-			"Pinch(",
-			"Pinch",
-			"ScrollWheel",
-			"wheel",
-			"GetPolarCenterPos",
-			"lookPositionEnd",
-			"GetPolarCenterPos",
-			"lookOffset",
-			"nearWeaponZoomPower",
-			"UpdateCamera",
-			"ControlOnTouchUp",
-			"camera",
-			"FieldCamera",
-			"stickDirectionOnSwiping",
-			"OnShortTapDelegate",
-			"Swipe",
-			"SwipeEndHandler",
-			"SwipingHandler",
-			"MFDraggingHandler",
-			"MainCamera",
-			"fieldCamera",
-			"zoomOutPower",
-			"nearWeaponZoomPower",
-			"fieldCamera",
-			"lookPositionEnd",
-			"lookOffset",
-			"FieldCamera",
-			"pvp_deck",
-			"DeckUpdateEquipmentModel",
-			"deck/updateequipment",
-			"Button Weapon Change",
-			" ",
-			"mapchip_3d_0008_models_materials_",
-			"mapchip_3d_0008_models_materials_new",
-			"mapchip_3d_0008_models_materials_",
-			"mapchip_3d_0008_models_materials_new",
-			"DL_Windowns",
-			"class debug",
-			"class debug {",
-			"class debug{",
-			"class debug ",
-			"class debug",
-			"debugwar",
-			"event",
-			"不支持",
-			"dl_",
-			"GlobalDataManager.I.DL_Id",
-			"DownloadFinishModel",
-			"downloadover",
-			"QuestGetDreamExModel",
-			"SetSleepTimeOutEnable",
-			"DL_IsBeginToDownload",
-			"DL_DownloadScene",
-			"DL_ShowReward",
-			"DL_IsDownLoadFile",
-			"DL_DownloadScene",
-			"GetSlotActionSkillId",
-			"();\n",
-			"QuestGetDreamExModel",
-			"DL_ITEM_once",
-			"DL_ITEM_all_update",
-			"DL_ITEM_all",
-			"dl_all",
-			"OverDownload",
-			"GlobalDataManager.I.DL_Deck",
-			"QuestGetDreamExModel",
-			"dl_sho",
-			"DL_Windowns",
-			"areaid",
-			"SetupView",
-			"GetAssetVersion",
-			"version",
-			"getversion",
-			"_Version",
-			"CN_DEVELOP",
-			"IsVersionCached"
+			"moveZoomSpeed"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1003,68 +989,71 @@
 					"file": "Assets/App/Scripts/Manager/MyApplaction.cs",
 					"settings":
 					{
-						"buffer_size": 560,
+						"buffer_size": 2374,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								328,
-								328
+								1532,
+								1550
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 107.0,
+						"translation.y": 811.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/App/Scripts/Scene/GameScene.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/coroutineWrap.cs",
 					"settings":
 					{
-						"buffer_size": 304,
+						"buffer_size": 2109,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								206,
-								206
+								944,
+								944
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 242.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 2,
-					"file": "Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CScene.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaState.cs",
 					"settings":
 					{
-						"buffer_size": 696,
+						"buffer_size": 6774,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								327,
-								333
+								0,
+								0
 							]
 						],
 						"settings":
@@ -1073,30 +1062,32 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 163.0,
+						"translation.y": 3579.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/App/Scripts/Scene/LoginScene.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ObjectWrap.cs",
 					"settings":
 					{
-						"buffer_size": 307,
+						"buffer_size": 9416,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								203,
-								203
+								693,
+								693
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1106,103 +1097,18 @@
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/App/Scripts/Scene/TitleScene.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/LuaWrap.cs",
 					"settings":
 					{
-						"buffer_size": 306,
+						"buffer_size": 1059,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								100,
-								100
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "Assets/App/Scripts/Manager/UIManager.cs",
-					"settings":
-					{
-						"buffer_size": 195,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								192,
-								192
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "Assets/App/Scripts/submodule/Unity3DUtil/CSingleton.cs",
-					"settings":
-					{
-						"buffer_size": 357,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								80,
-								90
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 62.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
-				{
-					"buffer": 7,
-					"file": "Assets/MyPlugins/uLua/Examples/03_AccessingLuaVariables/AccessingLuaVariables.cs",
-					"settings":
-					{
-						"buffer_size": 1276,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								503,
-								503
+								334,
+								340
 							]
 						],
 						"settings":
@@ -1212,30 +1118,1130 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 146.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "Assets/MyPlugins/uLua/Examples/02_CreateGameObject/CreateGameObject.cs",
+					"buffer": 5,
 					"settings":
 					{
-						"buffer_size": 563,
+						"buffer_size": 52615,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										276,
+										290
+									],
+									[
+										434,
+										448
+									],
+									[
+										689,
+										703
+									],
+									[
+										757,
+										771
+									],
+									[
+										878,
+										892
+									],
+									[
+										918,
+										932
+									],
+									[
+										987,
+										1001
+									],
+									[
+										1004,
+										1018
+									],
+									[
+										1242,
+										1256
+									],
+									[
+										1354,
+										1368
+									],
+									[
+										1443,
+										1457
+									],
+									[
+										1496,
+										1510
+									],
+									[
+										1552,
+										1566
+									],
+									[
+										1606,
+										1620
+									],
+									[
+										1833,
+										1847
+									],
+									[
+										1969,
+										1983
+									],
+									[
+										2202,
+										2216
+									],
+									[
+										2442,
+										2456
+									],
+									[
+										2722,
+										2736
+									],
+									[
+										3007,
+										3021
+									],
+									[
+										3171,
+										3185
+									],
+									[
+										3456,
+										3470
+									],
+									[
+										3724,
+										3738
+									],
+									[
+										3850,
+										3864
+									],
+									[
+										4151,
+										4165
+									],
+									[
+										4467,
+										4481
+									],
+									[
+										4731,
+										4745
+									],
+									[
+										5049,
+										5063
+									],
+									[
+										5403,
+										5417
+									],
+									[
+										5769,
+										5783
+									],
+									[
+										6057,
+										6071
+									],
+									[
+										6120,
+										6134
+									],
+									[
+										6175,
+										6189
+									],
+									[
+										6234,
+										6248
+									],
+									[
+										6303,
+										6317
+									],
+									[
+										6373,
+										6387
+									],
+									[
+										6440,
+										6454
+									],
+									[
+										6509,
+										6523
+									],
+									[
+										6586,
+										6600
+									],
+									[
+										6801,
+										6815
+									],
+									[
+										7009,
+										7023
+									],
+									[
+										7446,
+										7460
+									],
+									[
+										7756,
+										7770
+									],
+									[
+										7818,
+										7832
+									],
+									[
+										7883,
+										7897
+									],
+									[
+										7951,
+										7965
+									],
+									[
+										8018,
+										8032
+									],
+									[
+										8093,
+										8107
+									],
+									[
+										8174,
+										8188
+									],
+									[
+										8232,
+										8246
+									],
+									[
+										8640,
+										8654
+									],
+									[
+										8917,
+										8931
+									],
+									[
+										9167,
+										9181
+									],
+									[
+										9516,
+										9525
+									],
+									[
+										9798,
+										9807
+									],
+									[
+										10103,
+										10112
+									],
+									[
+										10434,
+										10443
+									],
+									[
+										10629,
+										10638
+									],
+									[
+										10944,
+										10953
+									],
+									[
+										11119,
+										11128
+									],
+									[
+										11372,
+										11381
+									],
+									[
+										11503,
+										11512
+									],
+									[
+										11759,
+										11768
+									],
+									[
+										11883,
+										11892
+									],
+									[
+										12146,
+										12155
+									],
+									[
+										12404,
+										12413
+									],
+									[
+										12733,
+										12742
+									],
+									[
+										12929,
+										12938
+									],
+									[
+										13121,
+										13130
+									],
+									[
+										13315,
+										13324
+									],
+									[
+										13496,
+										13505
+									],
+									[
+										13749,
+										13758
+									],
+									[
+										14084,
+										14093
+									],
+									[
+										14265,
+										14274
+									],
+									[
+										14517,
+										14526
+									],
+									[
+										14794,
+										14803
+									],
+									[
+										15035,
+										15044
+									],
+									[
+										15158,
+										15167
+									],
+									[
+										15480,
+										15489
+									],
+									[
+										15672,
+										15681
+									],
+									[
+										15868,
+										15877
+									],
+									[
+										16060,
+										16069
+									],
+									[
+										16254,
+										16263
+									],
+									[
+										16453,
+										16462
+									],
+									[
+										16799,
+										16808
+									],
+									[
+										17009,
+										17018
+									],
+									[
+										17255,
+										17264
+									],
+									[
+										17386,
+										17395
+									],
+									[
+										17666,
+										17675
+									],
+									[
+										17809,
+										17818
+									],
+									[
+										18075,
+										18084
+									],
+									[
+										18221,
+										18230
+									],
+									[
+										18497,
+										18506
+									],
+									[
+										18645,
+										18654
+									],
+									[
+										18823,
+										18832
+									],
+									[
+										19083,
+										19092
+									],
+									[
+										19373,
+										19382
+									],
+									[
+										19643,
+										19652
+									],
+									[
+										19780,
+										19789
+									],
+									[
+										20095,
+										20104
+									],
+									[
+										20324,
+										20333
+									],
+									[
+										20580,
+										20589
+									],
+									[
+										20829,
+										20838
+									],
+									[
+										20951,
+										20960
+									],
+									[
+										21072,
+										21081
+									],
+									[
+										21194,
+										21203
+									],
+									[
+										21310,
+										21319
+									],
+									[
+										21427,
+										21436
+									],
+									[
+										21544,
+										21553
+									],
+									[
+										21664,
+										21673
+									],
+									[
+										21786,
+										21795
+									],
+									[
+										21909,
+										21918
+									],
+									[
+										22034,
+										22043
+									],
+									[
+										22218,
+										22227
+									],
+									[
+										22388,
+										22397
+									],
+									[
+										22640,
+										22649
+									],
+									[
+										22910,
+										22919
+									],
+									[
+										23200,
+										23209
+									],
+									[
+										23354,
+										23363
+									],
+									[
+										23507,
+										23516
+									],
+									[
+										23784,
+										23793
+									],
+									[
+										24066,
+										24075
+									],
+									[
+										24346,
+										24355
+									],
+									[
+										24687,
+										24696
+									],
+									[
+										24888,
+										24897
+									],
+									[
+										25098,
+										25107
+									],
+									[
+										25313,
+										25322
+									],
+									[
+										25519,
+										25528
+									],
+									[
+										25723,
+										25732
+									],
+									[
+										25928,
+										25937
+									],
+									[
+										26142,
+										26151
+									],
+									[
+										26361,
+										26370
+									],
+									[
+										26575,
+										26584
+									],
+									[
+										26787,
+										26796
+									],
+									[
+										27000,
+										27009
+									],
+									[
+										27222,
+										27231
+									],
+									[
+										27449,
+										27458
+									],
+									[
+										27665,
+										27674
+									],
+									[
+										27879,
+										27888
+									],
+									[
+										28094,
+										28103
+									],
+									[
+										28318,
+										28327
+									],
+									[
+										28547,
+										28556
+									],
+									[
+										28751,
+										28760
+									],
+									[
+										28961,
+										28970
+									],
+									[
+										29172,
+										29181
+									],
+									[
+										29376,
+										29385
+									],
+									[
+										29574,
+										29583
+									],
+									[
+										29781,
+										29790
+									],
+									[
+										29993,
+										30002
+									],
+									[
+										30196,
+										30205
+									],
+									[
+										30400,
+										30409
+									],
+									[
+										30613,
+										30622
+									],
+									[
+										30831,
+										30840
+									],
+									[
+										31039,
+										31048
+									],
+									[
+										31241,
+										31250
+									],
+									[
+										31452,
+										31461
+									],
+									[
+										31668,
+										31677
+									],
+									[
+										31981,
+										31990
+									],
+									[
+										32183,
+										32192
+									],
+									[
+										32378,
+										32387
+									],
+									[
+										32578,
+										32587
+									],
+									[
+										32774,
+										32783
+									],
+									[
+										32975,
+										32984
+									],
+									[
+										33171,
+										33180
+									],
+									[
+										33368,
+										33377
+									],
+									[
+										33584,
+										33593
+									],
+									[
+										33798,
+										33807
+									],
+									[
+										34013,
+										34022
+									],
+									[
+										34211,
+										34220
+									],
+									[
+										34414,
+										34423
+									],
+									[
+										34624,
+										34633
+									],
+									[
+										34832,
+										34841
+									],
+									[
+										35036,
+										35045
+									],
+									[
+										35245,
+										35254
+									],
+									[
+										35518,
+										35527
+									],
+									[
+										35698,
+										35707
+									],
+									[
+										36080,
+										36089
+									],
+									[
+										36292,
+										36301
+									],
+									[
+										36599,
+										36608
+									],
+									[
+										36774,
+										36783
+									],
+									[
+										37116,
+										37125
+									],
+									[
+										37371,
+										37380
+									],
+									[
+										37635,
+										37644
+									],
+									[
+										37772,
+										37781
+									],
+									[
+										38099,
+										38108
+									],
+									[
+										38279,
+										38288
+									],
+									[
+										38465,
+										38474
+									],
+									[
+										38786,
+										38795
+									],
+									[
+										38979,
+										38988
+									],
+									[
+										39233,
+										39242
+									],
+									[
+										39381,
+										39390
+									],
+									[
+										39656,
+										39665
+									],
+									[
+										39948,
+										39957
+									],
+									[
+										40266,
+										40275
+									],
+									[
+										40442,
+										40451
+									],
+									[
+										40633,
+										40642
+									],
+									[
+										40829,
+										40838
+									],
+									[
+										41019,
+										41028
+									],
+									[
+										41199,
+										41208
+									],
+									[
+										41383,
+										41392
+									],
+									[
+										41572,
+										41581
+									],
+									[
+										41763,
+										41772
+									],
+									[
+										41947,
+										41956
+									],
+									[
+										42129,
+										42138
+									],
+									[
+										42439,
+										42448
+									],
+									[
+										42615,
+										42624
+									],
+									[
+										42866,
+										42875
+									],
+									[
+										43069,
+										43078
+									],
+									[
+										43250,
+										43259
+									],
+									[
+										43419,
+										43428
+									],
+									[
+										43592,
+										43601
+									],
+									[
+										43793,
+										43802
+									],
+									[
+										43968,
+										43977
+									],
+									[
+										44169,
+										44178
+									],
+									[
+										44351,
+										44360
+									],
+									[
+										44558,
+										44567
+									],
+									[
+										44770,
+										44779
+									],
+									[
+										44947,
+										44956
+									],
+									[
+										45150,
+										45159
+									],
+									[
+										45327,
+										45336
+									],
+									[
+										45530,
+										45539
+									],
+									[
+										45705,
+										45714
+									],
+									[
+										45906,
+										45915
+									],
+									[
+										46088,
+										46097
+									],
+									[
+										46296,
+										46305
+									],
+									[
+										46483,
+										46492
+									],
+									[
+										46696,
+										46705
+									],
+									[
+										46877,
+										46886
+									],
+									[
+										47071,
+										47080
+									],
+									[
+										47246,
+										47255
+									],
+									[
+										47432,
+										47441
+									],
+									[
+										47614,
+										47623
+									],
+									[
+										47803,
+										47812
+									],
+									[
+										48060,
+										48069
+									],
+									[
+										48272,
+										48281
+									],
+									[
+										48463,
+										48472
+									],
+									[
+										48661,
+										48670
+									],
+									[
+										48858,
+										48867
+									],
+									[
+										49101,
+										49110
+									],
+									[
+										49337,
+										49346
+									],
+									[
+										49679,
+										49688
+									],
+									[
+										49942,
+										49951
+									],
+									[
+										50198,
+										50207
+									],
+									[
+										50503,
+										50512
+									],
+									[
+										50877,
+										50895
+									],
+									[
+										51151,
+										51169
+									],
+									[
+										51352,
+										51370
+									],
+									[
+										51573,
+										51591
+									],
+									[
+										51886,
+										51904
+									],
+									[
+										52181,
+										52199
+									],
+									[
+										52523,
+										52541
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								51165,
+								51165
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 3,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 21285.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs",
+					"settings":
+					{
+						"buffer_size": 36542,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								264,
-								264
+								28833,
+								28836
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 15950.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaDLL.cs",
+					"settings":
+					{
+						"buffer_size": 17704,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1319,
+								1332
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 615.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaFunction.cs",
+					"settings":
+					{
+						"buffer_size": 7291,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								288,
+								299
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1245,50 +2251,52 @@
 				},
 				{
 					"buffer": 9,
-					"file": "Assets/MyPlugins/uLua/Examples/01_HelloWorld/HelloWorld.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaBase.cs",
 					"settings":
 					{
-						"buffer_size": 308,
+						"buffer_size": 2564,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								463,
+								463
 							]
 						],
 						"settings":
 						{
 							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 777.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/04_ScriptsFromFile.lua.txt",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimationClipPairWrap.cs",
 					"settings":
 					{
-						"buffer_size": 41,
+						"buffer_size": 3281,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								106,
+								115
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Text/Plain text.tmLanguage"
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1298,45 +2306,18 @@
 				},
 				{
 					"buffer": 11,
-					"file": "Assets/MyPlugins/uLua/Examples/04_ScriptsFromFile/ScriptsFromFile.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs",
 					"settings":
 					{
-						"buffer_size": 331,
+						"buffer_size": 49441,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 12,
-					"file": "Assets/MyPlugins/uLua/Examples/05_CallLuaFunction/CallLuaFunction.cs",
-					"settings":
-					{
-						"buffer_size": 918,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								694,
-								694
+								7079,
+								7093
 							]
 						],
 						"settings":
@@ -1346,35 +2327,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 13,
-					"file": "Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
-					"settings":
-					{
-						"buffer_size": 2184,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1317,
-								1317
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 563.0,
+						"translation.y": 3962.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1399,12 +2352,6 @@
 				0,
 				1,
 				1
-			],
-			[
-				0,
-				1,
-				1,
-				2
 			]
 		],
 		"cols":
@@ -1415,7 +2362,6 @@
 		"rows":
 		[
 			0.0,
-			0.5,
 			1.0
 		]
 	},
@@ -1431,16 +2377,60 @@
 		"selected_items":
 		[
 			[
+				"luaddl",
+				"MyPlugins/uniLua/U3DLua/uLua/Core/LuaDLL.cs"
+			],
+			[
+				"",
+				"MyPlugins/uniLua/UniLua/LuaState.cs"
+			],
+			[
+				"luastat",
+				"MyPlugins/uniLua/UniLua/LuaState.cs"
+			],
+			[
+				"luascrip",
+				"MyPlugins/uniLua/U3DLua/Source/Base/LuaScriptMgr.cs"
+			],
+			[
+				"luastate",
+				"MyPlugins/uniLua/UniLua/LuaState.cs"
+			],
+			[
+				"util",
+				"MyPlugins/uniLua/UniLua/Util.cs"
+			],
+			[
+				"luaap",
+				"MyPlugins/uniLua/UniLua/LuaAPI.cs"
+			],
+			[
+				"luafun",
+				"MyPlugins/uLua/Core/LuaFunction.cs"
+			],
+			[
+				"lua",
+				"MyPlugins/uLua/Core/Lua.cs"
+			],
+			[
+				"mya",
+				"App/Scripts/Manager/MyApplaction.cs"
+			],
+			[
+				"titlesc",
+				"App/Scripts/lua/Scene/TitleScene.lua"
+			],
+			[
+				"luastatic",
+				"MyPlugins/uLua/Core/LuaStatic.cs"
+			],
+			[
 				"csing",
 				"App/Scripts/submodule/Unity3DUtil/CSingleton.cs"
 			],
 			[
 				"gesture",
 				"Plugins/InputTouches/Gesture.cs"
-			],
-			[
-				"",
-				"App_China/Script/UI/Challenge_List.cs"
 			],
 			[
 				"common",
@@ -1897,50 +2887,6 @@
 			[
 				"and",
 				"Editor/AndroidExporter.cs"
-			],
-			[
-				"uicom",
-				"Scripts/UI/UI_Common.cs"
-			],
-			[
-				"stageobj",
-				"Scripts/Stage/StageObject.cs"
-			],
-			[
-				"uidownloa",
-				"App_China/Script/UI/UI_DownLoad_All.cs"
-			],
-			[
-				"downloadfi",
-				"App_China/Script/Network/Model/DownloadFinishModel.cs"
-			],
-			[
-				"uicomm",
-				"Scripts/UI/UI_Common.cs"
-			],
-			[
-				"u",
-				"Scripts/UI/UI_Menu.cs"
-			],
-			[
-				"uibuttonm",
-				"NGUI/Scripts/Interaction/UIButtonMessage.cs"
-			],
-			[
-				"version",
-				"Scripts/Network/Model/AssetBundleVersionModel.cs"
-			],
-			[
-				"networman",
-				"Scripts/Network/NetworkManager.cs"
-			],
-			[
-				"questlistmodel",
-				"Scripts/Network/Model/QuestListModel.cs"
-			],
-			[
-				"ui_",
-				"Scripts/UI/UI_Menu.cs"
 			]
 		],
 		"width": 0.0

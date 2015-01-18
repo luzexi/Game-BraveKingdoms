@@ -11,7 +11,8 @@
 				"*.m",
 				"*.xml",
 				"*.csv",
-				"*.lua"
+				"*.lua",
+				"*.md"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/"
         },
@@ -26,7 +27,8 @@
 				"*.m",
 				"*.xml",
 				"*.csv",
-				"*.lua"
+				"*.lua",
+				"*.md"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/"
         },
@@ -41,7 +43,8 @@
 				"*.m",
 				"*.xml",
 				"*.csv",
-				"*.lua"
+				"*.lua",
+				"*.md"
             ],
             "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/Plugins/"
         }
@@ -68,9 +71,7 @@
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween46.dll",
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/Editor/DOTweenEditor.dll",
 			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dExternal.dll",
-			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dSkin.dll",
-			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Plugins/x86/ulua.dll",
-			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Plugins/x86_64/ulua.dll"
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dSkin.dll"
         ]
     }
 }

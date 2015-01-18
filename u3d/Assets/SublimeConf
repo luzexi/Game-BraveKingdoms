@@ -8,6 +8,7 @@
 *.xml
 *.csv
 *.lua
+*.md
 App
 MyPlugins
 Plugins
