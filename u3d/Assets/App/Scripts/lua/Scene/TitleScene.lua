@@ -1,7 +1,5 @@
 ﻿
--- module "TitleScene"
-
-print("in lua.=====")
+print("ok in title scene")
 
 
 local function start()
@@ -12,3 +10,4 @@ end
 local t = {}
 t.start = start
 return t
+

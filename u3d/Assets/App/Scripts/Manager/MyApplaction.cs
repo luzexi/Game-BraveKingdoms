@@ -1,14 +1,13 @@
 ﻿
 using UnityEngine;
-using LuaInterface;
 using System.IO;
 using System;
 using UniLua;
 
+
 /// MyApplaction.cd
 /// Author: Lu Zexi
 /// 2015-01-17
-
 
 
 //my applaction
@@ -37,6 +36,8 @@ public class MyApplaction : MonoBehaviour
 
     void InitLua()
     {
+        // // LuaScriptMgr luaMgr = LuaScriptMgr.Instance;
+
         Lua = LuaAPI.NewState();
         Lua.L_OpenLibs();
 
