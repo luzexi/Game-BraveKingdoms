@@ -8,7 +8,7 @@ local ts = require "Scene/TitleScene"
 -- local ts = require "Scene/TitleScene"
 -- print("This is a script from a file 世界")
 
-local function main()
+function main()
     print("ok , in the main lua")
     ts.start()
 end
