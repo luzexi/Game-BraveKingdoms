@@ -6,25 +6,25 @@ using System.Collections.Generic;
 public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int constructor(IntPtr l) {
-		LuaDLL.lua_remove(l,1);
+		int argc = LuaDLL.lua_gettop(l);
 		UnityEngine.GameObject o;
-		if(matchType(l,1,typeof(string))){
+		if(argc==2){
 			System.String a1;
-			checkType(l,1,out a1);
+			checkType(l,2,out a1);
 			o=new UnityEngine.GameObject(a1);
 			pushObject(l,o);
 			return 1;
 		}
-		else if(matchType(l,1)){
+		else if(argc==1){
 			o=new UnityEngine.GameObject();
 			pushObject(l,o);
 			return 1;
 		}
-		else if(matchType(l,1,typeof(string),typeof(System.Type[]))){
+		else if(argc==3){
 			System.String a1;
-			checkType(l,1,out a1);
+			checkType(l,2,out a1);
 			System.Type[] a2;
-			checkType(l,2,out a2);
+			checkType(l,3,out a2);
 			o=new UnityEngine.GameObject(a1,a2);
 			pushObject(l,o);
 			return 1;
@@ -35,7 +35,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int GetComponent(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(System.Type))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(matchType(l,argc,2,typeof(System.Type))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
@@ -43,7 +44,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				pushValue(l,ret);
 				return 1;
 			}
-			else if(matchType(l,2,typeof(string))){
+			else if(matchType(l,argc,2,typeof(string))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -92,13 +93,23 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int GetComponents(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(System.Type))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
 				UnityEngine.Component[] ret=self.GetComponents(a1);
 				pushValue(l,ret);
 				return 1;
+			}
+			else if(argc==3){
+				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
+				System.Type a1;
+				checkType(l,2,out a1);
+				System.Collections.Generic.List<UnityEngine.Component> a2;
+				checkType(l,3,out a2);
+				self.GetComponents(a1,a2);
+				return 0;
 			}
 			LuaDLL.luaL_error(l,"No matched override function to call");
 			return 0;
@@ -111,7 +122,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int GetComponentsInChildren(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(System.Type))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
@@ -119,7 +131,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				pushValue(l,ret);
 				return 1;
 			}
-			else if(matchType(l,2,typeof(System.Type),typeof(bool))){
+			else if(argc==3){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
@@ -140,7 +152,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int GetComponentsInParent(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(System.Type))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
@@ -148,7 +161,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				pushValue(l,ret);
 				return 1;
 			}
-			else if(matchType(l,2,typeof(System.Type),typeof(bool))){
+			else if(argc==3){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);
@@ -198,7 +211,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int SendMessageUpwards(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(string),typeof(System.Object),typeof(UnityEngine.SendMessageOptions))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==4){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -209,7 +223,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.SendMessageUpwards(a1,a2,a3);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(System.Object))){
+			else if(matchType(l,argc,2,typeof(string),typeof(System.Object))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -218,14 +232,14 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.SendMessageUpwards(a1,a2);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string))){
+			else if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
 				self.SendMessageUpwards(a1);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
+			else if(matchType(l,argc,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -245,7 +259,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int SendMessage(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(string),typeof(System.Object),typeof(UnityEngine.SendMessageOptions))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==4){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -256,7 +271,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.SendMessage(a1,a2,a3);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(System.Object))){
+			else if(matchType(l,argc,2,typeof(string),typeof(System.Object))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -265,14 +280,14 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.SendMessage(a1,a2);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string))){
+			else if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
 				self.SendMessage(a1);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
+			else if(matchType(l,argc,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -292,7 +307,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int BroadcastMessage(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(string),typeof(System.Object),typeof(UnityEngine.SendMessageOptions))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(argc==4){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -303,7 +319,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.BroadcastMessage(a1,a2,a3);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(System.Object))){
+			else if(matchType(l,argc,2,typeof(string),typeof(System.Object))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -312,14 +328,14 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				self.BroadcastMessage(a1,a2);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string))){
+			else if(argc==2){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
 				self.BroadcastMessage(a1);
 				return 0;
 			}
-			else if(matchType(l,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
+			else if(matchType(l,argc,2,typeof(string),typeof(UnityEngine.SendMessageOptions))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -339,7 +355,8 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AddComponent(IntPtr l) {
 		try{
-			if(matchType(l,2,typeof(string))){
+			int argc = LuaDLL.lua_gettop(l);
+			if(matchType(l,argc,2,typeof(string))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.String a1;
 				checkType(l,2,out a1);
@@ -347,7 +364,7 @@ public class Lua_UnityEngine_GameObject : LuaObject {
 				pushValue(l,ret);
 				return 1;
 			}
-			else if(matchType(l,2,typeof(System.Type))){
+			else if(matchType(l,argc,2,typeof(System.Type))){
 				UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);
 				System.Type a1;
 				checkType(l,2,out a1);

@@ -1,0 +1,33 @@
+﻿using UnityEngine;
+using System;
+using LuaInterface;
+using SLua;
+using System.Collections.Generic;
+public class Lua_LuaUtil : LuaObject {
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int constructor(IntPtr l) {
+		LuaUtil o;
+		o=new LuaUtil();
+		pushObject(l,o);
+		return 1;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int ToAction_s(IntPtr l) {
+		try{
+			SLua.LuaFunction a1;
+			checkType(l,1,out a1);
+			System.Action ret=LuaUtil.ToAction(a1);
+			pushValue(l,ret);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
+	}
+	static public void reg(IntPtr l) {
+		getTypeTable(l,"LuaUtil");
+		addMember(l,ToAction_s);
+		createTypeMetatable(l,constructor, typeof(LuaUtil));
+	}
+}

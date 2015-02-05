@@ -1,18 +1,12 @@
 
-print("This is a script from a file")
+print("Start. Let's go.")
 
 local ts = require "Scene/TitleScene"
+require "Manager.UIManager"
 
--- local ts = dofile("Scene/TitleScene")
-
--- local ts = require "Scene/TitleScene"
--- print("This is a script from a file 世界")
 
 function main()
     print("ok , in the main lua")
     ts.start()
 end
 
-t = {}
-t.main = main
-return t

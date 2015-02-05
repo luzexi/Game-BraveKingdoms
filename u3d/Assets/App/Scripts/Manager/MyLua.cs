@@ -13,12 +13,33 @@ using SLua;
 //my lua
 public class MyLua
 {
+    private static MyLua s_cInstance;
+    public static MyLua sInstance
+    {
+        get
+        {
+            if(s_cInstance == null)
+                s_cInstance = new MyLua();
+            return s_cInstance;
+        }
+    }
+
     private LuaState m_cLuaState = null;   //lua state
+    public LuaState LuaState
+    {
+        get
+        {
+            if(m_cLuaState == null )
+                return null;
+            return m_cLuaState;
+        }
+    }
 
     //init
     public void Init()
     {
         this.m_cLuaState = new LuaState();
+        LuaObject.init(this. m_cLuaState.handle);
         LuaState.loaderDelegate = RequireLua;
         Bind("BindUnity");
         Bind("BindUnityUI");

@@ -2,6 +2,7 @@
 using System.IO;
 using System;
 using SLua;
+using DG.Tweening;
 
 
 /// MyApplaction.cd
@@ -14,7 +15,6 @@ public class MyApplication : MonoBehaviour
 {
 
     private const string UIROOT = "UICamera/Canvas";
-    private MyLua m_cLua = new MyLua();
 
     //awake
     void Awake()
@@ -29,19 +29,20 @@ public class MyApplication : MonoBehaviour
 
     void OnDestroy()
     {
-        this.m_cLua.OnDestroy();
+        MyLua.sInstance.OnDestroy();
     }
 
     void Init()
     {
+        DOTween.Init(true, true, LogBehaviour.ErrorsOnly);
         UIManager.sInstance.UIRoot = GameObject.Find(UIROOT).gameObject;
-        this.m_cLua.Init();
+        MyLua.sInstance.Init();
     }
 
     //update
     void Update()
     {
-        this.m_cLua.Update();
+        MyLua.sInstance.Update();
     }
 
     //fixed update

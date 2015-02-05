@@ -1,4 +1,4 @@
-// Copyright (c) 2011 Bob Berkebile (pixelplacment)
+﻿// Copyright (c) 2011 Bob Berkebile (pixelplacment)
 // Please direct any bugs/comments/suggestions to http://pixelplacement.com
 //
 // Permission is hereby granted, free of charge, to any person obtaining a copy
@@ -98,7 +98,7 @@ public class iTween : MonoBehaviour{
     private float lastRealTime; // Added by PressPlay
     private bool useRealTime; // Added by PressPlay
 
-#if WCAT_CUSTOM
+#if ITWEEN_CUSTOM
 	public delegate void OnUpdateDelegate(float value);
 #endif
 
@@ -202,7 +202,7 @@ public class iTween : MonoBehaviour{
 		public static LoopType loopType = LoopType.none;
 		public static EaseType easeType = iTween.EaseType.easeOutExpo;
 		public static float lookSpeed = 3f;
-		public static bool isLocal = false;
+		public static bool isLocal = true;
 		public static Space space = Space.Self;
 		public static bool orientToPath = false;
 		public static Color color = Color.white;
@@ -6478,7 +6478,7 @@ public class iTween : MonoBehaviour{
 			}
 		}
 	}
-#if WCAT_CUSTOM
+#if ITWEEN_CUSTOM
 	public static void StopAndCompleteByName(GameObject target, string name){
 		if (target == null)
 			return;
@@ -6799,7 +6799,7 @@ public class iTween : MonoBehaviour{
 		}
 		
 		foreach (DictionaryEntry item in argsCopy) {
-#if WCAT_CUSTOM
+#if ITWEEN_CUSTOM
 			if ( item.Value == null )
 			{
 				args[item.Key] = item.Value;
@@ -7101,7 +7101,7 @@ public class iTween : MonoBehaviour{
 			}else{
 				target=gameObject;	
 			}
-#if WCAT_CUSTOM
+#if ITWEEN_CUSTOM
 			object method = tweenArguments[callbackType];
 			Type method_type = method.GetType();
 			object method_param = tweenArguments[callbackType+"params"];
