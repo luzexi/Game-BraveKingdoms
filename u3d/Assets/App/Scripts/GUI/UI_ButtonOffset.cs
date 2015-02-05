@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.EventSystems;
 
 
 /// <summary>
@@ -9,7 +10,7 @@ public class UI_ButtonOffset : MonoBehaviour
     public Transform tweenTarget;
     public Vector3 hover = Vector3.zero;
     public Vector3 pressed = new Vector3(2f, -2f);
-    public float duration = 0.2f;
+    public float duration = 0;
 
     Vector3 mPos;
     bool mStarted = false;
@@ -21,6 +22,8 @@ public class UI_ButtonOffset : MonoBehaviour
             mStarted = true;
             if (tweenTarget == null) tweenTarget = transform;
             mPos = tweenTarget.localPosition;
+            var ev = UI_Event.Get(tweenTarget);
+            ev.onClick += OnClick;
         }
     }
 
@@ -43,28 +46,18 @@ public class UI_ButtonOffset : MonoBehaviour
         }
     }
 
-    void OnPress (bool isPressed)
+    void OnClick (PointerEventData eventData , GameObject go , string[] args)
     {
         if (enabled)
         {
             if (!mStarted) Start();
+            iTween.MoveTo( tweenTarget.gameObject , iTween.Hash( "position" , mPos+pressed , "time" , duration , "easetype" , "linear" ,
+                "oncomplete" , (System.Action)(()=>{
+                    iTween.MoveTo(tweenTarget.gameObject , mPos , duration);
+                    })
+             ) );
             // TweenPosition.Begin(tweenTarget.gameObject, duration, isPressed ? mPos + pressed :
             //     (UICamera.IsHighlighted(gameObject) ? mPos + hover : mPos)).method = UITweener.Method.EaseInOut;
         }
-    }
-
-    void OnHover (bool isOver)
-    {
-        if (enabled)
-        {
-            if (!mStarted) Start();
-            // TweenPosition.Begin(tweenTarget.gameObject, duration, isOver ? mPos + hover : mPos).method = UITweener.Method.EaseInOut;
-        }
-    }
-
-    void OnSelect (bool isSelected)
-    {
-        // if (enabled && (!isSelected || UICamera.currentScheme == UICamera.ControlScheme.Controller))
-        //     OnHover(isSelected);
     }
 }
