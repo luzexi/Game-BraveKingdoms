@@ -1,8 +1,13 @@
-﻿using UnityEngine;
+﻿// #define GAME_MEDIA
+
+
+using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
-using Game.Media;
 
+#if GAME_MEDIA
+using Game.Media;
+#endif
 
 /// <summary>
 /// Plays the specified sound.
@@ -30,6 +35,43 @@ public class UI_ButtonPlaySound : MonoBehaviour
     void OnClick (PointerEventData eventData , GameObject go , string[] args)
     {
         if(audioClip != null)
+        {
+#if GAME_MEDIA
             MediaMgr.sInstance.PlaySE(audioClip);
+#else
+            PlaySound(audioClip , volume , pitch);
+#endif
+        }
+    }
+
+    static AudioListener mListener;
+    static public AudioSource PlaySound (AudioClip clip, float volume, float pitch)
+    {
+        // volume *= soundVolume;
+
+        if (clip != null && volume > 0.01f)
+        {
+            if (mListener == null || !(mListener.enabled && mListener.gameObject.activeSelf))
+            {
+                mListener = GameObject.FindObjectOfType(typeof(AudioListener)) as AudioListener;
+
+                if (mListener == null)
+                {
+                    Camera cam = Camera.main;
+                    if (cam == null) cam = GameObject.FindObjectOfType(typeof(Camera)) as Camera;
+                    if (cam != null) mListener = cam.gameObject.AddComponent<AudioListener>();
+                }
+            }
+
+            if (mListener != null && mListener.enabled && mListener.gameObject.activeSelf)
+            {
+                AudioSource source = mListener.audio;
+                if (source == null) source = mListener.gameObject.AddComponent<AudioSource>();
+                source.pitch = pitch;
+                source.PlayOneShot(clip, volume);
+                return source;
+            }
+        }
+        return null;
     }
 }
