@@ -3,9 +3,13 @@ using UnityEngine.UI;
 using UnityEngine.EventSystems;
 
 
-/// <summary>
-/// Simple example script of how a button can be colored when the mouse hovers over it or it gets pressed.
-/// </summary>
+//  UI_ButtonColor.cs
+//  Author: Lu Zexi
+//  2015-02-06
+
+
+
+[AddComponentMenu("uGUI/Button Color")]
 public class UI_ButtonColor : MonoBehaviour
 {
     /// <summary>
@@ -27,15 +31,17 @@ public class UI_ButtonColor : MonoBehaviour
     /// <summary>
     /// Duration of the tween process.
     /// </summary>
-
     public float duration = 0.2f;
 
-    protected Color mColor;
-    protected bool mStarted = false;
-    // protected UIWidget mWidget;
+    Color mColor;
+    Image mImage;
+    bool mStarted = false;
+    bool m_bStartTween = false;
+    float m_fStartTime = -1;
+    
 
     /// <summary>
-    /// UIButtonColor's default (starting) color. It's useful to be able to change it, just in case.
+    /// UI_ButtonColor's default (starting) color. It's useful to be able to change it, just in case.
     /// </summary>
     public Color defaultColor
     {
@@ -62,11 +68,36 @@ public class UI_ButtonColor : MonoBehaviour
         }
     }
 
+    void Update()
+    {
+        if( this.m_bStartTween )
+        {
+            float disTime = Time.realtimeSinceStartup - this.m_fStartTime;
+            float rate = disTime / duration;
+            if( rate > 1f )
+                rate = 1f;
+            if(rate >= 1f)
+            {
+                this.m_bStartTween = false;
+                if(this.mImage != null)
+                    this.mImage.color = mColor;
+            }
+            else
+            {
+                if( rate >= 0.5f )
+                    rate = 1f - rate;
+                if(this.mImage != null)
+                    this.mImage.color = Color.Lerp( mColor , pressed , rate );
+            }
+        }
+    }
+
     void OnDisable ()
     {
         if (mStarted && tweenTarget != null)
         {
-            // iTween.Stop(tweenTarget.gameObject);
+            if( this.mImage != null )
+                this.mImage.color = mColor;
         }
     }
 
@@ -74,6 +105,7 @@ public class UI_ButtonColor : MonoBehaviour
     {
         if (tweenTarget == null) tweenTarget = gameObject;
         Image img = tweenTarget.GetComponent<Image>();
+        this.mImage = img;
         if(img != null)
         {
             mColor = img.color;
@@ -85,19 +117,15 @@ public class UI_ButtonColor : MonoBehaviour
         if (enabled)
         {
             if (!mStarted) Start();
-
-            System.Action<Color> onupdate = (System.Action<Color>)((val)=>{
-                var img = tweenTarget.GetComponent<Image>();
-                if( img != null )
-                    img.color = val;
-            });
-
-            iTween.Stop(tweenTarget.gameObject);
-            iTween.ValueTo( tweenTarget.gameObject , iTween.Hash( "from" , mColor , "to" , pressed , "time" , duration , "easetype" , "linear" ,
-                "onupdate" , onupdate , "oncomplete" , (System.Action)(()=>{
-                    iTween.ValueTo( tweenTarget.gameObject , iTween.Hash( "from" , pressed , "to" , mColor , "time" , duration , "easetype" , "linear" ,
-                        "onupdate" , onupdate));
-            }) ) );
+            this.m_bStartTween = true;
+            this.m_fStartTime = Time.realtimeSinceStartup;
+            if( this.mImage != null )
+                this.mImage.color = mColor;
+            if(duration <= 0)
+            {
+                if( this.mImage != null )
+                    this.mImage.color = pressed;
+            }
         }
     }
 }

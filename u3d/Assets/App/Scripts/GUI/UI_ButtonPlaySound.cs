@@ -7,6 +7,7 @@ using Game.Media;
 /// <summary>
 /// Plays the specified sound.
 /// </summary>
+[AddComponentMenu("uGUI/Button PlaySound")]
 public class UI_ButtonPlaySound : MonoBehaviour
 {
     public AudioClip audioClip;
