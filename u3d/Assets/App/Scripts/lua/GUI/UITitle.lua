@@ -25,14 +25,16 @@ local function show()
     btn.transform.localScale = Vector3.one
 
     local ev = UI_Event.Get(btn , "11;2")
-    ev.onClick = function( eventData , go , args )
+    ev.onClick = {"+=" , function( eventData , go , args )
         print(" ok in btn click ")
         print(args[1])
         local arg1 = tonumber(args[1])
         print(" arg1 " .. arg1)
+        GameObject.Destroy(mainObj)
     end
+    }
     
-    iTween.ScaleFrom(btn , Vector3(4,4,1) , 1)
+    -- iTween.ScaleFrom(btn , Vector3(4,4,1) , 1)
 end
 
 
