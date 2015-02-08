@@ -18,7 +18,7 @@ local function create()
 
     local btn = main.transform:Find("touchText")
 
-    local ev = UI_Event.Get(btn,"1:2")
+    local ev = UI_Event.Get(btn)
     ev.onClick = {"+=" , function( eventData , go , args )
         GameObject.Destroy(main)
         ui_system_bottom:create()
