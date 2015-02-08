@@ -34,7 +34,6 @@ public class MyApplication : MonoBehaviour
 
     void Init()
     {
-        DOTween.Init(true, true, LogBehaviour.ErrorsOnly);
         UIManager.sInstance.UIRoot = GameObject.Find(UIROOT).gameObject;
         MyLua.sInstance.Init();
     }

@@ -183,23 +183,7 @@ public class Lua_UI_Event : LuaObject {
 	static public int Get_s(IntPtr l) {
 		try{
 			int argc = LuaDLL.lua_gettop(l);
-			if(matchType(l,argc,1,typeof(UnityEngine.GameObject))){
-				UnityEngine.GameObject a1;
-				checkType(l,1,out a1);
-				UI_Event ret=UI_Event.Get(a1);
-				pushValue(l,ret);
-				return 1;
-			}
-			else if(matchType(l,argc,1,typeof(UnityEngine.GameObject),typeof(string))){
-				UnityEngine.GameObject a1;
-				checkType(l,1,out a1);
-				System.String a2;
-				checkType(l,2,out a2);
-				UI_Event ret=UI_Event.Get(a1,a2);
-				pushValue(l,ret);
-				return 1;
-			}
-			else if(matchType(l,argc,1,typeof(UnityEngine.Transform))){
+			if(matchType(l,argc,1,typeof(UnityEngine.Transform))){
 				UnityEngine.Transform a1;
 				checkType(l,1,out a1);
 				UI_Event ret=UI_Event.Get(a1);
@@ -224,6 +208,22 @@ public class Lua_UI_Event : LuaObject {
 			}
 			else if(matchType(l,argc,1,typeof(UnityEngine.MonoBehaviour),typeof(string))){
 				UnityEngine.MonoBehaviour a1;
+				checkType(l,1,out a1);
+				System.String a2;
+				checkType(l,2,out a2);
+				UI_Event ret=UI_Event.Get(a1,a2);
+				pushValue(l,ret);
+				return 1;
+			}
+			else if(matchType(l,argc,1,typeof(UnityEngine.GameObject))){
+				UnityEngine.GameObject a1;
+				checkType(l,1,out a1);
+				UI_Event ret=UI_Event.Get(a1);
+				pushValue(l,ret);
+				return 1;
+			}
+			else if(matchType(l,argc,1,typeof(UnityEngine.GameObject),typeof(string))){
+				UnityEngine.GameObject a1;
 				checkType(l,1,out a1);
 				System.String a2;
 				checkType(l,2,out a2);

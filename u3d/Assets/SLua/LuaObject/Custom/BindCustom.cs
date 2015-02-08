@@ -4,10 +4,10 @@ namespace SLua {
 		public static void BindCustom(IntPtr l) {
 			Lua_iTween.reg(l);
 			Lua_LuaUtil.reg(l);
-			Lua_UI_Event.reg(l);
 			Lua_Custom.reg(l);
 			Lua_Deleg.reg(l);
 			Lua_HelloWorld.reg(l);
+			Lua_UI_Event.reg(l);
 		}
 	}
 }
