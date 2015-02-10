@@ -15,6 +15,11 @@ namespace SLua
 				ua=null;
 				return op;
 			}
+            else if (LuaDLL.lua_isuserdata(l, p)==1)
+            {
+                ua = (Deleg.GetBundleInfoDelegate)checkObj(l, p);
+                return op;
+            }
             int r = LuaDLL.luaS_checkcallback(l, -1);
 			if(r<0) LuaDLL.luaL_error(l,"expect function");
 			if(getCacheDelegate<Deleg.GetBundleInfoDelegate>(r,out ua))
@@ -33,7 +38,7 @@ namespace SLua
 				checkType(l,error+1,out ret);
 				checkType(l,error+2,out a2);
 				checkType(l,error+3,out a3);
-				LuaDLL.lua_pop(l, 1);
+				LuaDLL.lua_settop(l, error-1);
 				return ret;
 			};
 			cacheDelegate(r,ua);

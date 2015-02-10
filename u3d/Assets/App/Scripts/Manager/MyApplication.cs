@@ -34,7 +34,6 @@ public class MyApplication : MonoBehaviour
 
     void Init()
     {
-        UIManager.sInstance.UIRoot = GameObject.Find(UIROOT).gameObject;
         MyLua.sInstance.Init();
     }
 

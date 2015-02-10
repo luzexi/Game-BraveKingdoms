@@ -44,6 +44,7 @@ using UnityEngine;
 /// <para>Author: Bob Berkebile (http://pixelplacement.com)</para>
 /// <para>Support: http://itween.pixelplacement.com</para>
 /// </summary>
+[CustomLuaClassAttribute]
 public class iTween : MonoBehaviour{
 	
 	#region Variables

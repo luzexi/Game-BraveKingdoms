@@ -15,6 +15,11 @@ namespace SLua
 				ua=null;
 				return op;
 			}
+            else if (LuaDLL.lua_isuserdata(l, p)==1)
+            {
+                ua = (System.Func<System.Int32>)checkObj(l, p);
+                return op;
+            }
             int r = LuaDLL.luaS_checkcallback(l, -1);
 			if(r<0) LuaDLL.luaL_error(l,"expect function");
 			if(getCacheDelegate<System.Func<System.Int32>>(r,out ua))
@@ -30,7 +35,7 @@ namespace SLua
 				}
 				int ret;
 				checkType(l,error+1,out ret);
-				LuaDLL.lua_pop(l, 1);
+				LuaDLL.lua_settop(l, error-1);
 				return ret;
 			};
 			cacheDelegate(r,ua);
