@@ -3,8 +3,8 @@
 
 
 local function start()
-    UI_Root = GameObject.Find("UICamera/Canvas").transform
-    UI_SystemRoot = GameObject.Find("UICamera/CanvasSystem").transform
+    UI_Root = GameObject.Find("UICamera/Canvas/UI").transform
+    UI_SystemRoot = GameObject.Find("UICamera/Canvas/SystemUI").transform
 end
 
 
