@@ -1,7 +1,6 @@
 ﻿
-require("GUI/ui_system_bottom")
-require("GUI/ui_system_top")
 local lua_http = require "Util/lua_http"
+local game_scene = require "Scene/GameScene"
 
 local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
@@ -12,6 +11,7 @@ local UI_Event = UI_Event
 local Network = Network;
 
 
+-- create
 local function create()
     local main = GameObject.Instantiate( Resources.Load("GUI/ui_title") )
     main.transform:SetParent(UI_Root)
@@ -23,12 +23,7 @@ local function create()
     local ev = UI_Event.Get(btn)
     ev.onClick = {"+=" , function( eventData , go , args )
         GameObject.Destroy(main)
-        local function callback( arg )
-            print(arg)
-        end
-        lua_http.request("http://www.luzexi.com",callback)
-        ui_system_bottom:create()
-        ui_system_top:create()
+        game_scene.create()
     end
     }
     

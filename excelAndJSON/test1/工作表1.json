@@ -1,0 +1,614 @@
+{
+  "10001": {
+    "aaa": {
+      "Name": "张三", 
+      "bbb": {
+        "Atk": 123, 
+        "Hp": 10, 
+        "ccc": {
+          "Def": 43, 
+          "description": "阿达", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 1000.0
+    }, 
+    "lv1": {
+      "atk": 10, 
+      "def": 5, 
+      "hp": 100, 
+      "name": "a"
+    }, 
+    "lv2": {
+      "atk": 10, 
+      "def": 5, 
+      "hp": 100, 
+      "name": "a"
+    }, 
+    "lv3": {
+      "atk": 10, 
+      "def": 5, 
+      "hp": 100, 
+      "name": "a"
+    }, 
+    "lv4": {
+      "atk": 10, 
+      "def": 5, 
+      "hp": 100, 
+      "name": "a"
+    }, 
+    "lv5": {
+      "atk": 10, 
+      "def": 5, 
+      "hp": 100, 
+      "name": "a"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      4
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      4.0
+    ]
+  }, 
+  "10002": {
+    "aaa": {
+      "Name": "李四", 
+      "bbb": {
+        "Atk": 21, 
+        "Hp": 11, 
+        "ccc": {
+          "Def": 32, 
+          "description": "打发掉方", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 23423.0
+    }, 
+    "lv1": {
+      "atk": 11, 
+      "def": 6, 
+      "hp": 100, 
+      "name": "b"
+    }, 
+    "lv2": {
+      "atk": 11, 
+      "def": 6, 
+      "hp": 100, 
+      "name": "b"
+    }, 
+    "lv3": {
+      "atk": 11, 
+      "def": 6, 
+      "hp": 100, 
+      "name": "b"
+    }, 
+    "lv4": {
+      "atk": 11, 
+      "def": 6, 
+      "hp": 100, 
+      "name": "b"
+    }, 
+    "lv5": {
+      "atk": 11, 
+      "def": 6, 
+      "hp": 100, 
+      "name": "b"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      5
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      5.0
+    ]
+  }, 
+  "10003": {
+    "aaa": {
+      "Name": "王五", 
+      "bbb": {
+        "Atk": null, 
+        "Hp": 234, 
+        "ccc": {
+          "Def": 43, 
+          "description": "啊适当范", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": null
+    }, 
+    "lv1": {
+      "atk": 12, 
+      "def": 7, 
+      "hp": 100, 
+      "name": "c"
+    }, 
+    "lv2": {
+      "atk": 12, 
+      "def": 7, 
+      "hp": 100, 
+      "name": "c"
+    }, 
+    "lv3": {
+      "atk": 12, 
+      "def": 7, 
+      "hp": 100, 
+      "name": "c"
+    }, 
+    "lv4": {
+      "atk": 12, 
+      "def": 7, 
+      "hp": 100, 
+      "name": "c"
+    }, 
+    "lv5": {
+      "atk": 12, 
+      "def": 7, 
+      "hp": 100, 
+      "name": "c"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      6
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      6.0
+    ]
+  }, 
+  "10004": {
+    "aaa": {
+      "Name": "赵六", 
+      "bbb": {
+        "Atk": null, 
+        "Hp": 13, 
+        "ccc": {
+          "Def": 32, 
+          "description": "威尔士", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 1000.0
+    }, 
+    "lv1": {
+      "atk": 13, 
+      "def": 8, 
+      "hp": 100, 
+      "name": "d"
+    }, 
+    "lv2": {
+      "atk": 13, 
+      "def": 8, 
+      "hp": 100, 
+      "name": "d"
+    }, 
+    "lv3": {
+      "atk": 13, 
+      "def": 8, 
+      "hp": 100, 
+      "name": "d"
+    }, 
+    "lv4": {
+      "atk": 13, 
+      "def": 8, 
+      "hp": 100, 
+      "name": "d"
+    }, 
+    "lv5": {
+      "atk": 13, 
+      "def": 8, 
+      "hp": 100, 
+      "name": "d"
+    }, 
+    "option": {
+      "a": 1, 
+      "c": 3, 
+      "e": 4
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      7
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      7.0
+    ]
+  }, 
+  "10005": {
+    "aaa": {
+      "Name": "老板", 
+      "bbb": {
+        "Atk": 123, 
+        "Hp": 1344, 
+        "ccc": {
+          "Def": 43, 
+          "description": "鞍山市撒", 
+          "leader": true
+        }
+      }, 
+      "monthlySalary": 999999.0
+    }, 
+    "lv1": {
+      "atk": 14, 
+      "def": 9, 
+      "hp": 100, 
+      "name": "e"
+    }, 
+    "lv2": {
+      "atk": 14, 
+      "def": 9, 
+      "hp": 100, 
+      "name": "e"
+    }, 
+    "lv3": {
+      "atk": 14, 
+      "def": 9, 
+      "hp": 100, 
+      "name": "e"
+    }, 
+    "lv4": {
+      "atk": 14, 
+      "def": 9, 
+      "hp": 100, 
+      "name": "e"
+    }, 
+    "lv5": {
+      "atk": 14, 
+      "def": 9, 
+      "hp": 100, 
+      "name": "e"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      8
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      8.0
+    ]
+  }, 
+  "10006": {
+    "aaa": {
+      "Name": "临时工", 
+      "bbb": {
+        "Atk": 2314, 
+        "Hp": 15, 
+        "ccc": {
+          "Def": 234, 
+          "description": "摔碎", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 1000.0
+    }, 
+    "lv1": {
+      "atk": 15, 
+      "def": 10, 
+      "hp": 100, 
+      "name": "f"
+    }, 
+    "lv2": {
+      "atk": 15, 
+      "def": 10, 
+      "hp": 100, 
+      "name": "f"
+    }, 
+    "lv3": {
+      "atk": 15, 
+      "def": 10, 
+      "hp": 100, 
+      "name": "f"
+    }, 
+    "lv4": {
+      "atk": 15, 
+      "def": 10, 
+      "hp": 100, 
+      "name": "f"
+    }, 
+    "lv5": {
+      "atk": 15, 
+      "def": 10, 
+      "hp": 100, 
+      "name": "f"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      4
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      9.0
+    ]
+  }, 
+  "10007": {
+    "aaa": {
+      "Name": "合同工", 
+      "bbb": {
+        "Atk": 123, 
+        "Hp": 16, 
+        "ccc": {
+          "Def": 43, 
+          "description": "摔碎", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 324234.0
+    }, 
+    "lv1": {
+      "atk": 16, 
+      "def": 11, 
+      "hp": 100, 
+      "name": "g"
+    }, 
+    "lv2": {
+      "atk": 16, 
+      "def": 11, 
+      "hp": 100, 
+      "name": "g"
+    }, 
+    "lv3": {
+      "atk": 16, 
+      "def": 11, 
+      "hp": 100, 
+      "name": "g"
+    }, 
+    "lv4": {
+      "atk": 16, 
+      "def": 11, 
+      "hp": 100, 
+      "name": "g"
+    }, 
+    "lv5": {
+      "atk": 16, 
+      "def": 11, 
+      "hp": 100, 
+      "name": "g"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      10
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      4.0
+    ]
+  }, 
+  "10009": {
+    "aaa": {
+      "Name": "码农", 
+      "bbb": {
+        "Atk": 123, 
+        "Hp": 18, 
+        "ccc": {
+          "Def": 43, 
+          "description": "随时随地", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 1000.0
+    }, 
+    "lv1": {
+      "atk": 18, 
+      "def": 13, 
+      "hp": 100, 
+      "name": "i"
+    }, 
+    "lv2": {
+      "atk": 18, 
+      "def": 13, 
+      "hp": 100, 
+      "name": "i"
+    }, 
+    "lv3": {
+      "atk": 18, 
+      "def": 13, 
+      "hp": 100, 
+      "name": "i"
+    }, 
+    "lv4": {
+      "atk": 18, 
+      "def": 13, 
+      "hp": 100, 
+      "name": "i"
+    }, 
+    "lv5": {
+      "atk": 18, 
+      "def": 13, 
+      "hp": 100, 
+      "name": "i"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      12
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      12.0
+    ]
+  }, 
+  "测试": {
+    "aaa": {
+      "Name": null, 
+      "bbb": {
+        "Atk": 345, 
+        "Hp": 17, 
+        "ccc": {
+          "Def": 43, 
+          "description": "萨斯", 
+          "leader": false
+        }
+      }, 
+      "monthlySalary": 1000.0
+    }, 
+    "lv1": {
+      "atk": 17, 
+      "def": 12, 
+      "hp": 100, 
+      "name": "h"
+    }, 
+    "lv2": {
+      "atk": 17, 
+      "def": 12, 
+      "hp": 100, 
+      "name": "h"
+    }, 
+    "lv3": {
+      "atk": 17, 
+      "def": 12, 
+      "hp": 100, 
+      "name": "h"
+    }, 
+    "lv4": {
+      "atk": 17, 
+      "def": 12, 
+      "hp": 100, 
+      "name": "h"
+    }, 
+    "lv5": {
+      "atk": 17, 
+      "def": 12, 
+      "hp": 100, 
+      "name": "h"
+    }, 
+    "option": {
+      "a": "b", 
+      "c": "a", 
+      "e": "f"
+    }, 
+    "skill1": [
+      "a", 
+      "b", 
+      "c", 
+      "d"
+    ], 
+    "skill2": [
+      1, 
+      2, 
+      3, 
+      11
+    ], 
+    "skill3": [
+      1.0, 
+      2.0, 
+      3.0, 
+      11.0
+    ]
+  }
+}

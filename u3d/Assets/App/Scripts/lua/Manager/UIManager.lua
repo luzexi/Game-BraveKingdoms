@@ -2,14 +2,14 @@
 
 
 
-UI_Root = GameObject.Find("UICamera/Canvas").transform
+local function start()
+    UI_Root = GameObject.Find("UICamera/Canvas").transform
+    UI_SystemRoot = GameObject.Find("UICamera/CanvasSystem").transform
+end
 
 
-print("ok in ui manager.")
 
 
-
-t = {}
-
-
-return t;
+local t = {}
+t.start = start
+return t

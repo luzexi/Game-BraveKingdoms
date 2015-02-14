@@ -1,10 +1,13 @@
 ﻿
 print("Start. Let's go.")
 
-local ts = require "Scene/TitleScene"
-require "Manager.UIManager"
+
+local ui_manager = require "Manager.UIManager"
+local title_scene = require "Scene/TitleScene"
+
 
 function main()
-    ts.start()
+    ui_manager.start()
+    title_scene.create()
 end
 
