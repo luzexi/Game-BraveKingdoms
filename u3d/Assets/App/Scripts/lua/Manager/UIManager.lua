@@ -2,7 +2,7 @@
 
 
 
-local function start()
+local function create()
     UI_Root = GameObject.Find("UICamera/Canvas/UI").transform
     UI_SystemRoot = GameObject.Find("UICamera/Canvas/SystemUI").transform
 end
@@ -11,5 +11,5 @@ end
 
 
 local t = {}
-t.start = start
+t.create = create
 return t

@@ -3,9 +3,8 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 
-local ui_hero_detail = nil
-
 local function create( func )
+    local ui_hero_detail = nil
     local ui_name = "ui_hero_detail"
 
     local function createObj()

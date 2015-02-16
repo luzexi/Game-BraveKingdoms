@@ -27,6 +27,9 @@ namespace SLua {
 			Lua_UnityEngine_Events_UnityEventBase.reg(l);
 			Lua_UnityEngine_Events_UnityEvent.reg(l);
 			Lua_UnityEngine_WWW.reg(l);
+			Lua_UnityEngine_AsyncOperation.reg(l);
+			Lua_UnityEngine_AssetBundleCreateRequest.reg(l);
+			Lua_UnityEngine_AssetBundleRequest.reg(l);
 			Lua_UnityEngine_Object.reg(l);
 			Lua_UnityEngine_AssetBundle.reg(l);
 			Lua_UnityEngine_HideFlags.reg(l);
@@ -39,7 +42,11 @@ namespace SLua {
 			Lua_UnityEngine_LogType.reg(l);
 			Lua_UnityEngine_DeviceType.reg(l);
 			Lua_UnityEngine_SystemInfo.reg(l);
+			Lua_UnityEngine_WaitForSeconds.reg(l);
+			Lua_UnityEngine_WaitForFixedUpdate.reg(l);
+			Lua_UnityEngine_WaitForEndOfFrame.reg(l);
 			Lua_UnityEngine_ScriptableObject.reg(l);
+			Lua_UnityEngine_ResourceRequest.reg(l);
 			Lua_UnityEngine_Resources.reg(l);
 			Lua_UnityEngine_ThreadPriority.reg(l);
 			Lua_UnityEngine_Profiler.reg(l);
