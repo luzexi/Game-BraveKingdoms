@@ -3,13 +3,15 @@
 local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
+local Screen = UnityEngine.Screen
 
 
 local function create()
     local ui_main = require "GUI/ui_main"
 
     local main_obj = nil
-    local ui_name = "ui_main"
+    local ui_name = "ui_gacha"
+    local ratex = SCREEN_WIDE/Screen.width
 
     local function createObj()
         main_obj = GameObject.Instantiate(Resources.Load("GUI/ui_gacha"))
@@ -33,6 +35,32 @@ local function create()
             print("ok in btn right")
         end
         }
+
+        local gacha1_btn = main_obj.transform:Find("btn_gacha1/btn")
+        local gacha2_btn = main_obj.transform:Find("btn_gacha2/btn")
+        local gacha_super1_btn = main_obj.transform:Find("btn_gacha_super1/btn")
+        local gacha_super2_btn = main_obj.transform:Find("btn_gacha_super2/btn")
+        ev = UI_Event.Get(gacha1_btn)
+        ev.onClick = {"+=" , function(eventData , go , args)
+            print("xxx gacha1 btn")
+        end
+        }
+        ev = UI_Event.Get(gacha2_btn)
+        ev.onClick = {"+=" , function(eventData , go , args)
+            print("xxx gacha2 btn")
+        end
+        }
+        ev = UI_Event.Get(gacha_super1_btn)
+        ev.onClick = {"+=" , function(eventData , go , args)
+            print("gacha_super1_btn btn")
+        end
+        }
+        ev = UI_Event.Get(gacha_super2_btn)
+        ev.onClick = {"+=" , function(eventData , go , args)
+            print("gacha_super2_btn btn")
+        end
+        }
+
     end
 
     createObj()

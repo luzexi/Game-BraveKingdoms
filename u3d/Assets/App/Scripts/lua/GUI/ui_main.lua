@@ -30,21 +30,181 @@ local function create()
         UI_Master = ui_main_obj
     end
 
-    local function regEvent()
-        local btn = ui_main_obj.transform:Find("icon/btn1")
-        local ev = UI_Event.Get(btn)
-        ev.onClick = {"+=", function( eventData , go , args )
-            GameObject.Destroy(ui_main_obj)
+    local function updateInfo()
 
-            ui_hero_detail.create( function()
-                ui_system_bottom.show()
-                createObj()
-                regEvent()
+        local function set_icon( trans , hero )
+            local back = trans:Find("back")
+            local dark = trans:Find("dark")
+            local fire = trans:Find("fire")
+            local light = trans:Find("light")
+            local thunder = trans:Find("thunder")
+            local water = trans:Find("water")
+            local wood = trans:Find("wood")
+            back.gameObject:SetActive(false)
+            dark.gameObject:SetActive(false)
+            fire.gameObject:SetActive(false)
+            light.gameObject:SetActive(false)
+            thunder.gameObject:SetActive(false)
+            water.gameObject:SetActive(false)
+            wood.gameObject:SetActive(false)
+            ar_property = {fire , water , wood , thunder , light , dark}
+            if hero ~= nil then
+                local table = HeroTable[""..hero.tableid]
+                local property = ar_property[table.Nature]
+                property.gameObject:SetActive(true)
+            else
+                back.gameObject:SetActive(true)
             end
-            )
-            ui_system_bottom.hiden()
         end
-        }
+
+        local function set_property( trans , hero )
+            local dark = trans:Find("dark")
+            local fire = trans:Find("fire")
+            local light = trans:Find("light")
+            local thunder = trans:Find("thunder")
+            local water = trans:Find("water")
+            local wood = trans:Find("wood")
+            dark.gameObject:SetActive(false)
+            fire.gameObject:SetActive(false)
+            light.gameObject:SetActive(false)
+            thunder.gameObject:SetActive(false)
+            water.gameObject:SetActive(false)
+            wood.gameObject:SetActive(false)
+            ar_property = {fire , water , wood , thunder , light , dark}
+            if hero ~= nil then
+                local table = HeroTable[""..hero.tableid]
+                local property = ar_property[table.Nature]
+                property.gameObject:SetActive(true)
+            end
+        end
+
+        local function set_card( trans , hero )
+            if hero ~= nil then
+                local ui_img = trans:GetComponent("RawImage")
+                local table = HeroTable[""..hero.tableid]
+                ui_img.texture = Resources.Load("AvatarL/"..table.AvatarL)
+            else
+                trans.gameObject:SetActive(false)
+            end
+        end
+
+        local icon1 = ui_main_obj.transform:Find("icon/icon1")
+        local icon2 = ui_main_obj.transform:Find("icon/icon2")
+        local icon3 = ui_main_obj.transform:Find("icon/icon3")
+        local icon4 = ui_main_obj.transform:Find("icon/icon4")
+        local icon5 = ui_main_obj.transform:Find("icon/icon5")
+
+        set_icon(icon1 , Player.group[1])
+        set_icon(icon2 , Player.group[2])
+        set_icon(icon3 , Player.group[3])
+        set_icon(icon4 , Player.group[4])
+        set_icon(icon5 , Player.group[5])
+
+        local card1 = ui_main_obj.transform:Find("icon/card1")
+        local card2 = ui_main_obj.transform:Find("icon/card2")
+        local card3 = ui_main_obj.transform:Find("icon/card3")
+        local card4 = ui_main_obj.transform:Find("icon/card4")
+        local card5 = ui_main_obj.transform:Find("icon/card5")
+
+        set_card( card1 , Player.group[1] )
+        set_card( card2 , Player.group[2] )
+        set_card( card3 , Player.group[3] )
+        set_card( card4 , Player.group[4] )
+        set_card( card5 , Player.group[5] )
+
+        local property1 = ui_main_obj.transform:Find("icon/property1")
+        local property2 = ui_main_obj.transform:Find("icon/property2")
+        local property3 = ui_main_obj.transform:Find("icon/property3")
+        local property4 = ui_main_obj.transform:Find("icon/property4")
+        local property5 = ui_main_obj.transform:Find("icon/property5")
+
+        set_property(property1 , Player.group[1])
+        set_property(property2 , Player.group[2])
+        set_property(property3 , Player.group[3])
+        set_property(property4 , Player.group[4])
+        set_property(property5 , Player.group[5])
+    end
+
+    local function regEvent()
+        for i=1,5,1 do
+            if Player.group[i] ~= nil then
+                local btn = ui_main_obj.transform:Find("icon/btn"..i)
+                local ev = UI_Event.Get(btn)
+                ev.onClick = {"+=", function( eventData , go , args )
+                    GameObject.Destroy(ui_main_obj)
+
+                    ui_hero_detail.create( Player.group[i] , function()
+                        ui_system_bottom.show()
+                        createObj()
+                        updateInfo()
+                        regEvent()
+                    end
+                    )
+                    ui_system_bottom.hiden()
+                end
+                }
+            end
+        end
+
+        -- btn = ui_main_obj.transform:Find("icon/btn2")
+        -- ev = UI_Event.Get(btn)
+        -- ev.onClick = {"+=", function( eventData , go , args )
+        --     GameObject.Destroy(ui_main_obj)
+
+        --     ui_hero_detail.create( Player.group[2] , function()
+        --         ui_system_bottom.show()
+        --         createObj()
+        --         regEvent()
+        --     end
+        --     )
+        --     ui_system_bottom.hiden()
+        -- end
+        -- }
+
+        -- btn = ui_main_obj.transform:Find("icon/btn3")
+        -- ev = UI_Event.Get(btn)
+        -- ev.onClick = {"+=", function( eventData , go , args )
+        --     GameObject.Destroy(ui_main_obj)
+
+        --     ui_hero_detail.create( Player.group[3] , function()
+        --         ui_system_bottom.show()
+        --         createObj()
+        --         regEvent()
+        --     end
+        --     )
+        --     ui_system_bottom.hiden()
+        -- end
+        -- }
+
+        -- btn = ui_main_obj.transform:Find("icon/btn4")
+        -- ev = UI_Event.Get(btn)
+        -- ev.onClick = {"+=", function( eventData , go , args )
+        --     GameObject.Destroy(ui_main_obj)
+
+        --     ui_hero_detail.create( Player.group[4] , function()
+        --         ui_system_bottom.show()
+        --         createObj()
+        --         regEvent()
+        --     end
+        --     )
+        --     ui_system_bottom.hiden()
+        -- end
+        -- }
+
+        -- btn = ui_main_obj.transform:Find("icon/btn5")
+        -- ev = UI_Event.Get(btn)
+        -- ev.onClick = {"+=", function( eventData , go , args )
+        --     GameObject.Destroy(ui_main_obj)
+
+        --     ui_hero_detail.create( Player.group[5] , function()
+        --         ui_system_bottom.show()
+        --         createObj()
+        --         regEvent()
+        --     end
+        --     )
+        --     ui_system_bottom.hiden()
+        -- end
+        -- }
 
         local btn_menu = ui_main_obj.transform:Find("btn_menu")
         ev = UI_Event.Get(btn_menu)
@@ -62,63 +222,31 @@ local function create()
         -- end
         -- }
 
-        local quest = ui_main_obj.transform:Find("quest")
         local btn_quest1 = ui_main_obj.transform:Find("quest/quest1")
         local btn_quest2 = ui_main_obj.transform:Find("quest/quest2")
         local btn_quest3 = ui_main_obj.transform:Find("quest/quest3")
-        local quest_width = 500
-
-        local function onQuestDown( eventData , go , args )
-            print("on quest down " .. go.name)
-        end
-        local function onQuestMove( eventData , go ,args )
-            -- print("on quest move " .. go.name)
-            -- quest.localPosition = 
-            -- Vector3(quest.localPosition.x + eventData.delta.x*ratex , quest.localPosition.y , quest.localPosition.z)
-            
-            btn_quest3.localPosition = 
-            Vector3(btn_quest3.localPosition.x + eventData.delta.x*ratex , btn_quest3.localPosition.y , btn_quest3.localPosition.z)
-            btn_quest2.localPosition = 
-            Vector3(btn_quest2.localPosition.x + eventData.delta.x*ratex , btn_quest2.localPosition.y , btn_quest2.localPosition.z)
-            btn_quest1.localPosition = 
-            Vector3(btn_quest1.localPosition.x + eventData.delta.x*ratex , btn_quest1.localPosition.y , btn_quest1.localPosition.z)
-
-            local function questMove( btn_trans )
-                local posx = btn_trans.localPosition.x
-                if posx < -1000 then
-                    btn_trans.localPosition = Vector3( 500, btn_trans.localPosition.y , btn_trans.localPosition.z )
-                end
-                if posx > 1000 then
-                    btn_trans.localPosition = Vector3( -500, btn_trans.localPosition.y , btn_trans.localPosition.z )
-                end
-            end
-            questMove(btn_quest1)
-            questMove(btn_quest2)
-            questMove(btn_quest3)
-        end
-        local function onQuestUp( eventData , go ,args )
-            print("onquestup " .. go.name)
-        end
-        --
         
         ev = UI_Event.Get(btn_quest1)
-        ev.onDown = { "+=" , onQuestDown }
-        ev.onDrag = { "+=" , onQuestMove }
-        ev.onUp = { "+=" , onQuestUp }
-
+        ev.onClick = { "+=" , function( eventData , go , args )
+            print("quest1 click")
+        end
+        }
         
         ev = UI_Event.Get(btn_quest2)
-        ev.onDown = { "+=" , onQuestDown }
-        ev.onDrag = { "+=" , onQuestMove }
-        ev.onUp = { "+=" , onQuestUp }
+        ev.onClick = { "+=" , function( eventData , go , args )
+            print("quest2 click")
+        end
+        }
 
         ev = UI_Event.Get(btn_quest3)
-        ev.onDown = { "+=" , onQuestDown }
-        ev.onDrag = { "+=" , onQuestMove }
-        ev.onUp = { "+=" , onQuestUp } 
+        ev.onClick = { "+=" , function( eventData , go , args )
+            print("quest3 click")
+        end
+        }
     end
 
     createObj()
+    updateInfo()
     regEvent()
 end
 

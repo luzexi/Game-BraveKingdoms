@@ -17,6 +17,22 @@ local function create( )
     main.transform:SetParent( UI_SystemRoot )
     main.transform.localPosition = Vector3.zero
     main.transform.localScale = Vector3.one
+
+    local function updateInfo()
+        local gold = main.transform:Find("background/gold/text"):GetComponent("Text")
+        gold.text = Player.gold
+        local soul = main.transform:Find("background/soul/text"):GetComponent("Text")
+        soul.text = Player.soul
+        local crystal = main.transform:Find("background/crystal/text"):GetComponent("Text")
+        crystal.text = Player.crystal
+        local bstar = main.transform:Find("background/bstar/text"):GetComponent("Text")
+        bstar.text = Player.bstar
+        local hp = main.transform:Find("background/hp/bar"):GetComponent("Scrollbar")
+        hp.size = Player.hp / Player.maxhp
+        local exp = main.transform:Find("background/exp"):GetComponent("Scrollbar")
+        exp.size = Player.exp / Player.maxexp
+    end
+    updateInfo()
     return main
 end
 
