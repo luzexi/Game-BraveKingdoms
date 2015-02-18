@@ -1,4 +1,4 @@
-﻿
+﻿﻿
 
 using System;
 using UnityEngine;
@@ -34,6 +34,14 @@ public class LuaUtil
     {
         return (System.Action<string>)(( arg )=>{
             fun.call( arg );
+        });
+    }
+
+    // cast to the action string function
+    public static System.Action<GameObject,int> ToActionGameObjectInt( LuaFunction fun )
+    {
+        return (System.Action<GameObject,int>)(( arg1 , arg2 )=>{
+            fun.call( arg1 , arg2 );
         });
     }
 }

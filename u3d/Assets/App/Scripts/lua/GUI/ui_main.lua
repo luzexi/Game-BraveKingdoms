@@ -146,66 +146,6 @@ local function create()
             end
         end
 
-        -- btn = ui_main_obj.transform:Find("icon/btn2")
-        -- ev = UI_Event.Get(btn)
-        -- ev.onClick = {"+=", function( eventData , go , args )
-        --     GameObject.Destroy(ui_main_obj)
-
-        --     ui_hero_detail.create( Player.group[2] , function()
-        --         ui_system_bottom.show()
-        --         createObj()
-        --         regEvent()
-        --     end
-        --     )
-        --     ui_system_bottom.hiden()
-        -- end
-        -- }
-
-        -- btn = ui_main_obj.transform:Find("icon/btn3")
-        -- ev = UI_Event.Get(btn)
-        -- ev.onClick = {"+=", function( eventData , go , args )
-        --     GameObject.Destroy(ui_main_obj)
-
-        --     ui_hero_detail.create( Player.group[3] , function()
-        --         ui_system_bottom.show()
-        --         createObj()
-        --         regEvent()
-        --     end
-        --     )
-        --     ui_system_bottom.hiden()
-        -- end
-        -- }
-
-        -- btn = ui_main_obj.transform:Find("icon/btn4")
-        -- ev = UI_Event.Get(btn)
-        -- ev.onClick = {"+=", function( eventData , go , args )
-        --     GameObject.Destroy(ui_main_obj)
-
-        --     ui_hero_detail.create( Player.group[4] , function()
-        --         ui_system_bottom.show()
-        --         createObj()
-        --         regEvent()
-        --     end
-        --     )
-        --     ui_system_bottom.hiden()
-        -- end
-        -- }
-
-        -- btn = ui_main_obj.transform:Find("icon/btn5")
-        -- ev = UI_Event.Get(btn)
-        -- ev.onClick = {"+=", function( eventData , go , args )
-        --     GameObject.Destroy(ui_main_obj)
-
-        --     ui_hero_detail.create( Player.group[5] , function()
-        --         ui_system_bottom.show()
-        --         createObj()
-        --         regEvent()
-        --     end
-        --     )
-        --     ui_system_bottom.hiden()
-        -- end
-        -- }
-
         local btn_menu = ui_main_obj.transform:Find("btn_menu")
         ev = UI_Event.Get(btn_menu)
         ev.onClick = {"+=", function( eventData , go , args )

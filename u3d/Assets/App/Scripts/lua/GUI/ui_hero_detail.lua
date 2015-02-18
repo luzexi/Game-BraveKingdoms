@@ -55,6 +55,15 @@ local function create( hero , func )
         else
             lock.gameObject:SetActive(false)
         end
+        local star1 = star:Find("star1")
+        local star2 = star:Find("star2")
+        local star3 = star:Find("star3")
+        local star4 = star:Find("star4")
+        local star5 = star:Find("star5")
+        local strlst = {star1 , star2 , star3 , star4 , star5}
+        for i = table.StarLevel+1, 5 , 1 do
+            strlst[i].gameObject:SetActive(false)
+        end
     end
 
     local function regEvent()
