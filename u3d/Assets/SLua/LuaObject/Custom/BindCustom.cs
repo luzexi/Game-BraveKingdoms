@@ -8,6 +8,7 @@ namespace SLua {
 			Lua_Deleg.reg(l);
 			Lua_HelloWorld.reg(l);
 			Lua_UI_Event.reg(l);
+			Lua_UI_Scroll_List.reg(l);
 			Lua_iTween.reg(l);
 		}
 	}

@@ -27,6 +27,60 @@ local function create()
             ui_main.create()
         end
         }
+
+        local btn_hero_lst = main_obj.transform:Find("btn_heros")
+        ev = UI_Event.Get(btn_hero_lst)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_list = require("GUI/ui_hero_list")
+            ui_hero_list.create()
+        end
+        }
+
+        local btn_hero_sell = main_obj.transform:Find("btn_sell")
+        ev = UI_Event.Get(btn_hero_sell)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_sell = require("GUI/ui_hero_sell")
+            ui_hero_sell.create()
+        end
+        }
+
+        local btn_evolution = main_obj.transform:Find("btn_evolution")
+        ev = UI_Event.Get(btn_evolution)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_evolution = require("GUI/ui_hero_evolution")
+            ui_hero_evolution.create()
+        end
+        }
+
+        local btn_team_editor = main_obj.transform:Find("btn_team_editor")
+        ev = UI_Event.Get(btn_team_editor)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_team = require("GUI/ui_hero_team")
+            ui_hero_team.create()
+        end
+        }
+
+        local btn_combine = main_obj.transform:Find("btn_combine")
+        ev = UI_Event.Get(btn_combine)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_combine = require("GUI/ui_hero_combine")
+            ui_hero_combine.create()
+        end
+        }
+
+        local btn_equip = main_obj.transform:Find("btn_equip")
+        ev = UI_Event.Get(btn_equip)
+        ev.onClick = {"+=",function(eventData , go , args)
+            GameObject.Destroy(main_obj)
+            ui_hero_equip = require("GUI/ui_hero_equip")
+            ui_hero_equip.create()
+        end
+        }
     end
 
     createObj()
