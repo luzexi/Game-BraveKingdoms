@@ -18,6 +18,7 @@ local function create()
         main_obj.transform:SetParent(UI_Root)
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
+        UI_Master = main_obj
     end
     
     local function regEvent()
@@ -135,12 +136,6 @@ local function create()
                 if (now_index-1)*MAX_NODE_HERO+i+1 <= #Player.heros then
                     child_item.gameObject:SetActive(true)
                     UI_Event.Get(child_item,""..now_index..";"..i)
-                    -- child_item.onClick = function(eventData , go , args)
-                    --     GameObject.Destroy(main_obj)
-                    --     local ui_hero_detail = require("GUI/ui_hero_detail")
-                    --     local tmp_hero = Player.heros[(tonumber(args[0])-1)*MAX_NODE_HERO+tonumber(args[1])]
-                    --     ui_hero_detail.create(tmp_hero)
-                    -- end
                     setup_icon(child_item.gameObject,Player.heros[(now_index-1)*MAX_NODE_HERO+i+1])
                 else
                     child_item.gameObject:SetActive(false)

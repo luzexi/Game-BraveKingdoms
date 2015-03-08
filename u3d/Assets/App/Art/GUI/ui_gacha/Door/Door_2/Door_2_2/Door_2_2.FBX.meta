@@ -1,0 +1,164 @@
+fileFormatVersion: 2
+guid: 0b874e242707781419d1245b5dd8ff48
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: 02_Bone002
+    100002: 02_Bone002 1
+    100004: 02_Bone002 2
+    100006: 02_Bone002 3
+    100008: 02_Bone004
+    100010: 02_Bone004 1
+    100012: 02_Bone006
+    100014: 02_huan_L_Bone003
+    100016: 02_huan_L_Box03
+    100018: 02_huan_r_Bone003
+    100020: 02_huan_r_Box04
+    100022: 02_men_L_Bone001
+    100024: 02_men_L_model
+    100026: 02_men_r_Bone001
+    100028: 02_men_r_model
+    100030: 02_menkuang_model
+    100032: 02_qiu_L_Bone001
+    100034: 02_qiu_r_Bone001
+    100036: 02_shitou_Bone005
+    100038: 02_shitou_model
+    100040: Box02
+    100042: //RootNode
+    400000: 02_Bone002
+    400002: 02_Bone002 1
+    400004: 02_Bone002 2
+    400006: 02_Bone002 3
+    400008: 02_Bone004
+    400010: 02_Bone004 1
+    400012: 02_Bone006
+    400014: 02_huan_L_Bone003
+    400016: 02_huan_L_Box03
+    400018: 02_huan_r_Bone003
+    400020: 02_huan_r_Box04
+    400022: 02_men_L_Bone001
+    400024: 02_men_L_model
+    400026: 02_men_r_Bone001
+    400028: 02_men_r_model
+    400030: 02_menkuang_model
+    400032: 02_qiu_L_Bone001
+    400034: 02_qiu_r_Bone001
+    400036: 02_shitou_Bone005
+    400038: 02_shitou_model
+    400040: Box02
+    400042: //RootNode
+    2300000: 02_huan_L_Box03
+    2300002: 02_huan_r_Box04
+    2300004: Box02
+    3300000: 02_huan_L_Box03
+    3300002: 02_huan_r_Box04
+    3300004: Box02
+    4300000: 02_shitou_model
+    4300002: 02_menkuang_model
+    4300004: 02_men_r_model
+    4300006: 02_men_L_model
+    4300008: Box02
+    4300010: 02_huan_r_Box04
+    4300012: 02_huan_L_Box03
+    7400000: open
+    7400002: keep
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: 02_men_L_model
+    13700002: 02_men_r_model
+    13700004: 02_menkuang_model
+    13700006: 02_shitou_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 150
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: keep
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

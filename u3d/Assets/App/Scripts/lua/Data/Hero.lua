@@ -1,4 +1,4 @@
-﻿
+
 
 local function init()
     --
@@ -19,6 +19,21 @@ local function create( tableid )
     hero.recover = 3
     hero.lock = false
     return hero
+end
+
+local function createBattleHero( hero )
+    local battlehero = {}
+    battlehero.tableid = hero.tableid
+    battlehero.equip = hero.equip
+    battlehero.attack = hero.attack
+    battlehero.defence = hero.defence
+    battlehero.recover = hero.recover
+    battlehero.hp = hero.maxhp
+    battlehero.maxhp = hero.maxhp
+    battlehero.sp = 0
+    battlehero.maxsp = 100
+    
+    return battlehero
 end
 
 

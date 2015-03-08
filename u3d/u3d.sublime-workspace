@@ -4,8 +4,252 @@
 		"selected_items":
 		[
 			[
+				"Sca",
+				"Scrollbar"
+			],
+			[
+				"ui_sys",
+				"ui_system_bottom"
+			],
+			[
+				"Ga",
+				"Gacha1Table"
+			],
+			[
+				"Add",
+				"AddDragEvent"
+			],
+			[
+				"MAX_N",
+				"MAX_NODE_HERO"
+			],
+			[
+				"To",
+				"ToActionGameObjectInt"
+			],
+			[
+				"max_in",
+				"max_index"
+			],
+			[
+				"setu",
+				"setup_icon"
+			],
+			[
+				"Av",
+				"AvatarM"
+			],
+			[
+				"Avat",
+				"AvatarL"
+			],
+			[
+				"crea",
+				"create"
+			],
+			[
+				"ui_hero_l",
+				"ui_hero_list"
+			],
+			[
+				"bn_her",
+				"btn_hero_lst"
+			],
+			[
+				"local",
+				"local"
+			],
+			[
+				"Repos",
+				"RepositionMin"
+			],
+			[
+				"MinFi",
+				"MinFixPos"
+			],
+			[
+				"m_fmo",
+				"m_fMove_speed"
+			],
+			[
+				"m_f",
+				"m_fMoveDir"
+			],
+			[
+				"m_",
+				"m_fMove_speed"
+			],
+			[
+				"ui_hero_lis",
+				"ui_hero_list_name"
+			],
+			[
+				"ui_bak",
+				"ui_background_name"
+			],
+			[
+				"ui_back",
+				"ui_background"
+			],
+			[
+				"REpo",
+				"RepositionMin"
+			],
+			[
+				"Rep",
+				"RepositionMax"
+			],
+			[
+				"Text",
+				"Text"
+			],
+			[
+				"gacha",
+				"gacha_super2"
+			],
+			[
+				"gacha_",
+				"gacha_super1"
+			],
+			[
+				"ques",
+				"quest_width"
+			],
+			[
+				"Sc",
+				"Screen"
+			],
+			[
+				"loca",
+				"local	local x = 1"
+			],
+			[
+				"fucn",
+				"function"
+			],
+			[
+				"create",
+				"create"
+			],
+			[
+				"btn",
+				"btn_menu"
+			],
+			[
+				"ui_main",
+				"ui_main_obj"
+			],
+			[
+				"function",
+				"function"
+			],
+			[
+				"COn",
+				"CONST_ITEM_INDEX"
+			],
+			[
+				"hero_",
+				"HERO_GENERATE_INDEX"
+			],
+			[
+				"C",
+				"CONST_HERO_INDEX"
+			],
+			[
+				"Con",
+				"CONST_ITEM_INDEX"
+			],
+			[
+				"player",
+				"player_data"
+			],
+			[
+				"Player",
+				"Player"
+			],
+			[
+				"sa",
+				"save_data"
+			],
+			[
+				"save",
+				"SaveData"
+			],
+			[
+				"Erro",
+				"ErrorCallBack"
+			],
+			[
+				"Custo",
+				"CustomLuaClassAttribute"
+			],
+			[
+				"Hide",
+				"HideInInspector"
+			],
+			[
+				"lol",
+				"localPosition"
+			],
+			[
+				"Vec",
+				"Vector3"
+			],
+			[
+				"ease",
+				"easeType"
+			],
+			[
 				"m_c",
-				"m_cLuaState"
+				"m_cImage"
+			],
+			[
+				"dis",
+				"disTime"
+			],
+			[
+				"Loo",
+				"Loop"
+			],
+			[
+				"Loop",
+				"LoopType"
+			],
+			[
+				"audi",
+				"audioClip"
+			],
+			[
+				"gam",
+				"gameObject"
+			],
+			[
+				"ENV",
+				"ENV_PITCH"
+			],
+			[
+				"SE_",
+				"SE_PITCH"
+			],
+			[
+				"BGM",
+				"BGM_PITCH"
+			],
+			[
+				"rea",
+				"realtimeSinceStartup"
+			],
+			[
+				"onupda",
+				"onupdate"
+			],
+			[
+				"method",
+				"method_type"
+			],
+			[
+				"Cusom",
+				"CustomLuaClassAttribute"
 			],
 			[
 				"assem",
@@ -220,10 +464,6 @@
 				"zero"
 			],
 			[
-				"local",
-				"localPosition"
-			],
-			[
 				"Resources_CN",
 				"Resources_CN/UI/Prefabs/PVP_MainBG"
 			],
@@ -274,264 +514,127 @@
 			[
 				"filena",
 				"filenames"
-			],
-			[
-				"unit",
-				"unity3d"
-			],
-			[
-				"Unit",
-				"UnityEngine"
-			],
-			[
-				"Weap",
-				"WeaponType"
-			],
-			[
-				"Attack",
-				"Attacker"
-			],
-			[
-				"cat",
-				"categoryId"
-			],
-			[
-				"Pvpai",
-				"Pvpai"
-			],
-			[
-				"Tick",
-				"Ticks"
-			],
-			[
-				"Common",
-				"Common_msg"
-			],
-			[
-				"pvp",
-				"pvp_deck"
-			],
-			[
-				"loc",
-				"localPosition"
-			],
-			[
-				"pvpd",
-				"Pvpdeck"
-			],
-			[
-				"forea",
-				"foreach"
-			],
-			[
-				"Se",
-				"Serializable"
-			],
-			[
-				"Lead",
-				"LeaderCard"
-			],
-			[
-				"camera",
-				"camera_cha"
-			],
-			[
-				"Hash",
-				"Hash"
-			],
-			[
-				"Move",
-				"MoveFrom"
-			],
-			[
-				"Pvpdeck",
-				"Pvpdeck"
-			],
-			[
-				"Oug",
-				"OutGameManager"
-			],
-			[
-				"Out",
-				"OutGameManager"
-			],
-			[
-				"Wait",
-				"WaitForFixedUpdate"
-			],
-			[
-				"m_clabelra",
-				"m_cLabelRankNow"
-			],
-			[
-				"Sc",
-				"ScaleFrom"
-			],
-			[
-				"tr",
-				"true"
-			],
-			[
-				"Serializ",
-				"SerializeField"
-			],
-			[
-				"next",
-				"next_wait"
-			],
-			[
-				"m_clabelr",
-				"m_cLabelRankNow"
-			],
-			[
-				"m_crank",
-				"m_cRankUpParent"
-			],
-			[
-				"globa",
-				"GlobalDataManager"
-			],
-			[
-				"lab",
-				"labelTime1"
-			],
-			[
-				"labl",
-				"labelTime2"
-			],
-			[
-				"labelt",
-				"labelTime1"
-			],
-			[
-				"sec",
-				"second"
-			],
-			[
-				"Qu",
-				"Quaternion"
-			],
-			[
-				"Resourc",
-				"Resources"
-			],
-			[
-				"Forced",
-				"ForcedLookTarget"
-			],
-			[
-				"Return",
-				"ReturnPolarFromForced"
-			],
-			[
-				"Yes",
-				"Yes"
-			],
-			[
-				"erro",
-				"Error"
-			],
-			[
-				"fiel",
-				"fieldCamera"
-			],
-			[
-				"allde",
-				"allDead"
-			],
-			[
-				"Chara",
-				"CharacterManager"
-			],
-			[
-				"ch",
-				"characters"
-			],
-			[
-				"char",
-				"characters"
-			],
-			[
-				"Camera",
-				"CameraManager"
-			],
-			[
-				"Target",
-				"Target"
-			],
-			[
-				"chra",
-				"chara"
-			],
-			[
-				"Dir",
-				"Dictionary"
-			],
-			[
-				"skill",
-				"SKILL_TIME_COST"
-			],
-			[
-				"camer",
-				"camera_cha"
-			],
-			[
-				"Oppos",
-				"OppositeType"
-			],
-			[
-				"Oppo",
-				"OppositeType"
-			],
-			[
-				"defence",
-				"defencer"
-			],
-			[
-				"attacker",
-				"attackerID"
-			],
-			[
-				"selfpo",
-				"selfPos3"
-			],
-			[
-				"actionsk",
-				"actionSkillId"
-			],
-			[
-				"chara",
-				"chara"
-			],
-			[
-				"Leader",
-				"LeaderSkill"
-			],
-			[
-				"len",
-				"Length"
-			],
-			[
-				"debu",
-				"debug_txt"
 			]
 		]
 	},
 	"buffers":
 	[
 		{
-			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs",
 			"settings":
 			{
-				"buffer_size": 14539,
-				"line_ending": "Unix"
+				"buffer_size": 14991,
+				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Manager/MyApplication.cs",
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
 			"settings":
 			{
-				"buffer_size": 715,
+				"buffer_size": 6495,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nlocal GameObject = UnityEngine.GameObject\nlocal Vector3 = UnityEngine.Vector3\nlocal Resources = UnityEngine.Resources\n\n\nlocal ui_hero_list_name = \"ui_hero_sell\"\n\nlocal MAX_NODE = 6\nlocal MAX_NODE_HERO = 5\n\nlocal function create()\n    local main_obj = nil\n\n    local function createObj()\n        main_obj = GameObject.Instantiate(Resources.Load(\"GUI/ui_hero_list\"))\n        main_obj.name = ui_hero_list_name\n        main_obj.transform:SetParent(UI_Root)\n        main_obj.transform.localPosition = Vector3.zero\n        main_obj.transform.localScale = Vector3.one\n        UI_Master = main_obj\n    end\n    \n    local function regEvent()\n        local btn_back = main_obj.transform:Find(\"btn_back\")\n        local ev = UI_Event.Get(btn_back)\n        ev.onClick = {\"+=\" , function(eventData , go , args)\n            GameObject.Destroy(main_obj)\n            local ui_hero_menu = require(\"GUI.ui_hero_menu\")\n            ui_hero_menu.create()\n        end\n        }\n\n        local btn_sort = main_obj.transform:Find(\"btn_sort\")\n    end\n\n    local function setup_icon( go , hero )\n        local bg_dark = go.transform:Find(\"frame_bg/frame_dark_bg\")\n        local bg_fire = go.transform:Find(\"frame_bg/frame_fire_bg\")\n        local bg_light = go.transform:Find(\"frame_bg/frame_light_bg\")\n        local bg_thunder = go.transform:Find(\"frame_bg/frame_thunder_bg\")\n        local bg_water = go.transform:Find(\"frame_bg/frame_water_bg\")\n        local bg_wood = go.transform:Find(\"frame_bg/frame_wood_bg\")\n        bg_dark.gameObject:SetActive(false)\n        bg_fire.gameObject:SetActive(false)\n        bg_light.gameObject:SetActive(false)\n        bg_thunder.gameObject:SetActive(false)\n        bg_water.gameObject:SetActive(false)\n        bg_wood.gameObject:SetActive(false)\n        local frame_bg_array = {bg_fire , bg_water , bg_wood , bg_thunder , bg_light , bg_dark}\n\n        local frame_dark = go.transform:Find(\"frame/frame_dark\")\n        local frame_fire = go.transform:Find(\"frame/frame_fire\")\n        local frame_light = go.transform:Find(\"frame/frame_light\")\n        local frame_thunder = go.transform:Find(\"frame/frame_thunder\")\n        local frame_water = go.transform:Find(\"frame/frame_water\")\n        local frame_wood = go.transform:Find(\"frame/frame_wood\")\n        frame_dark.gameObject:SetActive(false)\n        frame_fire.gameObject:SetActive(false)\n        frame_light.gameObject:SetActive(false)\n        frame_thunder.gameObject:SetActive(false)\n        frame_water.gameObject:SetActive(false)\n        frame_wood.gameObject:SetActive(false)\n        local frame_array = {frame_fire , frame_water , frame_wood , frame_thunder , frame_light , frame_dark}\n\n        local table = HeroTable[\"\"..hero.tableid]\n        frame_bg_array[table.Nature].gameObject:SetActive(true)\n        frame_array[table.Nature].gameObject:SetActive(true)\n\n        local hero_icon = go.transform:Find(\"hero\"):GetComponent(\"RawImage\")\n        hero_icon.texture = Resources.Load(\"AvatarM/\"..table.AvatarM)\n\n        local equip_icon = go.transform:Find(\"equip\")\n    end\n\n    local function setup()\n        local node = main_obj.transform:Find(\"node\")\n        local ui_scroll_list = node:GetComponent(\"UI_Scroll_List\")\n        local node_num , node_num_ = math.modf((#Player.heros)/5)\n        if node_num_ ~= 0 then\n            node_num = node_num + 1\n        end\n        local res_item = Resources.Load(\"GUI/ui_hero_item\")\n        if node_num > MAX_NODE then\n            node_num = MAX_NODE\n        end\n        local j = 1\n        for i=1,node_num,1 do\n            local node_node = GameObject()\n            node_node.name = \"\"..i\n            node_node.transform.parent = node\n            node_node.transform.localPosition = Vector3(0,207 - (i-1)*110,0)\n            node_node.transform.localScale = Vector3.one\n            for k = 0 , MAX_NODE_HERO-1 , 1 do\n                local node_node_item = GameObject.Instantiate(res_item)\n                node_node_item.name = k\n                node_node_item.transform:SetParent(node_node.transform)\n                node_node_item.transform.localPosition = Vector3( -250 + k*120,0,0)\n                node_node_item.transform.localScale = Vector3.one\n                ui_scroll_list:AddDragEvent(node_node_item.gameObject)\n                local node_node_ev = UI_Event.Get(node_node_item,\"\"..i..\";\"..k)\n                node_node_ev.onClick = function(eventData , go , args)\n                    GameObject.Destroy(main_obj)\n                    local ui_hero_detail = require(\"GUI/ui_hero_detail\")\n                    local tmp_hero = Player.heros[(tonumber(args[1])-1)*MAX_NODE_HERO+tonumber(args[2])+1]\n                    ui_hero_detail.create(tmp_hero , create)\n                end\n                if j <= #Player.heros then\n                    setup_icon(node_node_item,Player.heros[j])\n                    j = j +1\n                else\n                    node_node_item:SetActive(false)\n                end\n            end\n        end\n        \n        local max_index , max_index_= math.modf((#Player.heros)/MAX_NODE_HERO)\n        if max_index_ ~= 0 then\n            max_index = max_index + 1\n        end\n        max_index = max_index - MAX_NODE\n        if max_index < 0 then\n            max_index = 0\n        end\n\n        local function onChange( go , dir )\n            local now_index = 1\n            if dir == 0 then\n                now_index = tonumber(go.name) - MAX_NODE\n            else\n                now_index = tonumber(go.name) + MAX_NODE\n            end\n            go.name = \"\"..now_index\n            for i = 0,MAX_NODE_HERO-1,1 do\n                local child_item = go.transform:GetChild(i)\n                if (now_index-1)*MAX_NODE_HERO+i+1 <= #Player.heros then\n                    child_item.gameObject:SetActive(true)\n                    UI_Event.Get(child_item,\"\"..now_index..\";\"..i)\n                    setup_icon(child_item.gameObject,Player.heros[(now_index-1)*MAX_NODE_HERO+i+1])\n                else\n                    child_item.gameObject:SetActive(false)\n                end\n            end\n        end\n\n        local del_onchange = LuaUtil.ToActionGameObjectInt(onChange)\n\n        ui_scroll_list.MaxIndex = max_index\n        ui_scroll_list.MaxFixPos = 207\n        ui_scroll_list.MinFixPos = -209\n        ui_scroll_list.ItemNum = node_num\n        ui_scroll_list.ItemCost = 110\n        ui_scroll_list:Init()\n        ui_scroll_list.onChange = del_onchange\n    end\n\n    createObj()\n    setup()\n    regEvent()\nend\n\nlocal t = {}\nt.create = create\nreturn t\n\n",
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_sell.lua",
+			"file_size": 6660,
+			"file_write_time": 1424596177000000,
+			"settings":
+			{
+				"buffer_size": 6495,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_evolution.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_team.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_combine.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_equip.lua",
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_gacha.lua",
+			"settings":
+			{
+				"buffer_size": 3635,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Util/lua_math.lua",
+			"settings":
+			{
+				"buffer_size": 799,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Table/Gacha1Table.lua",
+			"settings":
+			{
+				"buffer_size": 376,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Data/Hero.lua",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nlocal GameObject = UnityEngine.GameObject\nlocal Resources = UnityEngine.Resources\nlocal Vector3 = UnityEngine.Vector3\n\nlocal function create( hero , func )\n    local main_obj = nil\n    local ui_name = \"ui_hero_detail\"\n\n    local function createObj()\n        main_obj = GameObject.Instantiate( Resources.Load(\"GUI/ui_hero_detail\") )\n        main_obj.name = ui_name\n        main_obj.transform:SetParent(UI_Root)\n        main_obj.transform.localPosition = Vector3.zero\n        main_obj.transform.localScale = Vector3.one\n    end\n\n    local function updateInfo()\n        local heroImg = main_obj.transform:Find(\"heroImg\"):GetComponent(\"RawImage\")\n        local cost = main_obj.transform:Find(\"heroData/cost/Text\"):GetComponent(\"Text\")\n        local attack = main_obj.transform:Find(\"heroData/attack/Text\"):GetComponent(\"Text\")\n        local defence = main_obj.transform:Find(\"heroData/defence/Text\"):GetComponent(\"Text\")\n        local equip = main_obj.transform:Find(\"heroData/equip/Text\"):GetComponent(\"Text\")\n        local hp = main_obj.transform:Find(\"heroData/hp/Text\"):GetComponent(\"Text\")\n        local lv_up = main_obj.transform:Find(\"heroData/lv_up/Text\"):GetComponent(\"Text\")\n        local lv = main_obj.transform:Find(\"heroData/lv/Text\"):GetComponent(\"Text\")\n        local recover = main_obj.transform:Find(\"heroData/recover/Text\"):GetComponent(\"Text\")\n        local hero_type = main_obj.transform:Find(\"heroData/type/Text\"):GetComponent(\"Text\")\n        local star = main_obj.transform:Find(\"heroData/star\")\n        local exp = main_obj.transform:Find(\"heroData/exp/exp_bar\")\n        local lock = main_obj.transform:Find(\"heroData/lock\")\n\n        local table = HeroTable[\"\"..hero.tableid]\n        heroImg.texture = Resources.Load(\"AvatarA/\"..table.AvatarA)\n        cost.text = \"\"..table.Cost\n        attack.text = \"\"..hero.attack\n        defence.text = \"\"..hero.defence\n        equip.text = \"ToDo\"\n        hp.text = \"\"..hero.maxhp\n        lv_up.text = \"ToDo\"\n        lv.text = \"\"..hero.lv\n        recover.text = \"\"..hero.recover\n        if table.Type == 0 then\n            hero_type.text = \"英雄\"\n        elseif table.Type == 1 then\n            hero_type.text = \"经验素材\"\n        elseif table.Type == 2 then\n            hero_type.text = \"进化素材\"\n        elseif table.Type == 3 then\n            hero_type.text = \"金钱素材\"\n        end\n        \n        if hero.lock then\n            lock.gameObject:SetActive(true)\n        else\n            lock.gameObject:SetActive(false)\n        end\n        local star1 = star:Find(\"star1\")\n        local star2 = star:Find(\"star2\")\n        local star3 = star:Find(\"star3\")\n        local star4 = star:Find(\"star4\")\n        local star5 = star:Find(\"star5\")\n        local strlst = {star1 , star2 , star3 , star4 , star5}\n        for i = table.StarLevel+1, 5 , 1 do\n            strlst[i].gameObject:SetActive(false)\n        end\n    end\n\n    local function regEvent()\n        local collider = main_obj.transform:Find(\"collider\")\n        local ev = UI_Event.Get(collider)\n        ev.onClick = {\"+=\",function(eventData , go , args)\n            GameObject.Destroy(main_obj)\n            func()\n        end\n        }\n    end\n\n    createObj()\n    updateInfo()\n    regEvent()\nend\n\n\n\n\nlocal t = {}\nt.create = create\nreturn t\n",
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_detail.lua",
+			"file_size": 3358,
+			"file_write_time": 1424521757000000,
+			"settings":
+			{
+				"buffer_size": 3241,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+			"settings":
+			{
+				"buffer_size": 695,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_battle.lua",
+			"settings":
+			{
+				"buffer_size": 4727,
 				"line_ending": "Windows"
 			}
 		},
@@ -539,113 +642,23 @@
 			"file": "Assets/App/Scripts/Manager/MyLua.cs",
 			"settings":
 			{
-				"buffer_size": 2144,
+				"buffer_size": 2543,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvr.cs",
-			"settings":
-			{
-				"buffer_size": 2439,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/lua/Main.lua",
-			"settings":
-			{
-				"buffer_size": 166,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/lua/Scene/TitleScene.lua",
-			"settings":
-			{
-				"buffer_size": 200,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/MyPlugins/Demigiant/DOTween/Examples/Basics.cs",
-			"settings":
-			{
-				"buffer_size": 971,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/lua/Manager/UIManager.lua",
-			"settings":
-			{
-				"buffer_size": 149,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/MyPlugins/iTweenEditor/iTween.cs",
-			"settings":
-			{
-				"buffer_size": 274315,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/lua/GUI/UITitle.lua",
-			"settings":
-			{
-				"buffer_size": 647,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs",
-			"settings":
-			{
-				"buffer_size": 43195,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Vector3.cs",
-			"settings":
-			{
-				"buffer_size": 19783,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "Searching 990 files for \"WCAT_CUSTOM\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTween.cs:\n   99      private bool useRealTime; // Added by PressPlay\n  100  \n  101: #if WCAT_CUSTOM\n  102  	public delegate void OnUpdateDelegate(float value);\n  103  #endif\n  ...\n 6479  		}\n 6480  	}\n 6481: #if WCAT_CUSTOM\n 6482  	public static void StopAndCompleteByName(GameObject target, string name){\n 6483  		if (target == null)\n ....\n 6800  		\n 6801  		foreach (DictionaryEntry item in argsCopy) {\n 6802: #if WCAT_CUSTOM\n 6803  			if ( item.Value == null )\n 6804  			{\n ....\n 7102  				target=gameObject;	\n 7103  			}\n 7104: #if WCAT_CUSTOM\n 7105  			object method = tweenArguments[callbackType];\n 7106  			Type method_type = method.GetType();\n\n4 matches in 1 file\n\n\nSearching 1464 files for \"Instantiate\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/UITitle.lua:\n    6  local function show()\n    7      local obj = Resources.Load(\"GUI/Title\")\n    8:     local background = GameObject.Instantiate( obj )\n    9      background.transform.parent = UIRoot\n   10      background.transform.localPosition = Vector3.Zero\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/Reporter.cs:\n  413  		GUISkin skin = Resources.Load(\"reporterScrollerSkin\",typeof(GUISkin)) as GUISkin ;\n  414  \n  415: 		toolbarScrollerSkin = (GUISkin)GameObject.Instantiate( skin );\n  416  		toolbarScrollerSkin.verticalScrollbar.fixedWidth = 0f ;\n  417  		toolbarScrollerSkin.horizontalScrollbar.fixedHeight = 0f ;\n  ...\n  419  		toolbarScrollerSkin.horizontalScrollbarThumb.fixedHeight = 0f;\n  420  \n  421: 		logScrollerSkin = (GUISkin)GameObject.Instantiate( skin );\n  422  		logScrollerSkin.verticalScrollbar.fixedWidth = size.x * 2f ;\n  423  		logScrollerSkin.horizontalScrollbar.fixedHeight = 0f ;\n  ...\n  425  		logScrollerSkin.horizontalScrollbarThumb.fixedHeight = 0f;\n  426  \n  427: 		graphScrollerSkin = (GUISkin)GameObject.Instantiate( skin );\n  428  		graphScrollerSkin.verticalScrollbar.fixedWidth = 0f ;\n  429  		graphScrollerSkin.horizontalScrollbar.fixedHeight = size.x * 2f ;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Changelog.txt:\n   99  Version 1.5.6\n  100  - Improved UFPS Example\n  101: - A few actions accept optional a gameObject as target position now(SetDestination,Instantiate,SetIKPosition...)\n  102: - Added randomization actions( InstantiateRandom, PlayRandom(Sound), SetRandomMaterial...)\n  103  - Improved state machine selection when switching to playmode.\n  104  - Moved Third Party Integrations to http://zerano-unity3d.com/AIDocumentation/navigation/add-ons/\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/StateMachine.cs:\n  119  			from.parameters.RemoveAll (x => x == null);\n  120  			for (int i=0; i<from.parameters.Count; i++) {\n  121: 				NamedParameter parameter = (NamedParameter)ScriptableObject.Instantiate (from.parameters [i]);\n  122  				parameter.stateMachine = to;\n  123  				to.parameters.Add (parameter);\n  ...\n  133  \n  134  			for(int i=0;i< from.states.Count;i++){\n  135: 				State state =(State)ScriptableObject.Instantiate(from.states[i]);\n  136  				state.name=state.name.Replace(\"(Clone)\",\"\");\n  137  				state.actions.Clear();\n  ...\n  146  				from.states[i].actions.RemoveAll(x=>x==null);\n  147  				for (int a=0; a< from.states[i].actions.Count; a++) {\n  148: 					StateAction action = (StateAction)ScriptableObject.Instantiate (from.states[i].actions[a]);\n  149  					action.name=action.name.Replace(\"(Clone)\",\"\");\n  150  					state.actions.Add(action);\n  ...\n  163  								mParameter=(NamedParameter)ScriptableObject.CreateInstance(fields[af].FieldType);\n  164  							}\n  165: 							NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate(mParameter);\n  166  							paramter.stateMachine=to;\n  167  							if(paramter.Reference == DefaultReference.Owner.ToString()){\n  ...\n  185  				from.states[i].transitions.RemoveAll(x=>x==null);\n  186  				for (int t=0; t< from.states[i].transitions.Count; t++) {\n  187: 					StateTransition transition = (StateTransition)ScriptableObject.Instantiate (from.states[i].transitions [t]);\n  188  					transition.name=transition.name.Replace(\"(Clone)\",\"\");\n  189  					transition.conditions.Clear();\n  ...\n  198  					for(int c=0; c<from.states[i].transitions[t].conditions.Count;c++){\n  199  \n  200: 						StateCondition condition=(StateCondition)ScriptableObject.Instantiate(from.states[i].transitions[t].conditions[c]);\n  201  						condition.name=condition.name.Replace(\"(Clone)\",\"\");\n  202  						transition.conditions.Add(condition);\n  ...\n  217  								}\n  218  								\n  219: 								NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate(mParameter);\n  220  								paramter.stateMachine=to;\n  221  								if(paramter.Reference == DefaultReference.Owner.ToString()){\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/Instantiate.cs:\n    5  	[Info (category = \"GameObject\",    \n    6  	       description = \"Clones the object original.\",\n    7: 	       url = \"https://docs.unity3d.com/Documentation/ScriptReference/Object.Instantiate.html\")]\n    8  	[System.Serializable]\n    9: 	public class Instantiate : StateAction {\n   10  		[Tooltip(\"An existing object that you want to make a copy of.\")]\n   11  		public ObjectParameter original;\n   ..\n   14  		[ObjectType(typeof(GameObject))]\n   15  		[RequiredField(DefaultReference.None,false)]\n   16: 		[Tooltip(\"Optional instantiates at targets position.\")]\n   17  		public ObjectParameter target;\n   18  		[Tooltip(\"Orientation of the new object.\")]\n   19  		public Vector3Parameter rotation;\n   20  		[RequiredField(DefaultReference.None,false,false)]\n   21: 		[Tooltip( \"Instantiated clone of the original.\")]\n   22  		public ObjectParameter store;\n   23  		[Tooltip(\"Execute the action every frame.\")]\n   ..\n   28  			if (original.Value== null) {\n   29  				enabled=false;\n   30: 				Debug.Log(\"Could not execute \"+ GetType().ToString()+\", because the Object to instantiate is null. Action disabled!\");\n   31  				return;\n   32  			}\n   33  			if (target != null && !target.isNone && target.Value != null) {\n   34: 				store.Value = Instantiate (original.Value, ((GameObject)target.Value).transform.position, Quaternion.Euler (rotation.Value));\n   35  			} else {\n   36: 				store.Value = Instantiate (original.Value, position.Value, Quaternion.Euler (rotation.Value));\n   37  			}\n   38  			if (!everyFrame) {\n   ..\n   44  		{\n   45  			if (target != null && !target.isNone && target.Value != null) {\n   46: 				store.Value = Instantiate (original.Value, ((GameObject)target.Value).transform.position, Quaternion.Euler (rotation.Value));\n   47  			} else {\n   48: 				store.Value = Instantiate (original.Value, position.Value, Quaternion.Euler (rotation.Value));\n   49  			}\n   50  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/InstantiateRandom.cs:\n    6  	[Info (category = \"GameObject\",    \n    7  	       description = \"Clones a random object from the originals list.\",\n    8: 	       url = \"https://docs.unity3d.com/Documentation/ScriptReference/Object.Instantiate.html\")]\n    9  	[System.Serializable]\n   10: 	public class InstantiateRandom : StateAction {\n   11  		[Tooltip(\"An existing object that you want to make a copy of.\")]\n   12  		public List<GameObject> originals;\n   ..\n   15  		[ObjectType(typeof(GameObject))]\n   16  		[RequiredField(DefaultReference.None,false)]\n   17: 		[Tooltip(\"Optional instantiates at targets position.\")]\n   18  		public ObjectParameter target;\n   19  		[Tooltip(\"Orientation of the new object.\")]\n   20  		public Vector3Parameter rotation;\n   21  		[RequiredField(DefaultReference.None,false,false)]\n   22: 		[Tooltip( \"Instantiated clone of the original.\")]\n   23  		public ObjectParameter store;\n   24  		[Tooltip(\"Execute the action every frame.\")]\n   ..\n   33  			}\n   34  			if (target != null && !target.isNone && target.Value != null) {\n   35: 				store.Value = Instantiate (originals[Random.Range(0,originals.Count)], ((GameObject)target.Value).transform.position, Quaternion.Euler (rotation.Value));\n   36  			} else {\n   37: 				store.Value = Instantiate (originals[Random.Range(0,originals.Count)], position.Value, Quaternion.Euler (rotation.Value));\n   38  			}\n   39  			if (!everyFrame) {\n   ..\n   45  		{\n   46  			if (target != null && !target.isNone && target.Value != null) {\n   47: 				store.Value = Instantiate (originals[Random.Range(0,originals.Count)], ((GameObject)target.Value).transform.position, Quaternion.Euler (rotation.Value));\n   48  			} else {\n   49: 				store.Value = Instantiate (originals[Random.Range(0,originals.Count)], position.Value, Quaternion.Euler (rotation.Value));\n   50  			}\n   51  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/StateInspector.cs:\n   44  					genericMenu.AddItem(new GUIContent(\"Paste\"),false,delegate() {\n   45  						foreach (StateAction action in copiedState.actions) {\n   46: 							StateAction copy=(StateAction)ScriptableObject.Instantiate(action);\n   47  							copy.name=copy.name.Replace(\"(Clone)\",\"\");\n   48  							if (EditorUtility.IsPersistent (state)) {\n   ..\n   54  							for (int i=0; i< fields.Length; i++) {\n   55  								if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n   56: 									NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(action));\n   57  									if (EditorUtility.IsPersistent (copy)) {\n   58  										AssetDatabase.AddObjectToAsset(paramter,copy);\n   ..\n   82  \n   83  						foreach (StateAction action in copiedState.actions) {\n   84: 							StateAction copy=(StateAction)ScriptableObject.Instantiate(action);\n   85  							copy.name=copy.name.Replace(\"(Clone)\",\"\");\n   86  							if (EditorUtility.IsPersistent (state)) {\n   ..\n   92  							for (int i=0; i< fields.Length; i++) {\n   93  								if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n   94: 									NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(action));\n   95  									if (EditorUtility.IsPersistent (copy)) {\n   96  										AssetDatabase.AddObjectToAsset(paramter,copy);\n   ..\n  161  						genericMenu.AddItem(new GUIContent(\"Paste\"),false,delegate() {\n  162  							foreach (StateCondition condition in copiedConditions) {\n  163: 								StateCondition copy=(StateCondition)ScriptableObject.Instantiate(condition);\n  164  								copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  165  								if (EditorUtility.IsPersistent (state)) {\n  ...\n  171  								for (int i=0; i< fields.Length; i++) {\n  172  									if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  173: 										NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(condition));\n  174  										if (EditorUtility.IsPersistent (copy)) {\n  175  											AssetDatabase.AddObjectToAsset(paramter,copy);\n  ...\n  199  							\n  200  							foreach (StateCondition condition in copiedConditions) {\n  201: 								StateCondition copy=(StateCondition)ScriptableObject.Instantiate(condition);\n  202  								copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  203  								if (EditorUtility.IsPersistent (state.transitions[transitionIndex])) {\n  ...\n  209  								for (int i=0; i< fields.Length; i++) {\n  210  									if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  211: 										NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(condition));\n  212  										if (EditorUtility.IsPersistent (copy)) {\n  213  											AssetDatabase.AddObjectToAsset(paramter,copy);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/StateMachineGUI.cs:\n  494  					toolsMenu.AddItem(new GUIContent(\"Paste After\"),false,delegate() {\n  495  						State state=StateMachineWindow.StateMachineEditor.selectedStates[0];\n  496: 						Node copy=(Node)ScriptableObject.Instantiate(copiedNode);\n  497  						copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  498  						if (EditorUtility.IsPersistent (state)) {\n  ...\n  504  						for (int i=0; i< fields.Length; i++) {\n  505  							if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  506: 								NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(copiedNode));\n  507  								if (EditorUtility.IsPersistent (copy)) {\n  508  									AssetDatabase.AddObjectToAsset(paramter,copy);\n  ...\n  525  					toolsMenu.AddItem(new GUIContent(\"Paste Before\"),false,delegate() {\n  526  						State state=StateMachineWindow.StateMachineEditor.selectedStates[0];\n  527: 						Node copy=(Node)ScriptableObject.Instantiate(copiedNode);\n  528  						copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  529  						if (EditorUtility.IsPersistent (state)) {\n  ...\n  535  						for (int i=0; i< fields.Length; i++) {\n  536  							if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  537: 								NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(copiedNode));\n  538  								if (EditorUtility.IsPersistent (copy)) {\n  539  									AssetDatabase.AddObjectToAsset(paramter,copy);\n  ...\n  556  					toolsMenu.AddItem(new GUIContent(\"Replace\"),false,delegate() {\n  557  						State state=StateMachineWindow.StateMachineEditor.selectedStates[0];\n  558: 						Node copy=(Node)ScriptableObject.Instantiate(copiedNode);\n  559  						copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  560  						if (EditorUtility.IsPersistent (state)) {\n  ...\n  566  						for (int i=0; i< fields.Length; i++) {\n  567  							if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  568: 								NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(copiedNode));\n  569  								if (EditorUtility.IsPersistent (copy)) {\n  570  									AssetDatabase.AddObjectToAsset(paramter,copy);\n  ...\n  728  					state.name=copiedState.name;\n  729  					foreach (StateAction action in copiedState.actions) {\n  730: 						StateAction copy=(StateAction)ScriptableObject.Instantiate(action);\n  731  						copy.name=copy.name.Replace(\"(Clone)\",\"\");\n  732  						if (EditorUtility.IsPersistent (state)) {\n  ...\n  738  						for (int i=0; i< fields.Length; i++) {\n  739  							if(fields[i].FieldType.IsSubclassOf(typeof(NamedParameter))){\n  740: 								NamedParameter paramter=(NamedParameter)ScriptableObject.Instantiate((UnityEngine.Object)fields[i].GetValue(action));\n  741  								if (EditorUtility.IsPersistent (copy)) {\n  742  									AssetDatabase.AddObjectToAsset(paramter,copy);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Parameters/GlobalParameterCollection.cs:\n   18  					if(collection != null){\n   19  						for (int i=0; i<collection.parameters.Count; i++) {\n   20: 							NamedParameter parameter = (NamedParameter)ScriptableObject.Instantiate (collection.parameters [i]);\n   21  							if (mCollection.parameters == null) {\n   22  								mCollection.parameters = new List<NamedParameter> ();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/Misc/AnimationLink.cs:\n   47  			if (referenceMesh == null) return;\n   48  			\n   49: 			GameObject ob = GameObject.Instantiate(referenceMesh, transform.position, transform.rotation) as GameObject;\n   50  			ob.hideFlags = HideFlags.HideAndDontSave;\n   51  			\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOAgentPlacer.cs:\n   28  			Vector3 antipodal = -pos + goalOffset;\n   29  			\n   30: 			GameObject go = GameObject.Instantiate (prefab,Vector3.zero,Quaternion.Euler(0,angle+180,0)) as GameObject;\n   31  			RVOExampleAgent ag = go.GetComponent<RVOExampleAgent>();\n   32  			\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example12_Procedural/ProceduralWorld.cs:\n  170  				if ( pref.singleFixed ) {\n  171  					Vector3 p = new Vector3 ( (x+0.5f) * world.tileSize, 0, (z+0.5f) * world.tileSize );\n  172: 					GameObject ob = GameObject.Instantiate ( pref.prefab, p, Quaternion.identity ) as GameObject;\n  173  					ob.transform.parent = root;\n  174  				} else {\n  ...\n  204  								// Find a random position inside the current sub-tile\n  205  								Vector3 p = RandomInside (px, pz);\n  206: 								GameObject ob = GameObject.Instantiate ( pref.prefab, p, RandomYRot () ) as GameObject;\n  207  								ob.transform.parent = root;\n  208  								//ob.SetActive ( false );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/MineBotAI.cs:\n   14  	 * The forward animation will have it's speed modified by the velocity and scaled by #animationSpeed to adjust it to look good.\n   15  	 * The awake animation will only be sampled at the end frame and will not play.\\n\n   16: 	 * When the end of path is reached, if the #endOfPathEffect is not null, it will be instantiated at the current position. However a check will be\n   17  	 * done so that it won't spawn effects too close to the previous spawn-point.\n   18  	 * \\shadowimage{mine-bot.png}\n   ..\n   34  		public float animationSpeed = 0.2F;\n   35  		\n   36: 		/** Effect which will be instantiated when end of path is reached.\n   37  		 * \\see OnTargetReached */\n   38  		public GameObject endOfPathEffect;\n   ..\n   68  			\n   69  			if (endOfPathEffect != null && Vector3.Distance (tr.position, lastTarget) > 1) {\n   70: 				GameObject.Instantiate (endOfPathEffect,tr.position,tr.rotation);\n   71  				lastTarget = tr.position;\n   72  			}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/ObjectPlacer.cs:\n   30  			Vector3 p = hit.point;\n   31  			\n   32: 			GameObject obj = (GameObject)GameObject.Instantiate (go,p,Quaternion.identity);\n   33  			\n   34  			if (issueGUOs) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Generators/GridGenerator.cs:\n   31  Any graph which implements the IUpdatableGraph interface can be updated during runtime.\\n\n   32  For grid graphs this is a great feature since you can update only a small part of the grid without causing any lag like a complete rescan would.\\n\n   33: If you for example just have instantiated a sphere obstacle in the scene and you want to update the grid where that sphere was instantiated, you can do this:\\n\n   34  \\code AstarPath.active.UpdateGraphs (ob.collider.bounds); \\endcode\n   35: Where \\a ob is the obstacle you just instantiated (a GameObject).\\n\n   36  As you can see, the UpdateGraphs function takes a Bounds parameter and it will send an update call to all updateable graphs.\\n\n   37  A grid graph will update that area and a small margin around it equal to \\link Pathfinding.GraphCollision.diameter collision testing diameter/2 \\endlink\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Example for EasyButton/ETPlayer.cs:\n   19  	void Fire(){\n   20  		//if (buttonName==\"Fire\"){\n   21: 			Instantiate( bullet, gun.transform.position, gun.rotation);\n   22  		//}		\n   23  	}\n   ..\n   62  	{\n   63  		if (buttonName==\"Fire\"){\n   64: 			Instantiate( bullet, gun.transform.position, gun.rotation);\n   65  		}\n   66  	}*/\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-2D/Monster.cs:\n   21  	void CreateMonster(){\n   22  		if (enemy !=null){\n   23: 			Instantiate( enemy, Camera.main.ScreenToWorldPoint(new Vector3(Random.Range(0,Screen.width),Screen.height,Camera.main.nearClipPlane*2)), Quaternion.identity);\n   24  		}\n   25  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ObjectTouch.cs:\n   83  			if (child==null){\n   84  		\n   85: 				GameObject ring = Instantiate(Resources.Load(\"Ring01\"), transform.position , Quaternion.identity) as GameObject;\n   86  				ring.transform.localScale = transform.localScale * 1.5f;\n   87  				ring.AddComponent(\"SlowRotate\");\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ScreenTouch.cs:\n   28  			\n   29  			// ...\n   30: 			GameObject sphere = Instantiate(Resources.Load(\"GlowDisk01\"), position , Quaternion.identity) as GameObject;\n   31  			float size = Random.Range(0.5f,0.8f);\n   32  			sphere.transform.localScale = new Vector3(size,size,size);\n   33  			\n   34: 			GameObject spot= Instantiate(Resources.Load(\"Spot\"), position , Quaternion.identity) as GameObject;\n   35  			spot.transform.localScale = sphere.transform.localScale/2;\n   36  			spot.transform.parent = sphere.transform;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Swipe.cs:\n   41  			// the world coordinate from touch for z=5\n   42  			Vector3 position = gesture.GetTouchToWordlPoint(5);\n   43: 			trail = Instantiate( Resources.Load(\"Trail\"),position,Quaternion.identity) as GameObject;\n   44  		}\n   45  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoSwipe.cs:\n   38  		if ( trail==null){ // Only the first finger\n   39  			Vector3 position = gesture.GetTouchToWordlPoint( 5);\n   40: 			trail = Instantiate( Resources.Load(\"Trail\"),position,Quaternion.identity) as GameObject;\n   41  			\n   42  			// For real swipe End\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTween.cs:\n 6955          }\n 6956  \n 6957: 		//instantiates a cached ease equation reference:\n 6958  		GetEasingFunction();\n 6959  	}	\n 6960  	\n 6961: 	//instantiates a cached ease equation refrence:\n 6962  	void GetEasingFunction(){\n 6963  		switch (easeType){\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTweenEvent.cs:\n  175  	Dictionary<string, object> values;\n  176  	bool stopped;\n  177: 	iTween instantiatedTween;\n  178  	string internalName;\n  179  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Fonts/tk2dFontData.cs:\n  155  			else\n  156  			{\n  157: 				materialInst = Instantiate(material) as Material;\n  158  				materialInst.hideFlags = HideFlags.DontSave;\n  159  			}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Fonts/tk2dTextMesh.cs:\n  634  		\n  635  		// Can come in here without anything initalized when\n  636: 		// instantiated in code\n  637  		if ((updateFlags & UpdateFlags.UpdateBuffers) != 0 || mesh == null)\n  638  		{\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSpriteAnimator.cs:\n   13  \n   14  	/// <summary>\n   15: 	/// Interface option to play the animation automatically when instantiated / game is started. Useful for background looping animations.\n   16  	/// </summary>\n   17  	public bool playAutomatically = false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSpriteCollectionData.cs:\n  605  				for (int i = 0; i < materials.Length; ++i) \n  606  				{\n  607: 					materialInsts[i] = Instantiate(materials[i]) as Material;\n  608  	#if UNITY_EDITOR\n  609  					materialInsts[i].name = string.Format(\"{0}Material_{1}_{2}\", internalResourcePrefix, name, materials[i].name);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dSpriteCollectionBuilder.cs:\n 1622              Mesh mesh = null;\n 1623              Transform meshTransform = null;\n 1624:             GameObject instantiated = null;\n 1625  			\n 1626  			Vector3 colliderOrigin = new Vector3();\n ....\n 1629              {\n 1630  				// Disabled\n 1631:                 instantiated = GameObject.Instantiate(thisTexParam.overrideMesh) as GameObject;\n 1632:                 MeshFilter meshFilter = instantiated.GetComponentInChildren<MeshFilter>();\n 1633                  if (meshFilter == null)\n 1634                  {\n 1635                      Debug.LogError(\"Unable to find mesh\");\n 1636:                     GameObject.DestroyImmediate(instantiated);\n 1637                  }\n 1638                  else\n ....\n 1659                      coll.spriteDefinitions[i].indices[j] = mesh.triangles[j];\n 1660                  }\n 1661:                 GameObject.DestroyImmediate(instantiated);\n 1662              }\n 1663              else\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/Atlas/tk2dMaxRectsBinPack.cs:\n   14  		bool allowRotation = false;\n   15  \n   16: 		/// Instantiates a bin of size (0,0). Call Init to create a new bin.\n   17  		public MaxRectsBinPack()\n   18  		{\n   19  		}\n   20  \n   21: 		/// Instantiates a bin of the given size.\n   22  		public MaxRectsBinPack(int width, int height, bool allowRotation)\n   23  		{\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap/Code/tk2dTileMapBuilderUtil.cs:\n  128  						if (instance == null) {\n  129  					#if UNITY_EDITOR\n  130: 							instance = UnityEditor.PrefabUtility.InstantiatePrefab(prefab) as GameObject;\n  131  					#else\n  132: 							instance = GameObject.Instantiate(prefab, Vector3.zero, Quaternion.identity) as GameObject;\n  133  					#endif\n  134  \n  135  					#if UNITY_EDITOR && !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  136  							if (!Application.isPlaying) {\n  137: 								UnityEditor.Undo.RegisterCreatedObjectUndo(instance, \"Instantiated Prefab\");\n  138  							}\n  139  					#endif\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Controls/tk2dUIDropDownMenu.cs:\n  240      private tk2dUIDropDownItem CreateAnotherDropDownItem()\n  241      {\n  242:         GameObject go = Instantiate(dropDownItemTemplate.gameObject) as GameObject;\n  243          go.name = \"DropDownItem\";\n  244          go.transform.parent = transform;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI_demo/tk2dUIDemo5Controller.cs:\n   35  		float w = (prefabItem.GetMaxBounds() - prefabItem.GetMinBounds()).x;\n   36  		for (int i = 0; i < 10; ++i) {\n   37: 			tk2dUILayout layout = Instantiate(prefabItem) as tk2dUILayout;\n   38  			layout.transform.parent = manualScrollableArea.contentContainer.transform;\n   39  			layout.transform.localPosition = new Vector3(x, 0, 0);\n   ..\n   51  		// as needed and the layout container deals with the rest.\n   52  		for (int i = 0; i < 10; ++i) {\n   53: 			tk2dUILayout layout = Instantiate(prefabItem) as tk2dUILayout;\n   54  			autoScrollableArea.ContentLayoutContainer.AddLayoutAtIndex(layout, tk2dUILayoutItem.FixedSizeLayoutItem(), autoScrollableArea.ContentLayoutContainer.ItemCount - 1);\n   55  			DoSetActive( layout.transform, true );\n   ..\n   63  		int numToAdd = Random.Range(1, 5);\n   64  		for (int i = 0; i < numToAdd; ++i) {\n   65: 			tk2dUILayout layout = Instantiate(prefabItem) as tk2dUILayout;\n   66  			layout.transform.parent = manualScrollableArea.contentContainer.transform;\n   67  			layout.transform.localPosition = new Vector3(x, 0, 0);\n   ..\n   80  		int numToAdd = Random.Range(1, 5);\n   81  		for (int i = 0; i < numToAdd; ++i) {\n   82: 			tk2dUILayout layout = Instantiate(prefabItem) as tk2dUILayout;\n   83  			autoScrollableArea.ContentLayoutContainer.AddLayoutAtIndex(layout, tk2dUILayoutItem.FixedSizeLayoutItem(), autoScrollableArea.ContentLayoutContainer.ItemCount - 1);\n   84  			DoSetActive( layout.transform, true );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI_demo/tk2dUIDemo6Controller.cs:\n   49  		float x = 0;\n   50  		for (int i = 0; i < maxVisibleItems; ++i) {\n   51: 			tk2dUILayout layout = Instantiate(prefabItem) as tk2dUILayout;\n   52  			layout.transform.parent = scrollableArea.contentContainer.transform;\n   53  			layout.transform.localPosition = new Vector3(x, 0, 0);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Object.cs:\n   31  	}\n   32  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   33: 	static public int Instantiate_s(IntPtr l) {\n   34  		try{\n   35  			if(matchType(l,1,typeof(UnityEngine.Object),typeof(UnityEngine.Vector3),typeof(UnityEngine.Quaternion))){\n   ..\n   40  				UnityEngine.Quaternion a3;\n   41  				checkType(l,3,out a3);\n   42: 				UnityEngine.Object ret=UnityEngine.Object.Instantiate(a1,a2,a3);\n   43  				pushValue(l,ret);\n   44  				return 1;\n   ..\n   47  				UnityEngine.Object a1;\n   48  				checkType(l,1,out a1);\n   49: 				UnityEngine.Object ret=UnityEngine.Object.Instantiate(a1);\n   50  				pushValue(l,ret);\n   51  				return 1;\n   ..\n  238  		getTypeTable(l,\"UnityEngine.Object\");\n  239  		addMember(l,GetInstanceID);\n  240: 		addMember(l,Instantiate_s);\n  241  		addMember(l,Destroy_s);\n  242  		addMember(l,DestroyImmediate_s);\n\n94 matches across 34 files\n\n\nSearching 1464 files for \"SetParent\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/UITitle.lua:\n    8      local obj = Resources.Load(\"GUI/Title/title_log\")\n    9      local background = GameObject.Instantiate( obj )\n   10:     background.transform.SetParent(UIROOT,false)\n   11      background.transform.localPosition = Vector3.zero\n   12      background.transform.localScale = Vector3.one\n   13  \n   14      local btn = GameObject.Instantiate( Resources.Load(\"GUI/Title/touchText\") )\n   15:     btn.transform.SetParent(UIROOT,false)\n   16      btn.transform.localPosition = Vector3.zero\n   17      btn.transform.localScale = Vector3.one\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUIItem.cs:\n  171      /// Manually setting specific UIItem parent\n  172      /// </summary>\n  173:     public void ManuallySetParent(tk2dUIItem newParentUIItem)\n  174      {\n  175          parentUIItem = newParentUIItem;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Transform.cs:\n   11  	}\n   12  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   13: 	static public int SetParent(IntPtr l) {\n   14  		try{\n   15  			if(matchType(l,2,typeof(UnityEngine.Transform))){\n   ..\n   17  				UnityEngine.Transform a1;\n   18  				checkType(l,2,out a1);\n   19: 				self.SetParent(a1);\n   20  				return 0;\n   21  			}\n   ..\n   26  				System.Boolean a2;\n   27  				checkType(l,3,out a2);\n   28: 				self.SetParent(a1,a2);\n   29  				return 0;\n   30  			}\n   ..\n  751  	static public void reg(IntPtr l) {\n  752  		getTypeTable(l,\"UnityEngine.Transform\");\n  753: 		addMember(l,SetParent);\n  754  		addMember(l,Translate);\n  755  		addMember(l,Rotate);\n\n7 matches across 3 files\n\n\nSearching 1464 files for \"bool mathtype\"\n\n0 matches across 0 files\n\n\nSearching 1464 files for \"bool matchType\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs:\n  400          \n  401  \n  402:         public static bool matchType(IntPtr l, int p, LuaTypes lt, Type t)\n  403          {\n  404              if (t == typeof(object))\n  ...\n  449          }\n  450  \n  451:         public static bool matchType(IntPtr l, int from, params Type[] types)\n  452          {\n  453              if (LuaDLL.lua_gettop(l) - from + 1 != types.Length)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaVarObject.cs:\n   47              }\n   48  \n   49:             bool matchType(IntPtr l, int p, LuaTypes lt, Type t)\n   50              {\n   51                  string tn = t.Name;\n   ..\n   89              }\n   90  \n   91:             internal bool matchType(IntPtr l, int from, ParameterInfo[] pis)\n   92              {\n   93                  int top = LuaDLL.lua_gettop(l);\n\n4 matches across 2 files\n",
-			"settings":
-			{
-				"buffer_size": 32240,
-				"line_ending": "Windows",
-				"name": "Find Results",
-				"scratch": true
 			}
 		},
 		{
 			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs",
 			"settings":
 			{
-				"buffer_size": 34585,
+				"buffer_size": 39993,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Transform.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs",
 			"settings":
 			{
-				"buffer_size": 24403,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Object.cs",
-			"settings":
-			{
-				"buffer_size": 6806,
+				"buffer_size": 17428,
 				"line_ending": "Unix"
 			}
 		},
@@ -653,24 +666,161 @@
 			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs",
 			"settings":
 			{
-				"buffer_size": 22804,
+				"buffer_size": 22489,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/App/Scripts/Manager/UIManager.cs",
+			"contents": "ID,NAME,战场背景,背景音乐,体力消耗,层最大数,最大金币数,最大农场点,层1队列序号,层2队列序号,层3队列序号,层4队列序号,层5队列序号,层6队列序号,层7队列序号,层8队列序号,层9队列序号,层10队列序号,层11队列序号,层12队列序号,层13队列序号,层14队列序号,层15队列序号,精英怪,精英怪概率,宝箱怪概率,宝箱ID,宝箱掉落率,宝箱掉落金钱,宝箱金钱几率,宝箱掉落农场点,宝箱农场点几率,宝箱掉率怒气,宝箱怒气几率,宝箱掉落心,宝箱心几率,宝箱素材掉落率,掉落素材(权重算法),增加农场点,增加金币,获得经验数,描述\nID,Name,Scene,BGSound,HP Cost,MaxPass,MaxGold,MaxFarm,Pass1Queue,Pass2Queue,Pass3Queue,Pass4Queue,Pass5Queue,Pass6Queue,Pass7Queue,Pass8Queue,Pass9Queue,Pass10Queue,Pass11Queue,Pass12Queue,Pass13Queue,Pass14Queue,Pass15Queue,Jingying,JingyingRate,,,,DropGold,DropGoldRate,DropFarm,DropFarmRate,DropAnger,DropAngerRate,DropHeart,DropHeartRate,ItemDropRate,DropItem,AddFarm,AddJinbi,Exp,\n1,草原的试炼,BATTLE_Scene1,SD_BGM15混,3,3,500,300,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.2,2001:0.0181|2015:0.0181|2016:0.011|2034:0.0027,0,400,20,了解了基本的战斗情况后，让我们开始冒险之旅吧。\n2,精灵特攻,BATTLE_Scene1,SD_BGM15混,3,4,660,400,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.2,2001:0.0136|2015:0.0136|2016:0.0083|2021:0.0041|2035:0.0021|2040:0.0041|2046:0.0041,0,400,25,隐藏在草原中的精灵，正好适合新人用来练习技巧，一步步向前出发。\n3,草原之主,BATTLE_Scene1,SD_BGM15混,5,4,660,460,0,0,0,5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.2,2001:0.0149|2015:0.0149|2016:0.009|2036:0.0023|2046:0.0045|2052:0.0045,0,400,29,草原的边境之处拥有精灵王的守护，此处也是前往岩洞唯一途径。\n4,炎之王,BATTLE_Scene8,SD_BGM09火,3,3,1400,860,0,0,6,0,0,0,0,0,0,0,0,0,0,0,0,5,0.4,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0109|2004:0.0066|2009:0.0066|2015:0.0109|2016:0.0066|2021:0.0033|2031:0.0017|2040:0.0033,0,600,32,在岩洞的入口处就能感觉到炙热的气息，可想而知岩洞内是一副怎样的景象。\n5,炎之操纵者,BATTLE_Scene8,SD_BGM09火,3,4,2000,1240,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0095|2003:0.0095|2009:0.0057|2010:0.0029|2015:0.0095|2016:0.0057|2021:0.0029|2031:0.0014|2040:0.0029,0,600,35,岩洞不断的向前延伸，前方似乎有火焰高能存在。\n6,烈炎战将,BATTLE_Scene8,SD_BGM09火,4,4,2200,1360,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0085|2003:0.0085|2004:0.0052|2009:0.0052|2010:0.0026|2015:0.0085|2016:0.0052|2021:0.0026|2031:0.0013|2040:0.0026,0,600,50,不知不觉来到岩洞的深处，距离出口已经不远了。\n7,黑炎猛将,BATTLE_Scene8,SD_BGM09火,5,5,2400,1500,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.15,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0081|2003:0.0081|2004:0.0049|2009:0.0049|2010:0.0025|2015:0.0081|2016:0.0049|2021:0.0025|2027:0.0025|2031:0.0012|2040:0.0025,0,600,65,终于来到了出口，但是出口有着可怕的战士在此把守。\n8,冰之王,BATTLE_Scene2,SD_BGM10水,3,4,1600,1000,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.4,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0117|2004:0.0071|2011:0.0035|2015:0.0117|2016:0.0071|2027:0.0035|2032:0.0018|2040:0.0035,0,600,35,离开了岩洞后，马上进入了温度偏差极大的冰原。\n9,冰之操纵者,BATTLE_Scene2,SD_BGM10水,3,4,2100,1300,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0101|2003:0.0101|2011:0.003|2012:0.0061|2015:0.0101|2016:0.0061|2032:0.0015|2040:0.003,0,600,40,冰原中有位能够控制水的术士，要小心水属性的敌人。\n10,冰霜战将,BATTLE_Scene2,SD_BGM10水,4,4,2200,1360,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0092|2003:0.0092|2004:0.0056|2012:0.0056|2015:0.0092|2016:0.0056|2027:0.0028|2040:0.0028,0,600,53,据传闻在这片冰原上也有黄巾军正在四处为非作歹。\n11,冰枪霸王,BATTLE_Scene2,SD_BGM10水,5,5,2500,1560,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.15,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0077|2003:0.0077|2004:0.0047|2011:0.0023|2012:0.0047|2015:0.0077|2016:0.0047|2027:0.0023|2032:0.0012|2040:0.0023|2046:0.0023|2052:0.0023,0,600,83,就快要走出这片极寒的冰原，但是前方依然还有敌人等待着我们。\n12,林之王,BATTLE_Scene3,SD_BGM11木,3,4,1500,940,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.4,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0117|2004:0.0071|2011:0.0035|2015:0.0117|2016:0.0071|2027:0.0035|2033:0.0018|2052:0.0035,0,600,36,面前是一片非常寂静的森林，但是感觉每个角落都充满了危险。\n13,树之操纵者,BATTLE_Scene3,SD_BGM11木,3,4,2200,1360,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0107|2003:0.0107|2010:0.0032|2011:0.0032|2015:0.0107|2016:0.0065|2033:0.0016|2052:0.0032,0,600,42,寂静的环境加上错综的树枝，让人感觉非常容易迷失方向。\n14,丛林豪杰,BATTLE_Scene3,SD_BGM11木,4,4,2400,1500,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.009|2003:0.009|2004:0.0054|2010:0.0027|2011:0.0027|2015:0.009|2016:0.0054|2027:0.0027|2033:0.0014|2052:0.0027,0,600,57,在此的环境下，前方出现的敌人是我们无法回避的。\n15,丛林狩人,BATTLE_Scene3,SD_BGM11木,5,5,2600,1620,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.15,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2004:0.0105|2010:0.0053|2011:0.0053|2016:0.0105|2027:0.0053|2033:0.0026|2046:0.0053|2052:0.0053,0,600,84,森林最深部有位使用弓箭的危险狩人，对敌人毫不留情。\n16,雷之王,BATTLE_Scene4,SD_BGM12雷,3,4,1800,1120,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.4,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0109|2004:0.0066|2009:0.0066|2015:0.0109|2016:0.0066|2027:0.0033|2034:0.0017|2046:0.0033,0,600,41,寸步难行的沼泽，时不时会传来轰雷的响声，让人感觉非常不适。\n17,雷之操纵者,BATTLE_Scene4,SD_BGM12雷,3,4,2600,1620,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0095|2003:0.0095|2009:0.0057|2012:0.0057|2015:0.0095|2016:0.0057|2034:0.0014|2046:0.0029,0,600,47,不断的向前进发，但是这个环境下确实是一个非常大的挑战。\n18,飞砂风雷,BATTLE_Scene4,SD_BGM12雷,4,4,2700,1680,0,0,0,6,0,0,0,0,0,0,0,0,0,0,0,5,0.2,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0081|2003:0.0081|2004:0.0049|2009:0.0049|2012:0.0049|2015:0.0081|2016:0.0049|2027:0.0025|2034:0.0012|2046:0.0025,0,600,59,即便是在这种时候，依然有敌人出现，看来只能硬拼了。\n19,雷光一闪,BATTLE_Scene4,SD_BGM12雷,5,5,2900,1800,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.15,0.1,1,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0081|2003:0.0081|2004:0.0049|2009:0.0049|2012:0.0049|2015:0.0081|2016:0.0049|2027:0.0025|2034:0.0012|2046:0.0025,0,600,87,就要快要离开沼泽了，突然出现在我们面前的是昔日的御史中丞。\n20,光之王,BATTLE_Scene5,SD_BGM13光,4,5,2400,1500,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0109|2004:0.0066|2014:0.0066|2015:0.0109|2016:0.0066|2021:0.0033|2035:0.0017|2046:0.0033,0,600,44,一座散发出神圣气息的神殿，但是不可以大意。\n21,光之操纵者,BATTLE_Scene5,SD_BGM13光,4,5,3200,2000,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0101|2003:0.0101|2010:0.003|2014:0.0061|2015:0.0101|2016:0.0061|2035:0.0015|2046:0.003,0,600,57,神殿的内部，阻挡在前方是使用光之力量的术士。\n22,光之白马,BATTLE_Scene5,SD_BGM13光,5,5,3600,2240,0,0,0,0,6,0,0,0,0,0,0,0,0,0,0,5,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0085|2003:0.0085|2004:0.0052|2010:0.0026|2014:0.0052|2015:0.0085|2016:0.0052|2027:0.0026|2035:0.0013|2046:0.0026,0,600,62,阻挡在我们的前面的是？？看来他的攻击会毫不留情。\n23,圣光皇后,BATTLE_Scene5,SD_BGM13光,7,6,4000,2500,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0096|2003:0.0096|2004:0.0058|2010:0.0029|2014:0.0058|2016:0.0058|2027:0.0029|2035:0.0015|2040:0.0029|2046:0.0029,0,600,89,神殿的中心点，如果不证明自己的实力，不会轻易让我们离开的。\n24,暗之王,BATTLE_Scene6,SD_BGM14暗,4,5,2600,1620,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0109|2004:0.0066|2013:0.0066|2015:0.0109|2016:0.0066|2021:0.0033|2027:0.0033|2036:0.0017,0,600,46,这里给人一种毛骨悚然的气息，看来又是一场恶战。\n25,暗之操纵者,BATTLE_Scene6,SD_BGM14暗,4,5,3200,2000,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0095|2003:0.0095|2012:0.0057|2013:0.0057|2015:0.0095|2016:0.0057|2021:0.0029|2036:0.0014,0,600,57,虽然光之力量可以克制暗之力量，但是也会被暗之力量克制，要考虑下怎么对付。\n26,魅惑之争,BATTLE_Scene6,SD_BGM14暗,5,5,4000,2500,0,0,0,0,7,0,0,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0081|2003:0.0081|2004:0.0049|2012:0.0049|2013:0.0049|2015:0.0081|2016:0.0049|2021:0.0025|2027:0.0025|2036:0.0012,0,600,65,黄巾军首领之一的“人公将军”似乎正在此处谋划着一些什么，赶快去阻止他。\n27,不屈的战将,BATTLE_Scene6,SD_BGM14暗,7,6,5000,3120,0,0,0,0,0,7,0,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0074|2003:0.0074|2004:0.0045|2012:0.0045|2013:0.0045|2015:0.0074|2016:0.0045|2021:0.0022|2027:0.0022|2036:0.0011|2046:0.0022|2052:0.0022,0,600,91,墓地的最深处，我们继续前进，不知会遇到谁~~\n28,金碧神殿,BATTLE_Scene7,SD_BGM15混,5,7,4400,2740,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0074|2003:0.0074|2004:0.0045|2012:0.0045|2013:0.0045|2015:0.0074|2016:0.0045|2021:0.0022|2027:0.0022|2036:0.0011|2046:0.0022|2052:0.0022,0,800,90,根据情报来到遗迹之塔，除了一些小魔物并未发现其他线索。\n29,神兽来袭,BATTLE_Scene7,SD_BGM15混,5,7,4400,2740,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0066|2003:0.0066|2004:0.004|2009:0.004|2010:0.002|2011:0.002|2013:0.004|2014:0.004|2015:0.0066|2021:0.002|2027:0.002|2040:0.002|2046:0.002|2052:0.002,0,800,105,打听到了关于白虎的传说，最近一段时间经常出没在此。\n30,王者降临,BATTLE_Scene7,SD_BGM15混,6,7,4800,3000,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.006|2003:0.006|2004:0.0037|2009:0.0037|2010:0.0018|2011:0.0018|2013:0.0037|2014:0.0037|2015:0.006|2016:0.0037|2021:0.0018|2027:0.0018|2040:0.0018|2046:0.0018|2052:0.0018|2062:0.0007,0,800,110,周围情况似乎有点异常，感觉到非常强大的王者之气。\n31,四方魔物,BATTLE_Scene7,SD_BGM15混,6,7,4800,3000,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0057|2003:0.0057|2004:0.0035|2009:0.0035|2010:0.0017|2011:0.0017|2012:0.0035|2013:0.0035|2014:0.0035|2015:0.0057|2016:0.0035|2021:0.0017|2027:0.0017|2040:0.0017|2046:0.0017|2052:0.0017,0,800,130,拥有四属性的神秘敌人，很多勇士都止步于此。\n32,黄巾之乱,BATTLE_Scene7,SD_BGM15混,8,8,10000,5000,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,2,0.05,15,0.2,10,0.2,20,0.2,6,0.2,0.3,2001:0.0059|2003:0.0059|2004:0.0036|2009:0.0036|2010:0.0018|2011:0.0018|2012:0.0036|2013:0.0036|2014:0.0036|2015:0.0059|2018:0.0013|2021:0.0018|2027:0.0018|2040:0.0018|2046:0.0018|2052:0.0018|2062:0.0007,0,800,180,眼前就是黄巾军的首领张角，决战一触即发！！！\n33,灼炎战将,BATTLE_Scene8,SD_BGM09火,3,7,6000,3740,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0091|2003:0.0091|2005:0.0027|2009:0.0055|2015:0.0091|2016:0.0055|2018:0.0019|2022:0.0014|2041:0.0014|2049:0.0027|2061:0.0008|2063:0.0008,0,700,180,在击败了张角之后来到了此处，岩浆如同血脉一般在地表流动。\n34,烈炎猛将,BATTLE_Scene8,SD_BGM09火,3,7,4000,2500,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0096|2003:0.0096|2005:0.0029|2009:0.0058|2015:0.0096|2016:0.0058|2022:0.0015|2041:0.0015|2049:0.0029|2061:0.0009,0,700,230,在如此严酷的坏境下仍有黄巾余党在此作乱，看来此战无法避免。\n35,炽炎骁将,BATTLE_Scene8,SD_BGM09火,4,8,4600,2860,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0091|2003:0.0091|2005:0.0027|2009:0.0055|2015:0.0091|2016:0.0055|2018:0.0019|2022:0.0014|2041:0.0014|2049:0.0027|2061:0.0008|2063:0.0008,0,700,280,此处的中央区域，有着强悍的敌人把守，不知是否可以安全通过。\n36,绯焰公主,BATTLE_Scene8,SD_BGM09火,4,8,4400,2740,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0096|2003:0.0096|2005:0.0029|2009:0.0058|2015:0.0096|2016:0.0058|2022:0.0015|2041:0.0015|2049:0.0029|2061:0.0009,0,700,300,遇到了公主殿下，不知能否帮助我们。\n37,烈焰霸王,BATTLE_Scene8,SD_BGM09火,5,9,9000,5620,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0091|2003:0.0091|2005:0.0027|2009:0.0055|2015:0.0091|2016:0.0055|2018:0.0019|2022:0.0014|2041:0.0014|2049:0.0027|2061:0.0008|2063:0.0008,0,700,600,烈焰的王者就在前方，不知道会发生什么。\n38,寒冰骑士,BATTLE_Scene2,SD_BGM10水,5,7,5200,3240,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0107|2005:0.0032|2006:0.0032|2011:0.0032|2015:0.0107|2016:0.0065|2018:0.0023|2041:0.0016|2049:0.0032|2052:0.0032|2061:0.001|2063:0.001,0,700,220,平安通过了如此炎热的地方，紧接着是一个寒冷的洞窟。\n39,冰封猛将,BATTLE_Scene2,SD_BGM10水,5,7,4400,2740,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0115|2005:0.0035|2006:0.0035|2011:0.0035|2015:0.0115|2016:0.0069|2041:0.0017|2049:0.0035|2052:0.0035|2061:0.001,0,700,260,洞窟中镇守的猛将不会轻易放我们过去。\n40,星霜霸主,BATTLE_Scene2,SD_BGM10水,7,8,5000,3120,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0107|2005:0.0032|2006:0.0032|2011:0.0032|2015:0.0107|2016:0.0065|2018:0.0023|2041:0.0016|2049:0.0032|2052:0.0032|2061:0.001|2063:0.001,0,700,310,考验我们力量的时候到了，向霸主挥刀吧。\n41,冰刃皇后,BATTLE_Scene2,SD_BGM10水,7,8,4800,3000,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0115|2005:0.0035|2006:0.0035|2011:0.0035|2015:0.0115|2016:0.0069|2041:0.0017|2049:0.0035|2052:0.0035|2061:0.001,0,700,380,如此美丽的女性，为何会在此？她的身份让人捉摸不透。\n42,玄冰帝王,BATTLE_Scene2,SD_BGM10水,9,9,9400,5860,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0107|2005:0.0032|2006:0.0032|2011:0.0032|2015:0.0107|2016:0.0065|2018:0.0023|2041:0.0016|2049:0.0032|2052:0.0032|2061:0.001|2063:0.001,0,700,650,传说中的帝王，我们必须向他证明我们的实力才行。\n43,林海策士,BATTLE_Scene3,SD_BGM11木,5,7,6800,4240,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2005:0.0037|2007:0.0037|2010:0.0037|2012:0.0074|2015:0.0121|2016:0.0074|2018:0.0026|2038:0.0011|2047:0.0018|2049:0.0037|2053:0.0018|2061:0.0011,0,700,240,眼前是一片丛林，在其深处又有什么在等待着我们呢。\n44,山林猛将,BATTLE_Scene3,SD_BGM11木,5,7,4800,3000,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2005:0.004|2007:0.004|2010:0.004|2012:0.0079|2015:0.0131|2016:0.0079|2047:0.002|2049:0.004|2053:0.002|2061:0.0012,0,700,280,灰暗的光线加上高大的树木，让人觉得一直在这里徘徊。\n45,翠风飞将,BATTLE_Scene3,SD_BGM11木,7,8,5400,3360,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2005:0.0037|2007:0.0037|2010:0.0037|2012:0.0074|2015:0.0121|2016:0.0074|2018:0.0026|2038:0.0011|2047:0.0018|2049:0.0037|2053:0.0018|2061:0.0011,0,700,330,一点一点前进，要注意周围突如其来的敌人。\n46,密林倩影,BATTLE_Scene3,SD_BGM11木,7,8,5000,3120,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2005:0.004|2007:0.004|2010:0.004|2012:0.0079|2015:0.0131|2016:0.0079|2047:0.002|2049:0.004|2053:0.002|2061:0.0012,0,700,410,咦？前面有位女性的将军，让我们快去一探究竟。\n47,大地仁君,BATTLE_Scene3,SD_BGM11木,9,9,9600,6000,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2005:0.0037|2007:0.0037|2010:0.0037|2012:0.0074|2015:0.0121|2016:0.0074|2018:0.0026|2038:0.0011|2047:0.0018|2049:0.0037|2053:0.0018|2061:0.0011,0,700,700,真没想到居然能够在此遇到玄德公！！！\n48,雷暴战将,BATTLE_Scene4,SD_BGM12雷,5,7,7200,4500,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0104|2005:0.0031|2006:0.0031|2012:0.0063|2015:0.0104|2016:0.0063|2018:0.0022|2022:0.0016|2038:0.0009|2047:0.0016|2049:0.0031|2061:0.0009,0,700,280,轰雷的响声，似乎有危机即将到来。\n49,奔雷猛将,BATTLE_Scene4,SD_BGM12雷,5,7,5200,3240,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0111|2005:0.0034|2006:0.0034|2012:0.0067|2015:0.0111|2016:0.0067|2022:0.0017|2047:0.0017|2049:0.0034|2061:0.001,0,700,350,突如其来的黄巾余党不顾一切向我们袭来，赶快迎击。\n50,迅雷一闪,BATTLE_Scene4,SD_BGM12雷,7,8,5200,3240,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0104|2005:0.0031|2006:0.0031|2012:0.0063|2015:0.0104|2016:0.0063|2018:0.0022|2022:0.0016|2038:0.0009|2047:0.0016|2049:0.0031|2061:0.0009,0,700,390,高地的中央地段，似乎有敌人在追逐我们。\n51,雷光夫人,BATTLE_Scene4,SD_BGM12雷,7,8,5200,3240,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0111|2005:0.0034|2006:0.0034|2012:0.0067|2015:0.0111|2016:0.0067|2022:0.0017|2047:0.0017|2049:0.0034|2061:0.001,0,700,450,在这雷鸣高地竟然出现一位贵妇的身影…\n52,倾国倾城,BATTLE_Scene4,SD_BGM12雷,9,9,10000,6240,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,3,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2001:0.0104|2005:0.0031|2006:0.0031|2012:0.0063|2015:0.0104|2016:0.0063|2018:0.0022|2022:0.0016|2038:0.0009|2047:0.0016|2049:0.0031|2061:0.0009,0,700,760,传说中这里居住着一位倾国倾城的绝世美女。\n53,曙光皇后,BATTLE_Scene5,SD_BGM13光,6,7,7600,4740,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0036|2003:0.012|2005:0.0036|2007:0.0036|2014:0.0073|2016:0.0073|2018:0.0026|2022:0.0018|2041:0.0018|2043:0.0015|2049:0.0036|2061:0.0011,0,700,350,此处给人温馨和安详的感觉，真希望能够居住在这里。\n54,闪光白驹,BATTLE_Scene5,SD_BGM13光,6,7,5600,3500,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.004|2003:0.0131|2005:0.004|2007:0.004|2014:0.0079|2016:0.0079|2022:0.002|2041:0.002|2049:0.004|2061:0.0012,0,700,460,似乎听到马蹄声，一道白光急速接近中，那是？\n55,光辉女神,BATTLE_Scene5,SD_BGM13光,8,8,5400,3360,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0036|2003:0.012|2005:0.0036|2007:0.0036|2014:0.0073|2016:0.0073|2018:0.0026|2022:0.0018|2041:0.0018|2043:0.0015|2049:0.0036|2061:0.0011,0,700,540,好刺眼的光芒，散发出一股庄严的气息。\n56,月下圣兽,BATTLE_Scene5,SD_BGM13光,8,8,5000,3120,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.004|2003:0.0131|2005:0.004|2007:0.004|2014:0.0079|2016:0.0079|2022:0.002|2041:0.002|2049:0.004|2061:0.0012,0,700,560,隐约感觉到一股非常强大的力量，会是什么呢？\n57,天剑神威,BATTLE_Scene5,SD_BGM13光,10,9,10800,6740,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0036|2003:0.012|2005:0.0036|2007:0.0036|2014:0.0073|2016:0.0073|2018:0.0026|2022:0.0018|2041:0.0018|2043:0.0015|2049:0.0036|2061:0.0011,0,700,800,天剑的王者就在前方，向他展现出你的力量吧！！\n58,暗影策士,BATTLE_Scene6,SD_BGM14暗,6,7,8000,5000,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2003:0.0097|2005:0.0029|2006:0.0029|2010:0.0029|2012:0.0059|2013:0.0059|2016:0.0059|2017:0.0038|2018:0.0021|2043:0.0012|2047:0.0015|2049:0.0029|2053:0.0015|2061:0.0009,0,700,380,这个墓穴让人感觉随时都会敌人出现，要小心。\n59,深渊将军,BATTLE_Scene6,SD_BGM14暗,6,7,6400,4000,0,0,0,0,0,0,7,0,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2003:0.0104|2005:0.0031|2006:0.0031|2010:0.0031|2012:0.0063|2013:0.0063|2016:0.0063|2017:0.0041|2047:0.0016|2049:0.0031|2053:0.0016|2061:0.0009,0,700,490,在墓穴中休养生息的黄巾将军，除了击败他没有其他前进的方法\n60,幽冥狂战,BATTLE_Scene6,SD_BGM14暗,8,8,5600,3500,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2003:0.0097|2005:0.0029|2006:0.0029|2010:0.0029|2012:0.0059|2013:0.0059|2016:0.0059|2017:0.0038|2018:0.0021|2043:0.0012|2047:0.0015|2049:0.0029|2053:0.0015|2061:0.0009,0,700,580,墓穴的中端有位异常勇猛的武将等待着我们，看来必须击败他才能继续前进。\n61,妖媚女皇,BATTLE_Scene6,SD_BGM14暗,8,8,5600,3500,0,0,0,0,0,0,0,7,0,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2003:0.0104|2005:0.0031|2006:0.0031|2010:0.0031|2012:0.0063|2013:0.0063|2016:0.0063|2017:0.0041|2047:0.0016|2049:0.0031|2053:0.0016|2061:0.0009,0,700,600,前方传来一股暗之力量，很多冒险者都在此失败了。\n62,混世魔王,BATTLE_Scene6,SD_BGM14暗,10,9,10800,6740,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2003:0.0097|2005:0.0029|2006:0.0029|2010:0.0029|2012:0.0059|2013:0.0059|2016:0.0059|2017:0.0038|2018:0.0021|2043:0.0012|2047:0.0015|2049:0.0029|2053:0.0015|2061:0.0009,0,700,860,墓穴中的魔王，他的存在让人感觉不寒而栗。\n63,朱雀来袭,BATTLE_Scene7,SD_BGM15混,7,9,11000,6860,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.003|2003:0.0098|2005:0.003|2006:0.003|2007:0.003|2009:0.0059|2011:0.003|2012:0.0059|2017:0.0038|2022:0.0015|2031:0.0015|2041:0.0015|2046:0.003|2053:0.0015|2063:0.0009,0,1000,450,终于到达了洛阳金殿，这里是董卓在洛阳地区的据点。\n64,青龙降临,BATTLE_Scene7,SD_BGM15混,7,9,11400,7120,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.003|2003:0.0098|2005:0.003|2006:0.003|2007:0.003|2009:0.0059|2011:0.003|2012:0.0059|2017:0.0038|2022:0.0015|2032:0.0015|2038:0.0009|2041:0.0015|2046:0.003|2053:0.0015,0,1000,520,远方依稀可以看到一只神兽，不知它的存在是否是为了守护这座金殿。\n65,雷炎智将,BATTLE_Scene7,SD_BGM15混,8,9,10000,6240,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0023|2003:0.0076|2005:0.0023|2006:0.0023|2007:0.0023|2009:0.0046|2011:0.0023|2012:0.0046|2013:0.0046|2014:0.0046|2017:0.003|2022:0.0012|2031:0.0012|2041:0.0012|2047:0.0012|2049:0.0023|2053:0.0012|2061:0.0007|2063:0.0007,0,1000,600,雷与火的交加，我们需要寻找能够击败他们的方法。\n66,冰树骁将,BATTLE_Scene7,SD_BGM15混,8,9,10400,6500,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0023|2003:0.0076|2005:0.0023|2006:0.0023|2007:0.0023|2009:0.0046|2011:0.0023|2012:0.0046|2013:0.0046|2014:0.0046|2017:0.003|2022:0.0012|2032:0.0012|2038:0.0007|2041:0.0012|2047:0.0012|2049:0.0023|2053:0.0012|2061:0.0007,0,1000,600,冰与树的交加，除了击败他们没有其他方法前进。\n67,光暗神将,BATTLE_Scene7,SD_BGM15混,9,9,10600,6620,0,0,0,0,0,0,0,0,7,0,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0023|2003:0.0077|2005:0.0023|2006:0.0023|2007:0.0023|2009:0.0047|2010:0.0023|2011:0.0023|2012:0.0047|2013:0.0047|2014:0.0047|2017:0.003|2022:0.0012|2035:0.0012|2041:0.0012|2043:0.0009|2047:0.0012|2053:0.0012,0,1000,800,光与暗的交加，看来我们只能输死一搏，这是前往金殿最后一关。\n68,董卓讨伐战,BATTLE_Scene7,SD_BGM15混,10,10,16000,10000,0,0,0,0,0,0,0,0,0,7,0,0,0,0,0,6,0.1,0.1,4,0.05,25,0.2,20,0.2,20,0.2,6,0.2,0.3,2002:0.0023|2003:0.0075|2005:0.0023|2006:0.0023|2007:0.0023|2009:0.0045|2010:0.0023|2011:0.0023|2012:0.0045|2013:0.0045|2014:0.0045|2017:0.003|2027:0.0023|2036:0.0011|2041:0.0011|2043:0.0009|2047:0.0011|2053:0.0011,0,1000,1000,魔王董卓出现！在此一决雌雄吧！\n69,赤炎公主,BATTLE_Scene8,SD_BGM09火,8,8,7000,4360,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0105|2002:0.0032|2003:0.0105|2005:0.0032|2015:0.0105|2017:0.0041|2023:0.001|2031:0.0016|2043:0.0013|2049:0.0032|2061:0.001,0,800,800,在这片新的区域，逼人的热气，让人预感到未来的一番激战。\n70,火焰战驹,BATTLE_Scene8,SD_BGM09火,8,8,7000,4360,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0105|2002:0.0032|2003:0.0105|2005:0.0032|2015:0.0105|2017:0.0041|2023:0.001|2031:0.0016|2043:0.0013|2049:0.0032|2061:0.001,0,800,1000,这里的沙漠温度非常的炎热，不知道还会有人来此吗？\n71,烽火军师,BATTLE_Scene8,SD_BGM09火,9,9,15000,9360,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0094|2002:0.0029|2003:0.0094|2005:0.0029|2015:0.0094|2017:0.0037|2023:0.0009|2031:0.0014|2037:0.0009|2043:0.0011|2046:0.0029|2049:0.0029|2059:0.0014|2061:0.0009,0,800,1300,沙漠的中端居住着一位曾经参与过多场经典战役军师。\n72,灼热炎兽,BATTLE_Scene8,SD_BGM09火,9,9,16000,10000,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0093|2002:0.0028|2003:0.0093|2005:0.0028|2015:0.0093|2017:0.0037|2019:0.0028|2023:0.0008|2031:0.0014|2043:0.0011|2046:0.0028|2049:0.0028|2061:0.0008,0,800,1500,这里有一只极度凶残，天生神力的一只神兽\n73,朱雀降临,BATTLE_Scene8,SD_BGM09火,12,11,18000,11240,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0097|2002:0.0029|2003:0.0097|2005:0.0029|2015:0.0097|2017:0.0038|2023:0.0009|2031:0.0015|2043:0.0012|2046:0.0029|2049:0.0029|2060:0.0009|2061:0.0009,0,800,2000,沙漠的最后阶段，镇守此地的是一只鸟型神兽。\n74,寒霜女王,BATTLE_Scene2,SD_BGM10水,8,8,6400,4000,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0126|2005:0.0038|2011:0.0038|2015:0.0126|2017:0.005|2018:0.0027|2032:0.0019|2043:0.0015|2049:0.0038|2054:0.0011|2061:0.0011,0,800,930,穿越了沙漠后来到了山道，这里下着大雪，温度非常低。\n75,冰结智将,BATTLE_Scene2,SD_BGM10水,8,8,6400,4000,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0126|2005:0.0038|2011:0.0038|2015:0.0126|2017:0.005|2018:0.0027|2032:0.0019|2043:0.0015|2049:0.0038|2054:0.0011|2061:0.0011,0,800,1260,在暴风雪的情况下，越往前走越不知方向，要小心周围的魔物。\n76,星霜银枪,BATTLE_Scene2,SD_BGM10水,9,9,15600,9740,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0117|2005:0.0035|2011:0.0035|2015:0.0117|2017:0.0046|2018:0.0025|2032:0.0018|2037:0.0011|2043:0.0014|2049:0.0035|2054:0.0011|2059:0.0018|2061:0.0011|2065:0.0007,0,800,1440,在几乎迷失方向之时，遇见到一位名将，希望他能帮助我们。\n77,沉鱼落雁,BATTLE_Scene2,SD_BGM10水,9,9,16000,10000,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0124|2005:0.0038|2011:0.0038|2015:0.0124|2017:0.0049|2018:0.0026|2032:0.0019|2043:0.0015|2049:0.0038|2054:0.0011|2061:0.0011|2065:0.0008,0,800,1860,虽然战胜了名将，但是前面还有更多的敌人等待着我们。\n78,青龙升天,BATTLE_Scene2,SD_BGM10水,12,11,17000,10620,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0124|2005:0.0038|2011:0.0038|2015:0.0124|2017:0.0049|2018:0.0026|2032:0.0019|2043:0.0015|2049:0.0038|2054:0.0011|2061:0.0011|2065:0.0008,0,800,2230,寒冷的山道最后阶段，镇守此地的是一只龙形神兽。\n79,青竹女杰,BATTLE_Scene3,SD_BGM11木,8,8,6400,4000,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0106|2003:0.0106|2005:0.0032|2014:0.0064|2015:0.0106|2023:0.001|2033:0.0016|2048:0.001|2049:0.0032|2054:0.001|2061:0.001,0,800,1050,山道的另一端，是个被血色染红的森林，让人感觉不适。\n80,绿影古马,BATTLE_Scene3,SD_BGM11木,8,8,6400,4000,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0106|2003:0.0106|2005:0.0032|2014:0.0064|2015:0.0106|2023:0.001|2033:0.0016|2048:0.001|2049:0.0032|2054:0.001|2061:0.001,0,800,1360,错综的树枝让人在其中……当心迷失方向哦！~\n81,青龙偃月,BATTLE_Scene3,SD_BGM11木,8,9,17200,10740,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0099|2003:0.0099|2005:0.003|2014:0.006|2015:0.0099|2023:0.0009|2029:0.0009|2033:0.0015|2037:0.0009|2048:0.0009|2049:0.003|2054:0.0009|2059:0.0015|2061:0.0009,0,800,1750,血森中的镇守大将，使用一把非常巨大的刀作为武器。\n82,闭月羞花,BATTLE_Scene3,SD_BGM11木,8,9,16000,10000,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0098|2003:0.0098|2005:0.003|2014:0.0059|2015:0.0098|2019:0.003|2023:0.0009|2029:0.0009|2033:0.0015|2048:0.0009|2049:0.003|2054:0.0009|2061:0.0009,0,800,1930,没想到这片森林中还居住一位美女夫人，不知道这片鲜红的血森是否与她有关系。\n83,玄武出阵,BATTLE_Scene3,SD_BGM11木,10,11,18000,11240,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0102|2003:0.0102|2005:0.0031|2014:0.0062|2015:0.0102|2023:0.0009|2029:0.0009|2033:0.0015|2048:0.0009|2049:0.0031|2054:0.0009|2060:0.0009|2061:0.0009,0,800,2220,血红的森林最后阶段，镇守此地的是一只龟形神兽。\n84,慈爱之心,BATTLE_Scene4,SD_BGM12雷,8,8,6600,4120,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2003:0.0108|2006:0.0033|2009:0.0065|2011:0.0033|2013:0.0065|2015:0.0108|2023:0.001|2028:0.001|2034:0.0016|2048:0.001|2049:0.0033|2061:0.001,0,800,1080,充满着雷气的一块荒地，要小心到处的电击。\n85,雷霆战将,BATTLE_Scene4,SD_BGM12雷,8,8,6600,4120,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2003:0.0108|2006:0.0033|2009:0.0065|2011:0.0033|2013:0.0065|2015:0.0108|2023:0.001|2028:0.001|2034:0.0016|2048:0.001|2049:0.0033|2061:0.001,0,800,1380,在如此环境下，依然拥有勇者在此活动，此人必定有方法对付雷击。\n86,雷池天师,BATTLE_Scene4,SD_BGM12雷,8,9,15600,9740,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2003:0.0101|2006:0.003|2009:0.0061|2011:0.003|2013:0.0061|2015:0.0101|2023:0.0009|2028:0.0009|2034:0.0015|2037:0.0009|2044:0.0009|2048:0.0009|2049:0.003|2059:0.0015|2061:0.0009,0,800,1780,令人感到不适的地方，前方有人阻挡在面前...是被称为天师的英雄。\n87,雷鸣金刚,BATTLE_Scene4,SD_BGM12雷,8,9,16000,10000,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2003:0.0106|2006:0.0032|2009:0.0064|2011:0.0032|2013:0.0064|2015:0.0106|2023:0.001|2028:0.001|2034:0.0016|2044:0.001|2048:0.001|2049:0.0032|2061:0.001,0,800,2010,荒地的后端地区，雷电越来越强大，不知会发生什么事情？\n88,白虎咆哮,BATTLE_Scene4,SD_BGM12雷,10,11,17000,10620,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,5,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2003:0.0101|2006:0.0031|2009:0.0061|2011:0.0031|2013:0.0061|2015:0.0101|2018:0.0021|2023:0.0009|2028:0.0009|2034:0.0015|2044:0.0009|2048:0.0009|2049:0.0031|2061:0.0009,0,800,2350,风雨交加的荒地最后阶段，镇守此地的是一只虎形神兽。\n89,祥和之光,BATTLE_Scene5,SD_BGM13光,9,8,7000,4360,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0092|2003:0.0092|2007:0.0028|2011:0.0028|2013:0.0056|2014:0.0056|2015:0.0092|2035:0.0014|2037:0.0008|2049:0.0028|2061:0.0008,0,800,1250,令人感到神圣的神域，可以依稀感觉到光明的力量。\n90,白色闪电,BATTLE_Scene5,SD_BGM13光,9,8,7000,4360,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0092|2003:0.0092|2007:0.0028|2011:0.0028|2013:0.0056|2014:0.0056|2015:0.0092|2035:0.0014|2037:0.0008|2049:0.0028|2061:0.0008,0,800,1430,前方一股巨大的神秘力量，不知是敌是友。\n91,神域骁将,BATTLE_Scene5,SD_BGM13光,9,9,17000,10620,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0088|2003:0.0088|2007:0.0027|2011:0.0027|2013:0.0053|2014:0.0053|2015:0.0088|2035:0.0013|2037:0.0008|2049:0.0027|2059:0.0013|2061:0.0008|2066:0.0005,0,800,1820,能够散发出如此强烈的光之力量，绝非等闲之辈。\n92,光旋女王,BATTLE_Scene5,SD_BGM13光,9,9,17400,10860,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0086|2003:0.0086|2007:0.0026|2011:0.0026|2013:0.0052|2014:0.0052|2015:0.0086|2019:0.0026|2035:0.0013|2037:0.0008|2049:0.0026|2061:0.0008|2066:0.0005,0,800,2050,神域的守护，多年来一直在此守护，向她证明你的实力！\n93,白光圣兽,BATTLE_Scene5,SD_BGM13光,12,11,18000,11240,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0089|2003:0.0089|2007:0.0027|2011:0.0027|2013:0.0054|2014:0.0054|2015:0.0089|2035:0.0014|2037:0.0008|2049:0.0027|2060:0.0008|2061:0.0008|2066:0.0005,0,800,2400,神域中常年居住着一只人类从未见过，实力不会输给四神兽的圣兽。\n94,魅惑刀锋,BATTLE_Scene6,SD_BGM14暗,9,8,6000,3740,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0089|2002:0.0027|2003:0.0089|2006:0.0027|2009:0.0054|2014:0.0054|2015:0.0089|2028:0.0008|2036:0.0014|2049:0.0027|2059:0.0014|2061:0.0008,0,800,1280,一个充满了怨念和魔物的魔洞，似乎从没人进去再出来过。\n95,混沌狂战,BATTLE_Scene6,SD_BGM14暗,9,8,6000,3740,0,0,0,0,0,0,0,8,0,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0089|2002:0.0027|2003:0.0089|2006:0.0027|2009:0.0054|2014:0.0054|2015:0.0089|2028:0.0008|2036:0.0014|2049:0.0027|2059:0.0014|2061:0.0008,0,800,1460,在这等环境下，敌人的偷袭变得易如反掌。\n96,漆黑战将,BATTLE_Scene6,SD_BGM14暗,9,9,17000,10620,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0088|2002:0.0027|2003:0.0088|2006:0.0027|2009:0.0053|2014:0.0053|2015:0.0088|2028:0.0008|2036:0.0013|2049:0.0027|2059:0.0013|2061:0.0008|2066:0.0005,0,800,1850,魔洞的中央，必须集中精力不知还会冒出什么样子的敌人。\n97,鬼才相师,BATTLE_Scene6,SD_BGM14暗,9,9,16600,10360,0,0,0,0,0,0,0,0,8,0,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0088|2002:0.0027|2003:0.0088|2006:0.0027|2009:0.0053|2014:0.0053|2015:0.0088|2028:0.0008|2036:0.0013|2049:0.0027|2059:0.0013|2061:0.0008|2066:0.0005,0,800,2100,因自身的才能无所作为从而堕落成魔，在此修炼的策士。\n98,修罗战神,BATTLE_Scene6,SD_BGM14暗,12,11,18000,11240,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0085|2002:0.0026|2003:0.0085|2006:0.0026|2009:0.0052|2014:0.0052|2015:0.0085|2018:0.0018|2028:0.0008|2036:0.0013|2049:0.0026|2059:0.0013|2061:0.0008|2066:0.0005,0,800,2440,魔洞的出口，有看守大将保护，我们必须击败他继续前进。\n99,前往幽暗城,BATTLE_Scene7,SD_BGM15混,9,10,9000,5620,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0066|2002:0.002|2005:0.002|2006:0.002|2009:0.004|2011:0.002|2013:0.004|2014:0.004|2015:0.0066|2017:0.0026|2018:0.0014|2019:0.002|2023:0.0006|2028:0.0006|2031:0.001|2032:0.001|2033:0.001|2034:0.001|2035:0.001|2036:0.001|2042:0.0006|2048:0.0006|2054:0.0006|2059:0.001|2060:0.0006,0,1200,1600,终于来到了修罗战场，这里是最主要一个据点。\n100,天火的智将,BATTLE_Scene7,SD_BGM15混,9,10,8000,5000,0,0,0,0,0,0,0,0,0,8,0,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0065|2002:0.002|2005:0.002|2006:0.002|2009:0.004|2011:0.002|2013:0.004|2014:0.004|2015:0.0065|2017:0.0026|2018:0.0014|2019:0.002|2023:0.0006|2028:0.0006|2031:0.001|2032:0.001|2033:0.001|2034:0.001|2035:0.001|2036:0.001|2037:0.0006|2042:0.0006|2048:0.0006|2054:0.0006|2059:0.001|2060:0.0006,0,1200,2000,进入战场中，圣邪的力量混入在其中，让人感到异样。\n101,魔王的幻影,BATTLE_Scene7,SD_BGM15混,9,11,8000,5000,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0056|2002:0.0017|2003:0.0056|2005:0.0017|2006:0.0017|2007:0.0017|2009:0.0034|2011:0.0017|2013:0.0034|2014:0.0034|2015:0.0056|2017:0.0022|2018:0.0012|2019:0.0017|2023:0.0005|2028:0.0005|2031:0.0008|2032:0.0008|2033:0.0008|2034:0.0008|2035:0.0008|2036:0.0008|2037:0.0005|2042:0.0005|2048:0.0005|2054:0.0005|2059:0.0008|2060:0.0005|2066:0.0003,0,1200,2300,不愧是最终的大本营，在这片战场中召唤出来的所有人，都有着强大的力量。\n102,乱世之天剑,BATTLE_Scene7,SD_BGM15混,10,11,10000,6240,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0058|2002:0.0018|2003:0.0058|2005:0.0018|2006:0.0018|2007:0.0018|2009:0.0035|2011:0.0018|2013:0.0035|2014:0.0035|2015:0.0058|2017:0.0023|2018:0.0012|2023:0.0005|2028:0.0005|2031:0.0009|2032:0.0009|2033:0.0009|2034:0.0009|2035:0.0009|2036:0.0009|2037:0.0005|2042:0.0005|2048:0.0005|2054:0.0005|2059:0.0009|2066:0.0004,0,1200,2500,过去以华贵为荣的战场，如今虽然还保持着庄严，但是空气中混杂着强烈的邪恶气息 。\n103,黎明的勇者,BATTLE_Scene7,SD_BGM15混,10,11,8000,5000,0,0,0,0,0,0,0,0,0,0,8,0,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0057|2002:0.0017|2003:0.0057|2005:0.0017|2006:0.0017|2007:0.0017|2009:0.0034|2011:0.0017|2013:0.0034|2014:0.0034|2015:0.0057|2017:0.0022|2018:0.0012|2023:0.0005|2028:0.0005|2029:0.0005|2031:0.0009|2032:0.0009|2033:0.0009|2034:0.0009|2035:0.0009|2036:0.0009|2037:0.0005|2042:0.0005|2044:0.0005|2048:0.0005|2054:0.0005|2059:0.0009|2064:0.0003|2065:0.0003,0,1200,2600,到处充满了灵魂，看来将他们的灵魂解放是一件很重要的工作。\n104,人中吕布,BATTLE_Scene7,SD_BGM15混,14,12,25000,15620,0,0,0,0,0,0,0,0,0,0,0,8,0,0,0,7,0.1,0.1,6,0.05,40,0.2,30,0.2,20,0.2,6,0.2,0.3,2001:0.0058|2002:0.0017|2003:0.0058|2005:0.0017|2006:0.0017|2007:0.0017|2009:0.0035|2011:0.0017|2013:0.0035|2014:0.0035|2015:0.0058|2017:0.0023|2018:0.0012|2023:0.0005|2028:0.0005|2031:0.0009|2032:0.0009|2033:0.0009|2034:0.0009|2035:0.0009|2036:0.0009|2037:0.0005|2042:0.0005|2048:0.0005|2054:0.0005|2059:0.0009|2064:0.0003|2065:0.0003,0,1200,3000,就剩下最后一个目标了，不要小看了敌人所建筑的最后一道防线。\n100001,新手教程1,BATTLE_Scene1,SD_BGM15混,0,3,999,999,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,了解了基本的战斗情况后，让我们开始冒险之旅吧。\n100002,新手教程2,BATTLE_Scene2,SD_BGM16混,0,3,999,999,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,了解了基本的战斗情况后，让我们开始冒险之旅吧。\n100003,新手教程3,BATTLE_Scene3,SD_BGM17混,0,3,999,999,1,2,3,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,,0,0,0,了解了基本的战斗情况后，让我们开始冒险之旅吧。\n",
+			"file": "/Users/luzexi/Desktop/work/pstage/client/Table/TABLE_关卡.csv",
+			"file_size": 36686,
+			"file_write_time": 1423816515000000,
 			"settings":
 			{
-				"buffer_size": 195,
+				"buffer_size": 33211,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
+			"settings":
+			{
+				"buffer_size": 10525,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs",
+			"settings":
+			{
+				"buffer_size": 3896,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_menu.lua",
+			"settings":
+			{
+				"buffer_size": 2901,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nlocal hero = require \"Data/Hero\"\n\n\n\nlocal function init()\n    Player = {}\n    Player.Name = \"Jesse\"\n    Player.level = 1\n    Player.exp = 0\n    Player.maxexp = 100\n    Player.gold =9999\n    Player.soul = 9898\n    Player.crystal = 341\n    Player.bstar = 3233\n    Player.hp = 100\n    Player.maxhp = 100\n    Player.leaderid = 0\n    Player.items = {}\n    Player.heros = {}\n    Player.group = {}\n    Player.mails = {}\n\n    -- create hero\n    local tmpHero1 = hero.create(11)\n    table.insert( Player.heros ,#Player.heros + 1, tmpHero1)\n    local tmpHero2 = hero.create(20)\n    table.insert( Player.heros ,#Player.heros + 1, tmpHero2)\n    local tmpHero3 = hero.create(13)\n    table.insert( Player.heros ,#Player.heros + 1, tmpHero3)\n    local tmpHero4 = hero.create(40)\n    table.insert( Player.heros ,#Player.heros + 1, tmpHero4)\n    local tmpHero5 = hero.create(195)\n    table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    --\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(77)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(77)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(77)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(77)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(77)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(66)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(66)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(66)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(66)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(66)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(99)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    -- tmpHero5 = hero.create(195)\n    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)\n    \n    --\n\n    -- create group\n    Player.group = { tmpHero1.id , tmpHero2.id , tmpHero3.id , tmpHero4.id , tmpHero5.id }\n    Player.leaderid = tmpHero2.id\n    Player.gethero_by_group = function( index )\n        local id = Player.group[index]\n        local i\n        for i = 1 , #Player.heros , 1 do\n            if Player.heros[i].id == id then\n                return Player.heros[i]\n            end\n        end\n        return nil\n    end\n    -- for i=0,4,1 do\n    --     local group = { tmpHero1 , tmpHero2 , tmpHero3 , tmpHero4 , tmpHero5 }\n    --     Player.groups[i] = group\n    -- end\nend\n\n\n\nlocal t = {}\nt.init = init\nreturn t",
+			"file": "Assets/App/Scripts/lua/Data/Player.lua",
+			"file_size": 6680,
+			"file_write_time": 1424521572000000,
+			"settings":
+			{
+				"buffer_size": 6506,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "Searching 1560 files for \"table/herotable\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Manager/TableManager.lua:\n    1  \n    2  \n    3: local hero_table = require \"Table/HeroTable\"\n    4  local item_tabel = require \"Table/ItemTable\"\n    5  \n\n1 match in 1 file\n\n\nSearching 1560 files for \"tablemanager\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/GameScene.lua:\n    1  local save_data = require \"Manager/SaveData\"\n    2: local table_manager = require \"Manager/TableManager\"\n    3  local ui_system_bottom = require \"GUI/ui_system_bottom\"\n    4  local ui_system_top = require \"GUI/ui_system_top\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Table/TableMgr.cs:\n    7  \n    8  \n    9: //	TableManager.cs\n   10  //	Author: Lu Zexi\n   11  //	2014-07-23\n\n2 matches across 2 files\n\n\nSearching 1560 files for \"Player.group\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Player.lua:\n   19      Player.items = {}\n   20      Player.heros = {}\n   21:     Player.group = {}\n   22      Player.mails = {}\n   23  \n   ..\n  148  \n  149      -- create group\n  150:     Player.group = { tmpHero1.id , tmpHero2.id , tmpHero3.id , tmpHero4.id , tmpHero5.id }\n  151      Player.leaderid = tmpHero2.id\n  152      -- for i=0,4,1 do\n  153      --     local group = { tmpHero1 , tmpHero2 , tmpHero3 , tmpHero4 , tmpHero5 }\n  154:     --     Player.groups[i] = group\n  155      -- end\n  156  end\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_main.lua:\n   95          local icon5 = ui_main_obj.transform:Find(\"icon/icon5\")\n   96  \n   97:         set_icon(icon1 , Player.group[1])\n   98:         set_icon(icon2 , Player.group[2])\n   99:         set_icon(icon3 , Player.group[3])\n  100:         set_icon(icon4 , Player.group[4])\n  101:         set_icon(icon5 , Player.group[5])\n  102  \n  103          local card1 = ui_main_obj.transform:Find(\"icon/card1\")\n  ...\n  107          local card5 = ui_main_obj.transform:Find(\"icon/card5\")\n  108  \n  109:         set_card( card1 , Player.group[1] )\n  110:         set_card( card2 , Player.group[2] )\n  111:         set_card( card3 , Player.group[3] )\n  112:         set_card( card4 , Player.group[4] )\n  113:         set_card( card5 , Player.group[5] )\n  114  \n  115          local property1 = ui_main_obj.transform:Find(\"icon/property1\")\n  ...\n  119          local property5 = ui_main_obj.transform:Find(\"icon/property5\")\n  120  \n  121:         set_property(property1 , Player.group[1])\n  122:         set_property(property2 , Player.group[2])\n  123:         set_property(property3 , Player.group[3])\n  124:         set_property(property4 , Player.group[4])\n  125:         set_property(property5 , Player.group[5])\n  126      end\n  127  \n  128      local function regEvent()\n  129          for i=1,5,1 do\n  130:             if Player.group[i] ~= nil then\n  131                  local btn = ui_main_obj.transform:Find(\"icon/btn\"..i)\n  132                  local ev = UI_Event.Get(btn)\n  ...\n  134                      GameObject.Destroy(ui_main_obj)\n  135  \n  136:                     ui_hero_detail.create( Player.group[i] , function()\n  137                          ui_system_bottom.show()\n  138                          createObj()\n\n20 matches across 2 files\n\n\nSearching 1562 files for \"customlua\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Network/Network.cs:\n   13  \n   14  //network class\n   15: [CustomLuaClassAttribute]\n   16  public class Network\n   17  {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Custom.cs:\n    6  using System;\n    7  \n    8: [CustomLuaClassAttribute]\n    9  public class Custom : MonoBehaviour {\n   10  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Deleg.cs:\n    5  using System.Collections.Generic;\n    6  \n    7: [CustomLuaClassAttribute]\n    8  public class Deleg : MonoBehaviour {\n    9      \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/HelloWorld.cs:\n    6  using LuaInterface;\n    7  \n    8: [CustomLuaClass]\n    9  public class HelloWorld   {\n   10  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs:\n  205           foreach (Type t in types)\n  206           {\n  207:              if (t.GetCustomAttributes(typeof(CustomLuaClassAttribute), false).Length > 0)\n  208               {\n  209                   cust.Add(t);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs:\n   30  \n   31  [AttributeUsage(AttributeTargets.Class|AttributeTargets.Enum|AttributeTargets.Struct)]\n   32: public class CustomLuaClassAttribute : System.Attribute\n   33  {\n   34:     public CustomLuaClassAttribute()\n   35      {\n   36          //\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs:\n   15  /// ui event.\n   16  /// </summary>\n   17: [CustomLuaClassAttribute]\n   18  public class UI_Event : UnityEngine.EventSystems.EventTrigger\n   19  {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs:\n   14  \n   15  [AddComponentMenu(\"uGUI/UI_Scroll_List\")]\n   16: [CustomLuaClassAttribute]\n   17  public class UI_Scroll_List : MonoBehaviour\n   18  {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Util/LuaUtil.cs:\n   11  \n   12  \n   13: [CustomLuaClassAttribute]\n   14  public class LuaUtil\n   15  {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTween.cs:\n   45  /// <para>Support: http://itween.pixelplacement.com</para>\n   46  /// </summary>\n   47: [CustomLuaClassAttribute]\n   48  public class iTween : MonoBehaviour{\n   49  	\n\n11 matches across 10 files\n\n\nSearching 1563 files for \"luaS_tolstring32\"\n\n0 matches across 0 files\n",
+			"settings":
+			{
+				"buffer_size": 5997,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"contents": "",
+			"file": "/Users/luzexi/Desktop/work/wcat/jobs/WcatUnity/builds/2015-02-25_17-08-23/changelog.xml",
+			"file_size": -1,
+			"file_write_time": -1,
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/UI/UI_DownLoad_All.cs",
+			"settings":
+			{
+				"buffer_size": 9089,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Scene/GameScene.lua",
+			"settings":
+			{
+				"buffer_size": 596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Manager/TableManager.lua",
+			"settings":
+			{
+				"buffer_size": 288,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Util/LuaUtil.cs",
+			"settings":
+			{
+				"buffer_size": 1045,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\n\nlocal GameObject = UnityEngine.GameObject\nlocal Resources = UnityEngine.Resources\nlocal Vector3 = UnityEngine.Vector3\nlocal Screen = UnityEngine.Screen\n\n\n\n\n-- create\nlocal function create()\n    local ui_hero_detail = require \"GUI/ui_hero_detail\"\n    local ui_system_bottom = require \"GUI/ui_system_bottom\"\n    local ui_menu = require \"GUI/ui_menu\"\n    local ui_mail = require \"GUI/ui_mail\"\n\n    local ui_main_obj = nil\n    local ui_name = \"ui_main\"\n\n    local ratex = SCREEN_WIDE/Screen.width\n    local ratey = SCREEN_HEIGHT/Screen.height\n\n    local function createObj()\n        ui_main_obj = GameObject.Instantiate( Resources.Load(\"GUI/ui_main\") )\n        ui_main_obj.name = ui_name\n        ui_main_obj.transform:SetParent(UI_Root)\n        ui_main_obj.transform.localScale = Vector3.one\n        ui_main_obj.transform.localPosition = Vector3.zero\n        UI_Master = ui_main_obj\n    end\n\n    local function updateInfo()\n\n        local function set_icon( trans , hero )\n            local back = trans:Find(\"back\")\n            local dark = trans:Find(\"dark\")\n            local fire = trans:Find(\"fire\")\n            local light = trans:Find(\"light\")\n            local thunder = trans:Find(\"thunder\")\n            local water = trans:Find(\"water\")\n            local wood = trans:Find(\"wood\")\n            back.gameObject:SetActive(false)\n            dark.gameObject:SetActive(false)\n            fire.gameObject:SetActive(false)\n            light.gameObject:SetActive(false)\n            thunder.gameObject:SetActive(false)\n            water.gameObject:SetActive(false)\n            wood.gameObject:SetActive(false)\n            ar_property = {fire , water , wood , thunder , light , dark}\n            if hero ~= nil then\n                local table = HeroTable[\"\"..hero.tableid]\n                local property = ar_property[table.Nature]\n                property.gameObject:SetActive(true)\n            else\n                back.gameObject:SetActive(true)\n            end\n        end\n\n        local function set_property( trans , hero )\n            local dark = trans:Find(\"dark\")\n            local fire = trans:Find(\"fire\")\n            local light = trans:Find(\"light\")\n            local thunder = trans:Find(\"thunder\")\n            local water = trans:Find(\"water\")\n            local wood = trans:Find(\"wood\")\n            dark.gameObject:SetActive(false)\n            fire.gameObject:SetActive(false)\n            light.gameObject:SetActive(false)\n            thunder.gameObject:SetActive(false)\n            water.gameObject:SetActive(false)\n            wood.gameObject:SetActive(false)\n            ar_property = {fire , water , wood , thunder , light , dark}\n            if hero ~= nil then\n                local table = HeroTable[\"\"..hero.tableid]\n                local property = ar_property[table.Nature]\n                property.gameObject:SetActive(true)\n            end\n        end\n\n        local function set_card( trans , hero )\n            if hero ~= nil then\n                local ui_img = trans:GetComponent(\"RawImage\")\n                local table = HeroTable[\"\"..hero.tableid]\n                ui_img.texture = Resources.Load(\"AvatarL/\"..table.AvatarL)\n            else\n                trans.gameObject:SetActive(false)\n            end\n        end\n\n        local icon1 = ui_main_obj.transform:Find(\"icon/icon1\")\n        local icon2 = ui_main_obj.transform:Find(\"icon/icon2\")\n        local icon3 = ui_main_obj.transform:Find(\"icon/icon3\")\n        local icon4 = ui_main_obj.transform:Find(\"icon/icon4\")\n        local icon5 = ui_main_obj.transform:Find(\"icon/icon5\")\n\n        set_icon(icon1 , Player.gethero_by_group(1))\n        set_icon(icon2 , Player.gethero_by_group(2))\n        set_icon(icon3 , Player.gethero_by_group(3))\n        set_icon(icon4 , Player.gethero_by_group(4))\n        set_icon(icon5 , Player.gethero_by_group(5))\n\n        local card1 = ui_main_obj.transform:Find(\"icon/card1\")\n        local card2 = ui_main_obj.transform:Find(\"icon/card2\")\n        local card3 = ui_main_obj.transform:Find(\"icon/card3\")\n        local card4 = ui_main_obj.transform:Find(\"icon/card4\")\n        local card5 = ui_main_obj.transform:Find(\"icon/card5\")\n\n        set_card( card1 , Player.gethero_by_group(1) )\n        set_card( card2 , Player.gethero_by_group(2) )\n        set_card( card3 , Player.gethero_by_group(3) )\n        set_card( card4 , Player.gethero_by_group(4) )\n        set_card( card5 , Player.gethero_by_group(5) )\n\n        local property1 = ui_main_obj.transform:Find(\"icon/property1\")\n        local property2 = ui_main_obj.transform:Find(\"icon/property2\")\n        local property3 = ui_main_obj.transform:Find(\"icon/property3\")\n        local property4 = ui_main_obj.transform:Find(\"icon/property4\")\n        local property5 = ui_main_obj.transform:Find(\"icon/property5\")\n\n        set_property(property1 , Player.gethero_by_group(1))\n        set_property(property2 , Player.gethero_by_group(2))\n        set_property(property3 , Player.gethero_by_group(3))\n        set_property(property4 , Player.gethero_by_group(4))\n        set_property(property5 , Player.gethero_by_group(5))\n    end\n\n    local function regEvent()\n        for i=1,5,1 do\n            if Player.group[i] ~= nil then\n                local btn = ui_main_obj.transform:Find(\"icon/btn\"..i)\n                local ev = UI_Event.Get(btn)\n                ev.onClick = {\"+=\", function( eventData , go , args )\n                    GameObject.Destroy(ui_main_obj)\n\n                    ui_hero_detail.create( Player.gethero_by_group(i) , function()\n                        ui_system_bottom.show()\n                        createObj()\n                        updateInfo()\n                        regEvent()\n                    end\n                    )\n                    ui_system_bottom.hiden()\n                end\n                }\n            end\n        end\n\n        local btn_menu = ui_main_obj.transform:Find(\"btn_menu\")\n        ev = UI_Event.Get(btn_menu)\n        ev.onClick = {\"+=\", function( eventData , go , args )\n            GameObject.Destroy(ui_main_obj)\n            ui_menu.create()\n        end\n        }\n\n        -- local btn_mail = ui_main_obj.transform:Find(\"btn_mail\")\n        -- ev = UI_Event.Get(btn)\n        -- ev.onClick = {\"+=\", function( eventData , go , args )\n        --     GameObject.Destroy(ui_main_obj)\n        --     ui_mail.create()\n        -- end\n        -- }\n\n        local btn_quest1 = ui_main_obj.transform:Find(\"quest/quest1\")\n        local btn_quest2 = ui_main_obj.transform:Find(\"quest/quest2\")\n        local btn_quest3 = ui_main_obj.transform:Find(\"quest/quest3\")\n        \n        ev = UI_Event.Get(btn_quest1)\n        ev.onClick = { \"+=\" , function( eventData , go , args )\n            print(\"quest1 click\")\n        end\n        }\n        \n        ev = UI_Event.Get(btn_quest2)\n        ev.onClick = { \"+=\" , function( eventData , go , args )\n            print(\"quest2 click\")\n        end\n        }\n\n        ev = UI_Event.Get(btn_quest3)\n        ev.onClick = { \"+=\" , function( eventData , go , args )\n            print(\"quest3 click\")\n        end\n        }\n    end\n\n    createObj()\n    updateInfo()\n    regEvent()\nend\n\n\nlocal t = {}\nt.create = create\nreturn t\n\n",
+			"file": "Assets/App/Scripts/lua/GUI/ui_main.lua",
+			"file_size": 7366,
+			"file_write_time": 1424521728000000,
+			"settings":
+			{
+				"buffer_size": 7166,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/SLua/LuaObject/Custom/Lua_UI_Scroll_List.cs",
+			"settings":
+			{
+				"buffer_size": 5377,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "Assets/SLua/LuaObject/Lua_UnityEngine_GameObject.cs",
+			"file": "Assets/App/Scripts/submodule/Unity3DUtil/CMath.cs",
 			"settings":
 			{
-				"buffer_size": 20378,
+				"buffer_size": 12608,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DUtil/CRandom.cs",
+			"settings":
+			{
+				"buffer_size": 2947,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_system_top.lua",
+			"settings":
+			{
+				"buffer_size": 1648,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Manager/UIManager.lua",
+			"settings":
+			{
+				"buffer_size": 371,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -746,17 +896,115 @@
 	},
 	"file_history":
 	[
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/Examples/Basics.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Custom.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTween.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Custom/Lua_UI_Event.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Lua52Lib.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/AstarData.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/MyApplication.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/Examples/Sequences.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween.XML",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UI_Event.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMedia/src/MediaMgr.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMedia/src/AudioPlayer.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UI_ButtonScale.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/Input/UIEvent.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http/src/HttpRequest.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http/src/HTTPLoader.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Network/Network.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Util/LuaUtil.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Custom/Lua_LuaUtil.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_title.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/lib/dkjson.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Manager/GameDefine.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Manager/SaveData.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Main.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Table/HeroTable.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/GameScene.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_main.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_detail.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_menu.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_mail.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_gacha.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_menu.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_store.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Player.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Manager/UIManager.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system_bottom.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonColor.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Hero.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/TitleScene.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_background.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Item.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Table/ItemTable.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Manager/TableManager.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Group.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Mail.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Table/WorldTable.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Table/QuestTable.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Item.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Util/lua_http.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system_top.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Util/LuaTween.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Util/csv_util.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DTable/csv/CSVParser.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/LuaUtil.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Custom/Lua_Network.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Custom/LuaSystem_Action_string.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/lib/table.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/MyLua.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/excelAndJSON/test2/升级.json",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Util/lua_override.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system_top",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/UI_TweenColor.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/UI_TweenPosition.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/UI_TweenScale.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/UI_Tween.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/UITweener.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/AnimationOrTween.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/EventDelegate.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITween/TweenScale.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UI_ButtonPlaySound.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UI_ButtonOffset.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UI_ButtonColor.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/GUIUtil.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Deleg.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/lua/delegate.lua.txt",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaValueType.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaVarObject.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/ObjectCache.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMedia/README.md",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/README.md",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonScale.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonPlaySound.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonOffset.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_TweenScale.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_TweenPosition.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_TweenColor.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Transform.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvr.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/UITitle.lua",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Vector3.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Object.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/UIManager.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_GameObject.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/GUI/UITitle.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/lua/custom.lua.txt",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/lua/delegate.lua.txt",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/lua/main.lua.txt",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvrGameObject.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Custom.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/HelloWorld.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Deleg.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/LuaObject/Custom/BindCustom.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Main.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Main.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KeraLua/Lua.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/LuaEngine.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaBaseLib.cs",
@@ -775,105 +1023,7 @@
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Event/DebugHookEventArgs.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Event/EventCodes.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Event/EventMasks.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Event/HookExceptionEventArgs.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Exceptions/LuaException.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Exceptions/LuaScriptException.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Extensions/GeneralExtensions.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/ClassGenerator.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/DelegateGenerator.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/ILuaGeneratedType.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/LuaClassType.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/GCOptions.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/LuaEnums.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/LuaIndexes.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/LuaTypes.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/References.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/EventHandlerContainer.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/LuaClassHelper.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/Reporter.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/ReporterMessageReceiver.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/MethodArgs.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/RegisterEventHandler.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/MethodCache.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/CodeGeneration.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAuxLib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaTable.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DSublime2Project/README.md",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaState.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ToLua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaFFILib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/LuaWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/NetObjectWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/Lua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/Example/TestBehaviour.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/Example/ExampleBehaviour.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Manager/UIManager.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Scene/TitleScene.lua",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/toLua/Lua52Native.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/u3d.sublime-workspace",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Lua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Method/LuaDelegate.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DSublime2Project/Editor/SyncSublimeText2.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DDefineTool/src/Editor/DEFINE_TOOL.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DDefineTool/README.md",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KeraLua/NativeMethods.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Lua52Lib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Lua52Native.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DDefineTool/LICENSE",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/LICENSE",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/testLib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Test/BaseTest.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/LuaState.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Test/testLib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Test/PushTest",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/Lua52/Test/PushTest.cs",
-		"/Users/luzexi/Desktop/work/gitHub/u3dRuntimeDebug/README.md",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/toLua/toLua",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaDLL.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ObjectWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KopiLua/loadlib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Editor/BindLua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KopiLua/LuaState.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/Example/SpawnSphere.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KeraLua/LuaState.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KopiLua/lapi.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaBase.cs",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/UI/Prefabs/UI_Common.prefab",
-		"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Message/Common_msg.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Model/CModelMgr.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Table/SimpleJSON.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/Input/UIEvent.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CController.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/Input/INPUT_INFO.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CPage.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/UILAYER.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/View/CView.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CPageSwitch.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/README.md",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/coroutineWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaFunction.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/uLua/Core/LuaBase.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/AnimationClipPairWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/Dump.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/uLua/Core/Lua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/LuaScriptMgr.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaFile.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaAPI.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/Util.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/UniLua/LuaState.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/Debugger.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/LuaWrap/GameObjectWrap.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/Base/Client.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/uLua/Core/LuaDLL.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uniLua/U3DLua/Source/LuaWrap/Base/ToLua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Examples/06_LuaCoroutines/LuaCoroutines.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/LuaDLL.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/Lua.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/LuaStatic.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/uLua/Core/ObjectTranslator.cs"
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/NLua/Event/HookExceptionEventArgs.cs"
 	],
 	"find":
 	{
@@ -881,7 +1031,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 0.0,
 		"where_history":
 		[
 			""
@@ -892,134 +1042,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"bool matchType",
-			"matchType",
-			"bool mathtype",
+			"luaS_tolstring32",
+			"customlua",
+			"battlehero",
+			"battle.",
+			"detail",
+			"Player.group",
+			"tablemanager",
+			"table/herotable",
+			"MinFixSpeed",
+			"Pos =",
+			"this.Pos =",
+			"this.Pos",
+			"ItemNum",
+			"this.m_bFixPos = true;",
+			"m_fFixSpeed",
+			"FixPos",
+			"eventData.delta",
+			"this.pos",
+			"MinFixSpeed",
+			"MinPosX",
+			"MaxPosX",
+			"[0]",
+			"UI_Scroll_Horizontal",
+			"table.insert",
+			"table.remove",
+			"friend",
+			"quest_width",
+			"Vector3.zero",
 			"SetParent",
-			"get_zero",
-			"zero",
-			"if",
-			"Instantiate_s",
-			"Instantiate",
-			"assembly",
-			"();\n",
-			"moveTo",
-			"moveto",
-			"WCAT_CUSTOM",
-			"Profiler",
-			"Direction",
-			"Dictionary",
-			"Generate",
-			"HideInInspector",
-			"MonoPInvokeCallbackAttribute",
-			"Generate",
-			"noUseList",
-			"GenerateBind",
-			"path",
-			"GenerateBind",
-			"checkRef",
-			"BindUnity",
-			"dofile",
-			"loaderDelegate",
-			"BindCustom",
-			"HelloWorld",
-			"loaderDelegate",
-			"loader",
+			"loop or previous",
+			"loop or previous error loading",
 			"loadFile",
-			"WorkPath",
-			"LuaNativeFunction",
-			"yield",
-			"LuaNativeFunction",
-			"require",
-			"LuaNativeFunction",
-			"lua_pushcclosure",
-			"function",
-			"lua_pushcfunction",
-			"register",
-			"LuaNativeFunction",
-			"cclosure",
-			"LuaNativeFunction",
-			"ref",
-			"getref",
-			"lua_getref",
-			"tobool",
-			"tonumber",
-			"Unicode",
-			"string",
-			"lua_tostring",
-			"string",
+			"loaderDelegate",
+			"RequireLua",
+			"ui_master",
+			"UI_Group",
+			"encode2",
+			"encode2(",
+			"encode2 (",
+			"encode(",
+			"indent",
+			"state.buffer",
+			"function encode",
+			"encode",
+			"buffer",
+			"enum LuaTypes",
+			"CustomLuaClassAttribute",
+			"assembly",
+			" pushstring",
 			"pushstring",
-			"[DllImport(LUA_DLL)]",
-			"string",
-			"luaL_newstate",
-			"char *",
-			"tolstring",
-			"luaL_tolstring",
-			"lua_State *",
-			"LUALIB_API",
-			"getctx",
-			"string",
-			"fstring",
-			"vfstring",
-			"pushvfstring",
-			"luaO_pushvfstring",
-			"using",
-			"lua_State *",
-			"LUA_API",
-			"tonum",
-			"GetReturnTypesFromMethod",
-			"GetReturnTypesFromClass",
-			"register",
-			"ThrowExceptionFromError",
-			"panicCallback",
-			"PanicCallback",
-			"public",
-			"isGestureDone",
-			"doShow",
-			"show =",
-			"Reporter_show",
-			"show=",
-			"show =",
-			"doShow",
-			"open",
-			"ReporterMessageReceiver",
-			"LuaNetLoadFile",
-			"USE_KOPILUA",
-			"UNITY_3D",
-			"USE_KOPILUA",
-			"CATCH_EXCEPTIONS",
-			"LUA_CORE",
-			"USE_KOPILUA",
-			"regist",
-			"index",
-			"globalindex",
-			"globalsindex",
+			"void pushstring",
+			"pushstring",
+			"start(",
+			"start",
+			"clear()",
+			"clear",
+			"maxSize",
+			"TotalMemUsage",
+			"gcTotalMemory",
+			"deviceName",
+			"graphicsMemorySize",
+			"SystemInfo",
+			"SystemInfo=",
+			"SystemInfo =",
+			"SystemInfo",
+			"systemMemorySize",
+			"showMemory",
+			"GetEasingFunction",
+			"easeType",
+			"ease",
+			"easeOutSine",
+			"private",
+			"easeInQuad",
+			"class EasingFunction",
+			"EasingFunction",
+			"ease",
+			"EasingFunction",
+			"easeInQuad",
+			"void pushvalue",
+			"pushvalue",
+			"Play(",
+			"Play",
+			"//\n",
+			"moveto",
+			"tweenArguments",
+			"EaseType",
+			"easetype",
+			"movefrom",
+			"mColor",
+			"defaultColor",
+			"valueto",
+			"scaleto",
+			".init",
+			"init",
+			"stop",
+			"clear",
+			"stop",
+			"domove",
+			"doscale",
+			"wcat",
+			";\n",
+			"updateTable",
+			"Launch",
+			"scaleto",
+			"stop",
+			"class luafunction",
+			"void pushvalue",
+			"int pushvalue",
+			"pushvalue",
+			"bool matchType",
+			"Get_s",
+			"scalefrom",
+			"UIEvent",
+			"itween_custom",
+			"movefrom",
+			"ITWEEN_CUSTOM",
+			"WCAT_CUSTOM",
+			"OnUpdateDelegate",
+			"WCAT_CUSTOM",
+			"lua_pushstdcallcfunction",
+			"lua_callk",
+			"lua_pcallk",
+			"lua_pushstdcallcfunction",
+			"LuaCSFunction",
 			"function",
-			"LuaFunction",
-			"void LuaFunction",
-			"int LuaFunction",
-			"lightuserdata",
-			"userdata",
-			"L_RegistLib",
-			"PushCSharpClosure",
-			"PushValue",
-			"PushCSharpClosure",
-			"CreateTable",
-			"NewTable",
-			"CreateTable",
-			"void CreateTable",
-			"api",
-			"class api",
-			"API",
-			"class API",
-			"class api",
-			"L_NewLib",
-			"class ILuaAuxLib",
-			"ILuaAuxLib",
-			"transform",
-			"LLRequire",
-			"\"require\"",
-			"require"
+			"onupdate",
+			"OnUpdateDelegate",
+			"WCAT_CUSTOM"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -1027,6 +1177,9 @@
 		"regex": false,
 		"replace_history":
 		[
+			"MinPos",
+			"MaxPos",
+			"protected",
 			"[DllImport(LUA_DLL , CallingConvention = CallingConvention.Cdecl)]",
 			"string ",
 			"IntPtr ",
@@ -1045,27 +1198,30 @@
 	"groups":
 	[
 		{
-			"selected": 9,
+			"selected": 18,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs",
+					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs",
 					"settings":
 					{
-						"buffer_size": 14539,
+						"buffer_size": 14991,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1274,
-								1274
+								979,
+								979
 							]
 						],
 						"settings":
 						{
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
 							"syntax": "Packages/C#/C#.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -1078,23 +1234,26 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/App/Scripts/Manager/MyApplication.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
 					"settings":
 					{
-						"buffer_size": 715,
+						"buffer_size": 6495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								318,
-								318
+								181,
+								181
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
@@ -1106,80 +1265,89 @@
 				},
 				{
 					"buffer": 2,
-					"file": "Assets/App/Scripts/Manager/MyLua.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_sell.lua",
 					"settings":
 					{
-						"buffer_size": 2144,
+						"buffer_size": 6495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								357,
-								357
+								6495,
+								6495
 							]
 						],
 						"settings":
 						{
-							"auto_name": "",
-							"syntax": "Packages/C#/C#.tmLanguage",
+							"check_times": 1.0,
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"is_preview": true,
+							"origin_encoding": "UTF-8-SIG",
+							"revert_to_scratch": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 201.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvr.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_evolution.lua",
 					"settings":
 					{
-						"buffer_size": 2439,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1472,
-								1440
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"tab_size": 4,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 480.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 4,
-					"file": "Assets/App/Scripts/lua/Main.lua",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_team.lua",
 					"settings":
 					{
-						"buffer_size": 166,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								93,
-								93
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1189,23 +1357,26 @@
 				},
 				{
 					"buffer": 5,
-					"file": "Assets/App/Scripts/lua/Scene/TitleScene.lua",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_combine.lua",
 					"settings":
 					{
-						"buffer_size": 200,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								38,
-								38
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1215,24 +1386,26 @@
 				},
 				{
 					"buffer": 6,
-					"file": "Assets/MyPlugins/Demigiant/DOTween/Examples/Basics.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_equip.lua",
 					"settings":
 					{
-						"buffer_size": 971,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								247,
-								247
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1242,76 +1415,87 @@
 				},
 				{
 					"buffer": 7,
-					"file": "Assets/App/Scripts/lua/Manager/UIManager.lua",
+					"file": "Assets/App/Scripts/lua/GUI/ui_gacha.lua",
 					"settings":
 					{
-						"buffer_size": 149,
+						"buffer_size": 3635,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								98,
-								98
+								2113,
+								2113
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"clone_numbers": 3.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 744.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 8,
-					"file": "Assets/MyPlugins/iTweenEditor/iTween.cs",
+					"file": "Assets/App/Scripts/lua/Util/lua_math.lua",
 					"settings":
 					{
-						"buffer_size": 274315,
+						"buffer_size": 799,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								58370,
-								58370
+								0,
+								799
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 20058.0,
+						"translation.y": 119.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 9,
-					"file": "Assets/App/Scripts/lua/GUI/UITitle.lua",
+					"file": "Assets/App/Scripts/lua/Table/Gacha1Table.lua",
 					"settings":
 					{
-						"buffer_size": 647,
+						"buffer_size": 376,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								603,
-								603
+								292,
+								292
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Lua/Lua.tmLanguage"
+							"clone_numbers": 1,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1321,55 +1505,280 @@
 				},
 				{
 					"buffer": 10,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs",
+					"file": "Assets/App/Scripts/lua/Data/Hero.lua",
 					"settings":
 					{
-						"buffer_size": 43195,
+						"buffer_size": 835,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6184,
-								6184
+								173,
+								173
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"is_preview": true,
+							"origin_encoding": "UTF-8-SIG",
+							"prevent_detect": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"translate_tabs_to_spaces": true,
+							"viewport_position":
+							[
+								0.0,
+								14.0
+							]
 						},
 						"translation.x": 0.0,
-						"translation.y": 3099.0,
+						"translation.y": 14.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 11,
-					"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Vector3.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_detail.lua",
 					"settings":
 					{
-						"buffer_size": 19783,
+						"buffer_size": 3241,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								19380,
-								19384
+								1309,
+								1309
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"clone_numbers": 5.0,
+							"in_converting": true,
+							"is_preview": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 10843.0,
+						"translation.y": 173.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								695,
+								695
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Assets/App/Scripts/lua/GUI/ui_battle.lua",
+					"settings":
+					{
+						"buffer_size": 4727,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								830,
+								830
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Assets/App/Scripts/Manager/MyLua.cs",
+					"settings":
+					{
+						"buffer_size": 2543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1022,
+								1022
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 220.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs",
+					"settings":
+					{
+						"buffer_size": 39993,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1684,
+								1684
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs",
+					"settings":
+					{
+						"buffer_size": 17428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1529.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs",
+					"settings":
+					{
+						"buffer_size": 22489,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								16841,
+								16841
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5533.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "/Users/luzexi/Desktop/work/pstage/client/Table/TABLE_关卡.csv",
+					"settings":
+					{
+						"buffer_size": 33211,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "GB2312",
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1377,69 +1786,135 @@
 			]
 		},
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
-					"buffer": 10,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs",
+					"buffer": 19,
+					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
 					"settings":
 					{
-						"buffer_size": 43195,
+						"buffer_size": 10525,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								6013,
-								6013
+								2022,
+								2022
 							]
 						],
 						"settings":
 						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
 							"syntax": "Packages/C#/C#.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2656.0,
+						"translation.y": 998.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 8,
-					"file": "Assets/MyPlugins/iTweenEditor/iTween.cs",
+					"buffer": 20,
+					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs",
 					"settings":
 					{
-						"buffer_size": 274315,
+						"buffer_size": 3896,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3036,
-								3036
+								1995,
+								1995
 							]
 						],
 						"settings":
 						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
 							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 302.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 21,
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_menu.lua",
 					"settings":
 					{
-						"buffer_size": 32240,
+						"buffer_size": 2901,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2278,
+								2278
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 914.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "Assets/App/Scripts/lua/Data/Player.lua",
+					"settings":
+					{
+						"buffer_size": 6506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5884,
+								5884
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"is_preview": true,
+							"origin_encoding": "UTF-8-SIG",
+							"revert_to_scratch": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2129.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"settings":
+					{
+						"buffer_size": 5997,
 						"regions":
 						{
 							"match":
@@ -1448,440 +1923,140 @@
 								"regions":
 								[
 									[
-										203,
-										214
+										189,
+										204
 									],
 									[
-										327,
-										338
+										515,
+										527
 									],
 									[
-										531,
-										542
+										784,
+										796
 									],
 									[
-										651,
-										662
+										1070,
+										1082
 									],
 									[
-										1035,
-										1046
+										1177,
+										1189
 									],
 									[
-										1422,
-										1433
+										1441,
+										1453
 									],
 									[
-										1709,
-										1720
+										1691,
+										1703
 									],
 									[
-										1995,
-										2006
+										1740,
+										1752
 									],
 									[
-										2389,
-										2400
+										1789,
+										1801
 									],
 									[
-										2457,
-										2468
+										1838,
+										1850
 									],
 									[
-										2976,
-										2987
+										1887,
+										1899
 									],
 									[
-										3204,
-										3215
+										2099,
+										2111
 									],
 									[
-										3514,
-										3525
+										2150,
+										2162
 									],
 									[
-										3843,
-										3854
+										2201,
+										2213
 									],
 									[
-										4194,
-										4205
+										2252,
+										2264
 									],
 									[
-										4515,
-										4526
+										2303,
+										2315
 									],
 									[
-										4801,
-										4812
+										2539,
+										2551
 									],
 									[
-										5252,
-										5263
+										2596,
+										2608
 									],
 									[
-										5323,
-										5334
+										2653,
+										2665
 									],
 									[
-										5597,
-										5608
+										2710,
+										2722
 									],
 									[
-										5850,
-										5861
+										2767,
+										2779
 									],
 									[
-										6142,
-										6153
+										2896,
+										2908
 									],
 									[
-										6313,
-										6324
+										3176,
+										3188
 									],
 									[
-										6469,
-										6480
+										3493,
+										3502
 									],
 									[
-										6707,
-										6718
+										3702,
+										3711
 									],
 									[
-										6863,
-										6874
+										3946,
+										3955
 									],
 									[
-										7302,
-										7313
+										4184,
+										4193
 									],
 									[
-										7373,
-										7384
+										4474,
+										4483
 									],
 									[
-										7655,
-										7666
+										4817,
+										4826
 									],
 									[
-										7908,
-										7919
+										4887,
+										4896
 									],
 									[
-										8157,
-										8168
+										5102,
+										5111
 									],
 									[
-										8341,
-										8352
+										5383,
+										5392
 									],
 									[
-										8607,
-										8618
+										5574,
+										5583
 									],
 									[
-										8791,
-										8802
-									],
-									[
-										9238,
-										9249
-									],
-									[
-										9581,
-										9592
-									],
-									[
-										9905,
-										9916
-									],
-									[
-										10248,
-										10259
-									],
-									[
-										10651,
-										10662
-									],
-									[
-										11002,
-										11013
-									],
-									[
-										11349,
-										11360
-									],
-									[
-										11729,
-										11740
-									],
-									[
-										12236,
-										12247
-									],
-									[
-										12578,
-										12589
-									],
-									[
-										12976,
-										12987
-									],
-									[
-										13318,
-										13329
-									],
-									[
-										13711,
-										13722
-									],
-									[
-										14053,
-										14064
-									],
-									[
-										14410,
-										14421
-									],
-									[
-										14748,
-										14759
-									],
-									[
-										15230,
-										15241
-									],
-									[
-										15600,
-										15611
-									],
-									[
-										15976,
-										15987
-									],
-									[
-										16450,
-										16461
-									],
-									[
-										16744,
-										16755
-									],
-									[
-										17337,
-										17348
-									],
-									[
-										17618,
-										17629
-									],
-									[
-										17870,
-										17881
-									],
-									[
-										18201,
-										18212
-									],
-									[
-										18682,
-										18693
-									],
-									[
-										18780,
-										18791
-									],
-									[
-										18931,
-										18942
-									],
-									[
-										19451,
-										19462
-									],
-									[
-										19596,
-										19607
-									],
-									[
-										19885,
-										19896
-									],
-									[
-										20287,
-										20298
-									],
-									[
-										20707,
-										20718
-									],
-									[
-										20951,
-										20962
-									],
-									[
-										21431,
-										21442
-									],
-									[
-										21814,
-										21825
-									],
-									[
-										22062,
-										22073
-									],
-									[
-										22169,
-										22180
-									],
-									[
-										22449,
-										22460
-									],
-									[
-										22664,
-										22675
-									],
-									[
-										22956,
-										22967
-									],
-									[
-										23278,
-										23289
-									],
-									[
-										23640,
-										23651
-									],
-									[
-										24069,
-										24080
-									],
-									[
-										24224,
-										24235
-									],
-									[
-										24250,
-										24261
-									],
-									[
-										24351,
-										24362
-									],
-									[
-										24595,
-										24606
-									],
-									[
-										24830,
-										24841
-									],
-									[
-										25070,
-										25081
-									],
-									[
-										25212,
-										25223
-									],
-									[
-										25569,
-										25580
-									],
-									[
-										25664,
-										25675
-									],
-									[
-										25973,
-										25984
-									],
-									[
-										26257,
-										26268
-									],
-									[
-										26666,
-										26677
-									],
-									[
-										27003,
-										27014
-									],
-									[
-										27396,
-										27407
-									],
-									[
-										27715,
-										27726
-									],
-									[
-										28197,
-										28208
-									],
-									[
-										28575,
-										28586
-									],
-									[
-										28862,
-										28873
-									],
-									[
-										29062,
-										29073
-									],
-									[
-										29240,
-										29251
-									],
-									[
-										29637,
-										29646
-									],
-									[
-										29899,
-										29908
-									],
-									[
-										30243,
-										30252
-									],
-									[
-										30537,
-										30546
-									],
-									[
-										30726,
-										30735
-									],
-									[
-										30860,
-										30869
-									],
-									[
-										31031,
-										31040
-									],
-									[
-										31415,
-										31429
-									],
-									[
-										31589,
-										31603
-									],
-									[
-										31902,
-										31916
-									],
-									[
-										32082,
-										32096
+										5819,
+										5828
 									]
 								],
 								"scope": ""
@@ -1890,8 +2065,8 @@
 						"selection":
 						[
 							[
-								31599,
-								31599
+								5927,
+								5927
 							]
 						],
 						"settings":
@@ -1906,59 +2081,34 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 9730.0,
+						"translation.y": 2550.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 13,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs",
+					"buffer": 24,
+					"file": "/Users/luzexi/Desktop/work/wcat/jobs/WcatUnity/builds/2015-02-25_17-08-23/changelog.xml",
 					"settings":
 					{
-						"buffer_size": 34585,
+						"buffer_size": 0,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								14519,
-								14519
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/XML/XML.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 6615.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 14,
-					"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Transform.cs",
-					"settings":
-					{
-						"buffer_size": 24403,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								412,
-								412
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -1967,50 +2117,25 @@
 					"type": "text"
 				},
 				{
-					"buffer": 15,
-					"file": "Assets/SLua/LuaObject/Lua_UnityEngine_Object.cs",
+					"buffer": 25,
+					"file": "/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App_China/Script/UI/UI_DownLoad_All.cs",
 					"settings":
 					{
-						"buffer_size": 6806,
+						"buffer_size": 9089,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1250,
-								1250
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 3406.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 16,
-					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs",
-					"settings":
-					{
-						"buffer_size": 22804,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								72,
-								72
-							]
-						],
-						"settings":
-						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
 							"syntax": "Packages/C#/C#.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
@@ -2022,24 +2147,333 @@
 					"type": "text"
 				},
 				{
-					"buffer": 17,
-					"file": "Assets/App/Scripts/Manager/UIManager.cs",
+					"buffer": 26,
+					"file": "Assets/App/Scripts/lua/Scene/GameScene.lua",
 					"settings":
 					{
-						"buffer_size": 195,
+						"buffer_size": 596,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								192,
-								192
+								388,
+								388
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage"
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 27,
+					"file": "Assets/App/Scripts/lua/Manager/TableManager.lua",
+					"settings":
+					{
+						"buffer_size": 288,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								240,
+								240
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 0,
+					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs",
+					"settings":
+					{
+						"buffer_size": 14991,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								8582,
+								8582
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3577.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 28,
+					"file": "Assets/App/Scripts/Util/LuaUtil.cs",
+					"settings":
+					{
+						"buffer_size": 1045,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								608,
+								608
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 9.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 11,
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_detail.lua",
+					"settings":
+					{
+						"buffer_size": 3241,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1836,
+								1836
+							]
+						],
+						"settings":
+						{
+							"check_times": 1.0,
+							"clone_numbers": 5.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 178.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 29,
+					"file": "Assets/App/Scripts/lua/GUI/ui_main.lua",
+					"settings":
+					{
+						"buffer_size": 7166,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1882,
+								1882
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"is_preview": true,
+							"origin_encoding": "UTF-8-SIG",
+							"revert_to_scratch": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 610.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 30,
+					"file": "Assets/SLua/LuaObject/Custom/Lua_UI_Scroll_List.cs",
+					"settings":
+					{
+						"buffer_size": 5377,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								98,
+								98
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/App/Scripts/lua/Data/Hero.lua",
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								631,
+								631
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 241.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 31,
+					"file": "Assets/App/Scripts/submodule/Unity3DUtil/CMath.cs",
+					"settings":
+					{
+						"buffer_size": 12608,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1741.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 32,
+					"file": "Assets/App/Scripts/submodule/Unity3DUtil/CRandom.cs",
+					"settings":
+					{
+						"buffer_size": 2947,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								833,
+								833
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 394.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/App/Scripts/lua/Table/Gacha1Table.lua",
+					"settings":
+					{
+						"buffer_size": 376,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -2049,55 +2483,152 @@
 				},
 				{
 					"buffer": 1,
-					"file": "Assets/App/Scripts/Manager/MyApplication.cs",
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
 					"settings":
 					{
-						"buffer_size": 715,
+						"buffer_size": 6495,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								218,
-								233
+								6046,
+								6046
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 335.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 18,
-					"file": "Assets/SLua/LuaObject/Lua_UnityEngine_GameObject.cs",
+					"buffer": 33,
+					"file": "Assets/App/Scripts/lua/GUI/ui_system_top.lua",
 					"settings":
 					{
-						"buffer_size": 20378,
+						"buffer_size": 1648,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								425,
-								425
+								1272,
+								1276
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/C#/C#.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7507.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_sell.lua",
+					"settings":
+					{
+						"buffer_size": 6495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								249,
+								249
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 2.0,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"revert_to_scratch": true,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 34,
+					"file": "Assets/App/Scripts/lua/Manager/UIManager.lua",
+					"settings":
+					{
+						"buffer_size": 371,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								112,
+								112
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+					"settings":
+					{
+						"buffer_size": 695,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								191
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -2154,35 +2685,187 @@
 		"selected_items":
 		[
 			[
-				"",
+				"luadll",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs"
+			],
+			[
+				"luasta",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs"
+			],
+			[
+				"luobject",
 				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs"
 			],
 			[
-				"uiman",
+				"system_to",
+				"App/Scripts/lua/GUI/ui_system_top.lua"
+			],
+			[
+				"",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
+			],
+			[
+				"ui_main",
+				"App/Scripts/lua/GUI/ui_main.lua"
+			],
+			[
+				"ui_del",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
+			],
+			[
+				"hero",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"hero.",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"battle",
+				"App/Scripts/lua/Battle/battle.lua"
+			],
+			[
+				"uimana",
 				"App/Scripts/lua/Manager/UIManager.lua"
 			],
 			[
-				"luac",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs"
+				"ui_batt",
+				"App/Scripts/lua/GUI/ui_battle.lua"
 			],
 			[
-				"applicati",
-				"App/Scripts/Manager/MyApplication.cs"
+				"ui_herose",
+				"App/Scripts/lua/GUI/ui_hero_sell.lua"
 			],
 			[
-				"itw",
-				"MyPlugins/iTweenEditor/iTween.cs"
+				"ui_herolis",
+				"App/Scripts/lua/GUI/ui_hero_list.lua"
 			],
 			[
-				"basics",
-				"MyPlugins/Demigiant/DOTween/Examples/Basics.cs"
+				"hero_de",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
 			],
 			[
-				"itween",
-				"MyPlugins/iTweenEditor/iTween.cs"
+				"player",
+				"App/Scripts/lua/Data/Player.lua"
 			],
 			[
-				"titlesc",
+				"ui_hero_lis",
+				"App/Scripts/lua/GUI/ui_hero_list.lua"
+			],
+			[
+				"ui_hero_se",
+				"App/Scripts/lua/GUI/ui_hero_sell.lua"
+			],
+			[
+				"ui_systemto",
+				"App/Scripts/lua/GUI/ui_system_top.lua"
+			],
+			[
+				"gacha1t",
+				"App/Scripts/lua/Table/Gacha1Table.lua"
+			],
+			[
+				"tablemana",
+				"App/Scripts/lua/Manager/TableManager.lua"
+			],
+			[
+				"gacha1",
+				"App/Scripts/lua/Table/Gacha1Table.lua"
+			],
+			[
+				"herolua",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"lua_ma",
+				"App/Scripts/lua/Util/lua_math.lua"
+			],
+			[
+				"cran",
+				"App/Scripts/submodule/Unity3DUtil/CRandom.cs"
+			],
+			[
+				"cmath",
+				"App/Scripts/submodule/Unity3DUtil/CMath.cs"
+			],
+			[
+				"hero.l",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"ui_gacha",
+				"App/Scripts/lua/GUI/ui_gacha.lua"
+			],
+			[
+				"lua_ui_s",
+				"SLua/LuaObject/Custom/Lua_UI_Scroll_List.cs"
+			],
+			[
+				"ui_herol",
+				"App/Scripts/lua/GUI/ui_hero_list.lua"
+			],
+			[
+				"ui_hd",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
+			],
+			[
+				"luauti",
+				"App/Scripts/Util/LuaUtil.cs"
+			],
+			[
+				"ui_scroll_lis",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs"
+			],
+			[
+				"hero_d",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
+			],
+			[
+				"ui_scroll_ls",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs"
+			],
+			[
+				"ui_herom",
+				"App/Scripts/lua/GUI/ui_hero_menu.lua"
+			],
+			[
+				"ui_hero",
+				"App/Scripts/lua/GUI/ui_hero_list.lua"
+			],
+			[
+				"ui_even",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
+			],
+			[
+				"ui_scroll",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs"
+			],
+			[
+				"ui_herod",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
+			],
+			[
+				"luau",
+				"App/Scripts/Util/LuaUtil.cs"
+			],
+			[
+				"ui_sc",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Horizontal_Item.cs"
+			],
+			[
+				"ui_back",
+				"App/Scripts/lua/GUI/ui_background.lua"
+			],
+			[
+				"gamesc",
+				"App/Scripts/lua/Scene/GameScene.lua"
+			],
+			[
+				"ui_system.l",
+				"App/Scripts/lua/GUI/ui_system.lua"
+			],
+			[
+				"title",
 				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
@@ -2190,480 +2873,328 @@
 				"App/Scripts/lua/Main.lua"
 			],
 			[
-				"luasv",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvr.cs"
+				"ui_system.",
+				"App/Scripts/lua/GUI/ui_system.lua"
 			],
 			[
-				"luasvrgameobject",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvrGameObject.cs"
+				"ui_mai",
+				"App/Scripts/lua/GUI/ui_main.lua"
 			],
 			[
-				"mai",
-				"App/Scripts/lua/Main.lua"
+				"herode",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
 			],
 			[
-				"luasvr",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaSvr.cs"
+				"tableh",
+				"App/Scripts/lua/Table/HeroTable.lua"
 			],
 			[
-				"myappl",
-				"App/Scripts/Manager/MyApplaction.cs"
+				"ui_gach",
+				"App/Scripts/lua/GUI/ui_gacha.lua"
 			],
 			[
-				"luadll",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs"
+				"ui_main.",
+				"App/Scripts/lua/GUI/ui_main.lua"
 			],
 			[
-				"basetest",
-				"App/Scripts/submodule/Unity3DLua/Lua52/Test/BaseTest.cs"
+				"ui_eve",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
 			],
 			[
-				"luana",
-				"App/Scripts/submodule/Unity3DLua/Lua52/Lua52Native.cs"
+				"ui_butt",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonColor.cs"
 			],
 			[
-				"nativ",
-				"App/Scripts/submodule/Unity3DLua/NLua/KeraLua/NativeMethods.cs"
+				"table.l",
+				"App/Scripts/lua/lib/table.lua"
 			],
 			[
-				"testlib",
-				"App/Scripts/submodule/Unity3DLua/Lua52/testLib.cs"
+				"ui_event",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
 			],
 			[
-				"baset",
-				"App/Scripts/submodule/Unity3DLua/Lua52/Test/BaseTest.cs"
+				"gacha",
+				"App/Scripts/lua/GUI/ui_gacha.lua"
 			],
 			[
-				"test",
-				"App/Scripts/submodule/Unity3DLua/Lua52/testLib.cs"
+				"ui_menu",
+				"App/Scripts/lua/GUI/ui_menu.lua"
 			],
 			[
-				"lua52n",
-				"App/Scripts/submodule/Unity3DLua/Lua52/Lua52Native.cs"
+				"ui_system_b",
+				"App/Scripts/lua/GUI/ui_system_bottom.lua"
 			],
 			[
-				"nativem",
-				"App/Scripts/submodule/Unity3DLua/NLua/KeraLua/NativeMethods.cs"
-			],
-			[
-				"testl",
-				"App/Scripts/submodule/Unity3DLua/Lua52/testLib.cs"
-			],
-			[
-				"define",
-				"App/Scripts/submodule/Unity3DDefineTool/src/Editor/DEFINE_TOOL.cs"
-			],
-			[
-				"subli",
-				"App/Scripts/submodule/Unity3DSublime2Project/Editor/SyncSublimeText2.cs"
-			],
-			[
-				"codeg",
-				"App/Scripts/submodule/Unity3DLua/NLua/NLua/GenerateEventAssembly/CodeGeneration.cs"
-			],
-			[
-				"lualib",
-				"App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaLib/LuaLib.cs"
+				"ui_",
+				"App/Scripts/lua/GUI/ui_title.lua"
 			],
 			[
 				"luastate",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaState.cs"
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs"
 			],
 			[
-				"lua",
-				"App/Scripts/submodule/Unity3DLua/NLua/NLua/Lua.cs"
+				"mylua",
+				"App/Scripts/Manager/MyLua.cs"
 			],
 			[
-				"luatable",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaTable.cs"
+				"ui_ga",
+				"App/Scripts/lua/GUI/ui_gacha.lua"
 			],
 			[
-				"luawrap",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/LuaWrap.cs"
+				"ui_heo",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
 			],
 			[
-				"luaapi",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs"
+				"ui_mail",
+				"App/Scripts/lua/GUI/ui_mail.lua"
 			],
 			[
-				"luaaux",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAuxLib.cs"
+				"ui_he",
+				"App/Scripts/lua/GUI/ui_hero_detail.lua"
 			],
 			[
-				"luaen",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/LuaEngine.cs"
+				"ui_ma",
+				"App/Scripts/lua/GUI/ui_main.lua"
 			],
 			[
-				"uniluaen",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/UniLuaEngine.cs"
-			],
-			[
-				"luaap",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaAPI.cs"
-			],
-			[
-				"spawns",
-				"App/Scripts/submodule/Unity3DLua/NLua/Example/SpawnSphere.cs"
-			],
-			[
-				"testbeh",
-				"App/Scripts/submodule/Unity3DLua/NLua/Example/TestBehaviour.cs"
-			],
-			[
-				"luabase",
-				"App/Scripts/submodule/Unity3DLua/NLua/NLua/LuaBase.cs"
-			],
-			[
-				"main.lu",
-				"App/Scripts/lua/Main.lua"
-			],
-			[
-				"titles",
-				"App/Scripts/lua/Scene/TitleScene.lua"
-			],
-			[
-				"titlescene.l",
-				"App/Scripts/lua/Scene/TitleScene.lua"
+				"ui_ti",
+				"App/Scripts/lua/GUI/ui_title.lua"
 			],
 			[
 				"main.lua",
 				"App/Scripts/lua/Main.lua"
 			],
 			[
-				"lua.cs",
-				"App/Scripts/submodule/Unity3DLua/NLua/NLua/Lua.cs"
+				"uiman",
+				"App/Scripts/lua/Manager/UIManager.lua"
 			],
 			[
-				"mainl",
+				"uimain",
+				"App/Scripts/lua/GUI/ui_main.lua"
+			],
+			[
+				"games",
+				"App/Scripts/lua/Scene/GameScene.lua"
+			],
+			[
+				"ui_title",
+				"App/Scripts/lua/GUI/ui_title.lua"
+			],
+			[
+				"tablehe",
+				"App/Scripts/lua/Table/HeroTable.lua"
+			],
+			[
+				"saved",
+				"App/Scripts/lua/Manager/SaveData.lua"
+			],
+			[
+				"ui_t",
+				"App/Scripts/lua/GUI/ui_title.lua"
+			],
+			[
+				"herota",
+				"App/Scripts/lua/Table/HeroTable.lua"
+			],
+			[
+				"ui_tit",
+				"App/Scripts/lua/GUI/ui_title.lua"
+			],
+			[
+				"main.lu",
 				"App/Scripts/lua/Main.lua"
 			],
 			[
-				"example",
-				"App/Scripts/submodule/Unity3DLua/NLua/Example/ExampleBehaviour.cs"
+				"titlesc",
+				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
-				"my",
-				"App/Scripts/Manager/MyApplaction.cs"
+				"saveda",
+				"App/Scripts/lua/Manager/SaveData.lua"
 			],
 			[
-				"examplebe",
-				"App/Scripts/submodule/Unity3DLua/NLua/Example/ExampleBehaviour.cs"
+				"titles",
+				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
-				"myap",
-				"App/Scripts/Manager/MyApplaction.cs"
+				"dkjson",
+				"App/Scripts/lua/lib/dkjson.lua"
 			],
 			[
-				"uniwa",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/UniLuaWrap.cs"
+				"ui_titl",
+				"App/Scripts/lua/GUI/ui_title.lua"
 			],
 			[
-				"unitluaw",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/UniLuaWrap.cs"
+				"luahttp",
+				"App/Scripts/lua/Util/lua_http.lua"
 			],
 			[
-				"luabaselib",
-				"App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaBaseLib.cs"
+				"network.",
+				"SLua/LuaObject/Custom/Lua_Network.cs"
 			],
 			[
-				"uniluaw",
-				"App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/UniLuaWrap.cs"
+				"ui_system",
+				"App/Scripts/lua/GUI/ui_system_bottom.lua"
 			],
 			[
-				"luasc",
-				"App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/Base/LuaScriptMgr.cs"
+				"ui_syste",
+				"App/Scripts/lua/GUI/ui_system_top.lua"
 			],
 			[
-				"objectw",
-				"App/Scripts/submodule/Unity3DLua/uniLua/toLua/Source/LuaWrap/Base/ObjectWrap.cs"
+				"uititle",
+				"App/Scripts/lua/GUI/ui_title.lua"
 			],
 			[
-				"luaddl",
-				"MyPlugins/uniLua/U3DLua/uLua/Core/LuaDLL.cs"
+				"luacodege",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs"
 			],
 			[
-				"luastat",
-				"MyPlugins/uniLua/UniLua/LuaState.cs"
+				"luasystem",
+				"SLua/LuaObject/Custom/LuaSystem_Action_string.cs"
 			],
 			[
-				"luascrip",
-				"MyPlugins/uniLua/U3DLua/Source/Base/LuaScriptMgr.cs"
+				"lua_net",
+				"SLua/LuaObject/Custom/Lua_Network.cs"
 			],
 			[
-				"util",
-				"MyPlugins/uniLua/UniLua/Util.cs"
+				"luaobj",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs"
 			],
 			[
-				"luafun",
-				"MyPlugins/uLua/Core/LuaFunction.cs"
+				"lua_lua",
+				"SLua/LuaObject/Custom/Lua_LuaUtil.cs"
 			],
 			[
-				"mya",
-				"App/Scripts/Manager/MyApplaction.cs"
+				"luacodeg",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs"
 			],
 			[
-				"luastatic",
-				"MyPlugins/uLua/Core/LuaStatic.cs"
+				"netw",
+				"App/Scripts/Network/Network.cs"
 			],
 			[
-				"csing",
-				"App/Scripts/submodule/Unity3DUtil/CSingleton.cs"
-			],
-			[
-				"gesture",
-				"Plugins/InputTouches/Gesture.cs"
-			],
-			[
-				"common",
-				"Scripts/UI/UI_Common.cs"
-			],
-			[
-				"pvpmodel",
-				"App_China/Script/Network/Model/PVPModel.cs"
-			],
-			[
-				"chall",
-				"App_China/Script/UI/Challenge_List_Item.cs"
-			],
-			[
-				"checkre",
-				"Scripts/Network/Model/CheckRegisterModel.cs"
-			],
-			[
-				"title",
-				"Scripts/UI/UI_Title.cs"
-			],
-			[
-				"userinfom",
-				"Scripts/Network/Model/UserInfoModel.cs"
-			],
-			[
-				"playermo",
-				"Scripts/Network/Model/PlayerModel.cs"
-			],
-			[
-				"chal",
-				"App_China/Script/UI/Challenge_List.cs"
-			],
-			[
-				"field",
-				"Scripts/System/FieldCamera.cs"
-			],
-			[
-				"pvpmang",
-				"App_China/Script/Manager/PvpManager.cs"
-			],
-			[
-				"usercontrollerbase",
-				"Scripts/Controller/UserControllerBase.cs"
-			],
-			[
-				"fieldcam",
-				"Scripts/System/FieldCamera.cs"
-			],
-			[
-				"fieldc",
-				"Scripts/System/FieldCamera.cs"
-			],
-			[
-				"ui_inn",
-				"Scripts/UI/UI_Inn.cs"
-			],
-			[
-				"unitmo",
-				"Scripts/Network/Model/UnitModel.cs"
-			],
-			[
-				"global",
-				"Scripts/Manager/GlobalDataManager.cs"
-			],
-			[
-				"playermod",
-				"Scripts/Network/Model/PlayerModel.cs"
-			],
-			[
-				"unitse",
-				"Scripts/UI/UI_UnitSelectList.cs"
-			],
-			[
-				"uime",
-				"Scripts/UI/UI_Menu.cs"
-			],
-			[
-				"uidownload",
-				"App_China/Script/UI/UI_DownLoad_All.cs"
-			],
-			[
-				"deckmo",
-				"Scripts/Network/Model/DeckModel.cs"
-			],
-			[
-				"stagepl",
-				"Scripts/State/StageManagerStatePlaying.cs"
-			],
-			[
-				"uiwo",
-				"Scripts/UI/UI_World.cs"
-			],
-			[
-				"downloadlistmodel",
-				"App_China/Script/Network/Model/DownloadListModel.cs"
-			],
-			[
-				"downloadre",
-				"App_China/Script/UI/UI_Download_reward.cs"
-			],
-			[
-				"uiarea",
-				"Scripts/UI/Area/UI_Area.cs"
-			],
-			[
-				"uiwor",
-				"Scripts/UI/UI_World.cs"
-			],
-			[
-				"networkman",
-				"Scripts/Network/NetworkManager.cs"
-			],
-			[
-				"down",
-				"App_China/Script/Network/Model/DownloadFinishModel.cs"
-			],
-			[
-				"rewo",
-				"App_China/Script/UI/UI_Download_reward_ok.cs"
-			],
-			[
-				"stagepla",
-				"Scripts/State/StageManagerStatePlaying.cs"
-			],
-			[
-				"getdre",
-				"Scripts/Network/Model/QuestGetDreamModel.cs"
-			],
-			[
-				"questgeneratemodel",
-				"Scripts/Network/Model/QuestGenerateModel.cs"
-			],
-			[
-				"uidownloadall",
-				"App_China/Script/UI/UI_DownLoad_All.cs"
-			],
-			[
-				"uirew",
-				"App_China/Script/UI/UI_Download_reward.cs"
-			],
-			[
-				"playerstat",
-				"Scripts/Character/State/PlayerStateAction.cs"
-			],
-			[
-				"stagpl",
-				"Scripts/State/StageManagerStatePlaying.cs"
-			],
-			[
-				"ingamem",
-				"Scripts/Manager/InGameManager.cs"
-			],
-			[
-				"usercontroller",
-				"Scripts/Controller/UserController.cs"
-			],
-			[
-				"player",
-				"Scripts/Character/Player.cs"
-			],
-			[
-				"generate",
-				"Scripts/Network/Model/QuestGenerateModel.cs"
-			],
-			[
-				"gamed",
-				"App_China/Script/Manager/GAME_DEFINE.cs"
-			],
-			[
-				"men",
-				"Scripts/UI/UI_Menu.cs"
-			],
-			[
-				"completeq",
-				"AI System/Scripts/Actions/Quest/CompleteQuest.cs"
-			],
-			[
-				"dreammo",
-				"Scripts/Network/Model/QuestGetDreamModel.cs"
-			],
-			[
-				"downloadl",
-				"App_China/Script/Network/Model/DownloadListModel.cs"
-			],
-			[
-				"compl",
-				"AI System/Scripts/Actions/Quest/CompleteQuest.cs"
-			],
-			[
-				"ui_wor",
-				"Scripts/UI/UI_World.cs"
+				"uititl",
+				"App/Scripts/lua/GUI/ui_title.lua"
 			],
 			[
 				"netwo",
-				"Scripts/Network/NetworkManager_Asset.cs"
+				"App/Scripts/Network/Network.cs"
 			],
 			[
-				"networkmana",
-				"Scripts/Network/NetworkManager_Asset.cs"
+				"luadl",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs"
 			],
 			[
-				"assetbundleversionmodel",
-				"Scripts/Network/Model/AssetBundleVersionModel.cs"
+				"htt",
+				"App/Scripts/submodule/Unity3DNetwork-http/src/HTTPLoader.cs"
 			],
 			[
-				"assetmo",
-				"Scripts/Network/Model/AssetBundleVersionModel.cs"
+				"httpre",
+				"App/Scripts/submodule/Unity3DNetwork-http/src/HttpRequest.cs"
 			],
 			[
-				"inggamema",
-				"Scripts/Manager/InGameManager.cs"
+				"csvp",
+				"App/Scripts/submodule/Unity3DTable/csv/CSVParser.cs"
 			],
 			[
-				".csv",
-				"/Users/luzexi/Desktop/work/wcat/client/WcatUnity/Assets/App/Resources/Message/Common_msg.csv"
+				"csv",
+				"App/Scripts/Util/csv_util.cs"
 			],
 			[
-				"ui_downloa",
-				"App_China/Script/UI/UI_Download_reward.cs"
+				"luacode",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Editor/LuaCodeGen.cs"
 			],
 			[
-				"ui_me",
-				"Scripts/UI/UI_Menu.cs"
+				"luaobjec",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaObject.cs"
 			],
 			[
-				"downloadmo",
-				"App_China/Script/Network/Model/DownloadListModel.cs"
+				"mya",
+				"App/Scripts/Manager/MyApplication.cs"
 			],
 			[
-				"stagp",
-				"Scripts/State/StageManagerStatePlaying.cs"
+				"ti",
+				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
-				"stagping",
-				"Scripts/State/StageManagerStatePlaying.cs"
+				"main.",
+				"App/Scripts/lua/Main.lua"
 			],
 			[
-				"uitopm",
-				"Scripts/UI/UI_TopMenu.cs"
+				"tit",
+				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
-				"uimen",
-				"Scripts/UI/UI_Menu.cs"
+				"tweenco",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_TweenColor.cs"
 			],
 			[
-				"uidown",
-				"App_China/Script/UI/UI_DownLoad_All.cs"
+				"uievent",
+				"App/Scripts/submodule/Unity3DMVC/src/Controller/Input/UIEvent.cs"
 			],
 			[
-				"ui_donw",
-				"App_China/Script/UI/UI_Download_reward.cs"
+				"ui_e",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
+			],
+			[
+				"itwe",
+				"MyPlugins/iTweenEditor/iTween.cs"
+			],
+			[
+				"itwee",
+				"MyPlugins/iTweenEditor/iTween.cs"
+			],
+			[
+				"ui_ev",
+				"App/Scripts/GUI/UI_Event.cs"
+			],
+			[
+				"button",
+				"App/Scripts/GUI/UI_ButtonScale.cs"
+			],
+			[
+				"audi",
+				"App/Scripts/submodule/Unity3DMedia/src/AudioPlayer.cs"
+			],
+			[
+				"mediam",
+				"App/Scripts/submodule/Unity3DMedia/src/MediaMgr.cs"
+			],
+			[
+				"seq",
+				"MyPlugins/Demigiant/DOTween/Examples/Sequences.cs"
+			],
+			[
+				"uieve",
+				"App/Scripts/GUI/UI_Event.cs"
+			],
+			[
+				"dotween",
+				"MyPlugins/Demigiant/DOTween/DOTween.XML"
+			],
+			[
+				"myappl",
+				"App/Scripts/Manager/MyApplication.cs"
+			],
+			[
+				"myad",
+				"MyPlugins/AstarPathfindingProject/Core/AstarData.cs"
+			],
+			[
+				"basic",
+				"MyPlugins/Demigiant/DOTween/Examples/Basics.cs"
+			],
+			[
+				"luastat",
+				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs"
+			],
+			[
+				"dll",
+				"App/Scripts/submodule/Unity3DLua/Lua52/Lua52Lib.cs"
+			],
+			[
+				"lua_ui_eve",
+				"SLua/LuaObject/Custom/Lua_UI_Event.cs"
 			]
 		],
 		"width": 0.0

@@ -1,4 +1,4 @@
-﻿
+
 local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3

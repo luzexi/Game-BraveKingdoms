@@ -1,0 +1,231 @@
+fileFormatVersion: 2
+guid: e269b73ad26e3454db70a0d5dc20c5b9
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_L_Bone006
+    100002: arm_r_Bone006
+    100004: Bone003
+    100006: Bone005
+    100008: Bone005 1
+    100010: Bone007
+    100012: Bone007 1
+    100014: Bone010
+    100016: Bone017
+    100018: Bone017 1
+    100020: Bone027
+    100022: Bone027 1
+    100024: Bone034
+    100026: Bone039
+    100028: Bone045
+    100030: Bone045 1
+    100032: Box01
+    100034: Box02
+    100036: //RootNode
+    100038: f_caiwenji_3_model
+    100040: hair_Bone032
+    100042: hair_Bone033
+    100044: hair_L_Bone025
+    100046: hair_L_Bone026
+    100048: hair_r_Bone025
+    100050: hair_r_Bone026
+    100052: head_Bone002
+    100054: leg_L_Bone004
+    100056: leg_r_Bone004
+    100058: pifeng_L_Bone042
+    100060: pifeng_L_Bone043
+    100062: pifeng_L_Bone044
+    100064: pifeng_r_Bone042
+    100066: pifeng_r_Bone043
+    100068: pifeng_r_Bone044
+    100070: qundai2_L_Bone015
+    100072: qundai2_L_Bone016
+    100074: qundai2_r_Bone015
+    100076: qundai2_r_Bone016
+    100078: qundai_Bone008
+    100080: qundai_Bone009
+    100082: t_caiwenji_1_1_model
+    100084: t_caiwenji_2_2_model
+    100086: w_caiwenji_1_model
+    100088: wuqi_Bone038
+    100090: xiong_Bone001
+    400000: arm_L_Bone006
+    400002: arm_r_Bone006
+    400004: Bone003
+    400006: Bone005
+    400008: Bone005 1
+    400010: Bone007
+    400012: Bone007 1
+    400014: Bone010
+    400016: Bone017
+    400018: Bone017 1
+    400020: Bone027
+    400022: Bone027 1
+    400024: Bone034
+    400026: Bone039
+    400028: Bone045
+    400030: Bone045 1
+    400032: Box01
+    400034: Box02
+    400036: //RootNode
+    400038: f_caiwenji_3_model
+    400040: hair_Bone032
+    400042: hair_Bone033
+    400044: hair_L_Bone025
+    400046: hair_L_Bone026
+    400048: hair_r_Bone025
+    400050: hair_r_Bone026
+    400052: head_Bone002
+    400054: leg_L_Bone004
+    400056: leg_r_Bone004
+    400058: pifeng_L_Bone042
+    400060: pifeng_L_Bone043
+    400062: pifeng_L_Bone044
+    400064: pifeng_r_Bone042
+    400066: pifeng_r_Bone043
+    400068: pifeng_r_Bone044
+    400070: qundai2_L_Bone015
+    400072: qundai2_L_Bone016
+    400074: qundai2_r_Bone015
+    400076: qundai2_r_Bone016
+    400078: qundai_Bone008
+    400080: qundai_Bone009
+    400082: t_caiwenji_1_1_model
+    400084: t_caiwenji_2_2_model
+    400086: w_caiwenji_1_model
+    400088: wuqi_Bone038
+    400090: xiong_Bone001
+    2300000: Box01
+    2300002: Box02
+    3300000: Box01
+    3300002: Box02
+    4300000: f_caiwenji_3_model
+    4300002: t_caiwenji_1_1_model
+    4300004: t_caiwenji_2_2_model
+    4300006: w_caiwenji_1_model
+    4300008: Box01
+    4300010: Box02
+    7400000: idle
+    7400002: attack
+    7400004: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_caiwenji_3_model
+    13700002: t_caiwenji_1_1_model
+    13700004: t_caiwenji_2_2_model
+    13700006: w_caiwenji_1_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 200
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

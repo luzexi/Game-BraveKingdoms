@@ -1,0 +1,316 @@
+fileFormatVersion: 2
+guid: 37222c12e13c4c4449afd028f42cbe77
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_L_Bone004
+    100002: arm_r_Bone004
+    100004: Bone003
+    100006: Bone005
+    100008: Bone005 1
+    100010: Bone011
+    100012: Bone014
+    100014: Bone014 1
+    100016: Bone016
+    100018: Bone018
+    100020: Bone018 1
+    100022: Bone021
+    100024: Bone021 1
+    100026: Bone023
+    100028: Bone026
+    100030: Box01
+    100032: Box02
+    100034: foot_L_Bone013
+    100036: foot_r_Bone013
+    100038: //RootNode
+    100040: guanyu_head_model
+    100042: guanyu_jianjia_model
+    100044: guanyu_model
+    100046: guanyu_pifeng_model
+    100048: head_Bone002
+    100050: huzi_Bone024
+    100052: huzi_Bone025
+    100054: jianjia_Bone015
+    100056: leg_L_Bone012
+    100058: leg_r_Bone012
+    100060: maozi_Bone022
+    100062: pifeng_L_Bone019
+    100064: pifeng_L_Bone020
+    100066: pifeng_r_Bone019
+    100068: pifeng_r_Bone020
+    100070: qun_L_Bone017
+    100072: qun_r_Bone017
+    100074: wu_Bone010
+    100076: wuqi_model
+    100078: xiong_Bone001
+    100080: Camera001
+    100082: effect_guanyu_3_gslizi
+    100084: arm_L_Bone033
+    100086: arm_L_Bone034
+    100088: arm_r_Bone033
+    100090: arm_r_Bone034
+    100092: Bone016 1
+    100094: Bone029
+    100096: Bone029 1
+    100098: Bone032
+    100100: Bone032 1
+    100102: Bone035
+    100104: Bone035 1
+    100106: Bone038
+    100108: daizi_L_Bone030
+    100110: daizi_L_Bone031
+    100112: daizi_r_Bone030
+    100114: daizi_r_Bone031
+    100116: f_guanyu_3_1_model
+    100118: jianjia_r_Bone015
+    100120: maozi_Bone036
+    100122: maozi_Bone037
+    100124: qunL_L_Bone027
+    100126: qunL_L_Bone028
+    100128: qunL_r_Bone027
+    100130: qunL_r_Bone028
+    100132: t_guanyu_3_1_model
+    100134: t_guanyu_3_2_model
+    100136: w_guanyu_3_1_model
+    100138: w_guanyu_3_1_model 1
+    400000: arm_L_Bone004
+    400002: arm_r_Bone004
+    400004: Bone003
+    400006: Bone005
+    400008: Bone005 1
+    400010: Bone011
+    400012: Bone014
+    400014: Bone014 1
+    400016: Bone016
+    400018: Bone018
+    400020: Bone018 1
+    400022: Bone021
+    400024: Bone021 1
+    400026: Bone023
+    400028: Bone026
+    400030: Box01
+    400032: Box02
+    400034: foot_L_Bone013
+    400036: foot_r_Bone013
+    400038: //RootNode
+    400040: guanyu_head_model
+    400042: guanyu_jianjia_model
+    400044: guanyu_model
+    400046: guanyu_pifeng_model
+    400048: head_Bone002
+    400050: huzi_Bone024
+    400052: huzi_Bone025
+    400054: jianjia_Bone015
+    400056: leg_L_Bone012
+    400058: leg_r_Bone012
+    400060: maozi_Bone022
+    400062: pifeng_L_Bone019
+    400064: pifeng_L_Bone020
+    400066: pifeng_r_Bone019
+    400068: pifeng_r_Bone020
+    400070: qun_L_Bone017
+    400072: qun_r_Bone017
+    400074: wu_Bone010
+    400076: wuqi_model
+    400078: xiong_Bone001
+    400080: Camera001
+    400082: effect_guanyu_3_gslizi
+    400084: arm_L_Bone033
+    400086: arm_L_Bone034
+    400088: arm_r_Bone033
+    400090: arm_r_Bone034
+    400092: Bone016 1
+    400094: Bone029
+    400096: Bone029 1
+    400098: Bone032
+    400100: Bone032 1
+    400102: Bone035
+    400104: Bone035 1
+    400106: Bone038
+    400108: daizi_L_Bone030
+    400110: daizi_L_Bone031
+    400112: daizi_r_Bone030
+    400114: daizi_r_Bone031
+    400116: f_guanyu_3_1_model
+    400118: jianjia_r_Bone015
+    400120: maozi_Bone036
+    400122: maozi_Bone037
+    400124: qunL_L_Bone027
+    400126: qunL_L_Bone028
+    400128: qunL_r_Bone027
+    400130: qunL_r_Bone028
+    400132: t_guanyu_3_1_model
+    400134: t_guanyu_3_2_model
+    400136: w_guanyu_3_1_model
+    400138: w_guanyu_3_1_model 1
+    2300000: Box01
+    2300002: Box02
+    2300004: effect_guanyu_3_gslizi
+    3300000: Box01
+    3300002: Box02
+    3300004: effect_guanyu_3_gslizi
+    4300000: guanyu_head_model
+    4300002: guanyu_model
+    4300004: guanyu_pifeng_model
+    4300006: wuqi_model
+    4300008: guanyu_jianjia_model
+    4300010: Box01
+    4300012: Box02
+    4300014: effect_guanyu_3_gslizi
+    4300016: f_guanyu_3_1_model
+    4300018: t_guanyu_3_1_model
+    4300020: t_guanyu_3_2_model
+    4300022: w_guanyu_3_1_model
+    4300024: w_guanyu_3_1_model
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: guanyu_head_model
+    13700002: guanyu_jianjia_model
+    13700004: guanyu_model
+    13700006: guanyu_pifeng_model
+    13700008: wuqi_model
+    13700010: f_guanyu_3_1_model
+    13700012: t_guanyu_3_1_model
+    13700014: t_guanyu_3_2_model
+    13700016: w_guanyu_3_1_model
+    13700018: w_guanyu_3_1_model 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 75
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 102
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 102
+      lastFrame: 190
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

@@ -1,0 +1,175 @@
+fileFormatVersion: 2
+guid: b9f615e4982843841b4bdf30e50a6c56
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone002
+    100002: Bone002 1
+    100004: Bone004
+    100006: Bone004 1
+    100008: Bone005
+    100010: Box01
+    100012: //RootNode
+    100014: huan_L_Bone003
+    100016: huan_r_Bone003
+    100018: men_L_Bone001
+    100020: men_L_model
+    100022: men_r_Bone001
+    100024: men_r_model
+    100026: menkuang_model
+    100028: shitou_Bone004
+    100030: shitou_model
+    100032: Door_white
+    100034: Door_effect_1
+    100036: Door_effect_2
+    100038: Door_white_2
+    100040: Door_black
+    400000: Bone002
+    400002: Bone002 1
+    400004: Bone004
+    400006: Bone004 1
+    400008: Bone005
+    400010: Box01
+    400012: //RootNode
+    400014: huan_L_Bone003
+    400016: huan_r_Bone003
+    400018: men_L_Bone001
+    400020: men_L_model
+    400022: men_r_Bone001
+    400024: men_r_model
+    400026: menkuang_model
+    400028: shitou_Bone004
+    400030: shitou_model
+    400032: Door_white
+    400034: Door_effect_1
+    400036: Door_effect_2
+    400038: Door_white_2
+    400040: Door_black
+    2300000: Box01
+    2300002: menkuang_model
+    2300004: Door_white
+    2300006: Door_effect_1
+    2300008: Door_effect_2
+    2300010: Door_white_2
+    2300012: Door_black
+    3300000: Box01
+    3300002: menkuang_model
+    3300004: Door_white
+    3300006: Door_effect_1
+    3300008: Door_effect_2
+    3300010: Door_white_2
+    3300012: Door_black
+    4300000: shitou_model
+    4300002: menkuang_model
+    4300004: men_L_model
+    4300006: men_r_model
+    4300008: Box01
+    4300010: Door_white
+    4300012: Door_effect_1
+    4300014: Door_effect_2
+    4300016: Door_white_2
+    4300018: Door_black
+    7400000: open
+    7400002: keep
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: men_L_model
+    13700002: men_r_model
+    13700004: shitou_model
+    13700006: menkuang_model
+    13700008: Door_effect_1
+    13700010: Door_effect_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50.0000038
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: keep
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

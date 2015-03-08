@@ -1,0 +1,308 @@
+fileFormatVersion: 2
+guid: 2b0fed5572e14ac499c1d00d6a3e5e12
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: 04_Bone006
+    100002: 04_Bone007
+    100004: 04_Bone008
+    100006: 04_Bone009
+    100008: 04_Bone010
+    100010: 04_Bone011
+    100012: 04_Bone012
+    100014: 04_huan_L_Bone004
+    100016: 04_huan_L_Box004
+    100018: 04_huan_r_Bone004
+    100020: 04_huan_r_Box005
+    100022: 04_men_L_Bone002
+    100024: 04_men_L_model
+    100026: 04_men_r_Bone002
+    100028: 04_men_r_model
+    100030: 04_menkuang_model001
+    100032: 04_qiu_L_Bone002
+    100034: 04_qiu_r_Bone002
+    100036: 04_shitou_Bone005
+    100038: 04_shitou_model001
+    100040: 04_sui_L_Bone001
+    100042: 04_sui_L_Bone002
+    100044: 04_sui_L_Bone003
+    100046: 04_sui_L_Bone004
+    100048: 04_sui_L_Bone005
+    100050: 04_sui_L_Bone006
+    100052: 04_sui_L_Bone007
+    100054: 04_sui_L_Bone008
+    100056: 04_sui_L_Bone009
+    100058: 04_sui_L_Bone010
+    100060: 04_sui_L_Bone011
+    100062: 04_sui_L_Bone012
+    100064: 04_sui_r_Bone013
+    100066: 04_sui_r_Bone014
+    100068: 04_sui_r_Bone015
+    100070: 04_sui_r_Bone016
+    100072: 04_sui_r_Bone017
+    100074: 04_sui_r_Bone018
+    100076: 04_sui_r_Bone019
+    100078: 04_sui_r_Bone020
+    100080: 04_sui_r_Bone021
+    100082: 04_sui_r_Bone022
+    100084: Box04
+    100086: //RootNode
+    100088: 03_Bone002
+    100090: 03_Bone002 1
+    100092: 03_Bone002 2
+    100094: 03_Bone002 3
+    100096: 03_Bone004
+    100098: 03_Bone004 1
+    100100: 03_Bone005
+    100102: 03_huan_L_Bone003
+    100104: 03_huan_L_Box03
+    100106: 03_huan_r_Bone003
+    100108: 03_huan_r_Box04
+    100110: 03_men_L_Bone001
+    100112: 03_men_L_model
+    100114: 03_men_L_model 1
+    100116: 03_men_r_Bone001
+    100118: 03_menkuang_model
+    100120: 03_qiu_L_Bone001
+    100122: 03_qiu_r_Bone001
+    100124: 03_shitou_Bone004
+    100126: 03_shitou_model
+    100128: Box03
+    100130: 01_Bone002
+    100132: 01_Bone002 1
+    100134: 01_Bone004
+    100136: 01_Bone004 1
+    100138: 01_Bone005
+    100140: 01_huan_L_Bone003
+    100142: 01_huan_r_Bone003
+    100144: 01_men_L_Bone001
+    100146: 01_men_L_model
+    100148: 01_men_r_Bone001
+    100150: 01_men_r_model
+    100152: 01_menkuang_model
+    100154: 01_shitou_Bone004
+    100156: 01_shitou_model
+    100158: box01
+    400000: 04_Bone006
+    400002: 04_Bone007
+    400004: 04_Bone008
+    400006: 04_Bone009
+    400008: 04_Bone010
+    400010: 04_Bone011
+    400012: 04_Bone012
+    400014: 04_huan_L_Bone004
+    400016: 04_huan_L_Box004
+    400018: 04_huan_r_Bone004
+    400020: 04_huan_r_Box005
+    400022: 04_men_L_Bone002
+    400024: 04_men_L_model
+    400026: 04_men_r_Bone002
+    400028: 04_men_r_model
+    400030: 04_menkuang_model001
+    400032: 04_qiu_L_Bone002
+    400034: 04_qiu_r_Bone002
+    400036: 04_shitou_Bone005
+    400038: 04_shitou_model001
+    400040: 04_sui_L_Bone001
+    400042: 04_sui_L_Bone002
+    400044: 04_sui_L_Bone003
+    400046: 04_sui_L_Bone004
+    400048: 04_sui_L_Bone005
+    400050: 04_sui_L_Bone006
+    400052: 04_sui_L_Bone007
+    400054: 04_sui_L_Bone008
+    400056: 04_sui_L_Bone009
+    400058: 04_sui_L_Bone010
+    400060: 04_sui_L_Bone011
+    400062: 04_sui_L_Bone012
+    400064: 04_sui_r_Bone013
+    400066: 04_sui_r_Bone014
+    400068: 04_sui_r_Bone015
+    400070: 04_sui_r_Bone016
+    400072: 04_sui_r_Bone017
+    400074: 04_sui_r_Bone018
+    400076: 04_sui_r_Bone019
+    400078: 04_sui_r_Bone020
+    400080: 04_sui_r_Bone021
+    400082: 04_sui_r_Bone022
+    400084: Box04
+    400086: //RootNode
+    400088: 03_Bone002
+    400090: 03_Bone002 1
+    400092: 03_Bone002 2
+    400094: 03_Bone002 3
+    400096: 03_Bone004
+    400098: 03_Bone004 1
+    400100: 03_Bone005
+    400102: 03_huan_L_Bone003
+    400104: 03_huan_L_Box03
+    400106: 03_huan_r_Bone003
+    400108: 03_huan_r_Box04
+    400110: 03_men_L_Bone001
+    400112: 03_men_L_model
+    400114: 03_men_L_model 1
+    400116: 03_men_r_Bone001
+    400118: 03_menkuang_model
+    400120: 03_qiu_L_Bone001
+    400122: 03_qiu_r_Bone001
+    400124: 03_shitou_Bone004
+    400126: 03_shitou_model
+    400128: Box03
+    400130: 01_Bone002
+    400132: 01_Bone002 1
+    400134: 01_Bone004
+    400136: 01_Bone004 1
+    400138: 01_Bone005
+    400140: 01_huan_L_Bone003
+    400142: 01_huan_r_Bone003
+    400144: 01_men_L_Bone001
+    400146: 01_men_L_model
+    400148: 01_men_r_Bone001
+    400150: 01_men_r_model
+    400152: 01_menkuang_model
+    400154: 01_shitou_Bone004
+    400156: 01_shitou_model
+    400158: box01
+    2300000: 04_huan_L_Box004
+    2300002: 04_huan_r_Box005
+    2300004: Box04
+    2300006: 03_huan_L_Box03
+    2300008: 03_huan_r_Box04
+    2300010: Box03
+    2300012: box01
+    3300000: 04_huan_L_Box004
+    3300002: 04_huan_r_Box005
+    3300004: Box04
+    3300006: 03_huan_L_Box03
+    3300008: 03_huan_r_Box04
+    3300010: Box03
+    3300012: box01
+    4300000: 04_men_r_model
+    4300002: 04_men_L_model
+    4300004: 04_shitou_model001
+    4300006: 04_menkuang_model001
+    4300008: Box04
+    4300010: 04_huan_r_Box005
+    4300012: 04_huan_L_Box004
+    4300014: 03_shitou_model
+    4300016: 03_menkuang_model
+    4300018: 03_men_L_model
+    4300020: 03_men_L_model
+    4300022: Box03
+    4300024: 03_huan_r_Box04
+    4300026: 03_huan_L_Box03
+    4300028: 01_shitou_model
+    4300030: 01_menkuang_model
+    4300032: 01_men_L_model
+    4300034: 01_men_r_model
+    4300036: box01
+    7400000: keep
+    7400002: open
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: 04_men_L_model
+    13700002: 04_men_r_model
+    13700004: 04_menkuang_model001
+    13700006: 04_shitou_model001
+    13700008: 03_men_L_model
+    13700010: 03_men_L_model 1
+    13700012: 03_menkuang_model
+    13700014: 03_shitou_model
+    13700016: 01_men_L_model
+    13700018: 01_men_r_model
+    13700020: 01_menkuang_model
+    13700022: 01_shitou_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 3
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: keep
+      takeName: Take 001
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 
