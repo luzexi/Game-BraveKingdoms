@@ -1,6 +1,11 @@
 # Game-BraveKingdoms
 It is a single-player-game made by unity3d and It use c# and lua to program.
 
+# Init
+	Before run the game you must udpate submodule to pull myself unity3d  plugins in github.
+	git submodule update --init
+
+
 # About the game
 The game is an three kingdoms story.<br />
 You can have many heros and items.<br />
