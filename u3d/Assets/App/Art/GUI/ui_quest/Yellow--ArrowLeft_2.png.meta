@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 1372b4bb9a3df4cd7bb3c6782435e226
+guid: ee00f117e21824c588633de19aade120
 TextureImporter:
   fileIDToRecycleName: {}
   serializedVersion: 2
@@ -43,5 +43,5 @@ TextureImporter:
   buildTargetSettings: []
   spriteSheet:
     sprites: []
-  spritePackingTag: 
+  spritePackingTag: quest
   userData: 

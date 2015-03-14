@@ -169,18 +169,27 @@ local function create()
         ev = UI_Event.Get(btn_quest1)
         ev.onClick = { "+=" , function( eventData , go , args )
             print("quest1 click")
+            GameObject.Destroy(ui_main_obj)
+            local ui_quest = require("GUI/ui_quest")
+            ui_quest.create()
         end
         }
         
         ev = UI_Event.Get(btn_quest2)
         ev.onClick = { "+=" , function( eventData , go , args )
             print("quest2 click")
+            GameObject.Destroy(ui_main_obj)
+            local ui_quest = require("GUI/ui_quest")
+            ui_quest.create()
         end
         }
 
         ev = UI_Event.Get(btn_quest3)
         ev.onClick = { "+=" , function( eventData , go , args )
             print("quest3 click")
+            GameObject.Destroy(ui_main_obj)
+            local ui_quest = require("GUI/ui_quest")
+            ui_quest.create()
         end
         }
     end
