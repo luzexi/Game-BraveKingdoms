@@ -1,0 +1,229 @@
+fileFormatVersion: 2
+guid: 47b7818b9baa4dc46bc2b45ae896a8bc
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_L_Bone004
+    100002: arm_r_Bone004
+    100004: Bone003
+    100006: Bone006
+    100008: Bone006 1
+    100010: Bone009
+    100012: Bone010
+    100014: Bone010 1
+    100016: Bone014
+    100018: Bone014 1
+    100020: Bone020
+    100022: Bone020 1
+    100024: Bone027
+    100026: Box01
+    100028: Box02
+    100030: f_huanghou_1_1_model
+    100032: foot_L_Bone009
+    100034: foot_r_Bone009
+    100036: hand_L_Bone005
+    100038: hand_r_Bone005
+    100040: head_Bone002
+    100042: //RootNode
+    100044: leg_L_Bone008
+    100046: leg_r_Bone008
+    100048: leg_up_L_Bone007
+    100050: leg_up_r_Bone007
+    100052: qun1_L_Bone018
+    100054: qun1_L_Bone019
+    100056: qun1_r_Bone018
+    100058: qun1_r_Bone019
+    100060: qun2_Bone007
+    100062: qun2_Bone008
+    100064: qun_dai_Bone024
+    100066: qun_dai_Bone025
+    100068: qun_dai_Bone026
+    100070: t_huanghou_1_1_model
+    100072: t_huanghou_1_2_model
+    100074: t_huanghou_1_3_model
+    100076: xiong_Bone001
+    100078: xiu_L_Bone011
+    100080: xiu_L_Bone012
+    100082: xiu_L_Bone013
+    100084: xiu_r_Bone011
+    100086: xiu_r_Bone012
+    100088: xiu_r_Bone013
+    400000: arm_L_Bone004
+    400002: arm_r_Bone004
+    400004: Bone003
+    400006: Bone006
+    400008: Bone006 1
+    400010: Bone009
+    400012: Bone010
+    400014: Bone010 1
+    400016: Bone014
+    400018: Bone014 1
+    400020: Bone020
+    400022: Bone020 1
+    400024: Bone027
+    400026: Box01
+    400028: Box02
+    400030: f_huanghou_1_1_model
+    400032: foot_L_Bone009
+    400034: foot_r_Bone009
+    400036: hand_L_Bone005
+    400038: hand_r_Bone005
+    400040: head_Bone002
+    400042: //RootNode
+    400044: leg_L_Bone008
+    400046: leg_r_Bone008
+    400048: leg_up_L_Bone007
+    400050: leg_up_r_Bone007
+    400052: qun1_L_Bone018
+    400054: qun1_L_Bone019
+    400056: qun1_r_Bone018
+    400058: qun1_r_Bone019
+    400060: qun2_Bone007
+    400062: qun2_Bone008
+    400064: qun_dai_Bone024
+    400066: qun_dai_Bone025
+    400068: qun_dai_Bone026
+    400070: t_huanghou_1_1_model
+    400072: t_huanghou_1_2_model
+    400074: t_huanghou_1_3_model
+    400076: xiong_Bone001
+    400078: xiu_L_Bone011
+    400080: xiu_L_Bone012
+    400082: xiu_L_Bone013
+    400084: xiu_r_Bone011
+    400086: xiu_r_Bone012
+    400088: xiu_r_Bone013
+    2300000: Box01
+    2300002: Box02
+    3300000: Box01
+    3300002: Box02
+    4300000: t_huanghou_1_2_model
+    4300002: t_huanghou_1_3_model
+    4300004: t_huanghou_1_1_model
+    4300006: f_huanghou_1_1_model
+    4300008: Box01
+    4300010: Box02
+    7400000: idle
+    7400002: attack
+    7400004: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_huanghou_1_1_model
+    13700002: t_huanghou_1_1_model
+    13700004: t_huanghou_1_2_model
+    13700006: t_huanghou_1_3_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 175
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

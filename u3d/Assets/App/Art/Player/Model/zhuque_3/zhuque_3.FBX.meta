@@ -1,0 +1,370 @@
+fileFormatVersion: 2
+guid: 0b16f2260b5b98541a639d923b7bc13a
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone007
+    100014: Bone008
+    100016: Bone009
+    100018: Bone010
+    100020: Bone011
+    100022: Bone012
+    100024: Bone013
+    100026: Bone014
+    100028: Bone015
+    100030: Bone016
+    100032: Bone017
+    100034: Bone018
+    100036: Bone026
+    100038: Bone027
+    100040: Bone028
+    100042: Bone029
+    100044: Bone030
+    100046: Bone031
+    100048: Bone032
+    100050: Bone033
+    100052: Bone034
+    100054: Bone035
+    100056: Bone036
+    100058: Bone037
+    100060: Bone046
+    100062: Bone047
+    100064: Bone048
+    100066: Bone049
+    100068: Bone050
+    100070: Bone051
+    100072: Bone052
+    100074: Bone053
+    100076: Bone054
+    100078: Bone055
+    100080: Bone056
+    100082: Bone057
+    100084: Bone058
+    100086: Bone059
+    100088: Box01
+    100090: Box02
+    100092: Box03
+    100094: 'rBone006 '
+    100096: 'rBone007 '
+    100098: 'rBone008 '
+    100100: 'rBone009 '
+    100102: 'rBone010 '
+    100104: 'rBone011 '
+    100106: 'rBone012 '
+    100108: 'rBone013 '
+    100110: 'rBone014 '
+    100112: 'rBone015 '
+    100114: 'rBone016 '
+    100116: 'rBone017 '
+    100118: 'rBone018 '
+    100120: 'rBone026 '
+    100122: 'rBone027 '
+    100124: 'rBone028 '
+    100126: 'rBone029 '
+    100128: 'rBone030 '
+    100130: 'rBone031 '
+    100132: 'rBone032 '
+    100134: 'rBone033 '
+    100136: 'rBone034 '
+    100138: 'rBone035 '
+    100140: 'rBone036 '
+    100142: 'rBone037 '
+    100144: 'rBone046 '
+    100146: 'rBone047 '
+    100148: 'rBone050 '
+    100150: 'rBone051 '
+    100152: 'rBone052 '
+    100154: 'rBone053 '
+    100156: 'rBone054 '
+    100158: t_zhuque_2_1_model
+    100160: t_zhuque_2_2_model
+    100162: t_zhuque_3_1_model
+    100164: //RootNode
+    100166: t_zhuque_1_1_model
+    100168: effect_zhuque_standby_target
+    100170: effect_zhuque_standby_target_1
+    100172: effect_zhuque_standby_target_2
+    100174: effect_zhuque_standby_target_3
+    100176: effect_zhuque_standby_target_4
+    100178: effect_zhuque_standby_target_5
+    100180: effect_zhuque_standby
+    100182: effect_zhuque_standby_2
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone007
+    400014: Bone008
+    400016: Bone009
+    400018: Bone010
+    400020: Bone011
+    400022: Bone012
+    400024: Bone013
+    400026: Bone014
+    400028: Bone015
+    400030: Bone016
+    400032: Bone017
+    400034: Bone018
+    400036: Bone026
+    400038: Bone027
+    400040: Bone028
+    400042: Bone029
+    400044: Bone030
+    400046: Bone031
+    400048: Bone032
+    400050: Bone033
+    400052: Bone034
+    400054: Bone035
+    400056: Bone036
+    400058: Bone037
+    400060: Bone046
+    400062: Bone047
+    400064: Bone048
+    400066: Bone049
+    400068: Bone050
+    400070: Bone051
+    400072: Bone052
+    400074: Bone053
+    400076: Bone054
+    400078: Bone055
+    400080: Bone056
+    400082: Bone057
+    400084: Bone058
+    400086: Bone059
+    400088: Box01
+    400090: Box02
+    400092: Box03
+    400094: 'rBone006 '
+    400096: 'rBone007 '
+    400098: 'rBone008 '
+    400100: 'rBone009 '
+    400102: 'rBone010 '
+    400104: 'rBone011 '
+    400106: 'rBone012 '
+    400108: 'rBone013 '
+    400110: 'rBone014 '
+    400112: 'rBone015 '
+    400114: 'rBone016 '
+    400116: 'rBone017 '
+    400118: 'rBone018 '
+    400120: 'rBone026 '
+    400122: 'rBone027 '
+    400124: 'rBone028 '
+    400126: 'rBone029 '
+    400128: 'rBone030 '
+    400130: 'rBone031 '
+    400132: 'rBone032 '
+    400134: 'rBone033 '
+    400136: 'rBone034 '
+    400138: 'rBone035 '
+    400140: 'rBone036 '
+    400142: 'rBone037 '
+    400144: 'rBone046 '
+    400146: 'rBone047 '
+    400148: 'rBone050 '
+    400150: 'rBone051 '
+    400152: 'rBone052 '
+    400154: 'rBone053 '
+    400156: 'rBone054 '
+    400158: t_zhuque_2_1_model
+    400160: t_zhuque_2_2_model
+    400162: t_zhuque_3_1_model
+    400164: //RootNode
+    400166: t_zhuque_1_1_model
+    400168: effect_zhuque_standby_target
+    400170: effect_zhuque_standby_target_1
+    400172: effect_zhuque_standby_target_2
+    400174: effect_zhuque_standby_target_3
+    400176: effect_zhuque_standby_target_4
+    400178: effect_zhuque_standby_target_5
+    400180: effect_zhuque_standby
+    400182: effect_zhuque_standby_2
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    2300006: effect_zhuque_standby_target
+    2300008: effect_zhuque_standby_target_1
+    2300010: effect_zhuque_standby_target_2
+    2300012: effect_zhuque_standby_target_3
+    2300014: effect_zhuque_standby_target_4
+    2300016: effect_zhuque_standby_target_5
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    3300006: effect_zhuque_standby_target
+    3300008: effect_zhuque_standby_target_1
+    3300010: effect_zhuque_standby_target_2
+    3300012: effect_zhuque_standby_target_3
+    3300014: effect_zhuque_standby_target_4
+    3300016: effect_zhuque_standby_target_5
+    4300000: t_zhuque_2_1_model
+    4300002: t_zhuque_2_2_model
+    4300004: t_zhuque_3_1_model
+    4300006: Box01
+    4300008: Box03
+    4300010: Box02
+    4300012: t_zhuque_1_1_model
+    4300014: effect_zhuque_standby_target
+    4300016: effect_zhuque_standby_target_1
+    4300018: effect_zhuque_standby_target_2
+    4300020: effect_zhuque_standby_target_3
+    4300022: effect_zhuque_standby_target_4
+    4300024: effect_zhuque_standby_target_5
+    4300026: effect_zhuque_standby
+    4300028: effect_zhuque_standby_2
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: t_zhuque_2_1_model
+    13700002: t_zhuque_2_2_model
+    13700004: t_zhuque_3_1_model
+    13700006: t_zhuque_1_1_model
+    13700008: effect_zhuque_standby
+    13700010: effect_zhuque_standby_2
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 180
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

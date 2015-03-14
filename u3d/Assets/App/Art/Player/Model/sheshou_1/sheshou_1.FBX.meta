@@ -1,0 +1,211 @@
+fileFormatVersion: 2
+guid: b5885c5d54d3cbb40a9a5a9b8fcff353
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_L_Bone004
+    100002: arm_L_Bone005
+    100004: arm_r_Bone004
+    100006: arm_r_Bone005
+    100008: Bone003
+    100010: Bone006
+    100012: Bone006 1
+    100014: Bone010
+    100016: Bone010 1
+    100018: Bone015
+    100020: Bone017
+    100022: Bone019
+    100024: Bone019 1
+    100026: Bone022
+    100028: Bone022 1
+    100030: Box01
+    100032: Box02
+    100034: dai_Bone016
+    100036: f_lidian_1_1_model
+    100038: head_Bone002
+    100040: leg_L_Bone007
+    100042: leg_L_Bone008
+    100044: leg_L_Bone009
+    100046: leg_r_Bone007
+    100048: leg_r_Bone008
+    100050: leg_r_Bone009
+    100052: qun_L_Bone018
+    100054: qun_r_Bone018
+    100056: //RootNode
+    100058: t_lidian_1_1_model
+    100060: toudai_L_Bone020
+    100062: toudai_L_Bone021
+    100064: toudai_r_Bone020
+    100066: toudai_r_Bone021
+    100068: w_lidian_1_1_model
+    100070: wuqi_Bone014
+    100072: xiong_Bone001
+    400000: arm_L_Bone004
+    400002: arm_L_Bone005
+    400004: arm_r_Bone004
+    400006: arm_r_Bone005
+    400008: Bone003
+    400010: Bone006
+    400012: Bone006 1
+    400014: Bone010
+    400016: Bone010 1
+    400018: Bone015
+    400020: Bone017
+    400022: Bone019
+    400024: Bone019 1
+    400026: Bone022
+    400028: Bone022 1
+    400030: Box01
+    400032: Box02
+    400034: dai_Bone016
+    400036: f_lidian_1_1_model
+    400038: head_Bone002
+    400040: leg_L_Bone007
+    400042: leg_L_Bone008
+    400044: leg_L_Bone009
+    400046: leg_r_Bone007
+    400048: leg_r_Bone008
+    400050: leg_r_Bone009
+    400052: qun_L_Bone018
+    400054: qun_r_Bone018
+    400056: //RootNode
+    400058: t_lidian_1_1_model
+    400060: toudai_L_Bone020
+    400062: toudai_L_Bone021
+    400064: toudai_r_Bone020
+    400066: toudai_r_Bone021
+    400068: w_lidian_1_1_model
+    400070: wuqi_Bone014
+    400072: xiong_Bone001
+    2300000: Box01
+    2300002: Box02
+    3300000: Box01
+    3300002: Box02
+    4300000: t_lidian_1_1_model
+    4300002: f_lidian_1_1_model
+    4300004: w_lidian_1_1_model
+    4300006: Box01
+    4300008: Box02
+    7400000: idle
+    7400002: attack
+    7400004: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_lidian_1_1_model
+    13700002: t_lidian_1_1_model
+    13700004: w_lidian_1_1_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 193
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 193
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

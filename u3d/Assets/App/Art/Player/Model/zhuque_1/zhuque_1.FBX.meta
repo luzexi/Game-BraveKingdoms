@@ -1,0 +1,350 @@
+fileFormatVersion: 2
+guid: 79edcb7589725994a9850c087ead4af6
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone006(mirrored)
+    100014: Bone007
+    100016: Bone007(mirrored)
+    100018: Bone008
+    100020: Bone008(mirrored)
+    100022: Bone009
+    100024: Bone009(mirrored)
+    100026: Bone010
+    100028: Bone010(mirrored)
+    100030: Bone011
+    100032: Bone011(mirrored)
+    100034: Bone012
+    100036: Bone012(mirrored)
+    100038: Bone013
+    100040: Bone013(mirrored)
+    100042: Bone014
+    100044: Bone014(mirrored)
+    100046: Bone015
+    100048: Bone015(mirrored)
+    100050: Bone016
+    100052: Bone016(mirrored)
+    100054: Bone017
+    100056: Bone017(mirrored)
+    100058: Bone018
+    100060: Bone018(mirrored)
+    100062: Bone026
+    100064: Bone026(mirrored)
+    100066: Bone027
+    100068: Bone027(mirrored)
+    100070: Bone028
+    100072: Bone028(mirrored)
+    100074: Bone029
+    100076: Bone029(mirrored)
+    100078: Bone030
+    100080: Bone030(mirrored)
+    100082: Bone031
+    100084: Bone031(mirrored)
+    100086: Bone032
+    100088: Bone032(mirrored)
+    100090: Bone033
+    100092: Bone033(mirrored)
+    100094: Bone034
+    100096: Bone034(mirrored)
+    100098: Bone035
+    100100: Bone035(mirrored)
+    100102: Bone036
+    100104: Bone036(mirrored)
+    100106: Bone037
+    100108: Bone037(mirrored)
+    100110: Bone038
+    100112: Bone038(mirrored)
+    100114: Box01
+    100116: Box02
+    100118: Box03
+    100120: t_zhuque_1_1_model
+    100122: t_zhuque_1_1_model 1
+    100124: //RootNode
+    100126: 'lBone033 '
+    100128: 'lBone034 '
+    100130: 'lBone035 '
+    100132: 'lBone036 '
+    100134: 'lBone037 '
+    100136: 'lBone038 '
+    100138: 'rBone006 '
+    100140: 'rBone007 '
+    100142: 'rBone008 '
+    100144: 'rBone009 '
+    100146: 'rBone010 '
+    100148: 'rBone011 '
+    100150: 'rBone012 '
+    100152: 'rBone013 '
+    100154: 'rBone014 '
+    100156: 'rBone015 '
+    100158: 'rBone016 '
+    100160: 'rBone017 '
+    100162: 'rBone018 '
+    100164: 'rBone026 '
+    100166: 'rBone027 '
+    100168: 'rBone028 '
+    100170: 'rBone029 '
+    100172: 'rBone030 '
+    100174: 'rBone031 '
+    100176: 'rBone032 '
+    100178: t_zhuque_1_1
+    100180: t_zhuque_2_2
+    100182: t_zhuque_1_1 1
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone006(mirrored)
+    400014: Bone007
+    400016: Bone007(mirrored)
+    400018: Bone008
+    400020: Bone008(mirrored)
+    400022: Bone009
+    400024: Bone009(mirrored)
+    400026: Bone010
+    400028: Bone010(mirrored)
+    400030: Bone011
+    400032: Bone011(mirrored)
+    400034: Bone012
+    400036: Bone012(mirrored)
+    400038: Bone013
+    400040: Bone013(mirrored)
+    400042: Bone014
+    400044: Bone014(mirrored)
+    400046: Bone015
+    400048: Bone015(mirrored)
+    400050: Bone016
+    400052: Bone016(mirrored)
+    400054: Bone017
+    400056: Bone017(mirrored)
+    400058: Bone018
+    400060: Bone018(mirrored)
+    400062: Bone026
+    400064: Bone026(mirrored)
+    400066: Bone027
+    400068: Bone027(mirrored)
+    400070: Bone028
+    400072: Bone028(mirrored)
+    400074: Bone029
+    400076: Bone029(mirrored)
+    400078: Bone030
+    400080: Bone030(mirrored)
+    400082: Bone031
+    400084: Bone031(mirrored)
+    400086: Bone032
+    400088: Bone032(mirrored)
+    400090: Bone033
+    400092: Bone033(mirrored)
+    400094: Bone034
+    400096: Bone034(mirrored)
+    400098: Bone035
+    400100: Bone035(mirrored)
+    400102: Bone036
+    400104: Bone036(mirrored)
+    400106: Bone037
+    400108: Bone037(mirrored)
+    400110: Bone038
+    400112: Bone038(mirrored)
+    400114: Box01
+    400116: Box02
+    400118: Box03
+    400120: t_zhuque_1_1_model
+    400122: t_zhuque_1_1_model 1
+    400124: //RootNode
+    400126: 'lBone033 '
+    400128: 'lBone034 '
+    400130: 'lBone035 '
+    400132: 'lBone036 '
+    400134: 'lBone037 '
+    400136: 'lBone038 '
+    400138: 'rBone006 '
+    400140: 'rBone007 '
+    400142: 'rBone008 '
+    400144: 'rBone009 '
+    400146: 'rBone010 '
+    400148: 'rBone011 '
+    400150: 'rBone012 '
+    400152: 'rBone013 '
+    400154: 'rBone014 '
+    400156: 'rBone015 '
+    400158: 'rBone016 '
+    400160: 'rBone017 '
+    400162: 'rBone018 '
+    400164: 'rBone026 '
+    400166: 'rBone027 '
+    400168: 'rBone028 '
+    400170: 'rBone029 '
+    400172: 'rBone030 '
+    400174: 'rBone031 '
+    400176: 'rBone032 '
+    400178: t_zhuque_1_1
+    400180: t_zhuque_2_2
+    400182: t_zhuque_1_1 1
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    4300000: t_zhuque_1_1_model
+    4300002: t_zhuque_1_1_model
+    4300004: Box01
+    4300006: Box03
+    4300008: Box02
+    4300010: t_zhuque_1_1
+    4300012: t_zhuque_2_2
+    4300014: t_zhuque_1_1
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: t_zhuque_1_1_model
+    13700002: t_zhuque_1_1_model 1
+    13700004: t_zhuque_1_1
+    13700006: t_zhuque_2_2
+    13700008: t_zhuque_1_1 1
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 155
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 155
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

@@ -1,0 +1,245 @@
+fileFormatVersion: 2
+guid: 044a3e9628608db459d0c75d6cce832a
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone011
+    100014: Bone012
+    100016: Bone025
+    100018: Bone026
+    100020: Bone027
+    100022: Bone029
+    100024: Bone030
+    100026: Bone031
+    100028: Bone032
+    100030: Bone033
+    100032: Bone034
+    100034: Bone035
+    100036: Bone036
+    100038: Bone037
+    100040: Bone038
+    100042: Bone039
+    100044: Bone040
+    100046: Bone041
+    100048: Box01
+    100050: Box02
+    100052: //RootNode
+    100054: f_dahu_1_model
+    100056: 'rBone001 '
+    100058: 'rBone002 '
+    100060: 'rBone003 '
+    100062: 'rBone011 '
+    100064: 'rBone012 '
+    100066: 'rBone034 '
+    100068: 'rBone035 '
+    100070: 'rBone036 '
+    100072: 'rBone037 '
+    100074: 'rBone038 '
+    100076: 'rBone039 '
+    100078: t_dahu_1_1_model
+    100080: t_dahu_1_2_model
+    100082: w_dahu_1_model
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone011
+    400014: Bone012
+    400016: Bone025
+    400018: Bone026
+    400020: Bone027
+    400022: Bone029
+    400024: Bone030
+    400026: Bone031
+    400028: Bone032
+    400030: Bone033
+    400032: Bone034
+    400034: Bone035
+    400036: Bone036
+    400038: Bone037
+    400040: Bone038
+    400042: Bone039
+    400044: Bone040
+    400046: Bone041
+    400048: Box01
+    400050: Box02
+    400052: //RootNode
+    400054: f_dahu_1_model
+    400056: 'rBone001 '
+    400058: 'rBone002 '
+    400060: 'rBone003 '
+    400062: 'rBone011 '
+    400064: 'rBone012 '
+    400066: 'rBone034 '
+    400068: 'rBone035 '
+    400070: 'rBone036 '
+    400072: 'rBone037 '
+    400074: 'rBone038 '
+    400076: 'rBone039 '
+    400078: t_dahu_1_1_model
+    400080: t_dahu_1_2_model
+    400082: w_dahu_1_model
+    2300000: Box01
+    2300002: Box02
+    3300000: Box01
+    3300002: Box02
+    4300000: f_dahu_1_model
+    4300002: t_dahu_1_1_model
+    4300004: t_dahu_1_2_model
+    4300006: w_dahu_1_model
+    4300008: Box01
+    4300010: Box02
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_dahu_1_model
+    13700002: t_dahu_1_1_model
+    13700004: t_dahu_1_2_model
+    13700006: w_dahu_1_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

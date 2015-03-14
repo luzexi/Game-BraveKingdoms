@@ -1,0 +1,254 @@
+fileFormatVersion: 2
+guid: a9e74376bb4381a479c03b24504a2336
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone002
+    100002: Bone004
+    100004: Bone007
+    100006: Bone010
+    100008: Bone012
+    100010: Bone015
+    100012: Bone018
+    100014: Bone021
+    100016: Bone023
+    100018: Bone025
+    100020: Box01
+    100022: Box02
+    100024: Box03
+    100026: //RootNode
+    100028: f_caoren_2_1_model
+    100030: jianbang
+    100032: jiao
+    100034: piaodai1
+    100036: piaodai2
+    100038: piaodai3
+    100040: piaodai4
+    100042: piaodai5
+    100044: qugan
+    100046: rBone007
+    100048: 'rBone010 '
+    100050: 'rBone012 '
+    100052: 'rBone023 '
+    100054: rjianbang
+    100056: rjiao
+    100058: rshou
+    100060: rshoubi
+    100062: rtui
+    100064: shou
+    100066: shoubi
+    100068: t_caoren_2_1_model
+    100070: t_caoren_2_2_model
+    100072: t_caoren_2_3_model
+    100074: tou
+    100076: toufa1
+    100078: toufa2
+    100080: tui
+    100082: w_caoren_2_1_model
+    100084: wuqi1
+    100086: wuqi2
+    400000: Bone002
+    400002: Bone004
+    400004: Bone007
+    400006: Bone010
+    400008: Bone012
+    400010: Bone015
+    400012: Bone018
+    400014: Bone021
+    400016: Bone023
+    400018: Bone025
+    400020: Box01
+    400022: Box02
+    400024: Box03
+    400026: //RootNode
+    400028: f_caoren_2_1_model
+    400030: jianbang
+    400032: jiao
+    400034: piaodai1
+    400036: piaodai2
+    400038: piaodai3
+    400040: piaodai4
+    400042: piaodai5
+    400044: qugan
+    400046: rBone007
+    400048: 'rBone010 '
+    400050: 'rBone012 '
+    400052: 'rBone023 '
+    400054: rjianbang
+    400056: rjiao
+    400058: rshou
+    400060: rshoubi
+    400062: rtui
+    400064: shou
+    400066: shoubi
+    400068: t_caoren_2_1_model
+    400070: t_caoren_2_2_model
+    400072: t_caoren_2_3_model
+    400074: tou
+    400076: toufa1
+    400078: toufa2
+    400080: tui
+    400082: w_caoren_2_1_model
+    400084: wuqi1
+    400086: wuqi2
+    2300000: Box01
+    2300002: Box02
+    2300004: Box03
+    3300000: Box01
+    3300002: Box02
+    3300004: Box03
+    4300000: f_caoren_2_1_model
+    4300002: t_caoren_2_3_model
+    4300004: w_caoren_2_1_model
+    4300006: t_caoren_2_1_model
+    4300008: t_caoren_2_2_model
+    4300010: Box01
+    4300012: Box02
+    4300014: Box03
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_caoren_2_1_model
+    13700002: t_caoren_2_1_model
+    13700004: t_caoren_2_2_model
+    13700006: t_caoren_2_3_model
+    13700008: w_caoren_2_1_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 167
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 167
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

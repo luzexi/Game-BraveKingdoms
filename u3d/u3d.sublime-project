@@ -1,0 +1,95 @@
+{
+    "folders": [
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv",
+				"*.lua",
+				"*.md"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/"
+        },
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv",
+				"*.lua",
+				"*.md"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/"
+        },
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv",
+				"*.lua",
+				"*.md"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/Plugins/"
+        },
+        {
+            "file_include_patterns": [
+				"*.cs",
+				"*.js",
+				"*.txt",
+				"*.shader",
+				"*.json",
+				"*.mm",
+				"*.m",
+				"*.xml",
+				"*.csv",
+				"*.lua",
+				"*.md"
+            ],
+            "path": "/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/"
+        }
+    ],
+
+    "settings": {
+        "tab_size": 4,
+        "translate_tabs_to_spaces": true,
+        "default_encoding": "UTF-8 with BOM",
+        "default_line_ending": "windows",
+        "completesharp_assemblies": [
+			"/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEngine.dll",
+			"/Applications/Unity/Unity.app/Contents/Frameworks/Managed/UnityEditor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/../Library/ScriptAssemblies/Assembly-CSharp.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/../Library/ScriptAssemblies/Assembly-CSharp-Editor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DGameResource/src/zip/ICSharpCode.SharpZipLib.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Plugins/x86/slua.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Model/LitJson.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/Clipper/Pathfinding.ClipperLib.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/DotNetZip/Pathfinding.Ionic.Zip.Reduced.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/JsonFx/Pathfinding.JsonFx.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Plugins/Poly2Tri/Pathfinding.Poly2Tri.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween43.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/DOTween46.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/Demigiant/DOTween/Editor/DOTweenEditor.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dExternal.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dSkin.dll",
+			"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/Plugins/x86/slua.dll"
+        ]
+    }
+}

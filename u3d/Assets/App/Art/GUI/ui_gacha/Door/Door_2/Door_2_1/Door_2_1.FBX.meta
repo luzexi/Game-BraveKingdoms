@@ -1,0 +1,219 @@
+fileFormatVersion: 2
+guid: 883ec301d6c4a6a4486e83b3591359b7
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: 01_Bone002
+    100002: 01_Bone002 1
+    100004: 01_Bone004
+    100006: 01_Bone004 1
+    100008: 01_Bone005
+    100010: 01_huan_L_Bone003
+    100012: 01_huan_r_Bone003
+    100014: 01_men_L_Bone001
+    100016: 01_men_L_model
+    100018: 01_men_r_Bone001
+    100020: 01_men_r_model
+    100022: 01_menkuang_model
+    100024: 01_shitou_Bone004
+    100026: 01_shitou_model
+    100028: 02_Bone002
+    100030: 02_Bone002 1
+    100032: 02_Bone002 2
+    100034: 02_Bone002 3
+    100036: 02_Bone004
+    100038: 02_Bone004 1
+    100040: 02_Bone006
+    100042: 02_huan_L_Bone003
+    100044: 02_huan_L_Box03
+    100046: 02_huan_r_Bone003
+    100048: 02_huan_r_Box04
+    100050: 02_men_L_Bone001
+    100052: 02_men_L_model
+    100054: 02_men_r_Bone001
+    100056: 02_men_r_model
+    100058: 02_menkuang_model
+    100060: 02_qiu_L_Bone001
+    100062: 02_qiu_r_Bone001
+    100064: 02_shitou_Bone005
+    100066: 02_shitou_model
+    100068: box01
+    100070: Box02
+    100072: //RootNode
+    100074: Camera001
+    100076: Camera001.Target
+    100078: Door_effect_1
+    100080: Door_effect_2
+    400000: 01_Bone002
+    400002: 01_Bone002 1
+    400004: 01_Bone004
+    400006: 01_Bone004 1
+    400008: 01_Bone005
+    400010: 01_huan_L_Bone003
+    400012: 01_huan_r_Bone003
+    400014: 01_men_L_Bone001
+    400016: 01_men_L_model
+    400018: 01_men_r_Bone001
+    400020: 01_men_r_model
+    400022: 01_menkuang_model
+    400024: 01_shitou_Bone004
+    400026: 01_shitou_model
+    400028: 02_Bone002
+    400030: 02_Bone002 1
+    400032: 02_Bone002 2
+    400034: 02_Bone002 3
+    400036: 02_Bone004
+    400038: 02_Bone004 1
+    400040: 02_Bone006
+    400042: 02_huan_L_Bone003
+    400044: 02_huan_L_Box03
+    400046: 02_huan_r_Bone003
+    400048: 02_huan_r_Box04
+    400050: 02_men_L_Bone001
+    400052: 02_men_L_model
+    400054: 02_men_r_Bone001
+    400056: 02_men_r_model
+    400058: 02_menkuang_model
+    400060: 02_qiu_L_Bone001
+    400062: 02_qiu_r_Bone001
+    400064: 02_shitou_Bone005
+    400066: 02_shitou_model
+    400068: box01
+    400070: Box02
+    400072: //RootNode
+    400074: Camera001
+    400076: Camera001.Target
+    400078: Door_effect_1
+    400080: Door_effect_2
+    2300000: 02_huan_L_Box03
+    2300002: 02_huan_r_Box04
+    2300004: box01
+    2300006: Box02
+    2300008: Door_effect_1
+    2300010: Door_effect_2
+    3300000: 02_huan_L_Box03
+    3300002: 02_huan_r_Box04
+    3300004: box01
+    3300006: Box02
+    3300008: Door_effect_1
+    3300010: Door_effect_2
+    4300000: 02_shitou_model
+    4300002: 02_menkuang_model
+    4300004: 02_men_r_model
+    4300006: 02_men_L_model
+    4300008: Box02
+    4300010: 02_huan_r_Box04
+    4300012: 02_huan_L_Box03
+    4300014: 01_shitou_model
+    4300016: 01_menkuang_model
+    4300018: 01_men_L_model
+    4300020: 01_men_r_model
+    4300022: box01
+    4300024: Door_effect_1
+    4300026: Door_effect_2
+    7400000: open
+    7400002: keep
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: 01_men_L_model
+    13700002: 01_men_r_model
+    13700004: 01_menkuang_model
+    13700006: 01_shitou_model
+    13700008: 02_men_L_model
+    13700010: 02_men_r_model
+    13700012: 02_menkuang_model
+    13700014: 02_shitou_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: open
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 2
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: keep
+      takeName: Take 001
+      firstFrame: -1
+      lastFrame: 0
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

@@ -16,3 +16,18 @@ This project just for research.<br />
 
 # Sorry
 It is not complete , but you can see it in unity editor.
+
+# client struct
+
+## 客户端目录结构
+
+## root
+- Tool => tool of game
+- u3d => unity3d project
+- Table => xlsx files of game
+- Data => json files of game
+
+## Introduction of tool in unity3d
+- macro define tool.
+- Sublime project tool.
+

@@ -1,0 +1,364 @@
+fileFormatVersion: 2
+guid: c3bf9b08e0f275542bcb0feff5603ca4
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: arm_L_Bone009
+    100002: arm_r_Bone009
+    100004: Bone003
+    100006: Bone008
+    100008: Bone011
+    100010: Bone011 1
+    100012: Bone013
+    100014: Bone013 1
+    100016: Bone016
+    100018: Bone016 1
+    100020: Bone019
+    100022: Bone022
+    100024: Bone022 1
+    100026: Bone026
+    100028: Bone026 1
+    100030: Bone030
+    100032: Bone030 1
+    100034: Bone033
+    100036: Bone033 1
+    100038: Bone036
+    100040: Bone036 1
+    100042: Bone038
+    100044: Bone041
+    100046: Bone041 1
+    100048: Box01
+    100050: Box02
+    100052: f_zhaoyun_3_model
+    100054: foot_L_Bone029
+    100056: foot_r_Bone029
+    100058: hair_Bone004
+    100060: hair_Bone005
+    100062: hair_Bone006
+    100064: hair_Bone007
+    100066: hair_L_Bone039
+    100068: hair_L_Bone040
+    100070: hair_r_Bone039
+    100072: hair_r_Bone040
+    100074: hand_L_Bone010
+    100076: hand_r_Bone010
+    100078: head_Bone002
+    100080: jian_L_Bone012
+    100082: jian_r_Bone012
+    100084: Leg_L_Bone027
+    100086: Leg_L_Bone028
+    100088: Leg_r_Bone027
+    100090: Leg_r_Bone028
+    100092: piaodai1_L_Bone020
+    100094: piaodai1_L_Bone021
+    100096: piaodai1_r_Bone020
+    100098: piaodai1_r_Bone021
+    100100: piaodai2_L_Bone023
+    100102: piaodai2_L_Bone024
+    100104: piaodai2_L_Bone025
+    100106: piaodai2_r_Bone023
+    100108: piaodai2_r_Bone024
+    100110: piaodai2_r_Bone025
+    100112: piaodai3_L_Bone014
+    100114: piaodai3_L_Bone015
+    100116: piaodai3_r_Bone014
+    100118: piaodai3_r_Bone015
+    100120: piaodai4_L_Bone031
+    100122: piaodai4_L_Bone032
+    100124: piaodai4_r_Bone031
+    100126: piaodai4_r_Bone032
+    100128: piaodai_Bone017
+    100130: piaodai_Bone018
+    100132: pifeng_L_Bone034
+    100134: pifeng_L_Bone035
+    100136: pifeng_r_Bone034
+    100138: pifeng_r_Bone035
+    100140: t_zhaoyun_3_2_model
+    100142: t_zhaoyun_3_model
+    100144: w_zhaoyun_3_model
+    100146: wuqi_Bone037
+    100148: xiong_Bone001
+    100150: //RootNode
+    100152: effect_zhaoyun_standby_1
+    100154: effect_zhaoyun_standby_2
+    100156: effect_zhaoyun_standby_3
+    100158: effect_zhaoyun_standby_target
+    100160: effect_zhaoyun_standby_004
+    100162: effect_zhaoyun_standby_005
+    100164: effect_zhaoyun_standby_4
+    100166: effect_zhaoyun_standby_5
+    100168: effect_zhaoyun_standby_6
+    100170: effect_zhaoyun_standby_target_old
+    100172: Line004
+    400000: arm_L_Bone009
+    400002: arm_r_Bone009
+    400004: Bone003
+    400006: Bone008
+    400008: Bone011
+    400010: Bone011 1
+    400012: Bone013
+    400014: Bone013 1
+    400016: Bone016
+    400018: Bone016 1
+    400020: Bone019
+    400022: Bone022
+    400024: Bone022 1
+    400026: Bone026
+    400028: Bone026 1
+    400030: Bone030
+    400032: Bone030 1
+    400034: Bone033
+    400036: Bone033 1
+    400038: Bone036
+    400040: Bone036 1
+    400042: Bone038
+    400044: Bone041
+    400046: Bone041 1
+    400048: Box01
+    400050: Box02
+    400052: f_zhaoyun_3_model
+    400054: foot_L_Bone029
+    400056: foot_r_Bone029
+    400058: hair_Bone004
+    400060: hair_Bone005
+    400062: hair_Bone006
+    400064: hair_Bone007
+    400066: hair_L_Bone039
+    400068: hair_L_Bone040
+    400070: hair_r_Bone039
+    400072: hair_r_Bone040
+    400074: hand_L_Bone010
+    400076: hand_r_Bone010
+    400078: head_Bone002
+    400080: jian_L_Bone012
+    400082: jian_r_Bone012
+    400084: Leg_L_Bone027
+    400086: Leg_L_Bone028
+    400088: Leg_r_Bone027
+    400090: Leg_r_Bone028
+    400092: piaodai1_L_Bone020
+    400094: piaodai1_L_Bone021
+    400096: piaodai1_r_Bone020
+    400098: piaodai1_r_Bone021
+    400100: piaodai2_L_Bone023
+    400102: piaodai2_L_Bone024
+    400104: piaodai2_L_Bone025
+    400106: piaodai2_r_Bone023
+    400108: piaodai2_r_Bone024
+    400110: piaodai2_r_Bone025
+    400112: piaodai3_L_Bone014
+    400114: piaodai3_L_Bone015
+    400116: piaodai3_r_Bone014
+    400118: piaodai3_r_Bone015
+    400120: piaodai4_L_Bone031
+    400122: piaodai4_L_Bone032
+    400124: piaodai4_r_Bone031
+    400126: piaodai4_r_Bone032
+    400128: piaodai_Bone017
+    400130: piaodai_Bone018
+    400132: pifeng_L_Bone034
+    400134: pifeng_L_Bone035
+    400136: pifeng_r_Bone034
+    400138: pifeng_r_Bone035
+    400140: t_zhaoyun_3_2_model
+    400142: t_zhaoyun_3_model
+    400144: w_zhaoyun_3_model
+    400146: wuqi_Bone037
+    400148: xiong_Bone001
+    400150: //RootNode
+    400152: effect_zhaoyun_standby_1
+    400154: effect_zhaoyun_standby_2
+    400156: effect_zhaoyun_standby_3
+    400158: effect_zhaoyun_standby_target
+    400160: effect_zhaoyun_standby_004
+    400162: effect_zhaoyun_standby_005
+    400164: effect_zhaoyun_standby_4
+    400166: effect_zhaoyun_standby_5
+    400168: effect_zhaoyun_standby_6
+    400170: effect_zhaoyun_standby_target_old
+    400172: Line004
+    2300000: Box01
+    2300002: Box02
+    2300004: effect_zhaoyun_standby_1
+    2300006: effect_zhaoyun_standby_2
+    2300008: effect_zhaoyun_standby_3
+    2300010: effect_zhaoyun_standby_target
+    2300012: effect_zhaoyun_standby_004
+    2300014: effect_zhaoyun_standby_005
+    2300016: effect_zhaoyun_standby_4
+    2300018: effect_zhaoyun_standby_5
+    2300020: effect_zhaoyun_standby_target_old
+    3300000: Box01
+    3300002: Box02
+    3300004: effect_zhaoyun_standby_1
+    3300006: effect_zhaoyun_standby_2
+    3300008: effect_zhaoyun_standby_3
+    3300010: effect_zhaoyun_standby_target
+    3300012: effect_zhaoyun_standby_004
+    3300014: effect_zhaoyun_standby_005
+    3300016: effect_zhaoyun_standby_4
+    3300018: effect_zhaoyun_standby_5
+    3300020: effect_zhaoyun_standby_target_old
+    4300000: f_zhaoyun_3_model
+    4300002: t_zhaoyun_3_2_model
+    4300004: t_zhaoyun_3_model
+    4300006: w_zhaoyun_3_model
+    4300008: Box01
+    4300010: Box02
+    4300012: effect_zhaoyun_standby_1
+    4300014: effect_zhaoyun_standby_2
+    4300016: effect_zhaoyun_standby_3
+    4300018: effect_zhaoyun_standby_target
+    4300020: effect_zhaoyun_standby_004
+    4300022: effect_zhaoyun_standby_005
+    4300024: effect_zhaoyun_standby_4
+    4300026: effect_zhaoyun_standby_5
+    4300028: effect_zhaoyun_standby_6
+    4300030: effect_zhaoyun_standby_target_old
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_zhaoyun_3_model
+    13700002: t_zhaoyun_3_2_model
+    13700004: t_zhaoyun_3_model
+    13700006: w_zhaoyun_3_model
+    13700008: effect_zhaoyun_standby_6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 45
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 95
+      lastFrame: 96
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 210
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 

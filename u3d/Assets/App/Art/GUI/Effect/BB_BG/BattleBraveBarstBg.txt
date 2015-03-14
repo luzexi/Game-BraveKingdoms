@@ -1,0 +1,140 @@
+{"frames": {
+
+"GUI_bb_01.png":
+{
+	"frame": {"x":2,"y":686,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_02.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_03.png":
+{
+	"frame": {"x":2,"y":572,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_04.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_05.png":
+{
+	"frame": {"x":2,"y":458,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_06.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_07.png":
+{
+	"frame": {"x":2,"y":344,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_08.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_09.png":
+{
+	"frame": {"x":2,"y":230,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_10.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_11.png":
+{
+	"frame": {"x":2,"y":116,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_12.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_13.png":
+{
+	"frame": {"x":2,"y":2,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_14.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+},
+"GUI_bb_15.png":
+{
+	"frame": {"x":2,"y":800,"w":318,"h":112},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":318,"h":112},
+	"sourceSize": {"w":318,"h":112}
+},
+"GUI_bb_16.png":
+{
+	"frame": {"x":322,"y":2,"w":4,"h":4},
+	"rotated": false,
+	"trimmed": false,
+	"spriteSourceSize": {"x":0,"y":0,"w":4,"h":4},
+	"sourceSize": {"w":4,"h":4}
+}},
+"meta": {
+	"app": "http://www.texturepacker.com",
+	"version": "1.0",
+	"image": "BattleBraveBarstBg.png",
+	"format": "RGBA8888",
+	"size": {"w":512,"h":1024},
+	"scale": "1",
+	"smartupdate": "$TexturePacker:SmartUpdate:fa4c42fdf82dd8a66cdd32ce6644afa1$"
+}
+}

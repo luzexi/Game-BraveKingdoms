@@ -1,0 +1,275 @@
+fileFormatVersion: 2
+guid: 4ba8ab9631578bd4f9a43e41690c6932
+ModelImporter:
+  serializedVersion: 15
+  fileIDToRecycleName:
+    100000: Bone001
+    100002: Bone002
+    100004: Bone003
+    100006: Bone004
+    100008: Bone005
+    100010: Bone006
+    100012: Bone011
+    100014: Bone012
+    100016: Bone013
+    100018: Bone014
+    100020: Bone015
+    100022: Bone016
+    100024: Bone017
+    100026: Bone018
+    100028: Bone019
+    100030: Bone021
+    100032: Bone022
+    100034: Bone023
+    100036: Bone024
+    100038: Bone025
+    100040: Bone026
+    100042: Bone027
+    100044: Bone029
+    100046: Bone030
+    100048: Bone031
+    100050: Bone032
+    100052: Bone033
+    100054: Bone034
+    100056: Bone035
+    100058: Bone036
+    100060: Bone037
+    100062: Bone038
+    100064: Bone039
+    100066: Bone040
+    100068: Box01
+    100070: Box02
+    100072: //RootNode
+    100074: f_dahu_2_model
+    100076: 'rBone001 '
+    100078: 'rBone002 '
+    100080: 'rBone003 '
+    100082: 'rBone011 '
+    100084: 'rBone012 '
+    100086: 'rBone013 '
+    100088: 'rBone014 '
+    100090: 'rBone015 '
+    100092: 'rBone016 '
+    100094: 'rBone021 '
+    100096: 'rBone022 '
+    100098: 'rBone023 '
+    100100: 'rBone034 '
+    100102: 'rBone035 '
+    100104: 'rBone036 '
+    100106: 'rBone037 '
+    100108: t_dahu_2_1_model
+    100110: t_dahu_2_2_model
+    100112: w_dahu_2_model
+    400000: Bone001
+    400002: Bone002
+    400004: Bone003
+    400006: Bone004
+    400008: Bone005
+    400010: Bone006
+    400012: Bone011
+    400014: Bone012
+    400016: Bone013
+    400018: Bone014
+    400020: Bone015
+    400022: Bone016
+    400024: Bone017
+    400026: Bone018
+    400028: Bone019
+    400030: Bone021
+    400032: Bone022
+    400034: Bone023
+    400036: Bone024
+    400038: Bone025
+    400040: Bone026
+    400042: Bone027
+    400044: Bone029
+    400046: Bone030
+    400048: Bone031
+    400050: Bone032
+    400052: Bone033
+    400054: Bone034
+    400056: Bone035
+    400058: Bone036
+    400060: Bone037
+    400062: Bone038
+    400064: Bone039
+    400066: Bone040
+    400068: Box01
+    400070: Box02
+    400072: //RootNode
+    400074: f_dahu_2_model
+    400076: 'rBone001 '
+    400078: 'rBone002 '
+    400080: 'rBone003 '
+    400082: 'rBone011 '
+    400084: 'rBone012 '
+    400086: 'rBone013 '
+    400088: 'rBone014 '
+    400090: 'rBone015 '
+    400092: 'rBone016 '
+    400094: 'rBone021 '
+    400096: 'rBone022 '
+    400098: 'rBone023 '
+    400100: 'rBone034 '
+    400102: 'rBone035 '
+    400104: 'rBone036 '
+    400106: 'rBone037 '
+    400108: t_dahu_2_1_model
+    400110: t_dahu_2_2_model
+    400112: w_dahu_2_model
+    2300000: Box01
+    2300002: Box02
+    3300000: Box01
+    3300002: Box02
+    4300000: t_dahu_2_1_model
+    4300002: t_dahu_2_2_model
+    4300004: w_dahu_2_model
+    4300006: f_dahu_2_model
+    4300008: Box01
+    4300010: Box02
+    7400000: idle
+    7400002: move
+    7400004: attack
+    7400006: skill
+    9500000: //RootNode
+    11100000: //RootNode
+    13700000: f_dahu_2_model
+    13700002: t_dahu_2_1_model
+    13700004: t_dahu_2_2_model
+    13700006: w_dahu_2_model
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    clipAnimations:
+    - name: idle
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: 50
+      wrapMode: 2
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 1
+      loopBlend: 1
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: move
+      takeName: Take 001
+      firstFrame: 70
+      lastFrame: 71
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: attack
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    - name: skill
+      takeName: Take 001
+      firstFrame: 100
+      lastFrame: 156
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      transformMask: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .00999999978
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    handles: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  additionalBone: 1
+  animationType: 1
+  userData: 
