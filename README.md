@@ -13,7 +13,9 @@ You can train your own heros to be stronger.<br />
 And so on , much exciting features in it.
 
 # Notice(告知)
-You can't use this project for business.<br />
+The open source license is GPL.<br />
+开源协议为GPL<br />
+Don't use this project for business.<br />
 If you do that you will receive the lawyers letter and then you will be prosecution.<br />
 不要使用这个项目做商业运作，如果你那样做了，将会收到律师信并且有可能被起诉<br />
 This project just for research.<br />
