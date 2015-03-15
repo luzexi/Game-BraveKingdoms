@@ -144,14 +144,6 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 		return 1;
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int set_firstSelectedGameObject(IntPtr l) {
-		UnityEngine.EventSystems.EventSystem o = (UnityEngine.EventSystems.EventSystem)checkSelf(l);
-		UnityEngine.GameObject v;
-		checkType(l,2,out v);
-		o.firstSelectedGameObject=v;
-		return 0;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_currentSelectedGameObject(IntPtr l) {
 		UnityEngine.EventSystems.EventSystem o = (UnityEngine.EventSystems.EventSystem)checkSelf(l);
 		pushValue(l,o.currentSelectedGameObject);
@@ -179,7 +171,7 @@ public class Lua_UnityEngine_EventSystems_EventSystem : LuaObject {
 		addMember(l,"sendNavigationEvents",get_sendNavigationEvents,set_sendNavigationEvents,true);
 		addMember(l,"pixelDragThreshold",get_pixelDragThreshold,set_pixelDragThreshold,true);
 		addMember(l,"currentInputModule",get_currentInputModule,null,true);
-		addMember(l,"firstSelectedGameObject",get_firstSelectedGameObject,set_firstSelectedGameObject,true);
+		addMember(l,"firstSelectedGameObject",get_firstSelectedGameObject,null,true);
 		addMember(l,"currentSelectedGameObject",get_currentSelectedGameObject,null,true);
 		addMember(l,"lastSelectedGameObject",get_lastSelectedGameObject,null,true);
 		addMember(l,"alreadySelecting",get_alreadySelecting,null,true);
