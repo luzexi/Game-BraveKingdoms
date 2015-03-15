@@ -1,5 +1,7 @@
 # Game-BraveKingdoms
-It is a single-player-game made by unity3d and It use c# and lua to program.
+It is a single-player-game made by unity3d and It use c# and lua to program.<br />
+Please use Unity3D 4.6.1 or higher version.
+
 
 # Init
 	Before run the game you must udpate submodule to pull myself unity3d  plugins in github.
