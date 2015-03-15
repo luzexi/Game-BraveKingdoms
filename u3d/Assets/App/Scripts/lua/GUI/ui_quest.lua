@@ -47,7 +47,7 @@ local function create()
         for i=1,node_num,1 do
             local node_node = GameObject.Instantiate(res_item)
             node_node.name = ""..i
-            node_node.transform.parent = node
+            node_node.transform:SetParent(node)
             node_node.transform.localPosition = Vector3(0,233 - (i-1)*153,0)
             node_node.transform.localScale = Vector3.one
             setup_icon(node_node,QuestTable[i],true)
