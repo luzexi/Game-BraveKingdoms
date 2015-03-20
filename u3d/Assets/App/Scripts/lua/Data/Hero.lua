@@ -1,4 +1,4 @@
-
+﻿
 
 local function init()
     --
@@ -41,5 +41,6 @@ end
 local t = {}
 t.create = create
 t.init = init
+t.createBattleHero = createBattleHero
 return t
 

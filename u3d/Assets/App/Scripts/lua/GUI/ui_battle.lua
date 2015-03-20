@@ -5,42 +5,10 @@ local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 
 
-
-local function create()
-    local main_obj = createObj()
-    local ui_name = "ui_battle"
-
-    local function regEvent()
-        --
-    end
-end
-
-local function createObj()
-    local main_obj = UI_Root:Find(ui_name).gameObject
-    if main_obj ~= nil then
-        return main_obj
-    end
-    main_obj = GameObject.Instantiate(Resources.Load("GUI/ui_battle"))
-    main_obj.transform:SetParent(UI_Root)
-    main_obj.transform.localPosition = Vector3.zero
-    main_obj.transform.localScale = Vector3.one
-    local lua_battle = require("Battle/battle.lua")
-    lua_battle.initdata()
-
-    local i = 0
-    for i = 1 , 6 , 1 do
-        if i <= #Battle.heros then
-            updateInfo(i,Battle.heros[i])
-        else
-            updateInfo(i,nil)
-        end
-    end
-
-    return main_obj
-end
+local main_obj = nil
 
 local function updateInfo( index ,  battle_hero )
-    local main_obj = createObj()
+    -- local main_obj = createObj()
     local icon_obj = main_obj.transform:Find("icon")
     local battle_obj = main_obj.transform:Find("battle")
     local item_obj = main_obj.transform:Find("item_frame")
@@ -54,7 +22,7 @@ local function updateInfo( index ,  battle_hero )
     local hp_bar = icon:Find("hp/Scrollbar")
     local sp_obj = icon:Find("sp")
     local sp_text = icon:Find("sp/sp_img/sp_text")
-    local sp_bar = icon:Find("sp/Scrollbar'")
+    local sp_bar = icon:Find("sp/Scrollbar")
     local name = icon:Find("name")
     local empty = icon:Find("empty")
     local dead = icon:Find("dead")
@@ -109,18 +77,53 @@ local function updateInfo( index ,  battle_hero )
 
         local table = HeroTable[""..battle_hero.tableid]
 
-        icon_img.GetComponent("RawImage").texture = Resources.Load("AvatarM/"..table.AvatarM)
+        icon_img.gameObject:GetComponent("RawImage").texture = Resources.Load("AvatarM/"..table.AvatarM)
 
-        property_arr[table.Nature]:SetActive(true)
-        frame_bg_array[table.Nature]:SetActive(true)
-        name.GetComponent("Text").text = table.Name
+        property_arr[table.Nature].gameObject:SetActive(true)
+        frame_bg_array[table.Nature].gameObject:SetActive(true)
+        name:GetComponent("Text").text = table.Name
         empty.gameObject:SetActive(false)
         dead.gameObject:SetActive(false)
-        hp_text.GetComponent("Text").text = ""..battle_hero.hp.."/"..battle_hero.maxhp
-        hp_bar.GetComponent("Scrollbar").size = battle_hero.hp / battle_hero.maxhp
-        sp_text.GetComponent("Text").text = ""..battle_hero.sp.."/"..battle_hero.maxsp
-        sp_bar.GetComponent("Scrollbar").size = battle_hero.sp / battle_hero.maxsp
+        hp_text:GetComponent("Text").text = ""..battle_hero.hp.."/"..battle_hero.maxhp
+        hp_bar:GetComponent("Scrollbar").size = battle_hero.hp / battle_hero.maxhp
+        sp_text:GetComponent("Text").text = ""..battle_hero.sp.."/"..battle_hero.maxsp
+        sp_bar:GetComponent("Scrollbar").size = battle_hero.sp / battle_hero.maxsp
     end
+end
+
+local function create()
+    local ui_name = "ui_battle"
+
+    local function createObj()
+        main_obj = UI_Root:Find(ui_name)
+        if main_obj ~= nil then
+            main_obj = main_obj.gameObject
+            return main_obj
+        end
+        main_obj = GameObject.Instantiate(Resources.Load("GUI/ui_battle"))
+        main_obj.transform:SetParent(UI_Root)
+        main_obj.transform.localPosition = Vector3.zero
+        main_obj.transform.localScale = Vector3.one
+        local lua_battle = require("Battle/battle.lua")
+        lua_battle.initdata()
+
+        local i = 0
+        for i = 1 , 6 , 1 do
+            if i <= #Battle.heros then
+                updateInfo(i,Battle.heros[i])
+            else
+                updateInfo(i,nil)
+            end
+        end
+
+        return main_obj
+    end
+
+    local function regEvent()
+        --
+    end
+
+    main_obj = createObj()
 end
 
 local t = {}

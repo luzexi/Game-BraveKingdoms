@@ -12,9 +12,9 @@ local function initdata()
 
     local lua_hero = require("Data/Hero")
     local tmphero = lua_hero.create(234)
-    table.insert(Battle.heros , #Battle.catch_heros + 1, tmphero)
+    table.insert(Battle.catch_heros , #Battle.catch_heros + 1, tmphero)
     tmphero = lua_hero.create(23)
-    table.insert(Battle.heros , #Battle.catch_heros + 1, tmphero)
+    table.insert(Battle.catch_heros , #Battle.catch_heros + 1, tmphero)
 
     local i = 0
     for i = 1 , #Player.heros , 1 do
