@@ -27,7 +27,7 @@ local function create()
             node_num = MAX_NODE
         end
 
-        local function setup_icon( go , quest , clear )
+        local function setup_icon( go , quest , clear ,index)
             local title_txt = go.transform:Find("title"):GetComponent("Text")
             local desc_txt = go.transform:Find("desc"):GetComponent("Text")
             local clear_go = go.transform:Find("clear").gameObject
@@ -42,6 +42,16 @@ local function create()
                 new_go:SetActive(true)
                 clear_go:SetActive(false)
             end
+
+            local node_event = UI_Event.Get(go,""..index)
+            node_event.onClick = function(eventData , go , args)
+                print("args " .. args[1])
+                GameObject.Destroy(main_obj)
+                main_obj = nil
+
+                local battle_scene = require("Scene.BattleScene")
+                battle_scene.create()
+            end
         end
 
         for i=1,node_num,1 do
@@ -50,11 +60,7 @@ local function create()
             node_node.transform:SetParent(node)
             node_node.transform.localPosition = Vector3(0,233 - (i-1)*153,0)
             node_node.transform.localScale = Vector3.one
-            setup_icon(node_node,QuestTable[i],true)
-            local node_event = UI_Event.Get(node_node,""..i)
-            node_event.onClick = function(eventData , go , args)
-                -- GameObject.Destroy(main_obj)
-            end
+            setup_icon(node_node,QuestTable[i],true,i)
         end
         
         local max_index , max_index_= #QuestTable
@@ -71,7 +77,7 @@ local function create()
                 now_index = tonumber(go.name) + MAX_NODE
             end
             go.name = ""..now_index
-            setup_icon(go,QuestTable[now_index],true)
+            setup_icon(go,QuestTable[now_index],true,now_index)
         end
 
         local del_onchange = LuaUtil.ToActionGameObjectInt(onChange)
