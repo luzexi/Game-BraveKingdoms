@@ -1,4 +1,8 @@
 ﻿
+local GameObject = UnityEngine.GameObject
+local Resources = UnityEngine.Resources
+local Vector3 = UnityEngine.Vector3
+
 
 local function init()
     --
@@ -32,7 +36,11 @@ local function createBattleHero( hero )
     battlehero.maxhp = hero.maxhp
     battlehero.sp = 0
     battlehero.maxsp = 100
-    
+
+    local res = HeroTable[""..hero.tableid].Model
+    res = string.sub(res,7,#res)
+    print("res model -- " ..res)
+    battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
     return battlehero
 end
 
