@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"crea",
+				"createObj"
+			],
+			[
+				"create",
+				"create"
+			],
+			[
+				"CLI",
+				"CLICK_INTERVAL_POS"
+			],
+			[
+				"de",
+				"delta"
+			],
+			[
+				"setup",
+				"setup"
+			],
+			[
+				"clea",
+				"clear"
+			],
+			[
 				"Sca",
 				"Scrollbar"
 			],
@@ -42,10 +66,6 @@
 			[
 				"Avat",
 				"AvatarL"
-			],
-			[
-				"crea",
-				"create"
 			],
 			[
 				"ui_hero_l",
@@ -126,10 +146,6 @@
 			[
 				"fucn",
 				"function"
-			],
-			[
-				"create",
-				"create"
 			],
 			[
 				"btn",
@@ -498,22 +514,6 @@
 			[
 				"Gloa",
 				"GlobalDataManager"
-			],
-			[
-				"Reques",
-				"RequestAsset"
-			],
-			[
-				"Ext",
-				"ExternalResources"
-			],
-			[
-				"filenam",
-				"filenames"
-			],
-			[
-				"filena",
-				"filenames"
 			]
 		]
 	},
@@ -528,10 +528,200 @@
 			}
 		},
 		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_quest.lua",
+			"settings":
+			{
+				"buffer_size": 3262,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Editor/CustomExport.cs",
+			"settings":
+			{
+				"buffer_size": 719,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/README.md",
+			"settings":
+			{
+				"buffer_size": 138,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs",
+			"settings":
+			{
+				"buffer_size": 4574,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
 			"settings":
 			{
 				"buffer_size": 10525,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/Manager/MyLua.cs",
+			"settings":
+			{
+				"buffer_size": 2543,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+			"settings":
+			{
+				"buffer_size": 707,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Scene/GameScene.lua",
+			"settings":
+			{
+				"buffer_size": 596,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Scene/BattleScene.lua",
+			"settings":
+			{
+				"buffer_size": 433,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Data/Hero.lua",
+			"settings":
+			{
+				"buffer_size": 873,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "\nlocal GameObject = UnityEngine.GameObject\nlocal Vector3 = UnityEngine.Vector3\nlocal Resources = UnityEngine.Resources\n\n\nlocal ui_hero_list_name = \"ui_hero_list\"\n\nlocal MAX_NODE = 6\nlocal MAX_NODE_HERO = 5\n\nlocal function create()\n    local main_obj = nil\n\n    local function createObj()\n        main_obj = GameObject.Instantiate(Resources.Load(\"GUI/ui_hero_list\"))\n        main_obj.name = ui_hero_list_name\n        main_obj.transform:SetParent(UI_Root)\n        main_obj.transform.localPosition = Vector3.zero\n        main_obj.transform.localScale = Vector3.one\n        UI_Master = main_obj\n    end\n    \n    local function regEvent()\n        local btn_back = main_obj.transform:Find(\"btn_back\")\n        local ev = UI_Event.Get(btn_back)\n        ev.onClick = {\"+=\" , function(eventData , go , args)\n            GameObject.Destroy(main_obj)\n            local ui_hero_menu = require(\"GUI.ui_hero_menu\")\n            ui_hero_menu.create()\n        end\n        }\n\n        local btn_sort = main_obj.transform:Find(\"btn_sort\")\n    end\n\n    local function setup_icon( go , hero )\n        local bg_dark = go.transform:Find(\"frame_bg/frame_dark_bg\")\n        local bg_fire = go.transform:Find(\"frame_bg/frame_fire_bg\")\n        local bg_light = go.transform:Find(\"frame_bg/frame_light_bg\")\n        local bg_thunder = go.transform:Find(\"frame_bg/frame_thunder_bg\")\n        local bg_water = go.transform:Find(\"frame_bg/frame_water_bg\")\n        local bg_wood = go.transform:Find(\"frame_bg/frame_wood_bg\")\n        bg_dark.gameObject:SetActive(false)\n        bg_fire.gameObject:SetActive(false)\n        bg_light.gameObject:SetActive(false)\n        bg_thunder.gameObject:SetActive(false)\n        bg_water.gameObject:SetActive(false)\n        bg_wood.gameObject:SetActive(false)\n        local frame_bg_array = {bg_fire , bg_water , bg_wood , bg_thunder , bg_light , bg_dark}\n\n        local frame_dark = go.transform:Find(\"frame/frame_dark\")\n        local frame_fire = go.transform:Find(\"frame/frame_fire\")\n        local frame_light = go.transform:Find(\"frame/frame_light\")\n        local frame_thunder = go.transform:Find(\"frame/frame_thunder\")\n        local frame_water = go.transform:Find(\"frame/frame_water\")\n        local frame_wood = go.transform:Find(\"frame/frame_wood\")\n        frame_dark.gameObject:SetActive(false)\n        frame_fire.gameObject:SetActive(false)\n        frame_light.gameObject:SetActive(false)\n        frame_thunder.gameObject:SetActive(false)\n        frame_water.gameObject:SetActive(false)\n        frame_wood.gameObject:SetActive(false)\n        local frame_array = {frame_fire , frame_water , frame_wood , frame_thunder , frame_light , frame_dark}\n\n        local table = HeroTable[\"\"..hero.tableid]\n        frame_bg_array[table.Nature].gameObject:SetActive(true)\n        frame_array[table.Nature].gameObject:SetActive(true)\n\n        local hero_icon = go.transform:Find(\"hero\"):GetComponent(\"RawImage\")\n        hero_icon.texture = Resources.Load(\"AvatarM/\"..table.AvatarM)\n\n        local equip_icon = go.transform:Find(\"equip\")\n    end\n\n    local function setup()\n        local node = main_obj.transform:Find(\"node\")\n        local ui_scroll_list = node:GetComponent(\"UI_Scroll_List\")\n        local node_num , node_num_ = math.modf((#Player.heros)/5)\n        if node_num_ ~= 0 then\n            node_num = node_num + 1\n        end\n        local res_item = Resources.Load(\"GUI/ui_hero_item\")\n        if node_num > MAX_NODE then\n            node_num = MAX_NODE\n        end\n        local j = 1\n        for i=1,node_num,1 do\n            local node_node = GameObject()\n            node_node.name = \"\"..i\n            node_node.transform.parent = node\n            node_node.transform.localPosition = Vector3(0,207 - (i-1)*110,0)\n            node_node.transform.localScale = Vector3.one\n            for k = 0 , MAX_NODE_HERO-1 , 1 do\n                local node_node_item = GameObject.Instantiate(res_item)\n                node_node_item.name = k\n                node_node_item.transform:SetParent(node_node.transform)\n                node_node_item.transform.localPosition = Vector3( -250 + k*120,0,0)\n                node_node_item.transform.localScale = Vector3.one\n                ui_scroll_list:AddDragEvent(node_node_item.gameObject)\n                local node_node_ev = UI_Event.Get(node_node_item,\"\"..i..\";\"..k)\n                node_node_ev.onClick = function(eventData , go , args)\n                    GameObject.Destroy(main_obj)\n                    local ui_hero_detail = require(\"GUI/ui_hero_detail\")\n                    local tmp_hero = Player.heros[(tonumber(args[1])-1)*MAX_NODE_HERO+tonumber(args[2])+1]\n                    ui_hero_detail.create(tmp_hero , create)\n                end\n                if j <= #Player.heros then\n                    setup_icon(node_node_item,Player.heros[j])\n                    j = j +1\n                else\n                    node_node_item:SetActive(false)\n                end\n            end\n        end\n        \n        local max_index , max_index_= math.modf((#Player.heros)/MAX_NODE_HERO)\n        if max_index_ ~= 0 then\n            max_index = max_index + 1\n        end\n        max_index = max_index - MAX_NODE\n        if max_index < 0 then\n            max_index = 0\n        end\n\n        local function onChange( go , dir )\n            local now_index = 1\n            if dir == 0 then\n                now_index = tonumber(go.name) - MAX_NODE\n            else\n                now_index = tonumber(go.name) + MAX_NODE\n            end\n            go.name = \"\"..now_index\n            for i = 0,MAX_NODE_HERO-1,1 do\n                local child_item = go.transform:GetChild(i)\n                if (now_index-1)*MAX_NODE_HERO+i+1 <= #Player.heros then\n                    child_item.gameObject:SetActive(true)\n                    UI_Event.Get(child_item,\"\"..now_index..\";\"..i)\n                    setup_icon(child_item.gameObject,Player.heros[(now_index-1)*MAX_NODE_HERO+i+1])\n                else\n                    child_item.gameObject:SetActive(false)\n                end\n            end\n        end\n\n        local del_onchange = LuaUtil.ToActionGameObjectInt(onChange)\n\n        ui_scroll_list.MaxIndex = max_index\n        ui_scroll_list.MaxFixPos = 207\n        ui_scroll_list.MinFixPos = -209\n        ui_scroll_list.ItemNum = node_num\n        ui_scroll_list.ItemCost = 110\n        ui_scroll_list:Init()\n        ui_scroll_list.onChange = del_onchange\n    end\n\n    createObj()\n    setup()\n    regEvent()\nend\n\nlocal t = {}\nt.create = create\nreturn t\n\n",
+			"file": "Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
+			"file_size": 6663,
+			"file_write_time": 1424516520000000,
+			"settings":
+			{
+				"buffer_size": 6495,
+				"line_ending": "Windows",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Table/QuestTable.lua",
+			"settings":
+			{
+				"buffer_size": 658,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Manager/GameDefine.lua",
+			"settings":
+			{
+				"buffer_size": 119,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Manager/TableManager.lua",
+			"settings":
+			{
+				"buffer_size": 360,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_main.lua",
+			"settings":
+			{
+				"buffer_size": 7547,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Resources/Data/Table_Quest.json",
+			"settings":
+			{
+				"buffer_size": 30069,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Data/Player.lua",
+			"settings":
+			{
+				"buffer_size": 6506,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/Main.lua",
+			"settings":
+			{
+				"buffer_size": 269,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Script/LuaState.cs",
+			"settings":
+			{
+				"buffer_size": 18031,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_battle.lua",
+			"settings":
+			{
+				"buffer_size": 4888,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"contents": "Searching 1574 files for \"GetComponent\"\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/Editor/InspectorTool.cs:\n  238          //     Transform t = obj as Transform;\n  239  \n  240:         //     if (t.GetComponent<UIBehaviour>() != null)\n  241          //     {\n  242          //         isUI = true;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_battle.lua:\n   78          local table = HeroTable[\"\"..battle_hero.tableid]\n   79  \n   80:         -- icon_img.gameObject.GetComponent(\"RawImage\").texture = Resources.Load(\"AvatarM/\"..table.AvatarM)\n   81          icon_img.gameObject:SetActive(true)\n   82:         -- icon_img.gameObject.GetComponent(\"RawImage\")\n   83  \n   84          property_arr[table.Nature].gameObject:SetActive(true)\n   85          frame_bg_array[table.Nature].gameObject:SetActive(true)\n   86:         name.GetComponent(\"Text\").text = table.Name\n   87          empty.gameObject:SetActive(false)\n   88          dead.gameObject:SetActive(false)\n   89:         hp_text.GetComponent(\"Text\").text = \"\"..battle_hero.hp..\"/\"..battle_hero.maxhp\n   90:         hp_bar.GetComponent(\"Scrollbar\").size = battle_hero.hp / battle_hero.maxhp\n   91:         sp_text.GetComponent(\"Text\").text = \"\"..battle_hero.sp..\"/\"..battle_hero.maxsp\n   92:         sp_bar.GetComponent(\"Scrollbar\").size = battle_hero.sp / battle_hero.maxsp\n   93      end\n   94  end\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_detail.lua:\n   17  \n   18      local function updateInfo()\n   19:         local heroImg = main_obj.transform:Find(\"heroImg\"):GetComponent(\"RawImage\")\n   20:         local cost = main_obj.transform:Find(\"heroData/cost/Text\"):GetComponent(\"Text\")\n   21:         local attack = main_obj.transform:Find(\"heroData/attack/Text\"):GetComponent(\"Text\")\n   22:         local defence = main_obj.transform:Find(\"heroData/defence/Text\"):GetComponent(\"Text\")\n   23:         local equip = main_obj.transform:Find(\"heroData/equip/Text\"):GetComponent(\"Text\")\n   24:         local hp = main_obj.transform:Find(\"heroData/hp/Text\"):GetComponent(\"Text\")\n   25:         local lv_up = main_obj.transform:Find(\"heroData/lv_up/Text\"):GetComponent(\"Text\")\n   26:         local lv = main_obj.transform:Find(\"heroData/lv/Text\"):GetComponent(\"Text\")\n   27:         local recover = main_obj.transform:Find(\"heroData/recover/Text\"):GetComponent(\"Text\")\n   28:         local hero_type = main_obj.transform:Find(\"heroData/type/Text\"):GetComponent(\"Text\")\n   29          local star = main_obj.transform:Find(\"heroData/star\")\n   30          local exp = main_obj.transform:Find(\"heroData/exp/exp_bar\")\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_list.lua:\n   68          frame_array[table.Nature].gameObject:SetActive(true)\n   69  \n   70:         local hero_icon = go.transform:Find(\"hero\"):GetComponent(\"RawImage\")\n   71          hero_icon.texture = Resources.Load(\"AvatarM/\"..table.AvatarM)\n   72  \n   ..\n   76      local function setup()\n   77          local node = main_obj.transform:Find(\"node\")\n   78:         local ui_scroll_list = node:GetComponent(\"UI_Scroll_List\")\n   79          local node_num , node_num_ = math.modf((#Player.heros)/5)\n   80          if node_num_ ~= 0 then\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_sell.lua:\n   68          frame_array[table.Nature].gameObject:SetActive(true)\n   69  \n   70:         local hero_icon = go.transform:Find(\"hero\"):GetComponent(\"RawImage\")\n   71          hero_icon.texture = Resources.Load(\"AvatarM/\"..table.AvatarM)\n   72  \n   ..\n   76      local function setup()\n   77          local node = main_obj.transform:Find(\"node\")\n   78:         local ui_scroll_list = node:GetComponent(\"UI_Scroll_List\")\n   79          local node_num , node_num_ = math.modf((#Player.heros)/5)\n   80          if node_num_ ~= 0 then\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_main.lua:\n   81          local function set_card( trans , hero )\n   82              if hero ~= nil then\n   83:                 local ui_img = trans:GetComponent(\"RawImage\")\n   84                  local table = HeroTable[\"\"..hero.tableid]\n   85                  ui_img.texture = Resources.Load(\"AvatarL/\"..table.AvatarL)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_quest.lua:\n   21      local function setup()\n   22          local node = main_obj.transform:Find(\"node\")\n   23:         local ui_scroll_list = node:GetComponent(\"UI_Scroll_List\")\n   24          local node_num , node_num_ = #QuestTable\n   25          local res_item = Resources.Load(\"GUI/ui_quest_item\")\n   ..\n   29  \n   30          local function setup_icon( go , quest , clear ,index)\n   31:             local title_txt = go.transform:Find(\"title\"):GetComponent(\"Text\")\n   32:             local desc_txt = go.transform:Find(\"desc\"):GetComponent(\"Text\")\n   33              local clear_go = go.transform:Find(\"clear\").gameObject\n   34              local new_go = go.transform:Find(\"new\").gameObject\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system_top.lua:\n   20  \n   21      local function updateInfo()\n   22:         local gold = main.transform:Find(\"background/gold/text\"):GetComponent(\"Text\")\n   23          gold.text = Player.gold\n   24:         local soul = main.transform:Find(\"background/soul/text\"):GetComponent(\"Text\")\n   25          soul.text = Player.soul\n   26:         local crystal = main.transform:Find(\"background/crystal/text\"):GetComponent(\"Text\")\n   27          crystal.text = Player.crystal\n   28:         local bstar = main.transform:Find(\"background/bstar/text\"):GetComponent(\"Text\")\n   29          bstar.text = Player.bstar\n   30:         local hp = main.transform:Find(\"background/hp/bar\"):GetComponent(\"Scrollbar\")\n   31          hp.size = Player.hp / Player.maxhp\n   32:         local exp = main.transform:Find(\"background/exp\"):GetComponent(\"Scrollbar\")\n   33          exp.size = Player.exp / Player.maxexp\n   34      end\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Resources/main.txt:\n   15  \n   16  	local go = GameObject.Find(\"Canvas/Button\")\n   17: 	local btn = go:GetComponent(\"Button\")\n   18  	\n   19  \n   20  	btn.onClick:AddListener(function()\n   21  		local go = GameObject.Find(\"Canvas/Text\")\n   22: 		local label = go:GetComponent(\"Text\")\n   23  		label.text=\"hello world\"\n   24  	end)\n   25  	\n   26  \n   27: 	local go = GameObject.Find(\"Canvas/Panel2\"):GetComponent(\"ScrollRect\")\n   28: 	local go = GameObject.Find(\"Canvas/Panel2\"):GetComponent(\"ScrollRect\")\n   29  \n   30  	go.onValueChanged:AddListener(function(v)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/CController.cs:\n  113      public T FIND<T>(string path) where T : MonoBehaviour\n  114      {\n  115:         return this.transform.Find(path).GetComponent<T>();\n  116      }\n  117  \n  ...\n  136      public T FIND<T>(GameObject obj, string path) where T : MonoBehaviour\n  137      {\n  138:         return obj.transform.Find(path).GetComponent<T>();\n  139      }\n  140  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/Controller/Input/UIEvent.cs:\n   37  	public static UIEvent Get(GameObject go)\n   38  	{\n   39: 		UIEvent listener = go.GetComponent<UIEvent>();\n   40  		if (listener == null) listener = go.AddComponent<UIEvent>();\n   41  		return listener;\n   ..\n   44  	public static UIEvent Get(MonoBehaviour go)\n   45  	{\n   46: 		UIEvent listener = go.GetComponent<UIEvent>();\n   47  		if (listener == null) listener = go.gameObject.AddComponent<UIEvent>();\n   48  		return listener;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DMVC/src/View/CView.cs:\n   55  					else\n   56  					{\n   57: 						var com = tra.GetComponent(fieldType);\n   58  						f.SetValue(this,com);\n   59  					}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/Reporter.cs:\n  915  		{\n  916  			show = false;\n  917: 			ReporterGUI gui = gameObject.GetComponent<ReporterGUI>();\n  918  			DestroyImmediate( gui );\n  919  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/ReporterGUI.cs:\n    7  	void Awake()\n    8  	{\n    9: 		reporter = gameObject.GetComponent<Reporter>();\n   10  	}\n   11  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DRuntimeDebug/ReporterMessageReceiver.cs:\n    8  	void Start()\n    9  	{\n   10: 		reporter = gameObject.GetComponent<Reporter>();\n   11  	}\n   12  \n   ..\n   16  		//we can for example check the resultion of our device ,then change the size of reporter\n   17  		if( reporter == null )\n   18: 			reporter = gameObject.GetComponent<Reporter>();\n   19  \n   20  		if( Screen.width < 1000 )\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonColor.cs:\n   62      {\n   63          if (tweenTarget == null) tweenTarget = gameObject;\n   64:         Image img = tweenTarget.GetComponent<Image>();\n   65          this.mImage = img;\n   66          if(img != null)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs:\n   70      public static UI_Event Get(GameObject go , string args)\n   71      {\n   72:         UI_Event listener = go.GetComponent<UI_Event>();\n   73          if (listener == null) listener = go.AddComponent<UI_Event>();\n   74          if(!string.IsNullOrEmpty(args))\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_List.cs:\n   83          while(true)\n   84          {\n   85:             CanvasScaler cs = node.GetComponent<CanvasScaler>();\n   86              if(cs != null)\n   87              {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs:\n   63          while(true)\n   64          {\n   65:             CanvasScaler cs = node.GetComponent<CanvasScaler>();\n   66              if(cs != null)\n   67              {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_Tween.cs:\n   73      public static T Begin<T>( GameObject go ) where T : UI_Tween\n   74      {\n   75:         T comp = go.GetComponent<T>();\n   76          if (comp == null) comp = go.AddComponent<T>();\n   77          comp.enabled = true;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UITween/UI_TweenColor.cs:\n   31          if(tweenTarget == null) tweenTarget = this.gameObject;\n   32          this.m_fStartTime = Time.realtimeSinceStartup;\n   33:         this.m_cImage = tweenTarget.GetComponent<Image>();\n   34          this.m_delEase = GetEasingFunction(easeType);\n   35      }\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/UnityTools.cs:\n  133  		{\n  134  			List<GameObject> objectsToCall = new List<GameObject>();\n  135: 			Component[] targetComponents = (Component[])GameObject.FindObjectsOfType(typeof(MonoBehaviour));\n  136: 			for (int index = 0; index < targetComponents.Length; index++)\n  137  			{\n  138: 				objectsToCall.Add(targetComponents[index].gameObject);\n  139  			}\n  140  			\n  ...\n  159  			}\n  160  \n  161: 			MonoBehaviour[] behaviours = gameObject.GetComponents<MonoBehaviour> ();\n  162  \n  163  			for (int i=0; i< behaviours.Length; i++) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Animator/AnimatorAction.cs:\n   22  			}\n   23  \n   24: 			animator = ((GameObject)gameObject.Value).GetComponent<Animator> ();\n   25  			if (animator == null) {\n   26  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Audio/AudioSourceAction.cs:\n   21  				return;\n   22  			}\n   23: 			audio = ((GameObject)gameObject.Value).GetComponent<AudioSource> ();\n   24  			if (audio == null) {\n   25  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Camera/CameraAction.cs:\n   22  			}\n   23  			\n   24: 			camera = ((GameObject)gameObject.Value).GetComponent<Camera> ();\n   25  			if (camera == null) {\n   26  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/CharacterController/Move.cs:\n   38  				return;\n   39  			}\n   40: 			controller = ((GameObject)gameObject.Value).GetComponent<CharacterController> ();\n   41  			if (controller == null) {\n   42  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/CharacterController/SimpleMove.cs:\n   29  				return;\n   30  			}\n   31: 			controller = ((GameObject)gameObject.Value).GetComponent<CharacterController> ();\n   32  			if (controller == null) {\n   33  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/AddComponent.cs:\n   25  				return;\n   26  			}\n   27: 			Component component = ((GameObject)gameObject.Value).GetComponent (className.Value);\n   28  			if (component == null) {\n   29  				store.Value = ((GameObject)gameObject.Value).AddComponent (className.Value);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/GetComponent.cs:\n    5  	[Info (category = \"GameObject\",    \n    6  	       description = \"Get the component and store it.\",\n    7: 	       url = \"https://docs.unity3d.com/Documentation/ScriptReference/GameObject.GetComponent.html\")]\n    8  	[System.Serializable]\n    9: 	public class GetComponent : GameObjectAction {\n   10  		[Tooltip(\"The name of the class.\")]\n   11  		public StringParameter className;\n   ..\n   27  				return;\n   28  			}\n   29: 			store.Value=((GameObject)gameObject.Value).GetComponent(className.Value);\n   30  			if (!everyFrame) {\n   31  				Finish ();\n   ..\n   35  		public override void OnUpdate ()\n   36  		{\n   37: 			store.Value=((GameObject)gameObject.Value).GetComponent(className.Value);\n   38  		}\n   39  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/GetComponentInChildren.cs:\n    5  	[Info (category = \"GameObject\",    \n    6  	       description = \"Get the component  in children and store it.\",\n    7: 	       url = \"http://docs.unity3d.com/ScriptReference/Component.GetComponentInChildren.html\")]\n    8  	[System.Serializable]\n    9: 	public class GetComponentInChildren : GameObjectAction {\n   10  		[Tooltip(\"The name of the class.\")]\n   11  		public StringParameter className;\n   ..\n   27  				return;\n   28  			}\n   29: 			store.Value=((GameObject)gameObject.Value).GetComponentInChildren(UnityTools.GetType(className.Value));\n   30  			if (!everyFrame) {\n   31  				Finish ();\n   ..\n   35  		public override void OnUpdate ()\n   36  		{\n   37: 			store.Value=((GameObject)gameObject.Value).GetComponentInChildren(UnityTools.GetType(className.Value));\n   38  		}\n   39  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/GetProperty.cs:\n   98  				componentType=UnityTools.GetType(\"UnityEngine.\"+component);\n   99  			}\n  100: 			if (componentType != null && gameObject.Value != null && ((GameObject)gameObject.Value).GetComponent (componentType) != null) {\n  101  				\n  102: 				Component behaviour = ((GameObject)gameObject.Value).GetComponent (componentType);\n  103  				FieldInfo info = behaviour.GetType ().GetField (property);\n  104  				if (info != null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/GameObject/SetProperty.cs:\n   82  			}\n   83  			\n   84: 			if (componentType != null && ((GameObject)gameObject.Value).GetComponent (componentType) != null) {\n   85: 				behaviour = ((GameObject)gameObject.Value).GetComponent (componentType);\n   86  				info = behaviour.GetType ().GetField (property);\n   87  				propertyInfo = behaviour.GetType ().GetProperty(property);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/MonoBehaviour/Enabled.cs:\n   28  				return;\n   29  			}\n   30: 			behaviour = ((GameObject)gameObject.Value).GetComponent (className.Value) as MonoBehaviour;\n   31  			if (behaviour != null) {\n   32  				behaviour.enabled=value.Value;	\n   ..\n   39  		public override void OnUpdate ()\n   40  		{\n   41: 			behaviour = ((GameObject)gameObject.Value).GetComponent (className.Value) as MonoBehaviour;\n   42  			if (behaviour != null) {\n   43  				behaviour.enabled=value.Value;	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/MonoBehaviour/Invoke.cs:\n   34  				return;\n   35  			}\n   36: 			MonoBehaviour mono = ((GameObject)gameObject.Value).GetComponent (behaviour) as MonoBehaviour;\n   37  			if (mono == null) {\n   38  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/ApplyRootMotion.cs:\n   18  				return;			\n   19  			}\n   20: 			animator = agent.GetComponent<Animator> ();\n   21  			if (animator == null) {\n   22  				enabled = false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/Flee.cs:\n   44  			mTarget = ((GameObject)target.Value).transform;\n   45  			\n   46: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   47  			if (agent == null) {\n   48  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/NavMeshAgentAction.cs:\n   21  				return;\n   22  			}\n   23: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   24  			if (agent == null) {\n   25  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/Patrol.cs:\n   49  			}\n   50  \n   51: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   52  			if (agent == null) {\n   53  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/Seek.cs:\n   46  			mTarget = ((GameObject)target.Value).transform;\n   47  \n   48: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   49  			if (agent == null) {\n   50  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/NavMeshAgent/Wander.cs:\n   40  				return;\n   41  			}\n   42: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   43  			if (agent == null) {\n   44  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Physics/IgnoreCollision.cs:\n   38  			}\n   39  			\n   40: 			collider1 = ((GameObject)gameObject.Value).GetComponent<Collider> ();\n   41  			if (collider1 == null) {\n   42  				enabled=false;\n   43  				Debug.LogWarning(\"Missing Component! \"+ GetType().ToString()+ \" requires the Collider component on the GameObject. Action disabled! If you added the component in the same state, create a new state to run this action.\");\n   44  			}\n   45: 			collider2 = ((GameObject)target.Value).GetComponent<Collider> ();\n   46  			if (collider2 == null) {\n   47  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Rigidbody/RigidbodyAction.cs:\n   22  				return;\n   23  			}\n   24: 			rigidbody = ((GameObject)gameObject.Value).GetComponent<Rigidbody> ();\n   25  			if (rigidbody == null) {\n   26  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/DisableStateMachine.cs:\n   28  			GameObject behaviorGameObject = (GameObject)gameObject.Value;\n   29  			// Find the correct behavior tree based on the grouping\n   30: 			var behaviorComponents = behaviorGameObject.GetComponents<StateMachineBehaviour>();\n   31  			if (behaviorComponents != null && behaviorComponents.Length > 0) {\n   32  				behaviour = behaviorComponents[0];\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/EnableStateMachine.cs:\n   26  			GameObject behaviorGameObject = (GameObject)gameObject.Value;\n   27  			// Find the correct behavior tree based on the grouping\n   28: 			var behaviorComponents = behaviorGameObject.GetComponents<StateMachineBehaviour>();\n   29  			if (behaviorComponents != null && behaviorComponents.Length > 0) {\n   30  				behaviour = behaviorComponents[0];\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/SendEvent.cs:\n   45  			GameObject behaviorGameObject = (GameObject)gameObject.Value;\n   46  			// Find the correct behavior tree based on the grouping\n   47: 			var behaviorComponents = behaviorGameObject.GetComponents<StateMachineBehaviour>();\n   48  			if (behaviorComponents != null && behaviorComponents.Length > 0) {\n   49  				for (int i = 0; i < behaviorComponents.Length; ++i) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/SetDefaultState.cs:\n   26  			GameObject behaviorGameObject = (GameObject)gameObject.Value;\n   27  			// Find the correct behavior tree based on the grouping\n   28: 			var behaviorComponents = behaviorGameObject.GetComponents<StateMachineBehaviour>();\n   29  			if (behaviorComponents != null && behaviorComponents.Length > 0) {\n   30  				behaviour = behaviorComponents[0];\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/SetState.cs:\n   28  			GameObject behaviorGameObject = (GameObject)gameObject.Value;\n   29  			// Find the correct behavior tree based on the grouping\n   30: 			var behaviorComponents = behaviorGameObject.GetComponents<StateMachineBehaviour>();\n   31  			if (behaviorComponents != null && behaviorComponents.Length > 0) {\n   32  				behaviour = behaviorComponents[0];\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/StateMachine/SetStateMachine.cs:\n   24  			}\n   25  \n   26: 			StateMachineBehaviour behaviour= ((GameObject)gameObject.Value).GetComponent<StateMachineBehaviour> ();\n   27  			behaviour.SetStateMachine ((StateMachine)_stateMachine.Value);\n   28  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Actions/Vector3/GetComponent.cs:\n    7  	       url = \"\")]\n    8  	[System.Serializable]\n    9: 	public class GetComponent : StateAction {\n   10  		[Tooltip(\"Vector to use.\")]\n   11  		public Vector3Parameter vector;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/GetBool.cs:\n   26  			}\n   27  			\n   28: 			animator = ((GameObject)target.Value).GetComponent<Animator> ();\n   29  			if (animator == null) {\n   30  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/GetFloat.cs:\n   28  			}\n   29  			\n   30: 			animator = ((GameObject)target.Value).GetComponent<Animator> ();\n   31  			if (animator == null) {\n   32  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/GetInt.cs:\n   28  			}\n   29  			\n   30: 			animator = ((GameObject)target.Value).GetComponent<Animator> ();\n   31  			if (animator == null) {\n   32  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/GetLayerWeight.cs:\n   28  			}\n   29  			\n   30: 			animator = ((GameObject)gameObject.Value).GetComponent<Animator> ();\n   31  			if (animator == null) {\n   32  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/IsInTransition.cs:\n   27  			}\n   28  			\n   29: 			animator = ((GameObject)target.Value).GetComponent<Animator> ();\n   30  			if (animator == null) {\n   31  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Animator/IsName.cs:\n   30  			}\n   31  			\n   32: 			animator = ((GameObject)target.Value).GetComponent<Animator> ();\n   33  			if (animator == null) {\n   34  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnCollisionEnter.cs:\n   23  			}\n   24  \n   25: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   26  			if (handler == null) {\n   27  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnCollisionExit.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnCollisionStay.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnLevelWasLoaded.cs:\n   14  		{\n   15  \n   16: 			handler = stateMachine.owner.GetComponent<UnityEventHandler> ();\n   17  			if (handler == null) {\n   18  				handler = stateMachine.owner.AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerEnter.cs:\n   25  			}\n   26  \n   27: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   28  			if (handler == null) {\n   29  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerEnter2D.cs:\n   25  			}\n   26  \n   27: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   28  			if (handler == null) {\n   29  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerExit.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerExit2D.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerStay.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/Events/OnTriggerStay2D.cs:\n   22  			}\n   23  \n   24: 			handler = ((GameObject)gameObject.Value).GetComponent<UnityEventHandler> ();\n   25  			if (handler == null) {\n   26  				handler = ((GameObject)gameObject.Value).AddComponent<UnityEventHandler>();	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/GameObject/HasComponent.cs:\n   28  		public override bool Validate ()\n   29  		{\n   30: 			return ((GameObject)gameObject.Value).GetComponent(component.Value)== equals.Value;\n   31  		}\n   32  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/NavMeshAgent/GetRemainingDistance.cs:\n   26  				return;\n   27  			}\n   28: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   29  			if (agent == null) {\n   30  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/NavMeshAgent/HasPath.cs:\n   24  				return;\n   25  			}\n   26: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   27  			if (agent == null) {\n   28  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Conditions/NavMeshAgent/IsOnOffMeshLink.cs:\n   24  				return;\n   25  			}\n   26: 			agent = ((GameObject)gameObject.Value).GetComponent<NavMeshAgent> ();\n   27  			if (agent == null) {\n   28  				enabled=false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/AddStateMachine.cs:\n   20  			if (DragAndDrop.objectReferences.Length > 0 && DragAndDrop.objectReferences [0].GetType () == typeof(GameObject)) {\n   21  				GameObject go=(GameObject)DragAndDrop.objectReferences[0];\n   22: 				StateMachineBehaviour behaviour=go.GetComponent<StateMachineBehaviour>();\n   23  				if(behaviour != null && behaviour.stateMachine != null && !EditorUtility.IsPersistent(behaviour.stateMachine)){\n   24  					GameObject prefab=(GameObject)PrefabUtility.GetPrefabParent(go);\n   ..\n   26  						AssetDatabase.AddObjectToAsset(behaviour.stateMachine,prefab);\n   27  						AssetDatabase.SaveAssets();\n   28: 						prefab.GetComponent<StateMachineBehaviour>().stateMachine=behaviour.stateMachine;\n   29  					}\n   30  				}\n   ..\n   50  		{\n   51  			GameObject go = EditorUtility.InstanceIDToObject(pID) as GameObject;\n   52: 			if (go != null && go.GetComponent<StateMachineBehaviour>() != null)\n   53  			{\n   54  				Rect rect = new Rect(pRect.x + pRect.width - 25, pRect.y-3, 25, 25);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/GlobalParameterEditor.cs:\n  179  										mParam.FromSceneInstance=true;\n  180  										mParam.Reference=mParam.Value.name+\"(\"+EditorApplication.currentScene+\")\";\n  181: 										AddToParameterCollection mTemp=((GameObject)mParam.Value).GetComponent<AddToParameterCollection>();\n  182  										if(mTemp == null){\n  183  											mTemp=((GameObject)mParam.Value).AddComponent<AddToParameterCollection>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/MainToolbar.cs:\n   78  				GenericMenu toolsMenu = new GenericMenu();\n   79  				if(StateMachineWindow.StateMachineEditor.ActiveGameObject != null){\n   80: 					foreach(StateMachineBehaviour behaviour in StateMachineWindow.StateMachineEditor.ActiveGameObject.GetComponents<StateMachineBehaviour>()){\n   81  						if(behaviour.stateMachine != null){\n   82  							StateMachine mStateMachine= ((EditorApplication.isPlaying && !EditorApplication.isPaused) ? behaviour.executingStateMachine : behaviour.stateMachine);// behaviour.stateMachine;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/StateMachineEditor.cs:\n  345  		public void OnSelectionChange(){\n  346  			if (!PreferencesEditor.GetBool(Preference.LockSelection) && Selection.activeGameObject != null) {\n  347: 				StateMachineBehaviour behaviour = Selection.activeGameObject.GetComponent<StateMachineBehaviour> ();\n  348  				if(behaviour !=  null){\n  349  					StateMachine mStateMachine = ((EditorApplication.isPlaying && !EditorApplication.isPaused) ? behaviour.executingStateMachine : behaviour.stateMachine);\n  ...\n  367  			} else {\n  368  				if(ActiveGameObject != null){\n  369: 					StateMachineBehaviour behaviour=ActiveGameObject.GetComponent<StateMachineBehaviour>();\n  370  					if(behaviour != null){\n  371  						StateMachine mStateMachine = ((EditorApplication.isPlaying && !EditorApplication.isPaused) ? behaviour.executingStateMachine : behaviour.stateMachine);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AIStateMachine/Scripts/Editor/StateMachineWindow.cs:\n  135  		static void DrawGameObjectName(Transform transform, GizmoType gizmoType)\n  136  		{   \n  137: 			StateMachineBehaviour behaviour = transform.GetComponent<StateMachineBehaviour> ();\n  138  			\n  139  			if (behaviour != null && behaviour.currentState != null && behaviour.debug) { \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/astarclasses.cs:\n  764  public void Start () {\n  765  	//Assumes a Seeker component is attached to the GameObject\n  766: 	Seeker seeker = GetComponent<Seeker>();\n  767  	\n  768  	//seeker.pathCallback is a OnPathDelegate, we add the function OnPathComplete to it so it will be called whenever a path has finished calculating on that seeker\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/AI/AIPath.cs:\n  153  	  * */\n  154  	protected virtual void Awake () {\n  155: 		seeker = GetComponent<Seeker>();\n  156  		\n  157  		//This is a simple optimization, cache the transform component lookup\n  ...\n  159  		\n  160  		//Cache some other components (not all are necessarily there)\n  161: 		controller = GetComponent<CharacterController>();\n  162: 		navController = GetComponent<NavmeshController>();\n  163: 		rvoController = GetComponent<RVOController>();\n  164  		if ( rvoController != null ) rvoController.enableRotation = false;\n  165  		rigid = rigidbody;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/AI/NavmeshController.cs:\n   48  	 * \\code\n   49  	 * transform.position = new Vector3 (50,5,50);\n   50: 	 * GetComponent<NavmeshController>().Teleport ();\n   51  	 * \\endcode\n   52  	 */\n   ..\n   64  		forwardPlanning = forwardPlanning < 0.01F ? 0.01F : forwardPlanning;\n   65  		if (controller == null) {\n   66: 			controller = GetComponent<CharacterController>();\n   67  		}\n   68  		if (controller == null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/AI/RichAI.cs:\n  116  		\n  117  		void Awake () {\n  118: 			seeker = GetComponent<Seeker>();\n  119: 			controller = GetComponent<CharacterController>();\n  120: 			rvoController = GetComponent<RVOController>();\n  121  			if ( rvoController != null ) rvoController.enableRotation = false;\n  122  			tr = transform;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/AI/Seeker.cs:\n  379  	/** Returns a new path instance. The path will be taken from the path pool if path recycling is turned on.\\n\n  380  	 * This path can be sent to #StartPath(Path,OnPathDelegate,int) with no change, but if no change is required #StartPath(Vector3,Vector3,OnPathDelegate) does just that.\n  381: 	 * \\code Seeker seeker = GetComponent (typeof(Seeker)) as Seeker;\n  382  	 * Path p = seeker.GetNewPath (transform.position, transform.position+transform.forward*100);\n  383  	 * p.nnConstraint = NNConstraint.Default; \\endcode */\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/Misc/AnimationLink.cs:\n   53  			if (root == null) throw new System.Exception(\"Could not find root transform\");\n   54  				\n   55: 			Animation anim = ob.GetComponent<Animation>();\n   56  			if (anim == null) anim = ob.AddComponent<Animation>();\n   57  			\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/Misc/NodeLink.cs:\n  143  			Transform[] tfs = Selection.transforms;\n  144  			for (int i=0;i<tfs.Length;i++) {\n  145: 				NodeLink[] conns = tfs[i].GetComponents<NodeLink> ();\n  146  				for (int j=0;j<conns.Length;j++) DestroyImmediate (conns[j]);\n  147  			}\n  ...\n  151  		public static void LinkObjects (Transform a, Transform b, bool removeConnection) {\n  152  			NodeLink connecting = null;\n  153: 			NodeLink[] conns = a.GetComponents<NodeLink> ();\n  154  			for (int i=0;i<conns.Length;i++) {\n  155  				if (conns[i].end == b) {\n  ...\n  159  			}\n  160  			\n  161: 			conns = b.GetComponents<NodeLink> ();\n  162  			for (int i=0;i<conns.Length;i++) {\n  163  				if (conns[i].end == a) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Core/Serialization/JsonConverters.cs:\n   52  							return helpers[i].gameObject;\n   53  						} else {\n   54: 							return helpers[i].GetComponent (type);\n   55  						}\n   56  					}\n   ..\n   90  				}\n   91  				\n   92: 				UnityReferenceHelper helper = go.GetComponent<UnityReferenceHelper>();\n   93  				\n   94  				if (helper == null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Editor/SeekerEditor.cs:\n   70  \n   71  		if (mods == null) {\n   72: 			mods = new List<IPathModifier>(script.GetComponents<MonoModifier>() as IPathModifier[]);\n   73  		} else {\n   74  			mods.Clear ();\n   75: 			mods.AddRange (script.GetComponents<MonoModifier>() as IPathModifier[]);\n   76  		}\n   77  		\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Editor/GraphEditors/GraphEditor.cs:\n   57  					}\n   58  					if (go != null) {\n   59: 						UnityReferenceHelper urh = go.GetComponent<UnityReferenceHelper> ();\n   60  						if (urh == null) {\n   61  							\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Editor/GraphEditors/RecastGraphEditor.cs:\n   69  				}\n   70  				\n   71: 				if (meshRenderer.GetComponent<NavMeshRenderer>() == null) {\n   72  					meshRenderer.AddComponent<NavMeshRenderer>();\n   73  				}\n   74  				\n   75  				MeshFilter filter;\n   76: 				if ((filter = meshRenderer.GetComponent<MeshFilter>()) == null) {\n   77  					filter = meshRenderer.AddComponent<MeshFilter>();\n   78  				}\n   79  				\n   80: 				navmeshRenderer = meshRenderer.GetComponent<MeshRenderer>();\n   81  				if (navmeshRenderer == null) {\n   82  					navmeshRenderer = meshRenderer.AddComponent<MeshRenderer>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Editor/ModifierEditors/RaycastModifierEditor.cs:\n   61  		GUI.color = preCol;\n   62  \n   63: 		if ( ob.gameObject.GetComponent<Seeker> () == null ) {\n   64  			EditorGUILayout.HelpBox (\"No seeker found, modifiers are usually used together with a Seeker component\", MessageType.Warning );\n   65  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Editor/ModifierEditors/SmoothModifierEditor.cs:\n   80  		GUI.color = preCol;\n   81  \n   82: 		if ( ob.gameObject.GetComponent<Seeker> () == null ) {\n   83  			EditorGUILayout.HelpBox (\"No seeker found, modifiers are usually used together with a Seeker component\", MessageType.Warning );\n   84  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/GroupController.cs:\n   91  			\n   92  			float radsum = 0;\n   93: 			for (int i=0;i<selection.Count;i++) radsum += selection[i].GetComponent<RVOController>().radius;\n   94  			\n   95  			float radius = radsum / (Mathf.PI);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/LightweightRVO.cs:\n   88  		}\n   89  		sim = rvoSim.GetSimulator();\n   90: 		GetComponent<MeshFilter>().mesh = mesh;\n   91  		\n   92  		CreateAgents (agentCount);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOAgentPlacer.cs:\n   29  			\n   30  			GameObject go = GameObject.Instantiate (prefab,Vector3.zero,Quaternion.Euler(0,angle+180,0)) as GameObject;\n   31: 			RVOExampleAgent ag = go.GetComponent<RVOExampleAgent>();\n   32  			\n   33  			if (ag == null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example11_RVO/RVOExampleAgent.cs:\n   53  	\n   54  	public void Awake () {\n   55: 		seeker = GetComponent<Seeker> ();\n   56  	}\n   57  	\n   ..\n   75  #endif\n   76  		SetTarget (-transform.position);// + transform.forward * 400);\n   77: 		controller = GetComponent<RVOController> ();\n   78  		\n   79  	}\n   ..\n   86  	/** Animate the change of color */\n   87  	public void SetColor (Color col) {\n   88: 		if (rends == null) rends = GetComponentsInChildren<MeshRenderer>();\n   89  		foreach (MeshRenderer rend in rends) {\n   90  			Color current = rend.material.GetColor(\"_TintColor\");\n   ..\n   98  			clip.SetCurve (\"\",typeof(Material),\"_TintColor.b\",curveB);\n   99  			\n  100: 			Animation anim = rend.gameObject.GetComponent<Animation>();\n  101  			if (anim == null) {\n  102  				anim = rend.gameObject.AddComponent<Animation>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/Example8_PathTypes/PathTypesDemo.cs:\n  182  				\n  183  				GameObject ob = null;\n  184: 				if (unused.Count > i && unused[i].GetComponent<LineRenderer>() != null) {\n  185  					ob = unused[i];\n  186  					unused.RemoveAt (i);\n  ...\n  189  				}\n  190  				\n  191: 				LineRenderer lr = ob.GetComponent<LineRenderer>();\n  192  				lr.sharedMaterial = lineMat;\n  193  				lr.SetWidth (lineWidth,lineWidth);\n  ...\n  295  			\n  296  			GameObject go = new GameObject(\"Mesh\",typeof(MeshRenderer),typeof(MeshFilter));\n  297: 			MeshFilter fi = go.GetComponent<MeshFilter>();\n  298  			fi.mesh = mesh;\n  299: 			MeshRenderer re = go.GetComponent<MeshRenderer>();\n  300  			re.material = squareMat;\n  301  			\n  ...\n  307  			\n  308  			GameObject ob = new GameObject (\"LineRenderer\",typeof(LineRenderer));\n  309: 			LineRenderer lr = ob.GetComponent<LineRenderer>();\n  310  			lr.sharedMaterial = lineMat;\n  311  			lr.SetWidth (lineWidth,lineWidth);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/AIFollow.cs:\n   62  	/** Use this for initialization */\n   63  	public void Start () {\n   64: 		seeker = GetComponent<Seeker>();\n   65: 		controller = GetComponent<CharacterController>();\n   66: 		navmeshController = GetComponent<NavmeshController>();\n   67  		\n   68  		tr = transform;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/ExampleScenes/ExampleScripts/LocalAvoidanceMover.cs:\n   20  		void Start () {\n   21  			targetPoint = transform.forward*targetPointDist + transform.position;\n   22: 			controller = GetComponent<LocalAvoidance>();\n   23  			\n   24  		}\n   ..\n   31  			}\n   32  			/* else {\n   33: 				GetComponent<CharacterController>().SimpleMove ((targetPoint-transform.position).normalized*speed);\n   34  			}*/\n   35  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Generators/NavMeshGenerator.cs:\n 1212  				}\n 1213  				\n 1214: 				UnityReferenceHelper helper = go.GetComponent<UnityReferenceHelper>();\n 1215  				\n 1216  				if (helper == null) {\n ....\n 1260  							return helpers[i].gameObject;\n 1261  						} else {\n 1262: 							return helpers[i].GetComponent (type);\n 1263  						}\n 1264  					}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Generators/PointGenerator.cs:\n  458  				\n  459  #if !AstarRelease && FALSE\n  460: 				NodeObject nobj = child.GetComponent<NodeObject>();\n  461  				if (nobj != null) nodes[c].Walkable = nobj.walkable;\n  462  #endif\n  ...\n  552  					\n  553  #if !AstarRelease && FALSE\n  554: 					NodeObject nobj = gos[i].GetComponent<NodeObject>();\n  555  					if (nobj != null) nodes[i].Walkable = nobj.walkable;\n  556  #endif\n  ...\n  576  						\n  577  #if !AstarRelease && FALSE\n  578: 						NodeObject nobj = child.GetComponent<NodeObject>();\n  579  						if (nobj != null) nodes[c].Walkable = nobj.walkable;\n  580  #endif\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Generators/RecastGenerator.cs:\n  614  					MeshFilter filter = filters[i];\n  615  					if (filter.renderer != null && filter.sharedMesh != null && filter.renderer.enabled && (((1 << filter.gameObject.layer) & mask) == (1 << filter.gameObject.layer) || tagMask.Contains (filter.tag))) {\n  616: 						if (filter.GetComponent<RecastMeshObj>() == null) {\n  617  							filteredFilters.Add (filter);\n  618  						}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Generators/Utilities/RecastMeshObj.cs:\n  114  			if (rend == null && coll == null) throw new System.Exception (\"A renderer or a collider should be attached to the GameObject\");\n  115  			\n  116: 			MeshFilter filter = GetComponent<MeshFilter>();\n  117  			\n  118  			if (rend != null && filter == null) throw new System.Exception (\"A renderer was attached but no mesh filter\");\n  ...\n  140  			if (rend == null && coll == null) throw new System.Exception (\"A renderer or a collider should be attached to the GameObject\");\n  141  			\n  142: 			MeshFilter filter = GetComponent<MeshFilter>();\n  143  			\n  144  			if (rend != null && filter == null) throw new System.Exception (\"A renderer was attached but no mesh filter\");\n  ...\n  161  		\n  162  		public MeshFilter GetMeshFilter () {\n  163: 			return GetComponent<MeshFilter>();\n  164  		}\n  165  		\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/LocalAvoidance/LocalAvoidance.cs:\n   40  		/** Initialization. Caches CharacterController component and finds other agents */\n   41  		void Start () {\n   42: 			controller = GetComponent<CharacterController>();\n   43  			agents = FindObjectsOfType (typeof(LocalAvoidance)) as LocalAvoidance[];\n   44  			//targetPoint = transform.position+transform.forward*targetPointDistance;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Modifiers/Modifiers.cs:\n  148  		public void Awake () {\n  149  #if !PhotonImplementation\n  150: 			seeker = GetComponent<Seeker>();\n  151  #endif\n  152  			\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Pathfinders/FleePath.cs:\n   21  \n   22  //Get the Seeker component which must be attached to this GameObject\n   23: Seeker seeker = GetComponent<Seeker>();\n   24  \n   25  //Start the path and return the result to MyCompleteFunction (which is a function you have to define, the name can of course be changed)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/AstarPathfindingProject/Pathfinders/RandomPath.cs:\n   18  \n   19  //Get the Seeker component which must be attached to this GameObject\n   20: Seeker seeker = GetComponent<Seeker>();\n   21  \n   22  //Start the path and return the result to MyCompleteFunction (which is a function you have to define, the name can of course be changed)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyJoystick/Example_FirstPerson_DirectMode/GUIFirstDirect.cs:\n    9  	\n   10  	void Start(){\n   11: 		joystick = GameObject.Find(\"Move_Turn_Joystick\").GetComponent<EasyJoystick>();\n   12  	}\n   13  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-MultiLayer/TouchLayer.cs:\n   24  \n   25  	void Start () {\n   26: 		textMesh =(TextMesh)GameObject.Find(\"TouchOnLayer\").transform.gameObject.GetComponent(\"TextMesh\");\n   27  		EasyTouch.AddReservedGuiArea( rect1 );\n   28  		EasyTouch.AddReservedGuiArea( rect2 );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-Multiplefingers/ObjectTouch.cs:\n  114  			\n  115  			if (child!=null){\n  116: 				child.GetComponent<SlowRotate>().rotateSpeed *= 1.1f;\n  117  			}\n  118  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Drag.cs:\n   31  	\n   32  	void Start(){\n   33: 		textMesh = transform.Find(\"TextDrag\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   34  	}\n   35  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/LongTap.cs:\n   29  	void Start(){\n   30  		\n   31: 		textMesh = transform.Find(\"TextLongTap\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   32  	}\n   33  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/Swipe.cs:\n   30  	\n   31  	void Start(){\n   32: 		textMesh = GameObject.Find(\"LastSwipeText\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   33  	}\n   34  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-OneFinger/TouchStart.cs:\n   28  	\n   29  	void Start () {\n   30: 		textMesh =(TextMesh) transform.Find(\"TexttouchStart\").transform.gameObject.GetComponent(\"TextMesh\");\n   31  	}\n   32  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Pinch.cs:\n   33  	\n   34  	void Start(){\n   35: 		textMesh = transform.Find(\"TextPinch\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   36  	}\n   37  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/Twist.cs:\n   30  	\n   31  	void Start(){\n   32: 		textMesh = transform.Find(\"TextTwist\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   33  	}\n   34  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoDrag.cs:\n   31  	\n   32  	void Start(){\n   33: 		textMesh = transform.Find(\"TextDrag\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   34  	}\n   35  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoLongTap.cs:\n   30  	\n   31  	void Start(){\n   32: 		textMesh = transform.Find(\"TextLongTap\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   33  	}\n   34  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoSwipe.cs:\n   29  	\n   30  	void Start(){\n   31: 		textMesh = GameObject.Find(\"LastSwipeText\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   32  	}\n   33  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Example/C# Example/Examples for EasyTouch/Example-TwoFinger/TwoTouchStart.cs:\n   31  	\n   32  	void Start(){	\n   33: 		textMesh = transform.Find(\"TexttouchStart\").transform.gameObject.GetComponent(\"TextMesh\") as TextMesh;\n   34  	}\n   35  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/EasyJoystick.cs:\n  436  			xAxisTransform = value;\n  437  			if (xAxisTransform!=null){\n  438: 				xAxisCharacterController = xAxisTransform.GetComponent<CharacterController>();\n  439  			}\n  440  			else{\n  ...\n  564  			yAxisTransform = value;\n  565  			if (yAxisTransform!=null){\n  566: 				yAxisCharacterController = yAxisTransform.GetComponent<CharacterController>();\n  567  			}\n  568  			else{\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/MonoSingleton.cs:\n   13              	m_Instance = GameObject.FindObjectOfType(typeof(T)) as T;\n   14                  if( m_Instance == null ){\n   15:                     m_Instance = new GameObject(\"Singleton of \" + typeof(T).ToString(), typeof(T)).GetComponent<T>();\n   16  					 m_Instance.Init();\n   17                  }\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/Editor/GUIEasyButtonCallBack.cs:\n   27  	{\n   28  		GameObject gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;\n   29: 		if (gameObject != null && gameObject.GetComponent<EasyButton>() != null)\n   30  		{\n   31  			Rect rect = new Rect(selectionRect.x + selectionRect.width - 16f, selectionRect.y, 16f, 16f);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/Editor/GUIEasyJoystickCallBack.cs:\n   27  	{\n   28  		GameObject gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;\n   29: 		if (gameObject != null && gameObject.GetComponent<EasyJoystick>() != null)\n   30  		{\n   31  			Rect rect = new Rect(selectionRect.x + selectionRect.width - 16f, selectionRect.y, 16f, 16f);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/Editor/GUIEasyJoystickInspector.cs:\n  151  					if ( t.XAxisTransform!=null){\n  152  						// characterCollider\n  153: 						if (t.XAxisTransform.GetComponent<CharacterController>() && (t.XTI==EasyJoystick.PropertiesInfluenced.Translate || t.XTI==EasyJoystick.PropertiesInfluenced.TranslateLocal)){\n  154  							EditorGUILayout.HelpBox(\"CharacterController detected\",MessageType.Info);\n  155  							t.xAxisGravity = EditorGUILayout.FloatField(\"Gravity\",t.xAxisGravity);\n  ...\n  233  					if ( t.YAxisTransform!=null){\n  234  						// characterCollider\n  235: 						if (t.YAxisTransform.GetComponent<CharacterController>() && (t.YTI==EasyJoystick.PropertiesInfluenced.Translate || t.YTI==EasyJoystick.PropertiesInfluenced.TranslateLocal)){\n  236  							EditorGUILayout.HelpBox(\"CharacterController detected\",MessageType.Info);\n  237  							t.yAxisGravity = EditorGUILayout.FloatField(\"Gravity\",t.yAxisGravity);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/Editor/GUIEasytouchCallBack.cs:\n   30  	{\n   31  		GameObject gameObject = EditorUtility.InstanceIDToObject(instanceID) as GameObject;\n   32: 		if (gameObject != null && gameObject.GetComponent<EasyTouch>() != null)\n   33  		{\n   34  			Rect rect = new Rect(selectionRect.x + selectionRect.width - 16f, selectionRect.y, 16f, 16f);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/EasyTouch/Plugins/Editor/GUIEasyTouchMenu.cs:\n   20  		EasyTouch  easyt =(EasyTouch) GameObject.FindObjectOfType(typeof(EasyTouch));\n   21  		if (easyt==null){\n   22: 			easyt = GUIEasyTouchMenu.AddEasyTouch(true).GetComponent<EasyTouch>();	\n   23  		}\n   24  	\n   ..\n   37  		EasyTouch  easyt =(EasyTouch) GameObject.FindObjectOfType(typeof(EasyTouch));\n   38  		if (easyt==null){\n   39: 			easyt = GUIEasyTouchMenu.AddEasyTouch(true).GetComponent<EasyTouch>();	\n   40  		}\n   41  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTween.cs:\n  712  		\n  713  		//set tempColor and base fromColor:\n  714: 		if(target.GetComponent(typeof(GUITexture))){\n  715  			tempColor=fromColor=target.guiTexture.color;	\n  716: 		}else if(target.GetComponent(typeof(GUIText))){\n  717  			tempColor=fromColor=target.guiText.material.color;\n  718  		}else if(target.renderer){\n  ...\n  750  		\n  751  		//apply fromColor:\n  752: 		if(target.GetComponent(typeof(GUITexture))){\n  753  			target.guiTexture.color=fromColor;	\n  754: 		}else if(target.GetComponent(typeof(GUIText))){\n  755  			target.guiText.material.color=fromColor;\n  756  		}else if(target.renderer){\n  ...\n  954  			tempAudioSource=(AudioSource)args[\"audiosource\"];\n  955  		}else{\n  956: 			if(target.GetComponent(typeof(AudioSource))){\n  957  				tempAudioSource=target.audio;\n  958  			}else{\n  ...\n 3339  		\n 3340  		//from and init to values:\n 3341: 		if(GetComponent(typeof(GUITexture))){\n 3342  			colors = new Color[1,3];\n 3343  			colors[0,0] = colors[0,1] = guiTexture.color;\n 3344: 		}else if(GetComponent(typeof(GUIText))){\n 3345  			colors = new Color[1,3];\n 3346  			colors[0,0] = colors[0,1] = guiText.material.color;\n ....\n 3414  			audioSource=(AudioSource)tweenArguments[\"audiosource\"];\n 3415  		}else{\n 3416: 			if(GetComponent(typeof(AudioSource))){\n 3417  				audioSource=audio;\n 3418  			}else{\n ....\n 3440  			audioSource=(AudioSource)tweenArguments[\"audiosource\"];\n 3441  		}else{\n 3442: 			if(GetComponent(typeof(AudioSource))){\n 3443  				audioSource=audio;\n 3444  			}else{\n ....\n 4115  		\n 4116  		//apply:\n 4117: 		if(GetComponent(typeof(GUITexture))){\n 4118  			//guiTexture.color=colors[2];\n 4119  			guiTexture.color=colors[0,2];\n 4120: 		}else if(GetComponent(typeof(GUIText))){\n 4121  			//guiText.material.color=colors[2];\n 4122  			guiText.material.color=colors[0,2];\n ....\n 4133  		//dial in:\n 4134  		if(percentage==1){\n 4135: 			if(GetComponent(typeof(GUITexture))){\n 4136  				//guiTexture.color=colors[1];\n 4137  				guiTexture.color=colors[0,1];\n 4138: 			}else if(GetComponent(typeof(GUIText))){\n 4139  				//guiText.material.color=colors[1];\n 4140  				guiText.material.color=colors[0,1];\n ....\n 4860  		\n 4861  		//init values:\n 4862: 		if(target.GetComponent(typeof(GUITexture))){\n 4863  			colors[0] = colors[1] = target.guiTexture.color;\n 4864: 		}else if(target.GetComponent(typeof(GUIText))){\n 4865  			colors[0] = colors[1] = target.guiText.material.color;\n 4866  		}else if(target.renderer){\n ....\n 4895  				\n 4896  		//apply:\n 4897: 		if(target.GetComponent(typeof(GUITexture))){\n 4898  			target.guiTexture.color=colors[3];\n 4899: 		}else if(target.GetComponent(typeof(GUIText))){\n 4900  			target.guiText.material.color=colors[3];\n 4901  		}else if(target.renderer){\n ....\n 4956  			audioSource=(AudioSource)args[\"audiosource\"];\n 4957  		}else{\n 4958: 			if(target.GetComponent(typeof(AudioSource))){\n 4959  				audioSource=target.audio;\n 4960  			}else{\n ....\n 6106  	/// </summary>\n 6107  	public static void Resume(GameObject target){\n 6108: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6109  		foreach (iTween item in tweens){\n 6110  			item.enabled=true;\n ....\n 6131  	/// </param>	\n 6132  	public static void Resume(GameObject target, string type){\n 6133: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6134  		foreach (iTween item in tweens){\n 6135  			string targetType = item.type+item.method;\n ....\n 6148  	/// </param>	\n 6149  	public static void Resume(GameObject target, string type, bool includechildren){\n 6150: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6151  		foreach (iTween item in tweens){\n 6152  			string targetType = item.type+item.method;\n ....\n 6202  	/// </summary>\n 6203  	public static void Pause(GameObject target){\n 6204: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6205  		foreach (iTween item in tweens){\n 6206  			if(item.delay>0){\n ....\n 6232  	/// </param>	\n 6233  	public static void Pause(GameObject target, string type){\n 6234: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6235  		foreach (iTween item in tweens){\n 6236  			string targetType = item.type+item.method;\n ....\n 6254  	/// </param>	\n 6255  	public static void Pause(GameObject target, string type, bool includechildren){\n 6256: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6257  		foreach (iTween item in tweens){\n 6258  			string targetType = item.type+item.method;\n ....\n 6341  	/// </summary>\n 6342  	public static int Count(GameObject target){\n 6343: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6344  		return(tweens.Length);\n 6345  	}\n ....\n 6353  	public static int Count(GameObject target, string type){\n 6354  		int tweenCount = 0;\n 6355: 		Component[] tweens = target.GetComponents(typeof(iTween));foreach (iTween item in tweens){\n 6356  			string targetType = item.type+item.method;\n 6357  			targetType=targetType.Substring(0,type.Length);\n ....\n 6425  	/// </summary>\n 6426  	public static void Stop(GameObject target){\n 6427: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6428  		foreach (iTween item in tweens){\n 6429  			item.Dispose();\n ....\n 6450  	/// </param>	\n 6451  	public static void Stop(GameObject target, string type){\n 6452: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6453  		foreach (iTween item in tweens){\n 6454  			string targetType = item.type+item.method;\n ....\n 6468  	/// </param>	\n 6469  	public static void StopByName(GameObject target, string name){\n 6470: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6471  		foreach (iTween item in tweens){\n 6472  			/*string targetType = item.type+item.method;\n ....\n 6484  		if (target == null)\n 6485  			return;\n 6486: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6487  		foreach (iTween item in tweens){\n 6488  			/*			string targetType = item.type+item.method;\n ....\n 6500  		if (target == null)\n 6501  			return false;\n 6502: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6503  		foreach (iTween item in tweens){\n 6504  			/*			string targetType = item.type+item.method;\n ....\n 6523  	/// </param>	\n 6524  	public static void Stop(GameObject target, string type, bool includechildren){\n 6525: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6526  		foreach (iTween item in tweens){\n 6527  			string targetType = item.type+item.method;\n ....\n 6546  	/// </param>	\n 6547  	public static void StopByName(GameObject target, string name, bool includechildren){\n 6548: 		Component[] tweens = target.GetComponents(typeof(iTween));\n 6549  		foreach (iTween item in tweens){\n 6550  			/*string targetType = item.type+item.method;\n ....\n 7149  	\n 7150  	void ConflictCheck(){//if a new iTween is about to run and is of the same type as an in progress iTween this will destroy the previous if the new one is NOT identical in every way or it will destroy the new iTween if they are:	\n 7151: 		Component[] tweens = GetComponents(typeof(iTween));\n 7152  		foreach (iTween item in tweens) {\n 7153  			if(item.type == \"value\"){\n ....\n 7187  	void EnableKinematic(){\n 7188  		/*\n 7189: 		if(gameObject.GetComponent(typeof(Rigidbody))){\n 7190  			if(!rigidbody.isKinematic){\n 7191  				kinematic=true;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/iTweenEditor/iTweenEvent.cs:\n   92  	/// </returns>\n   93  	public static iTweenEvent GetEvent(GameObject obj, string name) {\n   94: 		var tweens = obj.GetComponents<iTweenEvent>();\n   95  		if(tweens.Length > 0) {\n   96  			var result = tweens.FirstOrDefault(tween => { return tween.tweenName == name; });\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Camera/tk2dCamera.cs:\n  119  		get {\n  120  			if (_unityCamera == null) {\n  121: 				_unityCamera = GetComponent<Camera>();\n  122  				if (_unityCamera == null) {\n  123  					Debug.LogError(\"A unity camera must be attached to the tk2dCamera script\");\n  ...\n  276  		}\n  277  		else {\n  278: 			this.GetComponent<Camera>().enabled = false;\n  279  		}\n  280  		\n  ...\n  738  \n  739  				// Mirror camera settings\n  740: 				Camera unityCamera = GetComponent<Camera>();\n  741  				if (unityCamera != null) {\n  742  					cameraSettings.rect = unityCamera.rect;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Camera/tk2dCameraAnchor.cs:\n   91  		get {\n   92  			if (tk2dCamera != null) {\n   93: 				_anchorCamera = tk2dCamera.GetComponent<Camera>();\n   94  				tk2dCamera = null;\n   95  #if UNITY_EDITOR\n   ..\n  108  		get {\n  109  			if (_anchorCameraCached != _anchorCamera) {\n  110: 				_anchorTk2dCamera = _anchorCamera.GetComponent<tk2dCamera>();\n  111  				_anchorCameraCached = _anchorCamera;\n  112  			}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Fonts/tk2dTextMesh.cs:\n  383  		get {\n  384  			if (_cachedRenderer == null) {\n  385: 				_cachedRenderer = GetComponent<Renderer>();\n  386  			}\n  387  			return _cachedRenderer;\n  ...\n  412  #if UNITY_EDITOR\n  413  	private void OnEnable() {\n  414: 		if (GetComponent<Renderer>() != null && data != null && data.font != null && data.font.inst != null && GetComponent<Renderer>().sharedMaterial == null && data.font.inst.needMaterialInstance) {\n  415  			ForceBuild();\n  416  		}\n  ...\n  422  		if (meshFilter == null)\n  423  		{\n  424: 			meshFilter = GetComponent<MeshFilter>();\n  425  		}\n  426  		if (meshFilter != null)\n  ...\n  585  			{\n  586  				if (meshFilter == null)\n  587: 					meshFilter = GetComponent<MeshFilter>();\n  588  				\n  589  				mesh = new Mesh();\n  ...\n  745  	void UpdateMaterial()\n  746  	{\n  747: 		if (GetComponent<Renderer>().sharedMaterial != _fontInst.materialInst)\n  748: 			GetComponent<Renderer>().material = _fontInst.materialInst;\n  749  	}\n  750  	\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Gui/tk2dButton.cs:\n  112  			// Find a camera parent \n  113              Transform node = transform;\n  114:             while (node && node.GetComponent<Camera>() == null)\n  115              {\n  116                  node = node.parent;\n  117              }\n  118:             if (node && node.GetComponent<Camera>() != null) \n  119  			{\n  120: 				viewCamera = node.GetComponent<Camera>();\n  121  			}\n  122  			\n  ...\n  124  			if (viewCamera == null && tk2dCamera.Instance)\n  125  			{\n  126: 				viewCamera = tk2dCamera.Instance.GetComponent<Camera>();\n  127  			}\n  128  			\n  ...\n  134  		}\n  135  		\n  136: 		sprite = GetComponent<tk2dBaseSprite>();\n  137  		\n  138  		// Further tests for sprite not being null aren't necessary, as the IDs will default to -1 in that case. Testing them will be sufficient\n  ...\n  144  		}\n  145  		\n  146: 		if (GetComponent<Collider>() == null)\n  147  		{\n  148  			BoxCollider newCollider = gameObject.AddComponent<BoxCollider>();\n  ...\n  153  		\n  154  		if ((buttonDownSound != null || buttonPressedSound != null || buttonUpSound != null) &&\n  155: 			GetComponent<AudioSource>() == null)\n  156  		{\n  157  			AudioSource audioSource = gameObject.AddComponent<AudioSource>();\n  ...\n  174  	void PlaySound(AudioClip source)\n  175  	{\n  176: 		if (GetComponent<AudioSource>() && source)\n  177  		{\n  178: 			GetComponent<AudioSource>().PlayOneShot(source);\n  179  		}\n  180  	}\n  ...\n  270  \n  271              RaycastHit hitInfo;\n  272: 			bool colliderHit = GetComponent<Collider>().Raycast(ray, out hitInfo, Mathf.Infinity);\n  273              if (buttonPressed && !colliderHit)\n  274  			{\n  ...\n  369  	            Ray ray = viewCamera.ScreenPointToRay(touch.position);\n  370  	            RaycastHit hitInfo;\n  371: 	            if (GetComponent<Collider>().Raycast(ray, out hitInfo, 1.0e8f))\n  372  	            {\n  373  					if (!Physics.Raycast(ray, hitInfo.distance - 0.01f))\n  ...\n  387  	            Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);\n  388  	            RaycastHit hitInfo;\n  389: 	            if (GetComponent<Collider>().Raycast(ray, out hitInfo, 1.0e8f))\n  390  	            {\n  391  					if (!Physics.Raycast(ray, hitInfo.distance - 0.01f))\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dAnimatedSprite.cs:\n   16  	void CheckAddAnimatorInternal() {\n   17  		if (_animator == null) {\n   18: 			_animator = gameObject.GetComponent<tk2dSpriteAnimator>();\n   19  			if (_animator == null) {\n   20  				_animator = gameObject.AddComponent<tk2dSpriteAnimator>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dBaseSprite.cs:\n  146  		get {\n  147  			if (_cachedRenderer == null) {\n  148: 				_cachedRenderer = GetComponent<Renderer>();\n  149  			}\n  150  			return _cachedRenderer;\n  ...\n  528  			{\n  529  				// Has the user created a box collider?\n  530: 				boxCollider = gameObject.GetComponent<BoxCollider>();\n  531  				\n  532  				if (boxCollider == null)\n  ...\n  566  					if (boxCollider2D == null) {\n  567  						// Has the user created a box collider?\n  568: 						boxCollider2D = gameObject.GetComponent<BoxCollider2D>();\n  569  						if (boxCollider2D == null)\n  570  						{\n  ...\n  712  		if (sprite.physicsEngine == tk2dSpriteDefinition.PhysicsEngine.Physics3D) {\n  713  			// User has created a collider\n  714: 			if (GetComponent<Collider>() != null)\n  715  			{\n  716: 				boxCollider = GetComponent<BoxCollider>();\n  717: 				meshCollider = GetComponent<MeshCollider>();\n  718  			}\n  719  			\n  ...\n  750  \n  751  				// this is required so our mesh pivot is at the right point\n  752: 				if (GetComponent<Rigidbody>()) GetComponent<Rigidbody>().centerOfMass = Vector3.zero;\n  753  			}\n  754  			else if (sprite.colliderType != tk2dSpriteDefinition.ColliderType.None)\n  ...\n  784  			return;\n  785  		\n  786: 		PhysicMaterial physicsMaterial = GetComponent<Collider>()?GetComponent<Collider>().sharedMaterial:null;\n  787: 		bool isTrigger = GetComponent<Collider>()?GetComponent<Collider>().isTrigger:false;\n  788  \n  789  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  790: 		PhysicsMaterial2D physicsMaterial2D = GetComponent<Collider2D>()?GetComponent<Collider2D>().sharedMaterial:null;\n  791: 		if (GetComponent<Collider2D>() != null) {\n  792: 			isTrigger = GetComponent<Collider2D>().isTrigger;\n  793  		}\n  794  #endif\n  795  \n  796: 		boxCollider = gameObject.GetComponent<BoxCollider>();\n  797: 		meshCollider = gameObject.GetComponent<MeshCollider>();\n  798  \n  799  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  800: 		boxCollider2D = gameObject.GetComponent<BoxCollider2D>();\n  801  		edgeCollider2D.Clear();\n  802: 		edgeCollider2D.AddRange( gameObject.GetComponents<EdgeCollider2D>() );\n  803  		polygonCollider2D.Clear();\n  804: 		polygonCollider2D.AddRange( gameObject.GetComponents<PolygonCollider2D>() );\n  805  #endif\n  806  \n  ...\n  877  		CreateCollider();\n  878  		\n  879: 		if (GetComponent<Collider>())\n  880  		{\n  881: 			GetComponent<Collider>().isTrigger = isTrigger;\n  882: 			GetComponent<Collider>().material = physicsMaterial;\n  883  		}\n  884  \n  ...\n  917  #if UNITY_EDITOR\n  918  	private void OnEnable() {\n  919: 		if (GetComponent<Renderer>() != null && Collection != null && GetComponent<Renderer>().sharedMaterial == null && Collection.inst.needMaterialInstance) {\n  920  			ForceBuild();\n  921  		}\n  ...\n  930  		if (CurrentSprite.physicsEngine == tk2dSpriteDefinition.PhysicsEngine.Physics3D) {\n  931  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  932: 			boxCollider2D = GetComponent<BoxCollider2D>();\n  933  			if (boxCollider2D != null) {\n  934  				Object.DestroyImmediate(boxCollider2D, true);\n  935  			}\n  936  #endif\n  937: 			boxCollider = GetComponent<BoxCollider>();\n  938  			if (boxCollider == null) {\n  939  				boxCollider = gameObject.AddComponent<BoxCollider>();\n  ...\n  942  		else if (CurrentSprite.physicsEngine == tk2dSpriteDefinition.PhysicsEngine.Physics2D) {\n  943  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  944: 			boxCollider = GetComponent<BoxCollider>();\n  945  			if (boxCollider != null) {\n  946  				Object.DestroyImmediate(boxCollider, true);\n  947  			}\n  948: 			boxCollider2D = GetComponent<BoxCollider2D>();\n  949  			if (boxCollider2D == null) {\n  950  				boxCollider2D = gameObject.AddComponent<BoxCollider2D>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dClippedSprite.cs:\n  106  #endif\n  107  		mesh.hideFlags = HideFlags.DontSave;\n  108: 		GetComponent<MeshFilter>().mesh = mesh;\n  109  \n  110  		// This will not be set when instantiating in code\n  ...\n  210  		mesh.bounds = AdjustedMeshBounds( mesh.bounds, renderLayer );\n  211  \n  212: 		GetComponent<MeshFilter>().mesh = mesh;\n  213  		\n  214  		UpdateCollider();\n  ...\n  308  	protected override void UpdateMaterial()\n  309  	{\n  310: 		Renderer renderer = GetComponent<Renderer>();\n  311  \n  312  		if (renderer.sharedMaterial != collectionInst.spriteDefinitions[spriteId].materialInst)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dPixelPerfectHelper.cs:\n   43  		float resScale = collectionTargetHeight / targetResolutionHeight;\n   44  \n   45: 		if (GetComponent<Camera>() != null) cam = GetComponent<Camera>();\n   46  		if (cam == null) cam = Camera.main;\n   47  		\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSlicedSprite.cs:\n  139  #endif\n  140  		mesh.hideFlags = HideFlags.DontSave;\n  141: 		GetComponent<MeshFilter>().mesh = mesh;\n  142  	\n  143  		// Cache box collider		\n  144  		if (boxCollider == null) {\n  145: 			boxCollider = GetComponent<BoxCollider>();\n  146  		}\n  147  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  148  		if (boxCollider2D == null) {\n  149: 			boxCollider2D = GetComponent<BoxCollider2D>();\n  150  		}\n  151  #endif\n  ...\n  294  		mesh.bounds = AdjustedMeshBounds( mesh.bounds, renderLayer );\n  295  		\n  296: 		GetComponent<MeshFilter>().mesh = mesh;\n  297  		\n  298  		UpdateCollider();\n  ...\n  404  	protected override void UpdateMaterial()\n  405  	{\n  406: 		Renderer renderer = GetComponent<Renderer>();\n  407  		if (renderer.sharedMaterial != collectionInst.spriteDefinitions[spriteId].materialInst)\n  408  			renderer.material = collectionInst.spriteDefinitions[spriteId].materialInst;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSprite.cs:\n   27  #endif\n   28  		mesh.hideFlags = HideFlags.DontSave;\n   29: 		GetComponent<MeshFilter>().mesh = mesh;\n   30  		\n   31  		// This will not be set when instantiating in code\n   ..\n   92  #endif\n   93  			mesh.hideFlags = HideFlags.DontSave;\n   94: 			GetComponent<MeshFilter>().mesh = mesh;\n   95  		}\n   96  		\n   ..\n  226  	protected override void UpdateMaterial()\n  227  	{\n  228: 		Renderer renderer = GetComponent<Renderer>();\n  229  		if (renderer.sharedMaterial != collectionInst.spriteDefinitions[spriteId].materialInst)\n  230  			renderer.material = collectionInst.spriteDefinitions[spriteId].materialInst;\n  ...\n  255  	{\n  256  		base.ForceBuild();\n  257: 		GetComponent<MeshFilter>().mesh = mesh;\n  258  	}\n  259  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSpriteAnimator.cs:\n  133  		get {\n  134  			if (_sprite == null) {\n  135: 				_sprite = GetComponent<tk2dBaseSprite>();\n  136  				if (_sprite == null) {\n  137  					Debug.LogError(\"Sprite not found attached to tk2dSpriteAnimator.\");\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSpriteAttachPoint.cs:\n   31  	void Awake() {\n   32  		if (sprite == null) {\n   33: 			sprite = GetComponent<tk2dBaseSprite>();\n   34  			if (sprite != null) {\n   35  				HandleSpriteChanged( sprite );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dSpriteFromTexture.cs:\n   15  		get {\n   16  			if (_sprite == null) {\n   17: 				_sprite = GetComponent<tk2dBaseSprite>();\n   18  				if (_sprite == null) {\n   19  					Debug.Log(\"tk2dSpriteFromTexture - Missing sprite object. Creating.\");\n   ..\n   35  	void OnDestroy() {\n   36  		DestroyInternal();\n   37: 		Renderer renderer = GetComponent<Renderer>();\n   38  		if (renderer != null) {\n   39  			renderer.material = null;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dStaticSpriteBatcher.cs:\n  190  #if UNITY_EDITOR\n  191  	private void OnEnable() {\n  192: 		if (GetComponent<Renderer>() != null && batchedSprites != null) {\n  193  			bool needBuild = false;\n  194: 			foreach (Material m in GetComponent<Renderer>().sharedMaterials) {\n  195  				if (m == null) {\n  196  					needBuild = true;\n  ...\n  323  			mesh = new Mesh();\n  324  			mesh.hideFlags = HideFlags.DontSave;\n  325: 			GetComponent<MeshFilter>().mesh = mesh;\n  326  		}\n  327  		else\n  ...\n  661  		}\n  662  		\n  663: 		GetComponent<Renderer>().sharedMaterials = materials.ToArray();\n  664  	}\n  665  \n  ...\n  668  		// Check if the Generate Colliders flag is cleared\n  669  		// Delete existing colliders and return otherwise\n  670: 		MeshCollider meshCollider = GetComponent<MeshCollider>();\n  671  		if (meshCollider != null)\n  672  		{\n  673: 			if (GetComponent<Collider>() != meshCollider) {\n  674  				// Already has a collider\n  675  				return;\n  ...\n  686  \n  687  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  688: 		EdgeCollider2D[] edgeColliders = GetComponents<EdgeCollider2D>();\n  689  		if (!CheckFlag(Flags.GenerateCollider)) {\n  690  			foreach (EdgeCollider2D ec in edgeColliders) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Code/Sprites/tk2dTiledSprite.cs:\n   93  #endif\n   94  		mesh.hideFlags = HideFlags.DontSave;\n   95: 		GetComponent<MeshFilter>().mesh = mesh;\n   96  		\n   97  		// This will not be set when instantiating in code\n   ..\n  107  			\n  108  			if (boxCollider == null)\n  109: 				boxCollider = GetComponent<BoxCollider>();\n  110  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  111  			if (boxCollider2D == null) {\n  112: 				boxCollider2D = GetComponent<BoxCollider2D>();\n  113  			}\n  114  #endif\n  ...\n  200  		mesh.bounds = AdjustedMeshBounds( mesh.bounds, renderLayer );\n  201  		\n  202: 		GetComponent<MeshFilter>().mesh = mesh;\n  203  		\n  204  		UpdateCollider();\n  ...\n  292  	protected override void UpdateMaterial()\n  293  	{\n  294: 		Renderer renderer = GetComponent<Renderer>();\n  295  		if (renderer.sharedMaterial != collectionInst.spriteDefinitions[spriteId].materialInst)\n  296  			renderer.material = collectionInst.spriteDefinitions[spriteId].materialInst;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dEditorUtility.cs:\n   36  	static void OnUndoRedo() {\n   37  		foreach (GameObject go in Selection.gameObjects) {\n   38: 			tk2dSpriteFromTexture sft = go.GetComponent<tk2dSpriteFromTexture>();\n   39: 			tk2dBaseSprite spr = go.GetComponent<tk2dBaseSprite>();\n   40: 			tk2dTextMesh tm = go.GetComponent<tk2dTextMesh>();\n   41  			if (sft != null) {\n   42  				sft.ForceBuild();\n   ..\n  210  			if (!iterGo) continue;\n  211  \n  212: 			tk2dSpriteCollection spriteCollection = iterGo.GetComponent<tk2dSpriteCollection>();\n  213: 			tk2dSpriteCollectionData spriteCollectionData = iterGo.GetComponent<tk2dSpriteCollectionData>();\n  214: 			tk2dFont font = iterGo.GetComponent<tk2dFont>();\n  215: 			tk2dSpriteAnimation anim = iterGo.GetComponent<tk2dSpriteAnimation>();\n  216  			\n  217  			if (spriteCollection) \n  ...\n  314  				if (!go) continue;\n  315  				\n  316: 				T gen = go.GetComponent<T>();\n  317  				if (gen)\n  318  				{\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dScaleUtility.cs:\n   13  									   accumulatedScale.z * node.localScale.z);\n   14  		\n   15: 		tk2dBaseSprite sprite = node.GetComponent<tk2dBaseSprite>();\n   16: 		tk2dTextMesh textMesh = node.GetComponent<tk2dTextMesh>();\n   17  		if (sprite)\n   18  		{\n   ..\n   42  	{\n   43  		List<UnityEngine.Object> undoObjects = new List<UnityEngine.Object>();\n   44: 		undoObjects.AddRange( rootObject.GetComponentsInChildren<Transform>() );\n   45: 		undoObjects.AddRange( rootObject.GetComponentsInChildren<tk2dTextMesh>() );\n   46: 		undoObjects.AddRange( rootObject.GetComponentsInChildren<tk2dBaseSprite>() );\n   47: 		MeshFilter[] meshFilters = rootObject.GetComponentsInChildren<MeshFilter>();\n   48  		foreach (MeshFilter mf in meshFilters) {\n   49  			if (mf.sharedMesh != null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/tk2dSpriteGuiUtility.cs:\n  139  				if (DragAndDrop.objectReferences.Length == 1 && DragAndDrop.objectReferences[0] is GameObject) {\n  140  					GameObject go = DragAndDrop.objectReferences[0] as GameObject;\n  141: 					if (go.GetComponent<tk2dSpriteCollection>() || go.GetComponent<tk2dSpriteCollectionData>()) {\n  142  						valid = true;\n  143  					}\n  ...\n  158  \n  159  				GameObject go = DragAndDrop.objectReferences[0] as GameObject;\n  160: 				tk2dSpriteCollection sc = go.GetComponent<tk2dSpriteCollection>();\n  161: 				tk2dSpriteCollectionData scd = go.GetComponent<tk2dSpriteCollectionData>();\n  162  				if (sc != null && scd == null) {\n  163  					scd = sc.spriteCollection;\n  ...\n  283  						GameObject scgo = AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(indexEntry.spriteCollectionDataGUID), typeof(GameObject)) as GameObject;\n  284  						if (scgo != null)\n  285: 							return scgo.GetComponent<tk2dSpriteCollectionData>();\n  286  					}\n  287  				}\n  ...\n  332  		GameObject go = AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(allSpriteCollections[index].spriteCollectionDataGUID), typeof(GameObject)) as GameObject;\n  333  		if (go == null) return defaultValue;\n  334: 		tk2dSpriteCollectionData data = go.GetComponent<tk2dSpriteCollectionData>();\n  335  		if (data == null) return defaultValue;\n  336  		return data;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Camera/tk2dCameraAnchorEditor.cs:\n   27  		_target.AnchorPoint = (tk2dBaseSprite.Anchor)EditorGUILayout.EnumPopup(\"Anchor Point\", _target.AnchorPoint);\n   28  \n   29: 		if (_target.AnchorCamera != null && _target.AnchorCamera.GetComponent<tk2dCamera>() != null) {\n   30  			EditorGUI.indentLevel++;\n   31  \n   ..\n   58      static void DoCreateCameraAnchorObject()\n   59  	{\n   60: 		if (Selection.activeGameObject == null || Selection.activeGameObject.GetComponent<Camera>() == null) {\n   61  			EditorUtility.DisplayDialog(\n   62  				\"Camera Anchor Error\", \n   ..\n   71  			go.transform.localScale = Vector3.one;\n   72  			tk2dCameraAnchor anchor = go.AddComponent<tk2dCameraAnchor>();\n   73: 			anchor.AnchorCamera = Selection.activeGameObject.GetComponent<Camera>();\n   74  			UpdateAnchorName(anchor);\n   75  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Camera/tk2dCameraEditor.cs:\n  311  \n  312  		SerializedObject so = this.serializedObject;\n  313: 		SerializedObject cam = new SerializedObject( target.GetComponent<Camera>() );\n  314  \n  315  		SerializedProperty m_ClearFlags = cam.FindProperty(\"m_ClearFlags\");\n  ...\n  380  		if (transparencySortMode != inheritedSettings.transparencySortMode) {\n  381  			inheritedSettings.transparencySortMode = transparencySortMode;\n  382: 			target.GetComponent<Camera>().transparencySortMode = transparencySortMode; // Change immediately in the editor\n  383  			EditorUtility.SetDirty(target);\n  384: 			EditorUtility.SetDirty(target.GetComponent<Camera>());\n  385  		}\n  386  	}\n  ...\n  396  			go.transform.parent = cam.transform;\n  397  			tk2dCameraAnchor cameraAnchor = go.AddComponent<tk2dCameraAnchor>();\n  398: 			cameraAnchor.AnchorCamera = cam.GetComponent<Camera>();\n  399  			tk2dCameraAnchorEditor.UpdateAnchorName( cameraAnchor );\n  400  			\n  ...\n  599  		tk2dCamera target = this.target as tk2dCamera;\n  600  		Handles.color = new Color32(255,255,255,255);\n  601: 		DrawCameraBounds( target.GetComponent<Camera>().worldToCameraMatrix, target.Editor__GetFinalProjectionMatrix() );\n  602  		Handles.color = new Color32(55,203,105,102);\n  603: 		DrawCameraBounds( target.GetComponent<Camera>().worldToCameraMatrix, target.Editor__GetNativeProjectionMatrix() );\n  604  \n  605  \n  ...\n  615  	static void ToggleUnityCamera() {\n  616  		if (Selection.gameObjects.Length == 1) {\n  617: 			Camera c = Selection.activeGameObject.GetComponent<Camera>();\n  618  			if ((c.hideFlags & HideFlags.HideInInspector) != 0) {\n  619  				c.hideFlags &= ~(HideFlags.HideInHierarchy | HideFlags.HideInInspector);\n  ...\n  709  					Rect r = new Rect(previewWindowRect.x + rs.x, Camera.current.pixelHeight - (previewWindowRect.y + rs.y), rs.width, rs.height);\n  710  					Vector2 v = new Vector2(previewWindowRect.x + rs.x, (Camera.current.pixelHeight - previewWindowRect.y - rs.height - heightTweak) + rs.y);\n  711: 					previewCamera.CopyFrom(target.GetComponent<Camera>());\n  712  					previewCamera.projectionMatrix = target.Editor__GetFinalProjectionMatrix(); // Work around a Unity bug\n  713  					previewCamera.pixelRect = new Rect(v.x, v.y, r.width, r.height);\n  ...\n  727  			{\n  728  				GameObject go = EditorUtility.CreateGameObjectWithHideFlags(\"@tk2dCamera_ScenePreview\", UnityEngine.HideFlags.HideAndDontSave, new System.Type[] { typeof(Camera) } );\n  729: 				previewCamera = go.GetComponent<Camera>();\n  730  				previewCamera.enabled = false;\n  731  			}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Fonts/tk2dTextMeshEditor.cs:\n   39      	List<Renderer> rs = new List<Renderer>();\n   40      	foreach (var v in targetTextMeshes) {\n   41:     		if (v != null && v.GetComponent<Renderer>() != null) {\n   42:     			rs.Add(v.GetComponent<Renderer>());\n   43      		}\n   44      	}\n   ..\n  126  		if (tk2dPreferences.inst.enableSpriteHandles == true) {\n  127  		\n  128: 			MeshFilter meshFilter = textMesh.GetComponent<MeshFilter>();\n  129  			if (!meshFilter || meshFilter.sharedMesh == null) {\n  130  				return;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dAnimatedSpriteEditor.cs:\n   52  					sprite.scale = animSprite.scale;\n   53  					// If this is not null, we assume it is already set up properly\n   54: 					if (animSprite.GetComponent<tk2dSpriteAnimator>() == null) {\n   55  						tk2dSpriteAnimator spriteAnimator = animSprite.gameObject.AddComponent<tk2dSpriteAnimator>();\n   56  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dSpriteCollectionBuilder.cs:\n 1630  				// Disabled\n 1631                  instantiated = GameObject.Instantiate(thisTexParam.overrideMesh) as GameObject;\n 1632:                 MeshFilter meshFilter = instantiated.GetComponentInChildren<MeshFilter>();\n 1633                  if (meshFilter == null)\n 1634                  {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dSpriteEditor.cs:\n   92      	List<Renderer> rs = new List<Renderer>();\n   93      	foreach (var v in targetSprites) {\n   94:     		if (v != null && v.GetComponent<Renderer>() != null) {\n   95:     			rs.Add(v.GetComponent<Renderer>());\n   96      		}\n   97      	}\n   ..\n  341  #endif\n  342  		foreach (GameObject go in Selection.gameObjects) {\n  343: 			if (go.GetComponent<tk2dBaseSprite>() != null) {\n  344  				action(go);\n  345  			}\n  ...\n  352  \n  353  	static void ConvertSpriteType(GameObject go, System.Type targetType) {\n  354: 		tk2dBaseSprite spr = go.GetComponent<tk2dBaseSprite>();\n  355  		System.Type sourceType = spr.GetType();\n  356  \n  ...\n  370  #else\n  371  			{\n  372: 				Collider[] colliders = spr.GetComponents<Collider>();\n  373  				foreach (Collider c in colliders) {\n  374  					Undo.DestroyObjectImmediate(c);\n  375  				}\n  376: 				Collider2D[] collider2Ds = spr.GetComponents<Collider2D>();\n  377  				foreach (Collider2D c in collider2Ds) {\n  378  					Undo.DestroyObjectImmediate(c);\n  ...\n  401  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  402  			{ \n  403: 				tk2dBaseSprite tmpSprite = go.GetComponent<tk2dBaseSprite>();\n  404  				if (tmpSprite != null) {\n  405  					Undo.RegisterCreatedObjectUndo( tmpSprite, \"Convert Sprite Type\" );\n  ...\n  417  			tk2dUndo.RecordObjects(targetSprites, \"Create Box Collider\");\n  418  			if (!newCreateBoxCollider) {\n  419: 				var boxCollider = sprite.GetComponent<BoxCollider>();\n  420  				if (boxCollider != null) {\n  421  					DestroyImmediate(boxCollider);\n  ...\n  423  				sprite.boxCollider = null;\n  424  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  425: 				var boxCollider2D = sprite.GetComponent<BoxCollider2D>();\n  426  				if (boxCollider2D != null) {\n  427  					DestroyImmediate(boxCollider2D);\n  ...\n  447  	static bool ValidateAddAnimator() {\n  448  		if (Selection.activeGameObject == null) return false;\n  449: 		return Selection.activeGameObject.GetComponent<tk2dSpriteAnimator>() == null;\n  450  	}\n  451  	[MenuItem(\"CONTEXT/tk2dBaseSprite/Add animator\", false, 10000)]\n  ...\n  459  		else {\n  460  			PerformActionOnGlobalSelection(\"Add animator\", delegate(GameObject go) {\n  461: 				tk2dSpriteAnimator animator = go.GetComponent<tk2dSpriteAnimator>();\n  462  				if (animator == null) {\n  463  					animator = go.AddComponent<tk2dSpriteAnimator>();\n  ...\n  474  	static void DoRemoveAnimator() {\n  475  		PerformActionOnGlobalSelection(\"Add AttachPoint\", delegate(GameObject go) {\n  476: 			tk2dSpriteAttachPoint ap = go.GetComponent<tk2dSpriteAttachPoint>();\n  477  			if (ap == null) {\n  478  				go.AddComponent<tk2dSpriteAttachPoint>();\n  ...\n  488  			tk2dSprite sprite = go.AddComponent<tk2dSprite>();\n  489  			sprite.SetSprite(sprColl, sprColl.FirstValidDefinitionIndex);\n  490: 			sprite.GetComponent<Renderer>().material = sprColl.FirstValidDefinition.material;\n  491  			sprite.Build();\n  492  			\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dStaticSpriteBatcherEditor.cs:\n    9  	tk2dStaticSpriteBatcher batcher { get { return (tk2dStaticSpriteBatcher)target; } }\n   10  	\n   11: 	// Like GetComponentsInChildren, but doesn't include self\n   12: 	T[] GetComponentsInChildrenExcludeSelf<T>(Transform root) where T : Component {\n   13: 		List<T> allTransforms = new List<T>( root.GetComponentsInChildren<T>() );\n   14  		return (from t in allTransforms where t.transform != root select t).ToArray();\n   15  	}\n   ..\n   20  		{\n   21  			// Select all children, EXCLUDING self\n   22: 			Transform[] allTransforms = batcher.transform.GetComponentsInChildren<Transform>();\n   23  			allTransforms = (from t in allTransforms where t != batcher.transform select t).ToArray();\n   24  			\n   25  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n   26: 			Renderer[] allRenderers = batcher.transform.GetComponentsInChildren<Renderer>();\n   27: 			allRenderers = (from r in allRenderers where r != batcher.GetComponent<Renderer>() select r).ToArray();\n   28  			if (allRenderers.Length > 0) {\n   29  				string sortingLayerName = allRenderers[0].sortingLayerName;\n   ..\n   43  			if (batcher.CheckFlag(tk2dStaticSpriteBatcher.Flags.SortToCamera)) {\n   44  				tk2dCamera tk2dCam = tk2dCamera.CameraForLayer( batcher.gameObject.layer );\n   45: 				Camera cam = tk2dCam ? tk2dCam.GetComponent<Camera>() : Camera.main;\n   46: 				allTransforms = (from t in allTransforms orderby cam.WorldToScreenPoint((t.GetComponent<Renderer>() != null) ? t.GetComponent<Renderer>().bounds.center : t.position).z descending select t).ToArray();\n   47  			}\n   48  			else {\n   49: 				allTransforms = (from t in allTransforms orderby ((t.GetComponent<Renderer>() != null) ? t.GetComponent<Renderer>().bounds.center : t.position).z descending select t).ToArray();\n   50  			}\n   51  			\n   ..\n   59  \n   60  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n   61: 			MeshCollider[] childMeshColliders = GetComponentsInChildrenExcludeSelf<MeshCollider>(batcher.transform);\n   62: 			BoxCollider[] childBoxColliders = GetComponentsInChildrenExcludeSelf<BoxCollider>(batcher.transform);\n   63: 			BoxCollider2D[] childBoxCollider2Ds = GetComponentsInChildrenExcludeSelf<BoxCollider2D>(batcher.transform);\n   64: 			EdgeCollider2D[] childEdgeCollider2Ds = GetComponentsInChildrenExcludeSelf<EdgeCollider2D>(batcher.transform);\n   65: 			PolygonCollider2D[] childPolygonCollider2Ds = GetComponentsInChildrenExcludeSelf<PolygonCollider2D>(batcher.transform);\n   66  \n   67  			if ((childMeshColliders.Length > 0 || childBoxColliders.Length > 0) && (childBoxCollider2Ds.Length > 0 || childEdgeCollider2Ds.Length > 0 || childPolygonCollider2Ds.Length > 0)) {\n   ..\n   83  			foreach (var t in allTransforms)\n   84  			{\n   85: 				tk2dBaseSprite baseSprite = t.GetComponent<tk2dBaseSprite>();\n   86: 				tk2dTextMesh textmesh = t.GetComponent<tk2dTextMesh>();\n   87  \n   88  				tk2dBatchedSprite bs = new tk2dBatchedSprite();\n   ..\n  170  \n  171  	static void RestoreBoxColliderSettings( GameObject go, float offset, float extents ) {\n  172: 		BoxCollider boxCollider = go.GetComponent<BoxCollider>();\n  173  		if (boxCollider != null) {\n  174  			Vector3 p = boxCollider.center;\n  ...\n  182  	\n  183  	public static void FillBatchedSprite(tk2dBatchedSprite bs, GameObject go) {\n  184: 		tk2dSprite srcSprite = go.transform.GetComponent<tk2dSprite>();\n  185: 		tk2dTiledSprite srcTiledSprite = go.transform.GetComponent<tk2dTiledSprite>();\n  186: 		tk2dSlicedSprite srcSlicedSprite = go.transform.GetComponent<tk2dSlicedSprite>();\n  187: 		tk2dClippedSprite srcClippedSprite = go.transform.GetComponent<tk2dClippedSprite>();\n  188  \n  189: 		tk2dBaseSprite baseSprite = go.GetComponent<tk2dBaseSprite>();\n  190  		bs.spriteId = baseSprite.spriteId;\n  191  		bs.spriteCollection = baseSprite.Collection;\n  ...\n  329  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  330  			string overridenSortingLayerName = \"\";\n  331: 			if (batcher.GetComponent<Renderer>()) {\n  332  				overrideSortingOrder = true;\n  333: 				overridenSortingOrder = batcher.GetComponent<Renderer>().sortingOrder;\n  334: 				overridenSortingLayerName = batcher.GetComponent<Renderer>().sortingLayerName;\n  335  			}\n  336  #endif\n  ...\n  384  \n  385  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  386: 				if (go.GetComponent<Renderer>() != null && overrideSortingOrder) {\n  387: 					go.GetComponent<Renderer>().sortingLayerName = overridenSortingLayerName;\n  388  				}\n  389  #endif\n  ...\n  406  		batcher.SetFlag(tk2dStaticSpriteBatcher.Flags.SortToCamera, EditorGUILayout.Toggle(\"Sort to Camera\", batcher.CheckFlag(tk2dStaticSpriteBatcher.Flags.SortToCamera)));\n  407  \n  408: 		MeshFilter meshFilter = batcher.GetComponent<MeshFilter>();\n  409: 		MeshRenderer meshRenderer = batcher.GetComponent<MeshRenderer>();\n  410  \n  411  		if (meshRenderer != null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d/Editor/Sprites/tk2dTiledSpriteEditor.cs:\n   69  		}\n   70  \n   71: 		Mesh mesh = sprite.GetComponent<MeshFilter>().sharedMesh;\n   72  		if (mesh != null) {\n   73  			GUILayout.Label(string.Format(\"Triangles: {0}\", mesh.triangles.Length / 3));\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d_demo/tk2dDemoAnimController.cs:\n   11  	void Start () \n   12  	{\n   13: 		animator = GetComponent<tk2dSpriteAnimator>();\n   14  		animator.AnimationEventTriggered += AnimationEventHandler;\n   15  		\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2d_demo/tk2dDemoRuntimeSpriteController.cs:\n   79  			Vector2 anchor = new Vector2(region.width / 2, region.height / 2);\n   80  			GameObject go = tk2dSprite.CreateFromTexture(runtimeTexture, spriteCollectionSize, region, anchor);\n   81: 			spriteInstance = go.GetComponent<tk2dSprite>();\n   82  			spriteCollectionInstance = spriteInstance.Collection;\n   83  		}\n   ..\n   90  			Vector2 anchor = new Vector2(region.width / 2, region.height / 2);\n   91  			GameObject go = tk2dSprite.CreateFromTexture(runtimeTexture, spriteCollectionSize, region, anchor);\n   92: 			spriteInstance = go.GetComponent<tk2dSprite>();\n   93  			spriteCollectionInstance = spriteInstance.Collection;\n   94  		}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap/Code/tk2dTileMap.cs:\n  151  					if (layer.spriteChannel != null && layer.spriteChannel.chunks != null) {\n  152  						foreach (tk2dRuntime.TileMap.SpriteChunk chunk in layer.spriteChannel.chunks) {\n  153: 							if (chunk.gameObject != null && chunk.gameObject.GetComponent<Renderer>() != null) {\n  154: 								if (chunk.gameObject.GetComponent<Renderer>().sharedMaterial == null) {\n  155  									needBuild = true;\n  156  									break;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap/Code/tk2dTileMapColliderBuilder.cs:\n   84  				if (chunk.meshCollider == null)\n   85  				{\n   86: 					chunk.meshCollider = chunk.gameObject.GetComponent<MeshCollider>();\n   87  					if (chunk.meshCollider == null)\n   88  						chunk.meshCollider = tk2dUtil.AddComponent<MeshCollider>(chunk.gameObject);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap/Code/tk2dTileMapMeshBuilder.cs:\n  131  			{\n  132  				chunk.mesh.subMeshCount = subMeshCount;\n  133: 				chunk.gameObject.GetComponent<Renderer>().materials = materials.ToArray();\n  134  				int subMeshId = 0;\n  135  				foreach (var indices in meshIndices)\n  ...\n  148  			}\n  149  \n  150: 			var meshFilter = chunk.gameObject.GetComponent<MeshFilter>();\n  151  			meshFilter.sharedMesh = chunk.mesh;\n  152  		}\n  ...\n  196  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n  197  							if (chunk.gameObject != null && useSortingLayer) {\n  198: 								Renderer r = chunk.gameObject.GetComponent<Renderer>();\n  199  								if (r != null) {\n  200  									r.sortingLayerName = layerData.sortingLayerName;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap/Editor/tk2dTileMapEditor.cs:\n   28  		foreach (GameObject go in Selection.gameObjects) {\n   29  			tk2dUtil.UndoEnabled = false;\n   30: 			tk2dTileMap tilemap = go.GetComponent<tk2dTileMap>();\n   31  			if (tilemap != null) {\n   32  				tilemap.ForceBuild();\n   ..\n 1266  				\n 1267  				GameObject scgo = AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(v.spriteCollectionDataGUID), typeof(GameObject)) as GameObject;\n 1268: 				var sc = scgo.GetComponent<tk2dSpriteCollectionData>();\n 1269  				if (sc != null && sc.spriteDefinitions != null && sc.spriteDefinitions.Length > 0 && sc.allowMultipleAtlases == false)\n 1270  				{\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap_demo/Demo1/Scripts/tk2dTileMapDemoFollowCam.cs:\n   14  \n   15  	void Awake() {\n   16: 		cam = GetComponent<tk2dCamera>();\n   17  	}\n   18  \n   ..\n   23  		transform.position = end;\n   24  \n   25: 		Rigidbody rigidbody = target.GetComponent<Rigidbody>();\n   26  		if (rigidbody != null && cam != null) {\n   27  			float spd = rigidbody.velocity.magnitude;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dTileMap_demo/Demo1/Scripts/tk2dTileMapDemoPlayer.cs:\n   19  \n   20  	void Awake() {\n   21: 		sprite = GetComponent<tk2dSprite>();\n   22  \n   23  		if (textMesh == null || textMesh.transform.parent != transform) {\n   ..\n   87  		if (AllowAddForce && moveX != 0) {\n   88  			forceWait = addForceLimit;\n   89: 			Rigidbody rigidbody = GetComponent<Rigidbody>();\n   90  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n   91: 			Rigidbody2D rigidbody2D = GetComponent<Rigidbody2D>();\n   92  #endif\n   93  			if (rigidbody != null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Controls/tk2dUIDropDownMenu.cs:\n  246          go.transform.localRotation = dropDownItemTemplate.transform.localRotation;\n  247          go.transform.localScale = dropDownItemTemplate.transform.localScale;\n  248:         tk2dUIDropDownItem item = go.GetComponent<tk2dUIDropDownItem>();\n  249  \n  250          item.OnItemSelected += ItemSelected;\n  251  \n  252:         tk2dUIUpDownHoverButton itemUpDownHoverBtn = go.GetComponent<tk2dUIUpDownHoverButton>();\n  253          item.upDownHoverBtn = itemUpDownHoverBtn;\n  254  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Controls/tk2dUIScrollableArea.cs:\n  655  \n  656      private static void GetRendererBoundsInChildren(Matrix4x4 rootWorldToLocal, Vector3[] minMax, Transform t) {\n  657:         MeshFilter mf = t.GetComponent<MeshFilter>();\n  658          if (mf != null && mf.sharedMesh != null) {\n  659              Bounds b = mf.sharedMesh.bounds;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Controls/tk2dUIScrollbar.cs:\n  261          if (upButton != null)\n  262          {\n  263:             hoverUpButton = upButton.GetComponent<tk2dUIHoverItem>();\n  264          }\n  265          if (downButton != null)\n  266          {\n  267:             hoverDownButton = downButton.GetComponent<tk2dUIHoverItem>();\n  268          }\n  269      }\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Controls/tk2dUITextInput.cs:\n  253          inputLabel.Commit();\n  254  \n  255:         while (inputLabel.GetComponent<Renderer>().bounds.extents.x * 2 > fieldLength)\n  256          {\n  257              modifiedText=modifiedText.Substring(1, modifiedText.Length - 1);\n  ...\n  436              cursorOffset += chr.advance * inputLabel.scale.x/2;\n  437          }\n  438:         cursor.transform.localPosition = new Vector3(inputLabel.transform.localPosition.x + (inputLabel.GetComponent<Renderer>().bounds.extents.x + cursorOffset) * multiplier, cursor.transform.localPosition.y, cursor.transform.localPosition.z);\n  439      }\n  440  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUIAudioManager.cs:\n   49          if (audioSrc == null)\n   50          {\n   51:             audioSrc = gameObject.GetComponent<AudioSource>();\n   52          }\n   53          if (audioSrc == null)\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUICamera.cs:\n   31  	public LayerMask FilteredMask {\n   32  		get {\n   33: 			return raycastLayerMask & GetComponent<Camera>().cullingMask;\n   34  		}\n   35  	}\n   ..\n   37  	public Camera HostCamera {\n   38  		get {\n   39: 			return GetComponent<Camera>();\n   40  		}\n   41  	}\n   42  \n   43  	void OnEnable() {\n   44: 		if (GetComponent<Camera>() == null) {\n   45  			Debug.LogError(\"tk2dUICamera should only be attached to a camera.\");\n   46  			enabled = false;\n   ..\n   48  		}\n   49  \n   50: 		if (!GetComponent<Camera>().orthographic && raycastType == tk2dRaycastType.Physics2D) {\n   51  			Debug.LogError(\"tk2dUICamera - Physics2D raycast only works with orthographic cameras.\");\n   52  			enabled = false;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUIItem.cs:\n  424          while (next != null)\n  425          {\n  426:             nextUIItem = next.GetComponent<tk2dUIItem>();\n  427              if (nextUIItem != null)\n  428              {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUILayout.cs:\n   49  \n   50  	void Reset() {\n   51: 		if (GetComponent<Collider>() != null) {\n   52: 			BoxCollider box = GetComponent<Collider>() as BoxCollider;\n   53  			if (box != null) {\n   54  				Bounds b = box.bounds;\n   ..\n   86  \n   87  		if (autoResizeCollider) {\n   88: 			var box = GetComponent<BoxCollider>();\n   89  			if (box != null) {\n   90  				box.center += (dMin + dMax) / 2.0f - origin;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUIManager.cs:\n  237  \n  238          // Largest depth gets priority\n  239:         sortedCameras.Sort( (a, b) => b.GetComponent<Camera>().depth.CompareTo( a.GetComponent<Camera>().depth ) );\n  240      }\n  241  \n  ...\n  278  \n  279      void HookUpLegacyCamera(Camera cam) {\n  280:         if (cam.GetComponent<tk2dUICamera>() == null) {\n  281              // Handle registration properly\n  282              tk2dUICamera newUICam = cam.gameObject.AddComponent<tk2dUICamera>();\n  ...\n  657                  ray = currCamera.HostCamera.ScreenPointToRay( screenPos );\n  658                  if (Physics.Raycast( ray, out hit, currCamera.HostCamera.farClipPlane - currCamera.HostCamera.nearClipPlane, currCamera.FilteredMask )) {\n  659:                     return hit.collider.GetComponent<tk2dUIItem>();\n  660                  }\n  661              }\n  ...\n  664                  Collider2D collider = Physics2D.OverlapPoint(currCamera.HostCamera.ScreenToWorldPoint(screenPos), currCamera.FilteredMask);\n  665                  if (collider != null) {\n  666:                     return collider.GetComponent<tk2dUIItem>();\n  667                  }\n  668  #else\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Code/Core/tk2dUIMask.cs:\n   17  		get {\n   18  			if (_thisMeshFilter == null) {\n   19: 				_thisMeshFilter = GetComponent<MeshFilter>();\n   20  			}\n   21  			return _thisMeshFilter;\n   ..\n   27  		get {\n   28  			if (_thisBoxCollider == null) {\n   29: 				_thisBoxCollider = GetComponent<BoxCollider>();\n   30  			}\n   31  			return _thisBoxCollider;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUIItemBoundsHelper.cs:\n   19      static void GetRendererBoundsInChildren(Matrix4x4 rootWorldToLocal, Vector3[] minMax, HashSet<Transform> ignoreItems, Transform t, bool includeAllChildren) {\n   20          if (!ignoreItems.Contains(t)) {\n   21:             MeshFilter mf = t.GetComponent<MeshFilter>();\n   22              if (mf != null && mf.sharedMesh != null) {\n   23                  Bounds b = mf.sharedMesh.bounds;\n   ..\n   33                  Transform child = t.GetChild(i);\n   34  \n   35:                 if (!includeAllChildren && child.GetComponent<Collider>() != null) {\n   36                      continue;\n   37                  }\n   ..\n   66          HashSet<Transform> ignoreItems = new HashSet<Transform>( item.editorIgnoreBounds );\n   67          Transform root = item.transform;\n   68:         Collider collider = item.GetComponent<Collider>();\n   69          Bounds b = GetRendererBoundsInChildren(root, ignoreItems, root, false);\n   70  \n   ..\n  117      	HashSet<tk2dUIItem> items = new HashSet<tk2dUIItem>();\n  118      	foreach (GameObject go in Selection.gameObjects) {\n  119:     		tk2dUIItem[] itemsToAdd = go.GetComponentsInChildren<tk2dUIItem>();\n  120      		foreach (tk2dUIItem itemToAdd in itemsToAdd) {\n  121      			items.Add( itemToAdd );\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUIItemEditor.cs:\n   46          methodBindingUtil.EndMessageGUI();\n   47  \n   48:         if (btn.GetComponent<Collider>() != null) {\n   49              GUILayout.Label(\"Collider\", EditorStyles.boldLabel);\n   50              EditorGUI.indentLevel++;\n   ..\n   91          while (go != null)\n   92          {\n   93:             btn = go.GetComponent<tk2dUIItem>();\n   94              if (btn != null)\n   95              {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUILayoutContainerEditor.cs:\n   10  \n   11  	protected override void GetItems(Transform t) {\n   12: 		tk2dUILayout objLayout = t.GetComponent<tk2dUILayout>();\n   13  \n   14  		if (objLayout != null) {\n   ..\n   37  		GUILayout.BeginVertical();\n   38  \n   39: 		if (My.GetComponent<tk2dBaseSprite>() != null) {\n   40  			EditorGUILayout.HelpBox(\"Please remove Sprite from this Object\\nin order to use Layout!\", MessageType.Error);\n   41  			GUILayout.EndVertical();\n   ..\n   66  				GUI.color = Color.green;\n   67  \n   68: 				if (item.layout != null && item.gameObj.GetComponent<tk2dBaseSprite>() != null) {\n   69  					warnLayoutHasSprite = true;\n   70  					warnLayoutName = item.gameObj.name;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUILayoutContainerSizerEditor.cs:\n   20  		for (int i = 0; i < t.childCount; ++i) {\n   21  			Transform c = t.GetChild(i);\n   22: 			tk2dUILayout layout = c.GetComponent<tk2dUILayout>();\n   23  \n   24  			if (layout == null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUILayoutEditor.cs:\n   12  \n   13  	void DrawLayoutOutline(Transform t) {\n   14: 		var layout = t.GetComponent<tk2dUILayout>();\n   15  		if (layout != null) {\n   16  			Vector3[] p = new Vector3[] {\n   ..\n   25  			Handles.DrawPolyLine(p);\n   26  \n   27: 			var sizer = t.GetComponent<tk2dUILayoutContainerSizer>();\n   28  			if (sizer != null) {\n   29  				Handles.color = Color.cyan;\n   ..\n   44  \n   45  	public void OnSceneGUI() {\n   46: 		if (My.GetComponent<tk2dBaseSprite>() != null)\n   47  			return;\n   48  \n   ..\n   67  		Event ev = Event.current;\n   68  		if (ev.type == EventType.ValidateCommand && ev.commandName == \"UndoRedoPerformed\") {\n   69: 			tk2dBaseSprite[] sprites = My.GetComponentsInChildren<tk2dBaseSprite>() as tk2dBaseSprite[];\n   70  			foreach (tk2dBaseSprite sprite in sprites) {\n   71  				sprite.ForceBuild();\n   72  			}\n   73: 			tk2dTextMesh[] textMeshes = My.GetComponentsInChildren<tk2dTextMesh>() as tk2dTextMesh[];\n   74  			foreach (tk2dTextMesh textMesh in textMeshes) {\n   75  				textMesh.ForceBuild();\n   ..\n   79  		// Draw outline of selected item\n   80  		if (selItem != null) {\n   81: 			if (selItem.gameObj.GetComponent<Renderer>() != null || selItem.layout != null) {\n   82  				float s = HandleUtility.GetHandleSize(t.position) * 0.05f;\n   83  				Vector3 svec = new Vector3(s, s);\n   ..\n   87  					b.size = selItem.layout.bMax - selItem.layout.bMin;\n   88  				} else {\n   89: 					b = selItem.gameObj.GetComponent<Renderer>().bounds;\n   90  				}\n   91  				Handles.color = Color.red;\n   ..\n  109  \n  110  	protected virtual void GetItems(Transform t) {\n  111: 		tk2dBaseSprite objSprite = t.GetComponent<tk2dBaseSprite>();\n  112: 		tk2dUIMask objMask = t.GetComponent<tk2dUIMask>();\n  113: 		tk2dUILayout objLayout = t.GetComponent<tk2dUILayout>();\n  114  \n  115  		tk2dUILayoutItem curItem = null;\n  ...\n  160  		GUILayout.BeginVertical();\n  161  \n  162: 		if (My.GetComponent<tk2dBaseSprite>() != null || My.GetComponent<tk2dTextMesh>() != null || My.GetComponent<tk2dUIMask>() != null) {\n  163  			EditorGUILayout.HelpBox(\"Please remove Sprite/TextMesh/UIMask from this Object\\nin order to use Layout!\", MessageType.Error);\n  164  			GUILayout.EndVertical();\n  ...\n  207  				My.Reshape(dMin, dMax, false);\n  208  				My.autoResizeCollider = lastAutoResizeCollider;\n  209: 				var box = My.GetComponent<BoxCollider>();\n  210  				if (box != null)\n  211  					box.center -= My.transform.worldToLocalMatrix.MultiplyVector(My.transform.position - lastPos);\n  ...\n  240  				else GUI.color = Color.green;\n  241  \n  242: 				if (item.layout != null && item.gameObj.GetComponent<tk2dBaseSprite>() != null) {\n  243  					warnLayoutHasSprite = true;\n  244  					warnLayoutName = item.gameObj.name;\n  ...\n  369  			for (int j = i + 1; j < list.Count; ++j) {\n  370  				var a = list[i];\n  371: 				bool aHasLayout = a.gameObj.GetComponent<tk2dUILayout>() != null;\n  372  				var b = list[j];\n  373: 				bool bHasLayout = b.gameObj.GetComponent<tk2dUILayout>() != null;\n  374  				bool swap = false;\n  375  				if (aHasLayout != bHasLayout) {\n  ...\n  407  \n  408  	void GetChildRendererBounds(Matrix4x4 rootWorldToLocal, Vector3[] minMax, Transform t) {\n  409: 		MeshFilter mf = t.GetComponent<MeshFilter>();\n  410  		if (mf != null && mf.sharedMesh != null) {\n  411  			Matrix4x4 m = rootWorldToLocal * t.localToWorldMatrix;\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUIMaskEditor.cs:\n   12  \n   13  #if !(UNITY_3_5 || UNITY_4_0 || UNITY_4_0_1 || UNITY_4_1 || UNITY_4_2)\n   14: 	Renderer renderer = mask.GetComponent<Renderer>();\n   15          GUILayout.Space(8);\n   16  		if (renderer != null) {\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUIMethodBindingHelper.cs:\n   20  \n   21          List<System.Type> addedTypes = new List<System.Type>();\n   22:         MonoBehaviour[] behaviours = go.GetComponents<MonoBehaviour>();\n   23          foreach (MonoBehaviour beh in behaviours) {\n   24              System.Type type = beh.GetType();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI/Editor/Core/tk2dUISpriteAnimatorEditor.cs:\n   15  \n   16  		foreach (GameObject go in Selection.gameObjects) {\n   17: 			tk2dSpriteAnimator animator = go.GetComponent<tk2dSpriteAnimator>();\n   18  			if (animator != null) {\n   19  				tk2dUISpriteAnimator UIanimator = go.AddComponent<tk2dUISpriteAnimator>();\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI_demo/tk2dUIDemo5Controller.cs:\n   18  		string name = firstPart[Random.Range(0, firstPart.Length)] + \" \" + secondPart[Random.Range(0, secondPart.Length)];\n   19   		Color color = new Color32((byte)Random.Range(192, 255), (byte)Random.Range(192, 255), (byte)Random.Range(192, 255), 255);\n   20: 		contentRoot.Find(\"Name\").GetComponent<tk2dTextMesh>().text = name;\n   21: 		contentRoot.Find(\"HP\").GetComponent<tk2dTextMesh>().text = \"HP: \" + Random.Range(100, 512).ToString();\n   22: 		contentRoot.Find(\"MP\").GetComponent<tk2dTextMesh>().text = \"MP: \" + (Random.Range(2, 40) * 10).ToString();\n   23: 		contentRoot.Find(\"Portrait\").GetComponent<tk2dBaseSprite>().color = color;\n   24  	}\n   25  \n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/MyPlugins/TK2DROOT/tk2dUI_demo/tk2dUIDemo6Controller.cs:\n   66  	// picture, for instance.\n   67  	void CustomizeListObject( Transform contentRoot, int itemId ) {\n   68: 		contentRoot.Find(\"Name\").GetComponent<tk2dTextMesh>().text = allItems[itemId].name;\n   69: 		contentRoot.Find(\"Score\").GetComponent<tk2dTextMesh>().text = \"Score: \" + allItems[itemId].score;\n   70: 		contentRoot.Find(\"Time\").GetComponent<tk2dTextMesh>().text = \"Time: \" + allItems[itemId].time;\n   71: 		contentRoot.Find(\"Portrait\").GetComponent<tk2dBaseSprite>().color = allItems[itemId].color;\n   72  		contentRoot.localPosition = new Vector3(itemId * itemStride, 0, 0);\n   73  	}\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_Component.cs:\n   13  	}\n   14  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   15: 	static public int GetComponent(IntPtr l) {\n   16  		try{\n   17  			int argc = LuaDLL.lua_gettop(l);\n   ..\n   20  				System.Type a1;\n   21  				checkType(l,2,out a1);\n   22: 				UnityEngine.Component ret=self.GetComponent(a1);\n   23  				pushValue(l,ret);\n   24  				return 1;\n   ..\n   28  				System.String a1;\n   29  				checkType(l,2,out a1);\n   30: 				UnityEngine.Component ret=self.GetComponent(a1);\n   31  				pushValue(l,ret);\n   32  				return 1;\n   ..\n   41  	}\n   42  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   43: 	static public int GetComponentInChildren(IntPtr l) {\n   44  		try{\n   45  			UnityEngine.Component self=(UnityEngine.Component)checkSelf(l);\n   46  			System.Type a1;\n   47  			checkType(l,2,out a1);\n   48: 			UnityEngine.Component ret=self.GetComponentInChildren(a1);\n   49  			pushValue(l,ret);\n   50  			return 1;\n   ..\n   56  	}\n   57  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   58: 	static public int GetComponentsInChildren(IntPtr l) {\n   59  		try{\n   60  			int argc = LuaDLL.lua_gettop(l);\n   ..\n   63  				System.Type a1;\n   64  				checkType(l,2,out a1);\n   65: 				UnityEngine.Component[] ret=self.GetComponentsInChildren(a1);\n   66  				pushValue(l,ret);\n   67  				return 1;\n   ..\n   73  				System.Boolean a2;\n   74  				checkType(l,3,out a2);\n   75: 				UnityEngine.Component[] ret=self.GetComponentsInChildren(a1,a2);\n   76  				pushValue(l,ret);\n   77  				return 1;\n   ..\n   86  	}\n   87  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   88: 	static public int GetComponentInParent(IntPtr l) {\n   89  		try{\n   90  			UnityEngine.Component self=(UnityEngine.Component)checkSelf(l);\n   91  			System.Type a1;\n   92  			checkType(l,2,out a1);\n   93: 			UnityEngine.Component ret=self.GetComponentInParent(a1);\n   94  			pushValue(l,ret);\n   95  			return 1;\n   ..\n  101  	}\n  102  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n  103: 	static public int GetComponentsInParent(IntPtr l) {\n  104  		try{\n  105  			int argc = LuaDLL.lua_gettop(l);\n  ...\n  108  				System.Type a1;\n  109  				checkType(l,2,out a1);\n  110: 				UnityEngine.Component[] ret=self.GetComponentsInParent(a1);\n  111  				pushValue(l,ret);\n  112  				return 1;\n  ...\n  118  				System.Boolean a2;\n  119  				checkType(l,3,out a2);\n  120: 				UnityEngine.Component[] ret=self.GetComponentsInParent(a1,a2);\n  121  				pushValue(l,ret);\n  122  				return 1;\n  ...\n  131  	}\n  132  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n  133: 	static public int GetComponents(IntPtr l) {\n  134  		try{\n  135  			int argc = LuaDLL.lua_gettop(l);\n  ...\n  138  				System.Type a1;\n  139  				checkType(l,2,out a1);\n  140: 				UnityEngine.Component[] ret=self.GetComponents(a1);\n  141  				pushValue(l,ret);\n  142  				return 1;\n  ...\n  148  				System.Collections.Generic.List<UnityEngine.Component> a2;\n  149  				checkType(l,3,out a2);\n  150: 				self.GetComponents(a1,a2);\n  151  				return 0;\n  152  			}\n  ...\n  436  	static public void reg(IntPtr l) {\n  437  		getTypeTable(l,\"UnityEngine.Component\");\n  438: 		addMember(l,GetComponent);\n  439: 		addMember(l,GetComponentInChildren);\n  440: 		addMember(l,GetComponentsInChildren);\n  441: 		addMember(l,GetComponentInParent);\n  442: 		addMember(l,GetComponentsInParent);\n  443: 		addMember(l,GetComponents);\n  444  		addMember(l,CompareTag);\n  445  		addMember(l,SendMessageUpwards);\n\n/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/SLua/LuaObject/Lua_UnityEngine_GameObject.cs:\n   50  	}\n   51  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   52: 	static public int GetComponent(IntPtr l) {\n   53  		try{\n   54  			int argc = LuaDLL.lua_gettop(l);\n   ..\n   57  				System.Type a1;\n   58  				checkType(l,2,out a1);\n   59: 				UnityEngine.Component ret=self.GetComponent(a1);\n   60  				pushValue(l,ret);\n   61  				return 1;\n   ..\n   65  				System.String a1;\n   66  				checkType(l,2,out a1);\n   67: 				UnityEngine.Component ret=self.GetComponent(a1);\n   68  				pushValue(l,ret);\n   69  				return 1;\n   ..\n   78  	}\n   79  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   80: 	static public int GetComponentInChildren(IntPtr l) {\n   81  		try{\n   82  			UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);\n   83  			System.Type a1;\n   84  			checkType(l,2,out a1);\n   85: 			UnityEngine.Component ret=self.GetComponentInChildren(a1);\n   86  			pushValue(l,ret);\n   87  			return 1;\n   ..\n   93  	}\n   94  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n   95: 	static public int GetComponentInParent(IntPtr l) {\n   96  		try{\n   97  			UnityEngine.GameObject self=(UnityEngine.GameObject)checkSelf(l);\n   98  			System.Type a1;\n   99  			checkType(l,2,out a1);\n  100: 			UnityEngine.Component ret=self.GetComponentInParent(a1);\n  101  			pushValue(l,ret);\n  102  			return 1;\n  ...\n  108  	}\n  109  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n  110: 	static public int GetComponents(IntPtr l) {\n  111  		try{\n  112  			int argc = LuaDLL.lua_gettop(l);\n  ...\n  115  				System.Type a1;\n  116  				checkType(l,2,out a1);\n  117: 				UnityEngine.Component[] ret=self.GetComponents(a1);\n  118  				pushValue(l,ret);\n  119  				return 1;\n  ...\n  125  				System.Collections.Generic.List<UnityEngine.Component> a2;\n  126  				checkType(l,3,out a2);\n  127: 				self.GetComponents(a1,a2);\n  128  				return 0;\n  129  			}\n  ...\n  137  	}\n  138  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n  139: 	static public int GetComponentsInChildren(IntPtr l) {\n  140  		try{\n  141  			int argc = LuaDLL.lua_gettop(l);\n  ...\n  144  				System.Type a1;\n  145  				checkType(l,2,out a1);\n  146: 				UnityEngine.Component[] ret=self.GetComponentsInChildren(a1);\n  147  				pushValue(l,ret);\n  148  				return 1;\n  ...\n  154  				System.Boolean a2;\n  155  				checkType(l,3,out a2);\n  156: 				UnityEngine.Component[] ret=self.GetComponentsInChildren(a1,a2);\n  157  				pushValue(l,ret);\n  158  				return 1;\n  ...\n  167  	}\n  168  	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]\n  169: 	static public int GetComponentsInParent(IntPtr l) {\n  170  		try{\n  171  			int argc = LuaDLL.lua_gettop(l);\n  ...\n  174  				System.Type a1;\n  175  				checkType(l,2,out a1);\n  176: 				UnityEngine.Component[] ret=self.GetComponentsInParent(a1);\n  177  				pushValue(l,ret);\n  178  				return 1;\n  ...\n  184  				System.Boolean a2;\n  185  				checkType(l,3,out a2);\n  186: 				UnityEngine.Component[] ret=self.GetComponentsInParent(a1,a2);\n  187  				pushValue(l,ret);\n  188  				return 1;\n  ...\n  626  		getTypeTable(l,\"UnityEngine.GameObject\");\n  627  		addMember(l,SampleAnimation);\n  628: 		addMember(l,GetComponent);\n  629: 		addMember(l,GetComponentInChildren);\n  630: 		addMember(l,GetComponentInParent);\n  631: 		addMember(l,GetComponents);\n  632: 		addMember(l,GetComponentsInChildren);\n  633: 		addMember(l,GetComponentsInParent);\n  634  		addMember(l,SetActive);\n  635  		addMember(l,CompareTag);\n\n523 matches across 180 files\n",
+			"settings":
+			{
+				"buffer_size": 121040,
+				"line_ending": "Windows",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_background.lua",
+			"settings":
+			{
+				"buffer_size": 835,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_system_top.lua",
+			"settings":
+			{
+				"buffer_size": 1648,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "Assets/App/Scripts/lua/GUI/ui_system_bottom.lua",
+			"settings":
+			{
+				"buffer_size": 2163,
 				"line_ending": "Windows"
 			}
 		}
@@ -608,6 +798,8 @@
 	},
 	"file_history":
 	[
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/Editor/LuaCodeGen.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_sell.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_hero_evolution.lua",
@@ -675,7 +867,6 @@
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_system.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/GUI/ui_background.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Item.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Table/ItemTable.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Group.lua",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/lua/Data/Mail.lua",
@@ -734,8 +925,7 @@
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/SLua/example/Main.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/NLua/KeraLua/Lua.cs",
 		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/LuaEngine.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaBaseLib.cs",
-		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/U3DLua/LuaWrap.cs"
+		"/Users/luzexi/Desktop/work/pstage/client/u3d/Assets/App/Scripts/submodule/Unity3DLua/uniLua/UniLua/LuaBaseLib.cs"
 	],
 	"find":
 	{
@@ -743,7 +933,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
 			""
@@ -754,6 +944,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"GetComponent",
+			"property_arr",
+			"main_obj",
+			"onClick",
+			"loadFile",
+			"onClick",
+			"onChange",
+			"QuestTable",
+			"#QuestTable",
+			"setup_icon",
+			"MaxIndex",
+			"ItemNum",
 			"luaS_tolstring32",
 			"customlua",
 			"battlehero",
@@ -869,19 +1071,7 @@
 			"UIEvent",
 			"itween_custom",
 			"movefrom",
-			"ITWEEN_CUSTOM",
-			"WCAT_CUSTOM",
-			"OnUpdateDelegate",
-			"WCAT_CUSTOM",
-			"lua_pushstdcallcfunction",
-			"lua_callk",
-			"lua_pcallk",
-			"lua_pushstdcallcfunction",
-			"LuaCSFunction",
-			"function",
-			"onupdate",
-			"OnUpdateDelegate",
-			"WCAT_CUSTOM"
+			"ITWEEN_CUSTOM"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -910,7 +1100,7 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 10,
 			"sheets":
 			[
 				{
@@ -925,12 +1115,13 @@
 						"selection":
 						[
 							[
-								1584,
-								1584
+								2007,
+								2007
 							]
 						],
 						"settings":
 						{
+							"check_times": 0.0,
 							"clone_numbers": 1.0,
 							"in_converting": true,
 							"origin_encoding": "UTF-8-SIG",
@@ -939,19 +1130,127 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 851.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/App/Scripts/lua/GUI/ui_quest.lua",
+					"settings":
+					{
+						"buffer_size": 3262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1885,
+								1885
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 545.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
-					"buffer": 1,
+					"buffer": 2,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Editor/CustomExport.cs",
+					"settings":
+					{
+						"buffer_size": 719,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								429,
+								429
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/README.md",
+					"settings":
+					{
+						"buffer_size": 138,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								138,
+								138
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Markdown/Markdown.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs",
+					"settings":
+					{
+						"buffer_size": 4574,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								2026,
+								2026
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 882.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
 					"file": "Assets/App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs",
 					"settings":
 					{
@@ -962,8 +1261,8 @@
 						"selection":
 						[
 							[
-								2022,
-								2022
+								1474,
+								1474
 							]
 						],
 						"settings":
@@ -975,7 +1274,2748 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
+						"translation.y": 762.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "Assets/App/Scripts/Manager/MyLua.cs",
+					"settings":
+					{
+						"buffer_size": 2543,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1022,
+								1022
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 485.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								234,
+								234
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "Assets/App/Scripts/lua/Scene/GameScene.lua",
+					"settings":
+					{
+						"buffer_size": 596,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								548,
+								548
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 53.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "Assets/App/Scripts/lua/Scene/BattleScene.lua",
+					"settings":
+					{
+						"buffer_size": 433,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								259,
+								259
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/App/Scripts/lua/Data/Hero.lua",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								750,
+								750
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 278.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 10,
+			"sheets":
+			[
+				{
+					"buffer": 11,
+					"file": "Assets/App/Scripts/lua/GUI/ui_hero_list.lua",
+					"settings":
+					{
+						"buffer_size": 6495,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								4957,
+								4957
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1580.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 12,
+					"file": "Assets/App/Scripts/lua/Table/QuestTable.lua",
+					"settings":
+					{
+						"buffer_size": 658,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								115,
+								115
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "Assets/App/Scripts/lua/Manager/GameDefine.lua",
+					"settings":
+					{
+						"buffer_size": 119,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 14,
+					"file": "Assets/App/Scripts/lua/Manager/TableManager.lua",
+					"settings":
+					{
+						"buffer_size": 360,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								312,
+								312
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 15,
+					"file": "Assets/App/Scripts/lua/GUI/ui_main.lua",
+					"settings":
+					{
+						"buffer_size": 7547,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7134,
+								7134
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2605.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "Assets/App/Resources/Data/Table_Quest.json",
+					"settings":
+					{
+						"buffer_size": 30069,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								29539,
+								29539
+							]
+						],
+						"settings":
+						{
+							"is_preview": true,
+							"origin_encoding": "UTF-8",
+							"syntax": "Packages/JavaScript/JSON.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 19810.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 17,
+					"file": "Assets/App/Scripts/lua/Data/Player.lua",
+					"settings":
+					{
+						"buffer_size": 6506,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								359,
+								364
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2155.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 18,
+					"file": "Assets/App/Scripts/lua/Main.lua",
+					"settings":
+					{
+						"buffer_size": 269,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								173,
+								173
+							]
+						],
+						"settings":
+						{
+							"in_converting": true,
+							"origin_encoding": "UTF-8-SIG",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 19,
+					"file": "Assets/App/Scripts/submodule/Unity3DLua/SLua/Script/LuaState.cs",
+					"settings":
+					{
+						"buffer_size": 18031,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								15032,
+								15032
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C#/C#.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 8357.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "Assets/App/Scripts/lua/Battle/battle.lua",
+					"settings":
+					{
+						"buffer_size": 707,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								191,
+								191
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 55.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 20,
+					"file": "Assets/App/Scripts/lua/GUI/ui_battle.lua",
+					"settings":
+					{
+						"buffer_size": 4888,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								832,
+								832
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 175.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 21,
+					"settings":
+					{
+						"buffer_size": 121040,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										220,
+										232
+									],
+									[
+										518,
+										530
+									],
+									[
+										684,
+										696
+									],
+									[
+										877,
+										889
+									],
+									[
+										1036,
+										1048
+									],
+									[
+										1129,
+										1141
+									],
+									[
+										1220,
+										1232
+									],
+									[
+										1313,
+										1325
+									],
+									[
+										1613,
+										1625
+									],
+									[
+										1712,
+										1724
+									],
+									[
+										1811,
+										1823
+									],
+									[
+										1912,
+										1924
+									],
+									[
+										2009,
+										2021
+									],
+									[
+										2100,
+										2112
+									],
+									[
+										2197,
+										2209
+									],
+									[
+										2288,
+										2300
+									],
+									[
+										2389,
+										2401
+									],
+									[
+										2489,
+										2501
+									],
+									[
+										2880,
+										2892
+									],
+									[
+										3133,
+										3145
+									],
+									[
+										3501,
+										3513
+									],
+									[
+										3754,
+										3766
+									],
+									[
+										4120,
+										4132
+									],
+									[
+										4516,
+										4528
+									],
+									[
+										4818,
+										4830
+									],
+									[
+										4901,
+										4913
+									],
+									[
+										5277,
+										5289
+									],
+									[
+										5409,
+										5421
+									],
+									[
+										5547,
+										5559
+									],
+									[
+										5687,
+										5699
+									],
+									[
+										5816,
+										5828
+									],
+									[
+										5957,
+										5969
+									],
+									[
+										6245,
+										6257
+									],
+									[
+										6405,
+										6417
+									],
+									[
+										6542,
+										6554
+									],
+									[
+										6621,
+										6633
+									],
+									[
+										6949,
+										6961
+									],
+									[
+										7136,
+										7148
+									],
+									[
+										7385,
+										7397
+									],
+									[
+										7605,
+										7617
+									],
+									[
+										7900,
+										7912
+									],
+									[
+										8156,
+										8168
+									],
+									[
+										8401,
+										8413
+									],
+									[
+										8630,
+										8642
+									],
+									[
+										8842,
+										8854
+									],
+									[
+										9142,
+										9154
+									],
+									[
+										9455,
+										9467
+									],
+									[
+										9804,
+										9816
+									],
+									[
+										10088,
+										10100
+									],
+									[
+										10400,
+										10412
+									],
+									[
+										10812,
+										10824
+									],
+									[
+										11113,
+										11125
+									],
+									[
+										11236,
+										11248
+									],
+									[
+										11311,
+										11323
+									],
+									[
+										11444,
+										11456
+									],
+									[
+										11732,
+										11744
+									],
+									[
+										12021,
+										12033
+									],
+									[
+										12299,
+										12311
+									],
+									[
+										12590,
+										12602
+									],
+									[
+										12904,
+										12916
+									],
+									[
+										13220,
+										13232
+									],
+									[
+										13693,
+										13705
+									],
+									[
+										13765,
+										13777
+									],
+									[
+										13977,
+										13989
+									],
+									[
+										14171,
+										14183
+									],
+									[
+										14548,
+										14560
+									],
+									[
+										14630,
+										14642
+									],
+									[
+										14852,
+										14864
+									],
+									[
+										15076,
+										15088
+									],
+									[
+										15460,
+										15472
+									],
+									[
+										15576,
+										15588
+									],
+									[
+										15921,
+										15933
+									],
+									[
+										16015,
+										16027
+									],
+									[
+										16379,
+										16391
+									],
+									[
+										16618,
+										16630
+									],
+									[
+										16957,
+										16969
+									],
+									[
+										17244,
+										17256
+									],
+									[
+										17567,
+										17579
+									],
+									[
+										17865,
+										17877
+									],
+									[
+										18140,
+										18152
+									],
+									[
+										18459,
+										18471
+									],
+									[
+										18745,
+										18757
+									],
+									[
+										19031,
+										19043
+									],
+									[
+										19411,
+										19423
+									],
+									[
+										19707,
+										19719
+									],
+									[
+										20119,
+										20131
+									],
+									[
+										20604,
+										20616
+									],
+									[
+										21080,
+										21092
+									],
+									[
+										21581,
+										21593
+									],
+									[
+										22056,
+										22068
+									],
+									[
+										22440,
+										22452
+									],
+									[
+										22760,
+										22772
+									],
+									[
+										23056,
+										23068
+									],
+									[
+										23333,
+										23345
+									],
+									[
+										23608,
+										23620
+									],
+									[
+										23895,
+										23907
+									],
+									[
+										24178,
+										24190
+									],
+									[
+										24453,
+										24465
+									],
+									[
+										24736,
+										24748
+									],
+									[
+										25088,
+										25100
+									],
+									[
+										25440,
+										25452
+									],
+									[
+										25780,
+										25792
+									],
+									[
+										26119,
+										26131
+									],
+									[
+										26472,
+										26484
+									],
+									[
+										26822,
+										26834
+									],
+									[
+										27174,
+										27186
+									],
+									[
+										27524,
+										27536
+									],
+									[
+										27876,
+										27888
+									],
+									[
+										28259,
+										28271
+									],
+									[
+										28541,
+										28553
+									],
+									[
+										28831,
+										28843
+									],
+									[
+										29129,
+										29141
+									],
+									[
+										29572,
+										29584
+									],
+									[
+										29954,
+										29966
+									],
+									[
+										30183,
+										30195
+									],
+									[
+										30656,
+										30668
+									],
+									[
+										31179,
+										31191
+									],
+									[
+										31798,
+										31810
+									],
+									[
+										32164,
+										32176
+									],
+									[
+										32669,
+										32681
+									],
+									[
+										33039,
+										33051
+									],
+									[
+										33422,
+										33434
+									],
+									[
+										33644,
+										33656
+									],
+									[
+										33706,
+										33718
+									],
+									[
+										33766,
+										33778
+									],
+									[
+										34101,
+										34113
+									],
+									[
+										34322,
+										34334
+									],
+									[
+										34565,
+										34577
+									],
+									[
+										34612,
+										34624
+									],
+									[
+										34675,
+										34687
+									],
+									[
+										35241,
+										35253
+									],
+									[
+										35692,
+										35704
+									],
+									[
+										36035,
+										36047
+									],
+									[
+										36315,
+										36327
+									],
+									[
+										36473,
+										36485
+									],
+									[
+										36805,
+										36817
+									],
+									[
+										36930,
+										36942
+									],
+									[
+										37209,
+										37221
+									],
+									[
+										37335,
+										37347
+									],
+									[
+										37617,
+										37629
+									],
+									[
+										37885,
+										37897
+									],
+									[
+										38079,
+										38091
+									],
+									[
+										38247,
+										38259
+									],
+									[
+										38593,
+										38605
+									],
+									[
+										38978,
+										38990
+									],
+									[
+										39406,
+										39418
+									],
+									[
+										39693,
+										39705
+									],
+									[
+										40076,
+										40088
+									],
+									[
+										40341,
+										40353
+									],
+									[
+										40499,
+										40511
+									],
+									[
+										40679,
+										40691
+									],
+									[
+										40961,
+										40973
+									],
+									[
+										41307,
+										41319
+									],
+									[
+										41471,
+										41483
+									],
+									[
+										41723,
+										41735
+									],
+									[
+										41808,
+										41820
+									],
+									[
+										42012,
+										42024
+									],
+									[
+										42347,
+										42359
+									],
+									[
+										42393,
+										42405
+									],
+									[
+										42459,
+										42471
+									],
+									[
+										42797,
+										42809
+									],
+									[
+										42900,
+										42912
+									],
+									[
+										43213,
+										43225
+									],
+									[
+										43400,
+										43412
+									],
+									[
+										43648,
+										43660
+									],
+									[
+										43844,
+										43856
+									],
+									[
+										44042,
+										44054
+									],
+									[
+										44547,
+										44559
+									],
+									[
+										44952,
+										44964
+									],
+									[
+										45297,
+										45309
+									],
+									[
+										45536,
+										45548
+									],
+									[
+										45846,
+										45858
+									],
+									[
+										46245,
+										46257
+									],
+									[
+										46513,
+										46525
+									],
+									[
+										46910,
+										46922
+									],
+									[
+										47343,
+										47355
+									],
+									[
+										47655,
+										47667
+									],
+									[
+										47988,
+										48000
+									],
+									[
+										48300,
+										48312
+									],
+									[
+										48605,
+										48617
+									],
+									[
+										48910,
+										48922
+									],
+									[
+										49232,
+										49244
+									],
+									[
+										49520,
+										49532
+									],
+									[
+										49820,
+										49832
+									],
+									[
+										50121,
+										50133
+									],
+									[
+										50428,
+										50440
+									],
+									[
+										50736,
+										50748
+									],
+									[
+										51050,
+										51062
+									],
+									[
+										51329,
+										51341
+									],
+									[
+										51524,
+										51536
+									],
+									[
+										51921,
+										51933
+									],
+									[
+										52260,
+										52272
+									],
+									[
+										52676,
+										52688
+									],
+									[
+										53056,
+										53068
+									],
+									[
+										53498,
+										53510
+									],
+									[
+										54086,
+										54098
+									],
+									[
+										54513,
+										54525
+									],
+									[
+										54735,
+										54747
+									],
+									[
+										54944,
+										54956
+									],
+									[
+										55060,
+										55072
+									],
+									[
+										55252,
+										55264
+									],
+									[
+										55358,
+										55370
+									],
+									[
+										55579,
+										55591
+									],
+									[
+										55737,
+										55749
+									],
+									[
+										55881,
+										55893
+									],
+									[
+										56111,
+										56123
+									],
+									[
+										56295,
+										56307
+									],
+									[
+										56424,
+										56436
+									],
+									[
+										56557,
+										56569
+									],
+									[
+										56748,
+										56760
+									],
+									[
+										56884,
+										56896
+									],
+									[
+										57069,
+										57081
+									],
+									[
+										57188,
+										57200
+									],
+									[
+										57376,
+										57388
+									],
+									[
+										57481,
+										57493
+									],
+									[
+										57698,
+										57710
+									],
+									[
+										57908,
+										57920
+									],
+									[
+										58142,
+										58154
+									],
+									[
+										58422,
+										58434
+									],
+									[
+										58667,
+										58679
+									],
+									[
+										58899,
+										58911
+									],
+									[
+										59178,
+										59190
+									],
+									[
+										59422,
+										59434
+									],
+									[
+										59632,
+										59644
+									],
+									[
+										59924,
+										59936
+									],
+									[
+										60153,
+										60165
+									],
+									[
+										60415,
+										60427
+									],
+									[
+										60633,
+										60645
+									],
+									[
+										60860,
+										60872
+									],
+									[
+										61143,
+										61155
+									],
+									[
+										61427,
+										61439
+									],
+									[
+										61836,
+										61848
+									],
+									[
+										62019,
+										62031
+									],
+									[
+										62333,
+										62345
+									],
+									[
+										62671,
+										62683
+									],
+									[
+										62870,
+										62882
+									],
+									[
+										63014,
+										63026
+									],
+									[
+										63327,
+										63339
+									],
+									[
+										63525,
+										63537
+									],
+									[
+										63803,
+										63815
+									],
+									[
+										63952,
+										63964
+									],
+									[
+										64051,
+										64063
+									],
+									[
+										64249,
+										64261
+									],
+									[
+										64399,
+										64411
+									],
+									[
+										64528,
+										64540
+									],
+									[
+										64605,
+										64617
+									],
+									[
+										64906,
+										64918
+									],
+									[
+										65059,
+										65071
+									],
+									[
+										65133,
+										65145
+									],
+									[
+										65299,
+										65311
+									],
+									[
+										65391,
+										65403
+									],
+									[
+										65619,
+										65631
+									],
+									[
+										65863,
+										65875
+									],
+									[
+										66057,
+										66069
+									],
+									[
+										66117,
+										66129
+									],
+									[
+										66269,
+										66281
+									],
+									[
+										66548,
+										66560
+									],
+									[
+										66845,
+										66857
+									],
+									[
+										67214,
+										67226
+									],
+									[
+										67549,
+										67561
+									],
+									[
+										67726,
+										67738
+									],
+									[
+										67943,
+										67955
+									],
+									[
+										68175,
+										68187
+									],
+									[
+										68246,
+										68258
+									],
+									[
+										68301,
+										68313
+									],
+									[
+										68454,
+										68466
+									],
+									[
+										68481,
+										68493
+									],
+									[
+										68706,
+										68718
+									],
+									[
+										68731,
+										68743
+									],
+									[
+										68803,
+										68815
+									],
+									[
+										68828,
+										68840
+									],
+									[
+										69003,
+										69015
+									],
+									[
+										69030,
+										69042
+									],
+									[
+										69091,
+										69103
+									],
+									[
+										69151,
+										69163
+									],
+									[
+										69256,
+										69268
+									],
+									[
+										69320,
+										69332
+									],
+									[
+										69472,
+										69484
+									],
+									[
+										69581,
+										69593
+									],
+									[
+										69700,
+										69712
+									],
+									[
+										69816,
+										69828
+									],
+									[
+										69863,
+										69875
+									],
+									[
+										69921,
+										69933
+									],
+									[
+										70070,
+										70082
+									],
+									[
+										70128,
+										70140
+									],
+									[
+										70456,
+										70468
+									],
+									[
+										70633,
+										70645
+									],
+									[
+										70969,
+										70981
+									],
+									[
+										71128,
+										71140
+									],
+									[
+										71448,
+										71460
+									],
+									[
+										71650,
+										71662
+									],
+									[
+										71821,
+										71833
+									],
+									[
+										72165,
+										72177
+									],
+									[
+										72203,
+										72215
+									],
+									[
+										72462,
+										72474
+									],
+									[
+										72604,
+										72616
+									],
+									[
+										72786,
+										72798
+									],
+									[
+										72938,
+										72950
+									],
+									[
+										73109,
+										73121
+									],
+									[
+										73493,
+										73505
+									],
+									[
+										73680,
+										73692
+									],
+									[
+										73835,
+										73847
+									],
+									[
+										74098,
+										74110
+									],
+									[
+										74338,
+										74350
+									],
+									[
+										74673,
+										74685
+									],
+									[
+										74964,
+										74976
+									],
+									[
+										75203,
+										75215
+									],
+									[
+										75487,
+										75499
+									],
+									[
+										75616,
+										75628
+									],
+									[
+										75810,
+										75822
+									],
+									[
+										75911,
+										75923
+									],
+									[
+										76155,
+										76167
+									],
+									[
+										76245,
+										76257
+									],
+									[
+										76479,
+										76491
+									],
+									[
+										76799,
+										76811
+									],
+									[
+										76986,
+										76998
+									],
+									[
+										77159,
+										77171
+									],
+									[
+										77312,
+										77324
+									],
+									[
+										77483,
+										77495
+									],
+									[
+										77935,
+										77947
+									],
+									[
+										78008,
+										78020
+									],
+									[
+										78071,
+										78083
+									],
+									[
+										78263,
+										78275
+									],
+									[
+										78366,
+										78378
+									],
+									[
+										78441,
+										78453
+									],
+									[
+										78511,
+										78523
+									],
+									[
+										78662,
+										78674
+									],
+									[
+										78927,
+										78939
+									],
+									[
+										78997,
+										79009
+									],
+									[
+										79197,
+										79209
+									],
+									[
+										79279,
+										79291
+									],
+									[
+										79364,
+										79376
+									],
+									[
+										79456,
+										79468
+									],
+									[
+										79895,
+										79907
+									],
+									[
+										79938,
+										79950
+									],
+									[
+										80151,
+										80163
+									],
+									[
+										80234,
+										80246
+									],
+									[
+										80586,
+										80598
+									],
+									[
+										80926,
+										80938
+									],
+									[
+										81348,
+										81360
+									],
+									[
+										81575,
+										81587
+									],
+									[
+										81870,
+										81882
+									],
+									[
+										82173,
+										82185
+									],
+									[
+										82459,
+										82471
+									],
+									[
+										82645,
+										82657
+									],
+									[
+										82865,
+										82877
+									],
+									[
+										83118,
+										83130
+									],
+									[
+										83295,
+										83307
+									],
+									[
+										83547,
+										83559
+									],
+									[
+										84056,
+										84068
+									],
+									[
+										84499,
+										84511
+									],
+									[
+										84826,
+										84838
+									],
+									[
+										84885,
+										84897
+									],
+									[
+										85065,
+										85077
+									],
+									[
+										85443,
+										85455
+									],
+									[
+										85984,
+										85996
+									],
+									[
+										86340,
+										86352
+									],
+									[
+										86399,
+										86411
+									],
+									[
+										86552,
+										86564
+									],
+									[
+										86755,
+										86767
+									],
+									[
+										86913,
+										86925
+									],
+									[
+										87086,
+										87098
+									],
+									[
+										87348,
+										87360
+									],
+									[
+										87649,
+										87661
+									],
+									[
+										87919,
+										87931
+									],
+									[
+										88191,
+										88203
+									],
+									[
+										88466,
+										88478
+									],
+									[
+										88771,
+										88783
+									],
+									[
+										89047,
+										89059
+									],
+									[
+										89402,
+										89414
+									],
+									[
+										89464,
+										89476
+									],
+									[
+										89591,
+										89603
+									],
+									[
+										89843,
+										89855
+									],
+									[
+										90125,
+										90137
+									],
+									[
+										90230,
+										90242
+									],
+									[
+										90602,
+										90614
+									],
+									[
+										90726,
+										90738
+									],
+									[
+										90764,
+										90776
+									],
+									[
+										90944,
+										90956
+									],
+									[
+										90982,
+										90994
+									],
+									[
+										91230,
+										91242
+									],
+									[
+										91343,
+										91355
+									],
+									[
+										91459,
+										91471
+									],
+									[
+										91579,
+										91591
+									],
+									[
+										91706,
+										91718
+									],
+									[
+										92080,
+										92092
+									],
+									[
+										92149,
+										92161
+									],
+									[
+										92393,
+										92405
+									],
+									[
+										92644,
+										92656
+									],
+									[
+										92727,
+										92739
+									],
+									[
+										92817,
+										92829
+									],
+									[
+										92910,
+										92922
+									],
+									[
+										92993,
+										93005
+									],
+									[
+										93278,
+										93290
+									],
+									[
+										93389,
+										93401
+									],
+									[
+										93475,
+										93487
+									],
+									[
+										93654,
+										93666
+									],
+									[
+										93729,
+										93741
+									],
+									[
+										94057,
+										94069
+									],
+									[
+										94130,
+										94142
+									],
+									[
+										94370,
+										94382
+									],
+									[
+										94687,
+										94699
+									],
+									[
+										95136,
+										95148
+									],
+									[
+										95462,
+										95474
+									],
+									[
+										95911,
+										95923
+									],
+									[
+										95983,
+										95995
+									],
+									[
+										96317,
+										96329
+									],
+									[
+										96687,
+										96699
+									],
+									[
+										96893,
+										96905
+									],
+									[
+										97172,
+										97184
+									],
+									[
+										97543,
+										97555
+									],
+									[
+										97834,
+										97846
+									],
+									[
+										98197,
+										98209
+									],
+									[
+										98330,
+										98342
+									],
+									[
+										98636,
+										98648
+									],
+									[
+										98866,
+										98878
+									],
+									[
+										99007,
+										99019
+									],
+									[
+										99419,
+										99431
+									],
+									[
+										99586,
+										99598
+									],
+									[
+										99971,
+										99983
+									],
+									[
+										100320,
+										100332
+									],
+									[
+										100474,
+										100486
+									],
+									[
+										100727,
+										100739
+									],
+									[
+										101094,
+										101106
+									],
+									[
+										101463,
+										101475
+									],
+									[
+										101743,
+										101755
+									],
+									[
+										101873,
+										101885
+									],
+									[
+										101965,
+										101977
+									],
+									[
+										102144,
+										102156
+									],
+									[
+										102548,
+										102560
+									],
+									[
+										102790,
+										102802
+									],
+									[
+										102854,
+										102866
+									],
+									[
+										103027,
+										103039
+									],
+									[
+										103349,
+										103361
+									],
+									[
+										103391,
+										103403
+									],
+									[
+										103532,
+										103544
+									],
+									[
+										104007,
+										104019
+									],
+									[
+										104324,
+										104336
+									],
+									[
+										104579,
+										104591
+									],
+									[
+										104746,
+										104758
+									],
+									[
+										105193,
+										105205
+									],
+									[
+										105465,
+										105477
+									],
+									[
+										105756,
+										105768
+									],
+									[
+										106055,
+										106067
+									],
+									[
+										106385,
+										106397
+									],
+									[
+										106622,
+										106634
+									],
+									[
+										106930,
+										106942
+									],
+									[
+										107068,
+										107080
+									],
+									[
+										107366,
+										107378
+									],
+									[
+										107747,
+										107759
+									],
+									[
+										108009,
+										108021
+									],
+									[
+										108183,
+										108195
+									],
+									[
+										108362,
+										108374
+									],
+									[
+										108603,
+										108615
+									],
+									[
+										108806,
+										108818
+									],
+									[
+										109067,
+										109079
+									],
+									[
+										109366,
+										109378
+									],
+									[
+										109557,
+										109569
+									],
+									[
+										109621,
+										109633
+									],
+									[
+										109685,
+										109697
+									],
+									[
+										109831,
+										109843
+									],
+									[
+										109876,
+										109888
+									],
+									[
+										109919,
+										109931
+									],
+									[
+										110259,
+										110271
+									],
+									[
+										110529,
+										110541
+									],
+									[
+										110785,
+										110797
+									],
+									[
+										110890,
+										110902
+									],
+									[
+										111139,
+										111151
+									],
+									[
+										111515,
+										111527
+									],
+									[
+										111856,
+										111868
+									],
+									[
+										112233,
+										112245
+									],
+									[
+										112789,
+										112801
+									],
+									[
+										112863,
+										112875
+									],
+									[
+										112975,
+										112987
+									],
+									[
+										113097,
+										113109
+									],
+									[
+										113411,
+										113423
+									],
+									[
+										113505,
+										113517
+									],
+									[
+										113611,
+										113623
+									],
+									[
+										113719,
+										113731
+									],
+									[
+										114065,
+										114077
+									],
+									[
+										114256,
+										114268
+									],
+									[
+										114435,
+										114447
+									],
+									[
+										114607,
+										114619
+									],
+									[
+										114830,
+										114842
+									],
+									[
+										115010,
+										115022
+									],
+									[
+										115214,
+										115226
+									],
+									[
+										115407,
+										115419
+									],
+									[
+										115593,
+										115605
+									],
+									[
+										115814,
+										115826
+									],
+									[
+										115992,
+										116004
+									],
+									[
+										116194,
+										116206
+									],
+									[
+										116385,
+										116397
+									],
+									[
+										116569,
+										116581
+									],
+									[
+										116763,
+										116775
+									],
+									[
+										116958,
+										116970
+									],
+									[
+										117133,
+										117145
+									],
+									[
+										117169,
+										117181
+									],
+									[
+										117215,
+										117227
+									],
+									[
+										117262,
+										117274
+									],
+									[
+										117306,
+										117318
+									],
+									[
+										117351,
+										117363
+									],
+									[
+										117640,
+										117652
+									],
+									[
+										117831,
+										117843
+									],
+									[
+										118010,
+										118022
+									],
+									[
+										118182,
+										118194
+									],
+									[
+										118407,
+										118419
+									],
+									[
+										118587,
+										118599
+									],
+									[
+										118810,
+										118822
+									],
+									[
+										118988,
+										119000
+									],
+									[
+										119182,
+										119194
+									],
+									[
+										119377,
+										119389
+									],
+									[
+										119536,
+										119548
+									],
+									[
+										119740,
+										119752
+									],
+									[
+										119933,
+										119945
+									],
+									[
+										120119,
+										120131
+									],
+									[
+										120321,
+										120333
+									],
+									[
+										120512,
+										120524
+									],
+									[
+										120709,
+										120721
+									],
+									[
+										120745,
+										120757
+									],
+									[
+										120791,
+										120803
+									],
+									[
+										120835,
+										120847
+									],
+									[
+										120872,
+										120884
+									],
+									[
+										120919,
+										120931
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								883,
+								883
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"output_tag": 1,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 224.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 22,
+					"file": "Assets/App/Scripts/lua/GUI/ui_background.lua",
+					"settings":
+					{
+						"buffer_size": 835,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								418,
+								418
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 96.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 23,
+					"file": "Assets/App/Scripts/lua/GUI/ui_system_top.lua",
+					"settings":
+					{
+						"buffer_size": 1648,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1589,
+								1589
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 460.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 24,
+					"file": "Assets/App/Scripts/lua/GUI/ui_system_bottom.lua",
+					"settings":
+					{
+						"buffer_size": 2163,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1865,
+								1865
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 865.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "Assets/App/Scripts/lua/GUI/ui_quest.lua",
+					"settings":
+					{
+						"buffer_size": 3262,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1885,
+								1885
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 569.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 10,
+					"file": "Assets/App/Scripts/lua/Data/Hero.lua",
+					"settings":
+					{
+						"buffer_size": 873,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								593,
+								593
+							]
+						],
+						"settings":
+						{
+							"clone_numbers": 1,
+							"origin_encoding": "ASCII",
+							"syntax": "Packages/Lua/Lua.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 280.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1016,7 +4056,7 @@
 		"rows":
 		[
 			0.0,
-			0.5,
+			0.477157315341,
 			1.0
 		]
 	},
@@ -1031,6 +4071,90 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"",
+				"App/Scripts/lua/GUI/ui_battle.lua"
+			],
+			[
+				"battle",
+				"App/Scripts/lua/Battle/battle.lua"
+			],
+			[
+				"hero",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"ui_battle",
+				"App/Scripts/lua/GUI/ui_battle.lua"
+			],
+			[
+				"hero.",
+				"App/Scripts/lua/Data/Hero.lua"
+			],
+			[
+				"player",
+				"App/Scripts/lua/Data/Player.lua"
+			],
+			[
+				"ui_quest",
+				"App/Scripts/lua/GUI/ui_quest.lua"
+			],
+			[
+				"ui_bttle",
+				"App/Scripts/lua/GUI/ui_battle.lua"
+			],
+			[
+				"ui_system_bottom",
+				"App/Scripts/lua/GUI/ui_system_bottom.lua"
+			],
+			[
+				"ui_system_to",
+				"App/Scripts/lua/GUI/ui_system_top.lua"
+			],
+			[
+				"ui_backgr",
+				"App/Scripts/lua/GUI/ui_background.lua"
+			],
+			[
+				"ui_eve",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
+			],
+			[
+				"luastate",
+				"App/Scripts/submodule/Unity3DLua/SLua/Script/LuaState.cs"
+			],
+			[
+				"main.",
+				"App/Scripts/lua/Main.lua"
+			],
+			[
+				"ui_scroll",
+				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs"
+			],
+			[
+				"ui_main",
+				"App/Scripts/lua/GUI/ui_main.lua"
+			],
+			[
+				"tablema",
+				"App/Scripts/lua/Manager/TableManager.lua"
+			],
+			[
+				"gamed",
+				"App/Scripts/lua/Manager/GameDefine.lua"
+			],
+			[
+				"ui_herol",
+				"App/Scripts/lua/GUI/ui_hero_list.lua"
+			],
+			[
+				"customex",
+				"App/Scripts/submodule/Unity3DLua/SLua/Editor/CustomExport.cs"
+			],
+			[
+				"luaco",
+				"App/Scripts/submodule/Unity3DLua/SLua/Editor/LuaCodeGen.cs"
+			],
 			[
 				"luadll",
 				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaDLL.cs"
@@ -1048,28 +4172,8 @@
 				"App/Scripts/lua/GUI/ui_system_top.lua"
 			],
 			[
-				"",
-				"App/Scripts/lua/GUI/ui_hero_detail.lua"
-			],
-			[
-				"ui_main",
-				"App/Scripts/lua/GUI/ui_main.lua"
-			],
-			[
 				"ui_del",
 				"App/Scripts/lua/GUI/ui_hero_detail.lua"
-			],
-			[
-				"hero",
-				"App/Scripts/lua/Data/Hero.lua"
-			],
-			[
-				"hero.",
-				"App/Scripts/lua/Data/Hero.lua"
-			],
-			[
-				"battle",
-				"App/Scripts/lua/Battle/battle.lua"
 			],
 			[
 				"uimana",
@@ -1090,10 +4194,6 @@
 			[
 				"hero_de",
 				"App/Scripts/lua/GUI/ui_hero_detail.lua"
-			],
-			[
-				"player",
-				"App/Scripts/lua/Data/Player.lua"
 			],
 			[
 				"ui_hero_lis",
@@ -1148,10 +4248,6 @@
 				"SLua/LuaObject/Custom/Lua_UI_Scroll_List.cs"
 			],
 			[
-				"ui_herol",
-				"App/Scripts/lua/GUI/ui_hero_list.lua"
-			],
-			[
 				"ui_hd",
 				"App/Scripts/lua/GUI/ui_hero_detail.lua"
 			],
@@ -1182,10 +4278,6 @@
 			[
 				"ui_even",
 				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
-			],
-			[
-				"ui_scroll",
-				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Scroll_Loop.cs"
 			],
 			[
 				"ui_herod",
@@ -1244,10 +4336,6 @@
 				"App/Scripts/lua/GUI/ui_main.lua"
 			],
 			[
-				"ui_eve",
-				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_Event.cs"
-			],
-			[
 				"ui_butt",
 				"App/Scripts/submodule/Unity3DuGUIToolkit/UI_ButtonColor.cs"
 			],
@@ -1274,10 +4362,6 @@
 			[
 				"ui_",
 				"App/Scripts/lua/GUI/ui_title.lua"
-			],
-			[
-				"luastate",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs"
 			],
 			[
 				"mylua",
@@ -1464,10 +4548,6 @@
 				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
 			[
-				"main.",
-				"App/Scripts/lua/Main.lua"
-			],
-			[
 				"tit",
 				"App/Scripts/lua/Scene/TitleScene.lua"
 			],
@@ -1502,46 +4582,6 @@
 			[
 				"audi",
 				"App/Scripts/submodule/Unity3DMedia/src/AudioPlayer.cs"
-			],
-			[
-				"mediam",
-				"App/Scripts/submodule/Unity3DMedia/src/MediaMgr.cs"
-			],
-			[
-				"seq",
-				"MyPlugins/Demigiant/DOTween/Examples/Sequences.cs"
-			],
-			[
-				"uieve",
-				"App/Scripts/GUI/UI_Event.cs"
-			],
-			[
-				"dotween",
-				"MyPlugins/Demigiant/DOTween/DOTween.XML"
-			],
-			[
-				"myappl",
-				"App/Scripts/Manager/MyApplication.cs"
-			],
-			[
-				"myad",
-				"MyPlugins/AstarPathfindingProject/Core/AstarData.cs"
-			],
-			[
-				"basic",
-				"MyPlugins/Demigiant/DOTween/Examples/Basics.cs"
-			],
-			[
-				"luastat",
-				"App/Scripts/submodule/Unity3DLua/SLua/Slua/Script/LuaState.cs"
-			],
-			[
-				"dll",
-				"App/Scripts/submodule/Unity3DLua/Lua52/Lua52Lib.cs"
-			],
-			[
-				"lua_ui_eve",
-				"SLua/LuaObject/Custom/Lua_UI_Event.cs"
 			]
 		],
 		"width": 0.0

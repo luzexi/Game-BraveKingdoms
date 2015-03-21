@@ -6,6 +6,7 @@ local Vector3 = UnityEngine.Vector3
 
 
 local main_obj = nil
+local battle_obj = nil
 
 local function updateInfo( index ,  battle_hero )
     -- local main_obj = createObj()
@@ -100,16 +101,42 @@ local function create()
             main_obj = main_obj.gameObject
             return main_obj
         end
+
+        battle_obj = GameObject.Instantiate(Resources.Load("Battle/BattleObj"))
+        battle_obj.transform.localPosition = Vector3.zero;
+        battle_obj.transform.localScale = Vector3.one;
+
+        local scene = GameObject.Instantiate(Resources.Load("Battle/Scene/scene_1"))
+        scene.transform.parent = battle_obj.transform
+        scene.transform.localPosition = Vector3.zero
+        scene.transform.localScale = Vector3.one
+
+        local right_pos = {}
+        for i = 1 , 6 , 1 do 
+            table.insert(right_pos , #right_pos+1 , battle_obj.transform:Find("RightPos/pos"..i))
+        end
+        local left_pos = {}
+        for i = 1 , 6 , 1 do 
+            table.insert(left_pos , #left_pos+1 , battle_obj.transform:Find("LeftPos/pos"..i))
+        end
+
+        local battle_camera = battle_obj.transform:Find("BattleCamera"):GetComponent("Camera")
+
         main_obj = GameObject.Instantiate(Resources.Load("GUI/ui_battle"))
+        main_obj.name = ui_name
         main_obj.transform:SetParent(UI_Root)
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
-        local lua_battle = require("Battle/battle.lua")
-        lua_battle.initdata()
+
+        local rendtexture = main_obj.transform:Find("rendtexture"):GetComponent("RawImage")
+        rendtexture.texture = battle_camera.targetTexture
 
         local i = 0
         for i = 1 , 6 , 1 do
             if i <= #Battle.heros then
+                Battle.heros[i].object.transform.parent = right_pos[i]
+                Battle.heros[i].object.transform.localPosition = Vector3.zero
+                Battle.heros[i].object.transform.localScale = Vector3.one
                 updateInfo(i,Battle.heros[i])
             else
                 updateInfo(i,nil)
