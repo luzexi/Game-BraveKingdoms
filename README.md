@@ -39,4 +39,4 @@ It is not complete , but you can see it in unity editor.
 ## Introduction of tool in unity3d
 - macro define tool.
 - Sublime project tool.
-
+- Table tool -- The main.sh can generate json from all of the xls and it will copy it to u3d project.
