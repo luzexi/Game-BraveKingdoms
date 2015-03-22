@@ -131,6 +131,9 @@ local function create()
         local rendtexture = main_obj.transform:Find("rendtexture"):GetComponent("RawImage")
         rendtexture.texture = battle_camera.targetTexture
 
+        local battle_lua = require("Battle.battle")
+        battle_lua.load_enemy(Battle.quest_table.id , Battle.gate)
+
         local i = 0
         for i = 1 , 6 , 1 do
             if i <= #Battle.heros then
@@ -140,6 +143,14 @@ local function create()
                 updateInfo(i,Battle.heros[i])
             else
                 updateInfo(i,nil)
+            end
+        end
+
+        for i = 1 , 6 , 1 do
+            if i <= #Battle.heros then
+                Battle.enemys[i].object.transform.parent = left_pos[i]
+                Battle.enemys[i].object.transform.localPosition = Vector3.zero
+                Battle.enemys[i].object.transform.localScale = Vector3.one
             end
         end
 

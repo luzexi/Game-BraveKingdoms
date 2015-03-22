@@ -45,10 +45,15 @@ local function create()
 
             local node_event = UI_Event.Get(go,""..index)
             node_event.onClick = function(eventData , go , args)
-                print("args " .. args[1])
+                
+                local quest_index = tonumber(args[1])
+                print("args -- " .. quest_index)
                 GameObject.Destroy(main_obj)
                 main_obj = nil
 
+                local battle_data = require("Battle.battle")
+                battle_data.initdata()
+                Battle.quest_table = QuestTable[quest_index]
                 local battle_scene = require("Scene.BattleScene")
                 battle_scene.create()
             end

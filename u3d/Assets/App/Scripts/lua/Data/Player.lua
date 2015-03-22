@@ -159,6 +159,18 @@ local function init()
         end
         return nil
     end
+    Player.getgroup_hero = function()
+        local grouphero = {}
+        local i = 1
+        for i = 1 , #Player.group ,1 do
+            local hero = nil
+            if Player.group[i] > 0 then
+                hero = Player.gethero_by_group(i)
+            end
+            table.insert(grouphero , #grouphero+1 , hero)
+        end
+        return grouphero
+    end
     -- for i=0,4,1 do
     --     local group = { tmpHero1 , tmpHero2 , tmpHero3 , tmpHero4 , tmpHero5 }
     --     Player.groups[i] = group
