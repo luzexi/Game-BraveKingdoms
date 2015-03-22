@@ -39,7 +39,24 @@ local function createBattleHero( hero )
 
     local res = HeroTable[""..hero.tableid].Model
     res = string.sub(res,7,#res)
-    print("res model -- " ..res)
+    battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
+    return battlehero
+end
+
+local function createBattleEnemy( hero )
+    local battlehero = {}
+    battlehero.tableid = hero.HeroID
+    battlehero.equip = 0
+    battlehero.attack = hero.Attack
+    battlehero.defence = hero.Defence
+    battlehero.recover = 0
+    battlehero.hp = hero.HP
+    battlehero.maxhp = hero.HP
+    battlehero.sp = 0
+    battlehero.maxsp = 100
+
+    local res = HeroTable[""..hero.HeroID].Model
+    res = string.sub(res,7,#res)
     battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
     return battlehero
 end
@@ -50,5 +67,6 @@ local t = {}
 t.create = create
 t.init = init
 t.createBattleHero = createBattleHero
+t.createBattleEnemy = createBattleEnemy
 return t
 

@@ -10,8 +10,6 @@ local function create()
     local ui_bottom = require("GUI/ui_system_bottom")
     ui_bottom.hiden()
     
-    local battle_data = require("Battle.battle")
-    battle_data.initdata()
     local ui_battle = require("GUI/ui_battle")
     ui_battle.create()
 end
