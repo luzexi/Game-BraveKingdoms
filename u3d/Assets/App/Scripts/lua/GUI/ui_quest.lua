@@ -51,8 +51,6 @@ local function create()
                 GameObject.Destroy(main_obj)
                 main_obj = nil
 
-                local battle_data = require("Battle.battle")
-                battle_data.initdata()
                 Battle.quest_table = QuestTable[quest_index]
                 local battle_scene = require("Scene.BattleScene")
                 battle_scene.create()

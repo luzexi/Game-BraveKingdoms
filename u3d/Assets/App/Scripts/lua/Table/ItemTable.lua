@@ -11,8 +11,11 @@ local function create()
     local at = Resources.Load("Data/Table_Item")
     local str = at.text
     ItemTable = {}
-    ItemTable = json.decode(str)
+    local tmptable = json.decode(str)
 
+    for key , val in pairs(tmptable) do
+        ItemTable[""..val.id] = val
+    end
     -- print(ItemTable[""..1]["Name"])
 end
 

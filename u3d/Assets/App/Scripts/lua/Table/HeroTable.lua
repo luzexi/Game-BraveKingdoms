@@ -11,7 +11,11 @@ local function create()
     local at = Resources.Load("Data/Table_Hero")
     local str = at.text
     HeroTable = {}
-    HeroTable = json.decode(str)
+    local tmptable = json.decode(str)
+
+    for key , val in pairs(tmptable) do
+        HeroTable[""..val.id] = val
+    end
 
     -- print(HeroTable[""..1]["Name"])
 end
