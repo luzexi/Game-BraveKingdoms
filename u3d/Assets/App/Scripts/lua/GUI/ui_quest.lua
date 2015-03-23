@@ -47,7 +47,7 @@ local function create()
             node_event.onClick = function(eventData , go , args)
                 
                 local quest_index = tonumber(args[1])
-                print("args -- " .. quest_index)
+                print("quest index -- " .. quest_index)
                 GameObject.Destroy(main_obj)
                 main_obj = nil
 

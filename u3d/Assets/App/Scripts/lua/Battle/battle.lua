@@ -3,7 +3,8 @@ local GameObject = UnityEngine.GameObject;
 local Resources = UnityEngine.Resources;
 local Vector3 = UnityEngine.Vector3;
 
-local lua_hero = require("Data/Hero")
+local lua_hero = require 'Data.Hero'
+local lua_battlehero = require 'Data.BattleHero'
 
 
 local function initdata()
@@ -11,9 +12,12 @@ local function initdata()
     Battle.soul = 83344
     Battle.crystal = 3433
     Battle.catch_heros = {}
-    Battle.heros = {}
-    Battle.enemys = {}
+    Battle.heros = {nil,nil,nil,nil,nil}
+    Battle.enemys = {nil,nil,nil,nil,nil}
     Battle.gate = 1
+    Battle.targetIndex = 1
+    Battle.autoTarget = false
+    Battle.autoIndex = 1
 
     local tmphero = lua_hero.create(234)
     table.insert(Battle.catch_heros , #Battle.catch_heros + 1, tmphero)
@@ -27,8 +31,7 @@ local function load_self()
     local i = 0
     local self_group_hero = Player.getgroup_hero()
     for i = 1 , #self_group_hero , 1 do
-        local battlehero = lua_hero.createBattleHero(self_group_hero[i])
-        table.insert(Battle.heros , #Battle.heros + 1 , battlehero)
+        Battle.heros[i] = lua_battlehero.createBattleHero(self_group_hero[i])
     end
 end
 
@@ -40,12 +43,10 @@ local function load_enemy( id , gateid )
         Battle.enemy_table = json.decode(table.text)
     end
 
-    Battle.enemys = {}
     local i
     for i , val in pairs(Battle.enemy_table) do
         if Battle.enemy_table[""..i].GateID == gateid then
-            local battle_enemy = lua_hero.createBattleEnemy(Battle.enemy_table[""..i])
-            table.insert(Battle.enemys , #Battle.enemys+1 , battle_enemy)
+            Battle.enemys[Battle.enemy_table[""..i].OrderID] = lua_battlehero.createBattleEnemy(Battle.enemy_table[""..i])
         end
     end
 
