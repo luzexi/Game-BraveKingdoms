@@ -8,8 +8,50 @@ local Vector3 = UnityEngine.Vector3
 local main_obj = nil
 local battle_obj = nil
 
-local function updateInfo( index ,  battle_hero )
-    -- local main_obj = createObj()
+
+-- update top num
+local function updateTop()
+    local soul_text = main_obj.transform:Find("battle/soul_text"):GetComponent("Text")
+    soul_text.text = Battle.soul
+    local gold_text = main_obj.transform:Find("battle/gold_text"):GetComponent("Text")
+    gold_text.text = Battle.gold
+    local hero_text = main_obj.transform:Find("battle/hero_text"):GetComponent("Text")
+    hero_text.text = #Battle.catch_heros
+    local crystal_text = main_obj.transform:Find("battle/crystal_text"):GetComponent("Text")
+    crystal_text.text = Battle.crystal
+end
+
+-- update target info
+local function updateTarget()
+    --
+end
+
+-- select target index
+local function setTarget( index )
+    print("target btn" .. index )
+    local target_icon = main_obj.transform:Find("battle/target")
+    if not Battle.autoTarget and index == Battle.targetIndex then
+        target_icon.gameObject:SetActive(false)
+        Battle.autoTarget = true
+        Battle.targetIndex = -1
+    else
+        if index <= 6 and Battle.enemys[index] ~= nil and Battle.enemys[index].hp > 0 then
+            Battle.autoTarget = false
+            local pos_ary = { Vector3(-100,244,0) , Vector3(-101,117,0) , Vector3(-157,170,0) ,
+            Vector3(-211,220,0) , Vector3(-220,111,0) , Vector3(-275,183,0) }
+            target_icon.gameObject:SetActive(true)
+            target_icon.localPosition = pos_ary[index]
+            Battle.targetIndex = index
+        end
+    end
+end
+
+-- select self index
+local function setMyself( index )
+    print("self btn "..index)
+end
+
+local function setInfo( index ,  battle_hero )
     local icon_obj = main_obj.transform:Find("icon")
     local battle_obj = main_obj.transform:Find("battle")
     local item_obj = main_obj.transform:Find("item_frame")
@@ -131,23 +173,53 @@ local function create()
         local rendtexture = main_obj.transform:Find("rendtexture"):GetComponent("RawImage")
         rendtexture.texture = battle_camera.targetTexture
 
-        local i = 0
-        for i = 1 , 6 , 1 do
-            if i <= #Battle.heros then
+        updateTop()
+
+        -- set self mode position
+        local i = 1
+        for i = 1 , #Battle.heros , 1 do
+            if Battle.heros[i] ~= nil then
                 Battle.heros[i].object.transform.parent = right_pos[i]
                 Battle.heros[i].object.transform.localPosition = Vector3.zero
                 Battle.heros[i].object.transform.localScale = Vector3.one
-                updateInfo(i,Battle.heros[i])
+                setInfo(i,Battle.heros[i])
+                local icon_btn = main_obj.transform:Find("icon/icon"..i.."/btn")
+                icon_btn = UI_Event.Get(icon_btn,""..i)
+                icon_btn.onClick = function(eventData , go , args)
+                    local icon_index = tonumber(args[1])
+                    print("icon index " .. icon_index)
+                end
             else
-                updateInfo(i,nil)
+                setInfo(i,nil)
             end
         end
 
-        for i = 1 , 6 , 1 do
-            if i <= #Battle.heros then
+        -- set enemy model position
+        for i = 1 , #Battle.enemys , 1 do
+            if Battle.enemys[i] ~= nil then
                 Battle.enemys[i].object.transform.parent = left_pos[i]
                 Battle.enemys[i].object.transform.localPosition = Vector3.zero
                 Battle.enemys[i].object.transform.localScale = Vector3.one
+            end
+        end
+
+        -- set selece enemy btn
+        for i = 1 , 6 , 1 do
+            local enemy_btn = main_obj.transform:Find("select/enemy/btn"..i)
+            enemy_btn = UI_Event.Get(enemy_btn , ""..i)
+            enemy_btn.onClick = function(eventData , go , args)
+                local tmpindex = tonumber(args[1])
+                setTarget(tmpindex)
+            end
+        end
+
+        -- set selece self btn
+        for i = 1 , 6 , 1 do
+            local self_btn = main_obj.transform:Find("select/self/btn"..i)
+            self_btn = UI_Event.Get(self_btn , ""..i)
+            self_btn.onClick = function(eventData , go , args)
+                local tmpindex = tonumber(args[1])
+                setMyself(tmpindex)
             end
         end
 
@@ -161,7 +233,12 @@ local function create()
     main_obj = createObj()
 end
 
+local function updateInfo( index , battle_hero )
+    --
+end
+
 local t = {}
 t.create = create
 t.updateInfo = updateInfo
+t.updateTop = updateTop
 return t
