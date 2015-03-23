@@ -3,9 +3,10 @@ local GameObject = UnityEngine.GameObject;
 local Resources = UnityEngine.Resources;
 local Vector3 = UnityEngine.Vector3;
 
+local lua_hero = require("Data/Hero")
+
 
 local function initdata()
-    Battle = {}
     Battle.gold = 23888
     Battle.soul = 83344
     Battle.crystal = 3433
@@ -14,11 +15,14 @@ local function initdata()
     Battle.enemys = {}
     Battle.gate = 1
 
-    local lua_hero = require("Data/Hero")
     local tmphero = lua_hero.create(234)
     table.insert(Battle.catch_heros , #Battle.catch_heros + 1, tmphero)
     tmphero = lua_hero.create(23)
     table.insert(Battle.catch_heros , #Battle.catch_heros + 1, tmphero)
+end
+
+
+local function load_self()
 
     local i = 0
     local self_group_hero = Player.getgroup_hero()
@@ -28,6 +32,7 @@ local function initdata()
     end
 end
 
+
 local function load_enemy( id , gateid )
     if Battle.enemy_table == nil then
         local table = Resources.Load("Data/Enemy/Table_Enemy"..id)
@@ -35,7 +40,6 @@ local function load_enemy( id , gateid )
         Battle.enemy_table = json.decode(table.text)
     end
 
-    local lua_hero = require("Data/Hero")
     Battle.enemys = {}
     local i
     for i , val in pairs(Battle.enemy_table) do
@@ -52,5 +56,6 @@ end
 
 local t = {}
 t.initdata = initdata
+t.load_self = load_self
 t.load_enemy = load_enemy
 return t

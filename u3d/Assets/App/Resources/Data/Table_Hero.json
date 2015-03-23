@@ -29,7 +29,8 @@
     "Skill": 1, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我们在此起誓，不求同年同月生\\n但求同年同月死"
+    "Word": "我们在此起誓，不求同年同月生\\n但求同年同月死", 
+    "id": 1
   }, 
   "2": {
     "AvatarA": "Tex_liubei_2_L", 
@@ -61,7 +62,8 @@
     "Skill": 2, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "我们在此起誓，不求同年同月生\\n但求同年同月死"
+    "Word": "我们在此起誓，不求同年同月生\\n但求同年同月死", 
+    "id": 2
   }, 
   "3": {
     "AvatarA": "Tex_liubei_3_L", 
@@ -93,7 +95,8 @@
     "Skill": 3, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "随我一起!\\n将这份力量为天下太平而用"
+    "Word": "随我一起!\\n将这份力量为天下太平而用", 
+    "id": 3
   }, 
   "4": {
     "AvatarA": "Tex_liubei_4_L", 
@@ -125,7 +128,8 @@
     "Skill": 4, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "随我一起!\\n将这份力量为天下太平而用"
+    "Word": "随我一起!\\n将这份力量为天下太平而用", 
+    "id": 4
   }, 
   "5": {
     "AvatarA": "Tex_caocao_1_L", 
@@ -157,7 +161,8 @@
     "Skill": 5, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "现在便是飞跃之时！\\n我的征途是浩瀚大地！"
+    "Word": "现在便是飞跃之时！\\n我的征途是浩瀚大地！", 
+    "id": 5
   }, 
   "6": {
     "AvatarA": "Tex_caocao_2_L", 
@@ -189,7 +194,8 @@
     "Skill": 6, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "现在便是飞跃之时！\\n我的征途是浩瀚大地！"
+    "Word": "现在便是飞跃之时！\\n我的征途是浩瀚大地！", 
+    "id": 6
   }, 
   "7": {
     "AvatarA": "Tex_caocao_3_L", 
@@ -221,7 +227,8 @@
     "Skill": 7, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "天下在我手中！\\n曹孟德将化不可能为可能！"
+    "Word": "天下在我手中！\\n曹孟德将化不可能为可能！", 
+    "id": 7
   }, 
   "8": {
     "AvatarA": "Tex_caocao_4_L", 
@@ -253,7 +260,8 @@
     "Skill": 8, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "天下在我手中！\\n曹孟德将化不可能为可能！"
+    "Word": "天下在我手中！\\n曹孟德将化不可能为可能！", 
+    "id": 8
   }, 
   "9": {
     "AvatarA": "Tex_sunquan_1_L", 
@@ -285,7 +293,8 @@
     "Skill": 9, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "这片江东河土乃是我们孙吴之地！"
+    "Word": "这片江东河土乃是我们孙吴之地！", 
+    "id": 9
   }, 
   "10": {
     "AvatarA": "Tex_sunquan_2_L", 
@@ -317,7 +326,8 @@
     "Skill": 10, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "这片江东河土乃是我们孙吴之地！"
+    "Word": "这片江东河土乃是我们孙吴之地！", 
+    "id": 10
   }, 
   "11": {
     "AvatarA": "Tex_sunquan_3_L", 
@@ -349,7 +359,8 @@
     "Skill": 11, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "总有一天，\\n我们孙吴将会吞并天下！"
+    "Word": "总有一天，\\n我们孙吴将会吞并天下！", 
+    "id": 11
   }, 
   "12": {
     "AvatarA": "Tex_sunquan_4_L", 
@@ -381,7 +392,8 @@
     "Skill": 12, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "总有一天，\\n我们孙吴将会吞并天下！"
+    "Word": "总有一天，\\n我们孙吴将会吞并天下！", 
+    "id": 12
   }, 
   "13": {
     "AvatarA": "Tex_diaochan_1_L", 
@@ -413,7 +425,8 @@
     "Skill": 13, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "正因为世道如此\\n我更要变得强大……"
+    "Word": "正因为世道如此\\n我更要变得强大……", 
+    "id": 13
   }, 
   "14": {
     "AvatarA": "Tex_diaochan_2_L", 
@@ -445,7 +458,8 @@
     "Skill": 14, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "正因为世道如此\\n我更要变得强大……"
+    "Word": "正因为世道如此\\n我更要变得强大……", 
+    "id": 14
   }, 
   "15": {
     "AvatarA": "Tex_diaochan_3_L", 
@@ -477,7 +491,8 @@
     "Skill": 15, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "来吧，奉先大人\\n将我和世界揽入手中……"
+    "Word": "来吧，奉先大人\\n将我和世界揽入手中……", 
+    "id": 15
   }, 
   "16": {
     "AvatarA": "Tex_diaochan_4_L", 
@@ -509,7 +524,8 @@
     "Skill": 16, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "来吧，奉先大人\\n将我和世界揽入手中……"
+    "Word": "来吧，奉先大人\\n将我和世界揽入手中……", 
+    "id": 16
   }, 
   "17": {
     "AvatarA": "Tex_yuanshao_1_L", 
@@ -541,7 +557,8 @@
     "Skill": 17, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "孟德唷\\n现在正是我们为皇帝而战的时刻"
+    "Word": "孟德唷\\n现在正是我们为皇帝而战的时刻", 
+    "id": 17
   }, 
   "18": {
     "AvatarA": "Tex_yuanshao_2_L", 
@@ -573,7 +590,8 @@
     "Skill": 18, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "孟德唷\\n现在正是我们为皇帝而战的时刻"
+    "Word": "孟德唷\\n现在正是我们为皇帝而战的时刻", 
+    "id": 18
   }, 
   "19": {
     "AvatarA": "Tex_yuanshao_3_L", 
@@ -605,7 +623,8 @@
     "Skill": 19, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "孟德，我们决一胜负的时刻到了"
+    "Word": "孟德，我们决一胜负的时刻到了", 
+    "id": 19
   }, 
   "20": {
     "AvatarA": "Tex_yuanshao_4_L", 
@@ -637,7 +656,8 @@
     "Skill": 20, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "孟德，我们决一胜负的时刻到了"
+    "Word": "孟德，我们决一胜负的时刻到了", 
+    "id": 20
   }, 
   "21": {
     "AvatarA": "Tex_dongzhuo_1_L", 
@@ -669,7 +689,8 @@
     "Skill": 21, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "汉王朝400年。\\n全部都成为我食粮吧！！"
+    "Word": "汉王朝400年。\\n全部都成为我食粮吧！！", 
+    "id": 21
   }, 
   "22": {
     "AvatarA": "Tex_dongzhuo_2_L", 
@@ -701,7 +722,8 @@
     "Skill": 22, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "汉王朝400年。\\n全部都成为我食粮吧！！"
+    "Word": "汉王朝400年。\\n全部都成为我食粮吧！！", 
+    "id": 22
   }, 
   "23": {
     "AvatarA": "Tex_dongzhuo_3_L", 
@@ -733,7 +755,8 @@
     "Skill": 23, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "竟敢对本王兵戎相向\\n真是愚蠢的家伙！"
+    "Word": "竟敢对本王兵戎相向\\n真是愚蠢的家伙！", 
+    "id": 23
   }, 
   "24": {
     "AvatarA": "Tex_dongzhuo_4_L", 
@@ -765,7 +788,8 @@
     "Skill": 24, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "竟敢对本王兵戎相向\\n真是愚蠢的家伙！"
+    "Word": "竟敢对本王兵戎相向\\n真是愚蠢的家伙！", 
+    "id": 24
   }, 
   "25": {
     "AvatarA": "Tex_zhanghe_1_L", 
@@ -797,7 +821,8 @@
     "Skill": 25, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我的生命就完全交由大人您了!"
+    "Word": "我的生命就完全交由大人您了!", 
+    "id": 25
   }, 
   "26": {
     "AvatarA": "Tex_zhanghe_2_L", 
@@ -829,7 +854,8 @@
     "Skill": 26, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "每一次跨越过生死之线\\n我就会变得更强！"
+    "Word": "每一次跨越过生死之线\\n我就会变得更强！", 
+    "id": 26
   }, 
   "27": {
     "AvatarA": "Tex_zhanghe_3_L", 
@@ -861,7 +887,8 @@
     "Skill": 27, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "每一次跨越过生死之线\\n我就会变得更强！"
+    "Word": "每一次跨越过生死之线\\n我就会变得更强！", 
+    "id": 27
   }, 
   "28": {
     "AvatarA": "Tex_sunce_1_L", 
@@ -893,7 +920,8 @@
     "Skill": 28, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "赶紧退下！\\n热血沸腾的我可不会手下留情"
+    "Word": "赶紧退下！\\n热血沸腾的我可不会手下留情", 
+    "id": 28
   }, 
   "29": {
     "AvatarA": "Tex_sunce_2_L", 
@@ -925,7 +953,8 @@
     "Skill": 29, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "苍天！我绝不会在这里就倒下！！"
+    "Word": "苍天！我绝不会在这里就倒下！！", 
+    "id": 29
   }, 
   "30": {
     "AvatarA": "Tex_sunce_3_L", 
@@ -957,7 +986,8 @@
     "Skill": 30, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "苍天！我绝不会在这里就倒下！！"
+    "Word": "苍天！我绝不会在这里就倒下！！", 
+    "id": 30
   }, 
   "31": {
     "AvatarA": "Tex_xiahouyuan_1_L", 
@@ -989,7 +1019,8 @@
     "Skill": 31, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我如同疾风一般的攻击\\n无人可挡！！"
+    "Word": "我如同疾风一般的攻击\\n无人可挡！！", 
+    "id": 31
   }, 
   "32": {
     "AvatarA": "Tex_xiahouyuan_2_L", 
@@ -1021,7 +1052,8 @@
     "Skill": 32, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "庸将，躲得过我的攻击吗！？"
+    "Word": "庸将，躲得过我的攻击吗！？", 
+    "id": 32
   }, 
   "33": {
     "AvatarA": "Tex_xiahouyuan_3_L", 
@@ -1053,7 +1085,8 @@
     "Skill": 33, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "庸将，躲得过我的攻击吗！？"
+    "Word": "庸将，躲得过我的攻击吗！？", 
+    "id": 33
   }, 
   "34": {
     "AvatarA": "Tex_xushu_1_L", 
@@ -1085,7 +1118,8 @@
     "Skill": 34, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "任何危机都有其破解之法……"
+    "Word": "任何危机都有其破解之法……", 
+    "id": 34
   }, 
   "35": {
     "AvatarA": "Tex_xushu_2_L", 
@@ -1117,7 +1151,8 @@
     "Skill": 35, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "看来是到了让你\\n见识一下我的智谋的时候了！"
+    "Word": "看来是到了让你\\n见识一下我的智谋的时候了！", 
+    "id": 35
   }, 
   "36": {
     "AvatarA": "Tex_xushu_3_L", 
@@ -1149,7 +1184,8 @@
     "Skill": 36, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "看来是到了让你\\n见识一下我的智谋的时候了！"
+    "Word": "看来是到了让你\\n见识一下我的智谋的时候了！", 
+    "id": 36
   }, 
   "37": {
     "AvatarA": "Tex_wangyuanji_1_L", 
@@ -1181,7 +1217,8 @@
     "Skill": 37, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "你骗不过我的眼睛……"
+    "Word": "你骗不过我的眼睛……", 
+    "id": 37
   }, 
   "38": {
     "AvatarA": "Tex_wangyuanji_2_L", 
@@ -1213,7 +1250,8 @@
     "Skill": 38, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "不看透战争的真相的话……\\n这愚蠢的争斗永远无法完结"
+    "Word": "不看透战争的真相的话……\\n这愚蠢的争斗永远无法完结", 
+    "id": 38
   }, 
   "39": {
     "AvatarA": "Tex_wangyuanji_3_L", 
@@ -1245,7 +1283,8 @@
     "Skill": 39, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "不看透战争的真相的话……\\n这愚蠢的争斗永远无法完结"
+    "Word": "不看透战争的真相的话……\\n这愚蠢的争斗永远无法完结", 
+    "id": 39
   }, 
   "40": {
     "AvatarA": "Tex_zhoutai_1_L", 
@@ -1277,7 +1316,8 @@
     "Skill": 40, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "这数百的伤痕\\n每一个都是我的荣耀！"
+    "Word": "这数百的伤痕\\n每一个都是我的荣耀！", 
+    "id": 40
   }, 
   "41": {
     "AvatarA": "Tex_zhoutai_2_L", 
@@ -1309,7 +1349,8 @@
     "Skill": 41, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "身上每多一处伤痕\\n我就会变得更强！"
+    "Word": "身上每多一处伤痕\\n我就会变得更强！", 
+    "id": 41
   }, 
   "42": {
     "AvatarA": "Tex_zhoutai_3_L", 
@@ -1341,7 +1382,8 @@
     "Skill": 42, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "身上每多一处伤痕\\n我就会变得更强！"
+    "Word": "身上每多一处伤痕\\n我就会变得更强！", 
+    "id": 42
   }, 
   "43": {
     "AvatarA": "Tex_huojingling_1_L", 
@@ -1373,7 +1415,8 @@
     "Skill": 43, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "呼呼呼\\n把我抱在怀里可以取暖哦~"
+    "Word": "呼呼呼\\n把我抱在怀里可以取暖哦~", 
+    "id": 43
   }, 
   "44": {
     "AvatarA": "Tex_huojinglingwang_1_L", 
@@ -1405,7 +1448,8 @@
     "Skill": 44, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "熊熊燃烧吧～吾乃……\\n不要把人家当成暖炉啦！！"
+    "Word": "熊熊燃烧吧～吾乃……\\n不要把人家当成暖炉啦！！", 
+    "id": 44
   }, 
   "45": {
     "AvatarA": "Tex_shuijingling_1_L", 
@@ -1437,7 +1481,8 @@
     "Skill": 45, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "恩～啊～找到水源的气息了～"
+    "Word": "恩～啊～找到水源的气息了～", 
+    "id": 45
   }, 
   "46": {
     "AvatarA": "Tex_shuijinglingwang_1_L", 
@@ -1469,7 +1514,8 @@
     "Skill": 46, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "咕噜咕噜……好多水哦……"
+    "Word": "咕噜咕噜……好多水哦……", 
+    "id": 46
   }, 
   "47": {
     "AvatarA": "Tex_shujingling_1_L", 
@@ -1501,7 +1547,8 @@
     "Skill": 47, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "我这里有果实，要吃吗？"
+    "Word": "我这里有果实，要吃吗？", 
+    "id": 47
   }, 
   "48": {
     "AvatarA": "Tex_shujinglingwang_1_L", 
@@ -1533,7 +1580,8 @@
     "Skill": 48, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我这里有好多你珍奇的水果吆~~~"
+    "Word": "我这里有好多你珍奇的水果吆~~~", 
+    "id": 48
   }, 
   "49": {
     "AvatarA": "Tex_leijingling_1_L", 
@@ -1565,7 +1613,8 @@
     "Skill": 49, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "滋滋滋滋…是不是非常酷？"
+    "Word": "滋滋滋滋…是不是非常酷？", 
+    "id": 49
   }, 
   "50": {
     "AvatarA": "Tex_leijinglingwang_1_L", 
@@ -1597,7 +1646,8 @@
     "Skill": 50, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "怎么样\\n我的雷电越来越酷了吧？"
+    "Word": "怎么样\\n我的雷电越来越酷了吧？", 
+    "id": 50
   }, 
   "51": {
     "AvatarA": "Tex_guangjingling_1_L", 
@@ -1629,7 +1679,8 @@
     "Skill": 51, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "我的光芒可以照亮前方的道路"
+    "Word": "我的光芒可以照亮前方的道路", 
+    "id": 51
   }, 
   "52": {
     "AvatarA": "Tex_guangjinglingwang_1_L", 
@@ -1661,7 +1712,8 @@
     "Skill": 52, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我身上的亮光是不是超有趣的？"
+    "Word": "我身上的亮光是不是超有趣的？", 
+    "id": 52
   }, 
   "53": {
     "AvatarA": "Tex_anjingling_1_L", 
@@ -1693,7 +1745,8 @@
     "Skill": 53, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "我可是恶作剧高手哦~"
+    "Word": "我可是恶作剧高手哦~", 
+    "id": 53
   }, 
   "54": {
     "AvatarA": "Tex_anjinglingwang_1_L", 
@@ -1725,7 +1778,8 @@
     "Skill": 54, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我是不是应该被称为恶作剧之王呢？"
+    "Word": "我是不是应该被称为恶作剧之王呢？", 
+    "id": 54
   }, 
   "55": {
     "AvatarA": "Tex_huoshushi_1_L", 
@@ -1757,7 +1811,8 @@
     "Skill": 55, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这火焰的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这火焰的力量\\n与您一同前行吧！", 
+    "id": 55
   }, 
   "56": {
     "AvatarA": "Tex_huoxianzhe_1_L", 
@@ -1789,7 +1844,8 @@
     "Skill": 56, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "火焰变得更炙热了……"
+    "Word": "火焰变得更炙热了……", 
+    "id": 56
   }, 
   "57": {
     "AvatarA": "Tex_shuishushi_1_L", 
@@ -1821,7 +1877,8 @@
     "Skill": 57, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这碧水的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这碧水的力量\\n与您一同前行吧！", 
+    "id": 57
   }, 
   "58": {
     "AvatarA": "Tex_shuixianzhe_1_L", 
@@ -1853,7 +1910,8 @@
     "Skill": 58, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "此刻仿佛\\n听到了水精灵在我耳边呢喃……"
+    "Word": "此刻仿佛\\n听到了水精灵在我耳边呢喃……", 
+    "id": 58
   }, 
   "59": {
     "AvatarA": "Tex_shushushi_1_L", 
@@ -1885,7 +1943,8 @@
     "Skill": 59, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这草木的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这草木的力量\\n与您一同前行吧！", 
+    "id": 59
   }, 
   "60": {
     "AvatarA": "Tex_shuxianzhe_1_L", 
@@ -1917,7 +1976,8 @@
     "Skill": 60, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我仿佛\\n能听到这片森林中所有的声音"
+    "Word": "我仿佛\\n能听到这片森林中所有的声音", 
+    "id": 60
   }, 
   "61": {
     "AvatarA": "Tex_leishushi_1_L", 
@@ -1949,7 +2009,8 @@
     "Skill": 61, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这雷电的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这雷电的力量\\n与您一同前行吧！", 
+    "id": 61
   }, 
   "62": {
     "AvatarA": "Tex_leixianzhe_1_L", 
@@ -1981,7 +2042,8 @@
     "Skill": 62, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "在雷鸣交加中我获得了更强的力量"
+    "Word": "在雷鸣交加中我获得了更强的力量", 
+    "id": 62
   }, 
   "63": {
     "AvatarA": "Tex_guangshushi_1_L", 
@@ -2013,7 +2075,8 @@
     "Skill": 63, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这圣光的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这圣光的力量\\n与您一同前行吧！", 
+    "id": 63
   }, 
   "64": {
     "AvatarA": "Tex_guangxianzhe_1_L", 
@@ -2045,7 +2108,8 @@
     "Skill": 64, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我的法杖时刻为你挥舞"
+    "Word": "我的法杖时刻为你挥舞", 
+    "id": 64
   }, 
   "65": {
     "AvatarA": "Tex_anshushi_1_L", 
@@ -2077,7 +2141,8 @@
     "Skill": 65, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "让我伴随这黑暗的力量\\n与您一同前行吧！"
+    "Word": "让我伴随这黑暗的力量\\n与您一同前行吧！", 
+    "id": 65
   }, 
   "66": {
     "AvatarA": "Tex_anxianzhe_1_L", 
@@ -2109,7 +2174,8 @@
     "Skill": 66, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "黑夜总是让人感觉恐惧"
+    "Word": "黑夜总是让人感觉恐惧", 
+    "id": 66
   }, 
   "67": {
     "AvatarA": "Tex_yandiwuguan_1_L", 
@@ -2141,7 +2207,8 @@
     "Skill": 67, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "这就让你见识一下本大爷的厉害！"
+    "Word": "这就让你见识一下本大爷的厉害！", 
+    "id": 67
   }, 
   "68": {
     "AvatarA": "Tex_yandijiangjun_1_L", 
@@ -2173,7 +2240,8 @@
     "Skill": 68, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "谁敢与我一战！！"
+    "Word": "谁敢与我一战！！", 
+    "id": 68
   }, 
   "69": {
     "AvatarA": "Tex_haidiwuguan_1_L", 
@@ -2205,7 +2273,8 @@
     "Skill": 69, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "看到我那锋利大刀没？"
+    "Word": "看到我那锋利大刀没？", 
+    "id": 69
   }, 
   "70": {
     "AvatarA": "Tex_haidijiangjun_1_L", 
@@ -2237,7 +2306,8 @@
     "Skill": 70, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "与我在此一战吧！！"
+    "Word": "与我在此一战吧！！", 
+    "id": 70
   }, 
   "71": {
     "AvatarA": "Tex_lindiwenguan_1_L", 
@@ -2269,7 +2339,8 @@
     "Skill": 71, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "我会将你行动铭记在史册中"
+    "Word": "我会将你行动铭记在史册中", 
+    "id": 71
   }, 
   "72": {
     "AvatarA": "Tex_lindijunshi_1_L", 
@@ -2301,7 +2372,8 @@
     "Skill": 72, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "你的伟绩我会铭记于心！！"
+    "Word": "你的伟绩我会铭记于心！！", 
+    "id": 72
   }, 
   "73": {
     "AvatarA": "Tex_leidiwenguan_1_L", 
@@ -2333,7 +2405,8 @@
     "Skill": 73, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "闪电啊？听到我的呐喊了吗？"
+    "Word": "闪电啊？听到我的呐喊了吗？", 
+    "id": 73
   }, 
   "74": {
     "AvatarA": "Tex_leidijunshi_1_L", 
@@ -2365,7 +2438,8 @@
     "Skill": 74, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我的闪电可划破长空"
+    "Word": "我的闪电可划破长空", 
+    "id": 74
   }, 
   "75": {
     "AvatarA": "Tex_xiandiwenguan_1_L", 
@@ -2397,7 +2471,8 @@
     "Skill": 75, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "圣光啊！请指引我前行……"
+    "Word": "圣光啊！请指引我前行……", 
+    "id": 75
   }, 
   "76": {
     "AvatarA": "Tex_xiandijunshi_1_L", 
@@ -2429,7 +2504,8 @@
     "Skill": 76, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "这利剑将会斩破黑暗！！"
+    "Word": "这利剑将会斩破黑暗！！", 
+    "id": 76
   }, 
   "77": {
     "AvatarA": "Tex_modiwuguan_1_L", 
@@ -2461,7 +2537,8 @@
     "Skill": 77, 
     "StarLevel": 1, 
     "Type": 0, 
-    "Word": "我的大刀已为你准备多时了！"
+    "Word": "我的大刀已为你准备多时了！", 
+    "id": 77
   }, 
   "78": {
     "AvatarA": "Tex_modijiangjun_1_L", 
@@ -2493,7 +2570,8 @@
     "Skill": 78, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "任何敌人都将成为我刀下的亡魂。"
+    "Word": "任何敌人都将成为我刀下的亡魂。", 
+    "id": 78
   }, 
   "79": {
     "AvatarA": "Tex_chengyuanzhi_1_L", 
@@ -2525,7 +2603,8 @@
     "Skill": 79, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "接下来是谁想成为我的刀下亡魂！"
+    "Word": "接下来是谁想成为我的刀下亡魂！", 
+    "id": 79
   }, 
   "80": {
     "AvatarA": "Tex_chengyuanzhi_2_L", 
@@ -2557,7 +2636,8 @@
     "Skill": 80, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "接下来是谁想成为我的刀下亡魂！"
+    "Word": "接下来是谁想成为我的刀下亡魂！", 
+    "id": 80
   }, 
   "81": {
     "AvatarA": "Tex_zhangmancheng_1_L", 
@@ -2589,7 +2669,8 @@
     "Skill": 81, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "哈哈哈哈！\\n来见识一下我那无敌的军队吧～！"
+    "Word": "哈哈哈哈！\\n来见识一下我那无敌的军队吧～！", 
+    "id": 81
   }, 
   "82": {
     "AvatarA": "Tex_zhangmancheng_2_L", 
@@ -2621,7 +2702,8 @@
     "Skill": 82, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "哈哈哈哈！\\n来见识一下我那无敌的军队吧～！"
+    "Word": "哈哈哈哈！\\n来见识一下我那无敌的军队吧～！", 
+    "id": 82
   }, 
   "83": {
     "AvatarA": "Tex_zhoucang_1_L", 
@@ -2653,7 +2735,8 @@
     "Skill": 83, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "小子！让你看看本大爷的厉害！！"
+    "Word": "小子！让你看看本大爷的厉害！！", 
+    "id": 83
   }, 
   "84": {
     "AvatarA": "Tex_zhoucang_2_L", 
@@ -2685,7 +2768,8 @@
     "Skill": 84, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "小子！让你看看本大爷的厉害！！"
+    "Word": "小子！让你看看本大爷的厉害！！", 
+    "id": 84
   }, 
   "85": {
     "AvatarA": "Tex_guanhai_1_L", 
@@ -2717,7 +2801,8 @@
     "Skill": 85, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "让你们见识见识黄巾军的力量！！"
+    "Word": "让你们见识见识黄巾军的力量！！", 
+    "id": 85
   }, 
   "86": {
     "AvatarA": "Tex_guanhai_2_L", 
@@ -2749,7 +2834,8 @@
     "Skill": 86, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "让你们见识见识黄巾军的力量！！"
+    "Word": "让你们见识见识黄巾军的力量！！", 
+    "id": 86
   }, 
   "87": {
     "AvatarA": "Tex_dawanma_1_L", 
@@ -2781,7 +2867,8 @@
     "Skill": 87, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "你能承受住这份灼热吗！？"
+    "Word": "你能承受住这份灼热吗！？", 
+    "id": 87
   }, 
   "88": {
     "AvatarA": "Tex_chitu_1_L", 
@@ -2813,7 +2900,8 @@
     "Skill": 88, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "燃烧吧，燃烧的更猛烈点！！"
+    "Word": "燃烧吧，燃烧的更猛烈点！！", 
+    "id": 88
   }, 
   "89": {
     "AvatarA": "Tex_lidian_1_L", 
@@ -2845,7 +2933,8 @@
     "Skill": 89, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "作为一军之将，必须时刻保持冷静"
+    "Word": "作为一军之将，必须时刻保持冷静", 
+    "id": 89
   }, 
   "90": {
     "AvatarA": "Tex_lidian_2_L", 
@@ -2877,7 +2966,8 @@
     "Skill": 90, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "将军，凡事还行三思！"
+    "Word": "将军，凡事还行三思！", 
+    "id": 90
   }, 
   "91": {
     "AvatarA": "Tex_mengguma_1_L", 
@@ -2909,7 +2999,8 @@
     "Skill": 91, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "想尝尝我铁蹄的滋味吗？"
+    "Word": "想尝尝我铁蹄的滋味吗？", 
+    "id": 91
   }, 
   "92": {
     "AvatarA": "Tex_songfeng_1_L", 
@@ -2941,7 +3032,8 @@
     "Skill": 92, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "你感受到了这份自然之力了吗？"
+    "Word": "你感受到了这份自然之力了吗？", 
+    "id": 92
   }, 
   "93": {
     "AvatarA": "Tex_wangshuang_1_L", 
@@ -2973,7 +3065,8 @@
     "Skill": 93, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "我王双乃是天下无双！！"
+    "Word": "我王双乃是天下无双！！", 
+    "id": 93
   }, 
   "94": {
     "AvatarA": "Tex_wangshuang_2_L", 
@@ -3005,7 +3098,8 @@
     "Skill": 94, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "我王双乃是天下无双！！"
+    "Word": "我王双乃是天下无双！！", 
+    "id": 94
   }, 
   "95": {
     "AvatarA": "Tex_baizongma_1_L", 
@@ -3037,7 +3131,8 @@
     "Skill": 95, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "你能跟上我的速度吗？"
+    "Word": "你能跟上我的速度吗？", 
+    "id": 95
   }, 
   "96": {
     "AvatarA": "Tex_dilu_1_L", 
@@ -3069,7 +3164,8 @@
     "Skill": 96, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "感觉到我的冲击的力量了吗？"
+    "Word": "感觉到我的冲击的力量了吗？", 
+    "id": 96
   }, 
   "97": {
     "AvatarA": "Tex_zhangliang_1_L", 
@@ -3101,7 +3197,8 @@
     "Skill": 97, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "誓死也要将黄巾的天下发扬光大！"
+    "Word": "誓死也要将黄巾的天下发扬光大！", 
+    "id": 97
   }, 
   "98": {
     "AvatarA": "Tex_zhangliang_2_L", 
@@ -3133,7 +3230,8 @@
     "Skill": 98, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "誓死也要将黄巾的天下发扬光大！"
+    "Word": "誓死也要将黄巾的天下发扬光大！", 
+    "id": 98
   }, 
   "99": {
     "AvatarA": "Tex_dahu_1_L", 
@@ -3165,7 +3263,8 @@
     "Skill": 99, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "你们都将成为我登上王座的基石！"
+    "Word": "你们都将成为我登上王座的基石！", 
+    "id": 99
   }, 
   "100": {
     "AvatarA": "Tex_dahu_2_L", 
@@ -3197,7 +3296,8 @@
     "Skill": 100, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "这王座……如此的摄人心魄"
+    "Word": "这王座……如此的摄人心魄", 
+    "id": 100
   }, 
   "101": {
     "AvatarA": "Tex_guonvwang_1_L", 
@@ -3229,7 +3329,8 @@
     "Skill": 101, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "天下不需要有二个女王，不是吗？"
+    "Word": "天下不需要有二个女王，不是吗？", 
+    "id": 101
   }, 
   "102": {
     "AvatarA": "Tex_guonvwang_2_L", 
@@ -3261,7 +3362,8 @@
     "Skill": 102, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "作为女王理应掌管天下的一切\\n不是吗？"
+    "Word": "作为女王理应掌管天下的一切\\n不是吗？", 
+    "id": 102
   }, 
   "103": {
     "AvatarA": "Tex_guanyinping_1_L", 
@@ -3293,7 +3395,8 @@
     "Skill": 103, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "父亲！您看着女儿的勇资！"
+    "Word": "父亲！您看着女儿的勇资！", 
+    "id": 103
   }, 
   "104": {
     "AvatarA": "Tex_guanyinping_2_L", 
@@ -3325,7 +3428,8 @@
     "Skill": 104, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "父亲！您的意志将由我来继承！！"
+    "Word": "父亲！您的意志将由我来继承！！", 
+    "id": 104
   }, 
   "105": {
     "AvatarA": "Tex_mifuren_1_L", 
@@ -3357,7 +3461,8 @@
     "Skill": 105, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "赵云将军!\\n请务必保护好这个孩子……"
+    "Word": "赵云将军!\\n请务必保护好这个孩子……", 
+    "id": 105
   }, 
   "106": {
     "AvatarA": "Tex_mifuren_2_L", 
@@ -3389,7 +3494,8 @@
     "Skill": 106, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "赵云将军!\\n请务必保护好这个孩子……"
+    "Word": "赵云将军!\\n请务必保护好这个孩子……", 
+    "id": 106
   }, 
   "107": {
     "AvatarA": "Tex_hetaihou_1_L", 
@@ -3421,7 +3527,8 @@
     "Skill": 107, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "只有弁儿\\n才是这汉室王朝的继承者！！"
+    "Word": "只有弁儿\\n才是这汉室王朝的继承者！！", 
+    "id": 107
   }, 
   "108": {
     "AvatarA": "Tex_hetaihou_2_L", 
@@ -3453,7 +3560,8 @@
     "Skill": 108, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "只有弁儿\\n才是这汉室王朝的继承者！！"
+    "Word": "只有弁儿\\n才是这汉室王朝的继承者！！", 
+    "id": 108
   }, 
   "109": {
     "AvatarA": "Tex_ganhuanghou_1_L", 
@@ -3485,7 +3593,8 @@
     "Skill": 109, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "不用担心\\n一定都会有解决之道的……"
+    "Word": "不用担心\\n一定都会有解决之道的……", 
+    "id": 109
   }, 
   "110": {
     "AvatarA": "Tex_ganhuanghou_2_L", 
@@ -3517,7 +3626,8 @@
     "Skill": 110, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "不用担心\\n一定都会有解决之道的……"
+    "Word": "不用担心\\n一定都会有解决之道的……", 
+    "id": 110
   }, 
   "111": {
     "AvatarA": "Tex_huoqiling_1_L", 
@@ -3549,7 +3659,8 @@
     "Skill": 111, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "麒麟中的王者便是我！"
+    "Word": "麒麟中的王者便是我！", 
+    "id": 111
   }, 
   "112": {
     "AvatarA": "Tex_huoqiling_2_L", 
@@ -3581,7 +3692,8 @@
     "Skill": 112, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "我烈焰吐息的温度如何？"
+    "Word": "我烈焰吐息的温度如何？", 
+    "id": 112
   }, 
   "113": {
     "AvatarA": "Tex_xiaoqiao_1_L", 
@@ -3613,7 +3725,8 @@
     "Skill": 113, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "周瑜大人\\n请务必保护好我们的家园……"
+    "Word": "周瑜大人\\n请务必保护好我们的家园……", 
+    "id": 113
   }, 
   "114": {
     "AvatarA": "Tex_xiaoqiao_2_L", 
@@ -3645,7 +3758,8 @@
     "Skill": 114, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "公瑾大人\\n即便是地狱我也将与您相随……"
+    "Word": "公瑾大人\\n即便是地狱我也将与您相随……", 
+    "id": 114
   }, 
   "115": {
     "AvatarA": "Tex_daqiao_1_L", 
@@ -3677,7 +3791,8 @@
     "Skill": 115, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "孙策大人\\n我等待着您胜利凯旋……"
+    "Word": "孙策大人\\n我等待着您胜利凯旋……", 
+    "id": 115
   }, 
   "116": {
     "AvatarA": "Tex_daqiao_2_L", 
@@ -3709,7 +3824,8 @@
     "Skill": 116, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "我会支持着您\\n达到那个梦想彼岸……"
+    "Word": "我会支持着您\\n达到那个梦想彼岸……", 
+    "id": 116
   }, 
   "117": {
     "AvatarA": "Tex_dapeng_1_L", 
@@ -3741,7 +3857,8 @@
     "Skill": 117, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "想尝尝我的雷电的威力吗？"
+    "Word": "想尝尝我的雷电的威力吗？", 
+    "id": 117
   }, 
   "118": {
     "AvatarA": "Tex_dapeng_2_L", 
@@ -3773,7 +3890,8 @@
     "Skill": 118, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "看见我翅膀扇动引起的雷鸣了吗？"
+    "Word": "看见我翅膀扇动引起的雷鸣了吗？", 
+    "id": 118
   }, 
   "119": {
     "AvatarA": "Tex_bulianshi_1_L", 
@@ -3805,7 +3923,8 @@
     "Skill": 119, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "我愿意成为东吴这把利剑的刀鞘"
+    "Word": "我愿意成为东吴这把利剑的刀鞘", 
+    "id": 119
   }, 
   "120": {
     "AvatarA": "Tex_bulianshi_2_L", 
@@ -3837,7 +3956,8 @@
     "Skill": 120, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "东吴的英灵们\\n请保佑孙权大人..."
+    "Word": "东吴的英灵们\\n请保佑孙权大人...", 
+    "id": 120
   }, 
   "121": {
     "AvatarA": "Tex_tianfeng_1_L", 
@@ -3869,7 +3989,8 @@
     "Skill": 121, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "哼哼哼……\\n有必要让你们知道一下我的厉害"
+    "Word": "哼哼哼……\\n有必要让你们知道一下我的厉害", 
+    "id": 121
   }, 
   "122": {
     "AvatarA": "Tex_tianfeng_2_L", 
@@ -3901,7 +4022,8 @@
     "Skill": 122, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "殿下，凡事还请三思而后行啊！"
+    "Word": "殿下，凡事还请三思而后行啊！", 
+    "id": 122
   }, 
   "123": {
     "AvatarA": "Tex_caoren_1_L", 
@@ -3933,7 +4055,8 @@
     "Skill": 123, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "就凭你这点力量也想赢过我！？"
+    "Word": "就凭你这点力量也想赢过我！？", 
+    "id": 123
   }, 
   "124": {
     "AvatarA": "Tex_caoren_2_L", 
@@ -3965,7 +4088,8 @@
     "Skill": 124, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "孟德的天下之道！由我来开辟！！"
+    "Word": "孟德的天下之道！由我来开辟！！", 
+    "id": 124
   }, 
   "125": {
     "AvatarA": "Tex_luxun_1_L", 
@@ -3997,7 +4121,8 @@
     "Skill": 125, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "孙吴之地由我陆逊来守护！"
+    "Word": "孙吴之地由我陆逊来守护！", 
+    "id": 125
   }, 
   "126": {
     "AvatarA": "Tex_luxun_2_L", 
@@ -4029,7 +4154,8 @@
     "Skill": 126, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "只要有我陆逊在\\n你们就休想动我东吴的一草一木！"
+    "Word": "只要有我陆逊在\\n你们就休想动我东吴的一草一木！", 
+    "id": 126
   }, 
   "127": {
     "AvatarA": "Tex_huangyueying_1_L", 
@@ -4061,7 +4187,8 @@
     "Skill": 127, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "孔明大人，请听一下我的计策"
+    "Word": "孔明大人，请听一下我的计策", 
+    "id": 127
   }, 
   "128": {
     "AvatarA": "Tex_huangyueying_2_L", 
@@ -4093,7 +4220,8 @@
     "Skill": 128, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "似乎刚才又有完美计策灵光闪现了"
+    "Word": "似乎刚才又有完美计策灵光闪现了", 
+    "id": 128
   }, 
   "129": {
     "AvatarA": "Tex_sunjian_1_L", 
@@ -4125,7 +4253,8 @@
     "Skill": 129, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "董卓！\\n你的暴虐将由我江东之虎来制裁！"
+    "Word": "董卓！\\n你的暴虐将由我江东之虎来制裁！", 
+    "id": 129
   }, 
   "130": {
     "AvatarA": "Tex_sunjian_2_L", 
@@ -4157,7 +4286,8 @@
     "Skill": 130, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "江东之虎的利齿\\n就用你的身体来深刻体验吧！！！"
+    "Word": "江东之虎的利齿\\n就用你的身体来深刻体验吧！！！", 
+    "id": 130
   }, 
   "131": {
     "AvatarA": "Tex_zhenji_1_L", 
@@ -4189,7 +4319,8 @@
     "Skill": 131, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "即便在乱世也会有爱情的存在"
+    "Word": "即便在乱世也会有爱情的存在", 
+    "id": 131
   }, 
   "132": {
     "AvatarA": "Tex_zhenji_2_L", 
@@ -4221,7 +4352,8 @@
     "Skill": 132, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "让我也为你的霸业\\n出一份绵薄之力吧!"
+    "Word": "让我也为你的霸业\\n出一份绵薄之力吧!", 
+    "id": 132
   }, 
   "133": {
     "AvatarA": "Tex_jiaxu_1_L", 
@@ -4253,7 +4385,8 @@
     "Skill": 133, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "只要有我的智慧在\\n策略将会无穷无尽"
+    "Word": "只要有我的智慧在\\n策略将会无穷无尽", 
+    "id": 133
   }, 
   "134": {
     "AvatarA": "Tex_jiaxu_2_L", 
@@ -4285,7 +4418,8 @@
     "Skill": 134, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "呵呵呵!\\n人心真是简单的东西啊……"
+    "Word": "呵呵呵!\\n人心真是简单的东西啊……", 
+    "id": 134
   }, 
   "135": {
     "AvatarA": "Tex_zhuque_1_L", 
@@ -4317,7 +4451,8 @@
     "Skill": 135, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "燃烧吧！\\n来自地狱的业火将会焚毁一切！！"
+    "Word": "燃烧吧！\\n来自地狱的业火将会焚毁一切！！", 
+    "id": 135
   }, 
   "136": {
     "AvatarA": "Tex_zhuque_2_L", 
@@ -4349,7 +4484,8 @@
     "Skill": 136, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "浴火……重生……"
+    "Word": "浴火……重生……", 
+    "id": 136
   }, 
   "137": {
     "AvatarA": "Tex_zhuque_3_L", 
@@ -4381,7 +4517,8 @@
     "Skill": 137, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "浴火……重生……"
+    "Word": "浴火……重生……", 
+    "id": 137
   }, 
   "138": {
     "AvatarA": "Tex_qinglong_1_L", 
@@ -4413,7 +4550,8 @@
     "Skill": 138, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "咆哮！龙卷！！\\n凡人哟，在神龙之力前绝望吧！！"
+    "Word": "咆哮！龙卷！！\\n凡人哟，在神龙之力前绝望吧！！", 
+    "id": 138
   }, 
   "139": {
     "AvatarA": "Tex_qinglong_2_L", 
@@ -4445,7 +4583,8 @@
     "Skill": 139, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "碧水之心的鼓动……\\n再次感受到了"
+    "Word": "碧水之心的鼓动……\\n再次感受到了", 
+    "id": 139
   }, 
   "140": {
     "AvatarA": "Tex_qinglong_3_L", 
@@ -4477,7 +4616,8 @@
     "Skill": 140, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "碧水之心的鼓动……\\n再次感受到了"
+    "Word": "碧水之心的鼓动……\\n再次感受到了", 
+    "id": 140
   }, 
   "141": {
     "AvatarA": "Tex_xuanwu_1_L", 
@@ -4509,7 +4649,8 @@
     "Skill": 141, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "感受到大地的震怒了吗？"
+    "Word": "感受到大地的震怒了吗？", 
+    "id": 141
   }, 
   "142": {
     "AvatarA": "Tex_xuanwu_2_L", 
@@ -4541,7 +4682,8 @@
     "Skill": 142, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "领悟到这来自大地的力量了吗？"
+    "Word": "领悟到这来自大地的力量了吗？", 
+    "id": 142
   }, 
   "143": {
     "AvatarA": "Tex_xuanwu_3_L", 
@@ -4573,7 +4715,8 @@
     "Skill": 143, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "领悟到这来自大地的力量了吗？"
+    "Word": "领悟到这来自大地的力量了吗？", 
+    "id": 143
   }, 
   "144": {
     "AvatarA": "Tex_baihu_1_L", 
@@ -4605,7 +4748,8 @@
     "Skill": 144, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "雷电啊！！\\n粉碎我面前的敌人吧！"
+    "Word": "雷电啊！！\\n粉碎我面前的敌人吧！", 
+    "id": 144
   }, 
   "145": {
     "AvatarA": "Tex_baihu_2_L", 
@@ -4637,7 +4781,8 @@
     "Skill": 145, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "雷鸣让我全身充满了力量！~"
+    "Word": "雷鸣让我全身充满了力量！~", 
+    "id": 145
   }, 
   "146": {
     "AvatarA": "Tex_baihu_3_L", 
@@ -4669,7 +4814,8 @@
     "Skill": 146, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "雷鸣让我全身充满了力量！~"
+    "Word": "雷鸣让我全身充满了力量！~", 
+    "id": 146
   }, 
   "147": {
     "AvatarA": "Tex_yuqiling_1_L", 
@@ -4701,7 +4847,8 @@
     "Skill": 147, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "圣光啊！听见我的呼唤了吗？"
+    "Word": "圣光啊！听见我的呼唤了吗？", 
+    "id": 147
   }, 
   "148": {
     "AvatarA": "Tex_yuqiling_2_L", 
@@ -4733,7 +4880,8 @@
     "Skill": 148, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "你感受到这神圣之力了吗？"
+    "Word": "你感受到这神圣之力了吗？", 
+    "id": 148
   }, 
   "149": {
     "AvatarA": "Tex_yuqiling_3_L", 
@@ -4765,7 +4913,8 @@
     "Skill": 149, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "你感受到这神圣之力了吗？"
+    "Word": "你感受到这神圣之力了吗？", 
+    "id": 149
   }, 
   "150": {
     "AvatarA": "Tex_lvbu_1_L", 
@@ -4797,7 +4946,8 @@
     "Skill": 150, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "杂碎！从我的眼前消失吧！！"
+    "Word": "杂碎！从我的眼前消失吧！！", 
+    "id": 150
   }, 
   "151": {
     "AvatarA": "Tex_lvbu_2_L", 
@@ -4829,7 +4979,8 @@
     "Skill": 151, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "站在我面前的人啊\\n很快就让你成为那群尸体的同伴！"
+    "Word": "站在我面前的人啊\\n很快就让你成为那群尸体的同伴！", 
+    "id": 151
   }, 
   "152": {
     "AvatarA": "Tex_lvbu_3_L", 
@@ -4861,7 +5012,8 @@
     "Skill": 152, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "站在我面前的人啊\\n很快就让你成为那群尸体的同伴！"
+    "Word": "站在我面前的人啊\\n很快就让你成为那群尸体的同伴！", 
+    "id": 152
   }, 
   "153": {
     "AvatarA": "Tex_zhouyu_1_L", 
@@ -4893,7 +5045,8 @@
     "Skill": 153, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "即便我的身体毁灭\\n也要将东吴之旗插遍天下"
+    "Word": "即便我的身体毁灭\\n也要将东吴之旗插遍天下", 
+    "id": 153
   }, 
   "154": {
     "AvatarA": "Tex_zhouyu_2_L", 
@@ -4925,7 +5078,8 @@
     "Skill": 154, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "孙吴的天下，由我来实现！！"
+    "Word": "孙吴的天下，由我来实现！！", 
+    "id": 154
   }, 
   "155": {
     "AvatarA": "Tex_zhouyu_3_L", 
@@ -4957,7 +5111,8 @@
     "Skill": 155, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "孙吴的天下，由我来实现！！"
+    "Word": "孙吴的天下，由我来实现！！", 
+    "id": 155
   }, 
   "156": {
     "AvatarA": "Tex_xuhuang_1_L", 
@@ -4989,7 +5144,8 @@
     "Skill": 156, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "不要深追！稳健的逐一歼灭敌军！！"
+    "Word": "不要深追！稳健的逐一歼灭敌军！！", 
+    "id": 156
   }, 
   "157": {
     "AvatarA": "Tex_xuhuang_2_L", 
@@ -5021,7 +5177,8 @@
     "Skill": 157, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "将这次胜利献给我们的祖国！\\n魏国万岁！！"
+    "Word": "将这次胜利献给我们的祖国！\\n魏国万岁！！", 
+    "id": 157
   }, 
   "158": {
     "AvatarA": "Tex_xuhuang_3_L", 
@@ -5053,7 +5210,8 @@
     "Skill": 158, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "将这次胜利献给我们的祖国！\\n魏国万岁！！"
+    "Word": "将这次胜利献给我们的祖国！\\n魏国万岁！！", 
+    "id": 158
   }, 
   "159": {
     "AvatarA": "Tex_taishici_1_L", 
@@ -5085,7 +5243,8 @@
     "Skill": 159, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "孙策殿下！\\n我的性命就交由您保管了！"
+    "Word": "孙策殿下！\\n我的性命就交由您保管了！", 
+    "id": 159
   }, 
   "160": {
     "AvatarA": "Tex_taishici_2_L", 
@@ -5117,7 +5276,8 @@
     "Skill": 160, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "不了解真正战场的家伙\\n不可能赢过我！"
+    "Word": "不了解真正战场的家伙\\n不可能赢过我！", 
+    "id": 160
   }, 
   "161": {
     "AvatarA": "Tex_taishici_3_L", 
@@ -5149,7 +5309,8 @@
     "Skill": 161, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "不了解真正战场的家伙\\n不可能赢过我！"
+    "Word": "不了解真正战场的家伙\\n不可能赢过我！", 
+    "id": 161
   }, 
   "162": {
     "AvatarA": "Tex_zhangjiao_1_L", 
@@ -5181,7 +5342,8 @@
     "Skill": 162, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "苍天已死，黄天当立\\n 岁在甲子，天下大吉！"
+    "Word": "苍天已死，黄天当立\\n 岁在甲子，天下大吉！", 
+    "id": 162
   }, 
   "163": {
     "AvatarA": "Tex_zhangjiao_2_L", 
@@ -5213,7 +5375,8 @@
     "Skill": 163, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "以我之真气，合天地之造化\\n雷公助我！"
+    "Word": "以我之真气，合天地之造化\\n雷公助我！", 
+    "id": 163
   }, 
   "164": {
     "AvatarA": "Tex_zhangjiao_3_L", 
@@ -5245,7 +5408,8 @@
     "Skill": 164, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "以我之真气，合天地之造化\\n雷公助我！"
+    "Word": "以我之真气，合天地之造化\\n雷公助我！", 
+    "id": 164
   }, 
   "165": {
     "AvatarA": "Tex_machao_1_L", 
@@ -5277,7 +5441,8 @@
     "Skill": 165, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "胆敢站在我马超面前的任何敌人\\n都会变为尸骸！"
+    "Word": "胆敢站在我马超面前的任何敌人\\n都会变为尸骸！", 
+    "id": 165
   }, 
   "166": {
     "AvatarA": "Tex_machao_2_L", 
@@ -5309,7 +5474,8 @@
     "Skill": 166, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "孟起在此！\\n想来领教一下西凉铁骑的厉害吗！？"
+    "Word": "孟起在此！\\n想来领教一下西凉铁骑的厉害吗！？", 
+    "id": 166
   }, 
   "167": {
     "AvatarA": "Tex_machao_3_L", 
@@ -5341,7 +5507,8 @@
     "Skill": 167, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "孟起在此！\\n想来领教一下西凉铁骑的厉害吗！？"
+    "Word": "孟起在此！\\n想来领教一下西凉铁骑的厉害吗！？", 
+    "id": 167
   }, 
   "168": {
     "AvatarA": "Tex_guanyu_1_L", 
@@ -5373,7 +5540,8 @@
     "Skill": 168, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "这一身的武勇\\n只为了兄长的梦想而战！"
+    "Word": "这一身的武勇\\n只为了兄长的梦想而战！", 
+    "id": 168
   }, 
   "169": {
     "AvatarA": "Tex_guanyu_2_L", 
@@ -5405,7 +5573,8 @@
     "Skill": 169, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "没有人敢向我关羽挑战了吗！！！"
+    "Word": "没有人敢向我关羽挑战了吗！！！", 
+    "id": 169
   }, 
   "170": {
     "AvatarA": "Tex_guanyu_3_L", 
@@ -5437,7 +5606,8 @@
     "Skill": 170, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "没有人敢向我关羽挑战了吗！！！"
+    "Word": "没有人敢向我关羽挑战了吗！！！", 
+    "id": 170
   }, 
   "171": {
     "AvatarA": "Tex_huoduanjian_1_L", 
@@ -5469,7 +5639,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感受到火焰的力量了吗？"
+    "Word": "你感受到火焰的力量了吗？", 
+    "id": 171
   }, 
   "172": {
     "AvatarA": "Tex_shuiduanjian_1_L", 
@@ -5501,7 +5672,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感受到水流的力量了吗？"
+    "Word": "你感受到水流的力量了吗？", 
+    "id": 172
   }, 
   "173": {
     "AvatarA": "Tex_shuduanjian_1_L", 
@@ -5533,7 +5705,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感觉到翠树的力量了吗？"
+    "Word": "你感觉到翠树的力量了吗？", 
+    "id": 173
   }, 
   "174": {
     "AvatarA": "Tex_leiduanjian_1_L", 
@@ -5565,7 +5738,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感受到雷电的力量了吗？"
+    "Word": "你感受到雷电的力量了吗？", 
+    "id": 174
   }, 
   "175": {
     "AvatarA": "Tex_guangduanjian_1_L", 
@@ -5597,7 +5771,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感受到光明的力量了吗？"
+    "Word": "你感受到光明的力量了吗？", 
+    "id": 175
   }, 
   "176": {
     "AvatarA": "Tex_anduanjian_1_L", 
@@ -5629,7 +5804,8 @@
     "Skill": 0, 
     "StarLevel": 1, 
     "Type": 2, 
-    "Word": "你感受到黑暗的力量了吗？"
+    "Word": "你感受到黑暗的力量了吗？", 
+    "id": 176
   }, 
   "177": {
     "AvatarA": "Tex_huoqingjia_1_L", 
@@ -5661,7 +5837,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这烈火将会给你来到新的力量！"
+    "Word": "这烈火将会给你来到新的力量！", 
+    "id": 177
   }, 
   "178": {
     "AvatarA": "Tex_shuiqingjia_1_L", 
@@ -5693,7 +5870,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这碧水将会给你来到新的力量！"
+    "Word": "这碧水将会给你来到新的力量！", 
+    "id": 178
   }, 
   "179": {
     "AvatarA": "Tex_shuqingjia_1_L", 
@@ -5725,7 +5903,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这翠树将会给你来到新的力量！"
+    "Word": "这翠树将会给你来到新的力量！", 
+    "id": 179
   }, 
   "180": {
     "AvatarA": "Tex_leiqingjia_1_L", 
@@ -5757,7 +5936,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这轰雷将会给你来到新的力量！"
+    "Word": "这轰雷将会给你来到新的力量！", 
+    "id": 180
   }, 
   "181": {
     "AvatarA": "Tex_guangqingjia_1_L", 
@@ -5789,7 +5969,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这白光将会给你来到新的力量！"
+    "Word": "这白光将会给你来到新的力量！", 
+    "id": 181
   }, 
   "182": {
     "AvatarA": "Tex_anqingjia_1_L", 
@@ -5821,7 +6002,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 2, 
-    "Word": "这黑暗将会给你来到新的力量！"
+    "Word": "这黑暗将会给你来到新的力量！", 
+    "id": 182
   }, 
   "183": {
     "AvatarA": "Tex_huochangjian_1_L", 
@@ -5853,7 +6035,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的火神之力可以让你更加强大!"
+    "Word": "我的火神之力可以让你更加强大!", 
+    "id": 183
   }, 
   "184": {
     "AvatarA": "Tex_shuichangjian_1_L", 
@@ -5885,7 +6068,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的水神之力可以让你更加强大!"
+    "Word": "我的水神之力可以让你更加强大!", 
+    "id": 184
   }, 
   "185": {
     "AvatarA": "Tex_shuchangjian_1_L", 
@@ -5917,7 +6101,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的树神之力可以让你更加强大!"
+    "Word": "我的树神之力可以让你更加强大!", 
+    "id": 185
   }, 
   "186": {
     "AvatarA": "Tex_leichangjian_1_L", 
@@ -5949,7 +6134,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的雷神之力可以让你更加强大!"
+    "Word": "我的雷神之力可以让你更加强大!", 
+    "id": 186
   }, 
   "187": {
     "AvatarA": "Tex_guangchangjian_1_L", 
@@ -5981,7 +6167,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的光神之力可以让你更加强大!"
+    "Word": "我的光神之力可以让你更加强大!", 
+    "id": 187
   }, 
   "188": {
     "AvatarA": "Tex_anchangjian_1_L", 
@@ -6013,7 +6200,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "我的暗神之力可以让你更加强大!"
+    "Word": "我的暗神之力可以让你更加强大!", 
+    "id": 188
   }, 
   "189": {
     "AvatarA": "Tex_huozhongjia_1_L", 
@@ -6045,7 +6233,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的火焰之力!"
+    "Word": "我将赐予你终极的火焰之力!", 
+    "id": 189
   }, 
   "190": {
     "AvatarA": "Tex_shuizhongjia_1_L", 
@@ -6077,7 +6266,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的水流之力!"
+    "Word": "我将赐予你终极的水流之力!", 
+    "id": 190
   }, 
   "191": {
     "AvatarA": "Tex_shuzhongjia_1_L", 
@@ -6109,7 +6299,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的翠树之力!"
+    "Word": "我将赐予你终极的翠树之力!", 
+    "id": 191
   }, 
   "192": {
     "AvatarA": "Tex_leizhongjia_1_L", 
@@ -6141,7 +6332,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的雷电之力!"
+    "Word": "我将赐予你终极的雷电之力!", 
+    "id": 192
   }, 
   "193": {
     "AvatarA": "Tex_guangzhongjia_1_L", 
@@ -6173,7 +6365,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的光明之力!"
+    "Word": "我将赐予你终极的光明之力!", 
+    "id": 193
   }, 
   "194": {
     "AvatarA": "Tex_anzhongjia_1_L", 
@@ -6205,7 +6398,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我将赐予你终极的黑暗之力!"
+    "Word": "我将赐予你终极的黑暗之力!", 
+    "id": 194
   }, 
   "195": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6237,7 +6431,8 @@
     "Skill": 0, 
     "StarLevel": 2, 
     "Type": 3, 
-    "Word": "瞧见我身上的钻石没？\\n可值钱了"
+    "Word": "瞧见我身上的钻石没？\\n可值钱了", 
+    "id": 195
   }, 
   "196": {
     "AvatarA": "Tex_tongzi_2_L", 
@@ -6269,7 +6464,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 3, 
-    "Word": "看到地上那些钻石没？\\n全都是我的！"
+    "Word": "看到地上那些钻石没？\\n全都是我的！", 
+    "id": 196
   }, 
   "197": {
     "AvatarA": "Tex_tongzi_3_L", 
@@ -6301,7 +6497,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 3, 
-    "Word": "区区一些钻石\\n岂是我全部的财力！！！"
+    "Word": "区区一些钻石\\n岂是我全部的财力！！！", 
+    "id": 197
   }, 
   "198": {
     "AvatarA": "Tex_yuzhuan_1_L", 
@@ -6333,7 +6530,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 1, 
-    "Word": "你想从我身上获得经验吗？"
+    "Word": "你想从我身上获得经验吗？", 
+    "id": 198
   }, 
   "199": {
     "AvatarA": "Tex_yuzhuan_2_L", 
@@ -6365,7 +6563,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 1, 
-    "Word": "不是所有人\\n都能从我这里获得经验的！~"
+    "Word": "不是所有人\\n都能从我这里获得经验的！~", 
+    "id": 199
   }, 
   "200": {
     "AvatarA": "Tex_yuzhuan_3_L", 
@@ -6397,7 +6596,8 @@
     "Skill": 0, 
     "StarLevel": 5, 
     "Type": 1, 
-    "Word": "凡是遇见我的人\\n一生都将会非常幸运的。"
+    "Word": "凡是遇见我的人\\n一生都将会非常幸运的。", 
+    "id": 200
   }, 
   "201": {
     "AvatarA": "Tex_baoxiangguai_1_L", 
@@ -6429,7 +6629,8 @@
     "Skill": 0, 
     "StarLevel": 3, 
     "Type": 2, 
-    "Word": "卡吃卡吃……"
+    "Word": "卡吃卡吃……", 
+    "id": 201
   }, 
   "202": {
     "AvatarA": "Tex_baoxiangguai_2_L", 
@@ -6461,7 +6662,8 @@
     "Skill": 0, 
     "StarLevel": 4, 
     "Type": 2, 
-    "Word": "我的尖牙锋利不？"
+    "Word": "我的尖牙锋利不？", 
+    "id": 202
   }, 
   "203": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6493,7 +6695,8 @@
     "Skill": 203, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "无论在怎样的绝境\\n一定都会有通向胜利的道路！"
+    "Word": "无论在怎样的绝境\\n一定都会有通向胜利的道路！", 
+    "id": 203
   }, 
   "204": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6525,7 +6728,8 @@
     "Skill": 204, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "只要能够胜利\\n老朽这条性命又算得上什么！"
+    "Word": "只要能够胜利\\n老朽这条性命又算得上什么！", 
+    "id": 204
   }, 
   "205": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6557,7 +6761,8 @@
     "Skill": 205, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "只要能够胜利\\n老朽这条性命又算得上什么！"
+    "Word": "只要能够胜利\\n老朽这条性命又算得上什么！", 
+    "id": 205
   }, 
   "206": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6589,7 +6794,8 @@
     "Skill": 206, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "小看女人可是会吃苦头的哟～"
+    "Word": "小看女人可是会吃苦头的哟～", 
+    "id": 206
   }, 
   "207": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6621,7 +6827,8 @@
     "Skill": 207, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "西凉蛮族！\\n不要小看女人的决心！！"
+    "Word": "西凉蛮族！\\n不要小看女人的决心！！", 
+    "id": 207
   }, 
   "208": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6653,7 +6860,8 @@
     "Skill": 208, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "西凉蛮族！\\n不要小看女人的决心！！"
+    "Word": "西凉蛮族！\\n不要小看女人的决心！！", 
+    "id": 208
   }, 
   "209": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6685,7 +6893,8 @@
     "Skill": 209, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "直到最后也要为荣耀而战！"
+    "Word": "直到最后也要为荣耀而战！", 
+    "id": 209
   }, 
   "210": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6717,7 +6926,8 @@
     "Skill": 210, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "去吧，一定要胜利凯旋哦！"
+    "Word": "去吧，一定要胜利凯旋哦！", 
+    "id": 210
   }, 
   "211": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6749,7 +6959,8 @@
     "Skill": 211, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "去吧，一定要胜利凯旋哦！"
+    "Word": "去吧，一定要胜利凯旋哦！", 
+    "id": 211
   }, 
   "212": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6781,7 +6992,8 @@
     "Skill": 212, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "小子！你死定了！\\n遇上本大爷是你的不幸！"
+    "Word": "小子！你死定了！\\n遇上本大爷是你的不幸！", 
+    "id": 212
   }, 
   "213": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6813,7 +7025,8 @@
     "Skill": 213, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "畏首畏尾的杂碎们赶紧给本大爷\\n闪开！"
+    "Word": "畏首畏尾的杂碎们赶紧给本大爷\\n闪开！", 
+    "id": 213
   }, 
   "214": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6845,7 +7058,8 @@
     "Skill": 214, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "畏首畏尾的杂碎们赶紧给本大爷\\n闪开！"
+    "Word": "畏首畏尾的杂碎们赶紧给本大爷\\n闪开！", 
+    "id": 214
   }, 
   "215": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6877,7 +7091,8 @@
     "Skill": 215, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "谁也无法阻挡我的进击！！"
+    "Word": "谁也无法阻挡我的进击！！", 
+    "id": 215
   }, 
   "216": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6909,7 +7124,8 @@
     "Skill": 216, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "哈哈哈哈哈\\n曹操军就尽是这等货色吗！"
+    "Word": "哈哈哈哈哈\\n曹操军就尽是这等货色吗！", 
+    "id": 216
   }, 
   "217": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6941,7 +7157,8 @@
     "Skill": 217, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "哈哈哈哈哈\\n曹操军就尽是这等货色吗！"
+    "Word": "哈哈哈哈哈\\n曹操军就尽是这等货色吗！", 
+    "id": 217
   }, 
   "218": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -6973,7 +7190,8 @@
     "Skill": 218, 
     "StarLevel": 2, 
     "Type": 0, 
-    "Word": "只要有我和颜良在\\n曹军不足为据！"
+    "Word": "只要有我和颜良在\\n曹军不足为据！", 
+    "id": 218
   }, 
   "219": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7005,7 +7223,8 @@
     "Skill": 219, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "狗贼曹操！\\n我要让你血债血偿！！"
+    "Word": "狗贼曹操！\\n我要让你血债血偿！！", 
+    "id": 219
   }, 
   "220": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7037,7 +7256,8 @@
     "Skill": 220, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "狗贼曹操！\\n我要让你血债血偿！！"
+    "Word": "狗贼曹操！\\n我要让你血债血偿！！", 
+    "id": 220
   }, 
   "221": {
     "AvatarA": "Tex_zhurong_1_L", 
@@ -7069,7 +7289,8 @@
     "Skill": 221, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "这样的战斗也不错呢～"
+    "Word": "这样的战斗也不错呢～", 
+    "id": 221
   }, 
   "222": {
     "AvatarA": "Tex_zhurong_2_L", 
@@ -7101,7 +7322,8 @@
     "Skill": 222, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "这就让你们知道火神一族的力量！"
+    "Word": "这就让你们知道火神一族的力量！", 
+    "id": 222
   }, 
   "223": {
     "AvatarA": "Tex_zhurong_3_L", 
@@ -7133,7 +7355,8 @@
     "Skill": 223, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "这就让你们知道火神一族的力量！"
+    "Word": "这就让你们知道火神一族的力量！", 
+    "id": 223
   }, 
   "224": {
     "AvatarA": "Tex_caiwenji_1_L", 
@@ -7165,7 +7388,8 @@
     "Skill": 224, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "父亲留下的诗文\\n至今在我心中涌动……"
+    "Word": "父亲留下的诗文\\n至今在我心中涌动……", 
+    "id": 224
   }, 
   "225": {
     "AvatarA": "Tex_caiwenji_2_L", 
@@ -7197,7 +7421,8 @@
     "Skill": 225, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "请让我来治愈你的满心创伤吧…"
+    "Word": "请让我来治愈你的满心创伤吧…", 
+    "id": 225
   }, 
   "226": {
     "AvatarA": "Tex_caiwenji_3_L", 
@@ -7229,7 +7454,8 @@
     "Skill": 226, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "请让我来治愈你的满心创伤吧…"
+    "Word": "请让我来治愈你的满心创伤吧…", 
+    "id": 226
   }, 
   "227": {
     "AvatarA": "Tex_zhaoyun_1_L", 
@@ -7261,7 +7487,8 @@
     "Skill": 227, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "你能跟上我长枪的流动嘛？"
+    "Word": "你能跟上我长枪的流动嘛？", 
+    "id": 227
   }, 
   "228": {
     "AvatarA": "Tex_zhaoyun_2_L", 
@@ -7293,7 +7520,8 @@
     "Skill": 228, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "现在就让你见识一下\\n我赵子龙这一世一代的决意！！"
+    "Word": "现在就让你见识一下\\n我赵子龙这一世一代的决意！！", 
+    "id": 228
   }, 
   "229": {
     "AvatarA": "Tex_zhaoyun_3_L", 
@@ -7325,7 +7553,8 @@
     "Skill": 229, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "现在就让你见识一下\\n我赵子龙这一世一代的决意！！"
+    "Word": "现在就让你见识一下\\n我赵子龙这一世一代的决意！！", 
+    "id": 229
   }, 
   "230": {
     "AvatarA": "Tex_xuchu_1_L", 
@@ -7357,7 +7586,8 @@
     "Skill": 230, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "黄巾小贼，快给本大爷闪开！"
+    "Word": "黄巾小贼，快给本大爷闪开！", 
+    "id": 230
   }, 
   "231": {
     "AvatarA": "Tex_xuchu_2_L", 
@@ -7389,7 +7619,8 @@
     "Skill": 231, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "曹操殿下的性命，由我来保护！"
+    "Word": "曹操殿下的性命，由我来保护！", 
+    "id": 231
   }, 
   "232": {
     "AvatarA": "Tex_xuchu_3_L", 
@@ -7421,7 +7652,8 @@
     "Skill": 232, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "曹操殿下的性命，由我来保护！"
+    "Word": "曹操殿下的性命，由我来保护！", 
+    "id": 232
   }, 
   "233": {
     "AvatarA": "Tex_xiahoudun_1_L", 
@@ -7453,7 +7685,8 @@
     "Skill": 233, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "小看独眼的话\\n你将死无葬身之地！"
+    "Word": "小看独眼的话\\n你将死无葬身之地！", 
+    "id": 233
   }, 
   "234": {
     "AvatarA": "Tex_xiahoudun_2_L", 
@@ -7485,7 +7718,8 @@
     "Skill": 234, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "孟德！你的天下由我来为你开辟！"
+    "Word": "孟德！你的天下由我来为你开辟！", 
+    "id": 234
   }, 
   "235": {
     "AvatarA": "Tex_xiahoudun_3_L", 
@@ -7517,7 +7751,8 @@
     "Skill": 235, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "孟德！你的天下由我来为你开辟！"
+    "Word": "孟德！你的天下由我来为你开辟！", 
+    "id": 235
   }, 
   "236": {
     "AvatarA": "Tex_zhangfei_1_L", 
@@ -7549,7 +7784,8 @@
     "Skill": 236, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "我乃张翼德！\\n想死的家伙给我站出来！！"
+    "Word": "我乃张翼德！\\n想死的家伙给我站出来！！", 
+    "id": 236
   }, 
   "237": {
     "AvatarA": "Tex_zhangfei_2_L", 
@@ -7581,7 +7817,8 @@
     "Skill": 237, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "万夫不挡张翼德说的正是老子！\\n谁人敢上前一步来！！"
+    "Word": "万夫不挡张翼德说的正是老子！\\n谁人敢上前一步来！！", 
+    "id": 237
   }, 
   "238": {
     "AvatarA": "Tex_zhangfei_3_L", 
@@ -7613,7 +7850,8 @@
     "Skill": 238, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "万夫不挡张翼德说的正是老子！\\n谁人敢上前一步来！！"
+    "Word": "万夫不挡张翼德说的正是老子！\\n谁人敢上前一步来！！", 
+    "id": 238
   }, 
   "239": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7645,7 +7883,8 @@
     "Skill": 239, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "在我的智略面前\\n你们就如孩童一般……"
+    "Word": "在我的智略面前\\n你们就如孩童一般……", 
+    "id": 239
   }, 
   "240": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7677,7 +7916,8 @@
     "Skill": 240, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "曹公哟\\n发扬光大魏国就交由司马一组吧！"
+    "Word": "曹公哟\\n发扬光大魏国就交由司马一组吧！", 
+    "id": 240
   }, 
   "241": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7709,7 +7949,8 @@
     "Skill": 241, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "曹公哟\\n发扬光大魏国就交由司马一组吧！"
+    "Word": "曹公哟\\n发扬光大魏国就交由司马一组吧！", 
+    "id": 241
   }, 
   "242": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7741,7 +7982,8 @@
     "Skill": 242, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "曹、孙加上刘\\n这便是三分天下之主"
+    "Word": "曹、孙加上刘\\n这便是三分天下之主", 
+    "id": 242
   }, 
   "243": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7773,7 +8015,8 @@
     "Skill": 243, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "我仿佛已经看见了蜀国的天下……"
+    "Word": "我仿佛已经看见了蜀国的天下……", 
+    "id": 243
   }, 
   "244": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7805,7 +8048,8 @@
     "Skill": 244, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "我仿佛已经看见了蜀国的天下……"
+    "Word": "我仿佛已经看见了蜀国的天下……", 
+    "id": 244
   }, 
   "245": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7837,7 +8081,8 @@
     "Skill": 245, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "没有人敢出来和我一战了吗！！"
+    "Word": "没有人敢出来和我一战了吗！！", 
+    "id": 245
   }, 
   "246": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7869,7 +8114,8 @@
     "Skill": 246, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "杂鱼！不要挡我魏延大人的道！"
+    "Word": "杂鱼！不要挡我魏延大人的道！", 
+    "id": 246
   }, 
   "247": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7901,7 +8147,8 @@
     "Skill": 247, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "杂鱼！不要挡我魏延大人的道！"
+    "Word": "杂鱼！不要挡我魏延大人的道！", 
+    "id": 247
   }, 
   "248": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7933,7 +8180,8 @@
     "Skill": 248, 
     "StarLevel": 3, 
     "Type": 0, 
-    "Word": "要是把我黄忠当成老将\\n可是要吃苦头的！"
+    "Word": "要是把我黄忠当成老将\\n可是要吃苦头的！", 
+    "id": 248
   }, 
   "249": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7965,7 +8213,8 @@
     "Skill": 249, 
     "StarLevel": 4, 
     "Type": 0, 
-    "Word": "来吧！\\n就让老朽成为年轻一代的引路石"
+    "Word": "来吧！\\n就让老朽成为年轻一代的引路石", 
+    "id": 249
   }, 
   "250": {
     "AvatarA": "Tex_tongzi_1_L", 
@@ -7997,6 +8246,7 @@
     "Skill": 250, 
     "StarLevel": 5, 
     "Type": 0, 
-    "Word": "来吧！\\n就让老朽成为年轻一代的引路石"
+    "Word": "来吧！\\n就让老朽成为年轻一代的引路石", 
+    "id": 250
   }
 }

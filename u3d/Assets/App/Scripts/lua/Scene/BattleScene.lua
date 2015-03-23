@@ -9,6 +9,11 @@ local function create()
     ui_top.hiden()
     local ui_bottom = require("GUI/ui_system_bottom")
     ui_bottom.hiden()
+
+    local battle_lua = require("Battle.battle")
+    battle_lua.initdata()
+    battle_lua.load_self()
+    battle_lua.load_enemy(Battle.quest_table.id , Battle.gate)
     
     local ui_battle = require("GUI/ui_battle")
     ui_battle.create()
