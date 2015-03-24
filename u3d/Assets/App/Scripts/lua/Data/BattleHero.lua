@@ -12,13 +12,15 @@ local function createBattleHero( hero )
     battlehero.defence = hero.defence
     battlehero.recover = hero.recover
     battlehero.hp = hero.maxhp
+    battlehero.dead = false
     battlehero.maxhp = hero.maxhp
     battlehero.sp = 0
     battlehero.maxsp = 100
 
-    local res = HeroTable[""..hero.tableid].Model
+    local res = HeroTable[hero.tableid].Model
     res = string.sub(res,7,#res)
     battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
+    battlehero.object:AddComponent("GfxObject")
     return battlehero
 end
 
@@ -34,9 +36,10 @@ local function createBattleEnemy( hero )
     battlehero.sp = 0
     battlehero.maxsp = 100
 
-    local res = HeroTable[""..hero.HeroID].Model
+    local res = HeroTable[hero.HeroID].Model
     res = string.sub(res,7,#res)
     battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
+    battlehero.object:AddComponent("GfxObject")
     return battlehero
 end
 

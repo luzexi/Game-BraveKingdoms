@@ -4,6 +4,7 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 
+local battle_lua = require 'Battle.battle'
 
 local main_obj = nil
 local battle_obj = nil
@@ -118,7 +119,7 @@ local function setInfo( index ,  battle_hero )
         frame_icon.gameObject:SetActive(true)
         frame_empty.gameObject:SetActive(false)
 
-        local table = HeroTable[""..battle_hero.tableid]
+        local table = HeroTable[battle_hero.tableid]
 
         icon_img.gameObject:GetComponent("RawImage").texture = Resources.Load("AvatarM/"..table.AvatarM)
 
@@ -144,25 +145,7 @@ local function create()
             return main_obj
         end
 
-        battle_obj = GameObject.Instantiate(Resources.Load("Battle/BattleObj"))
-        battle_obj.transform.localPosition = Vector3.zero;
-        battle_obj.transform.localScale = Vector3.one;
-
-        local scene = GameObject.Instantiate(Resources.Load("Battle/Scene/scene_1"))
-        scene.transform.parent = battle_obj.transform
-        scene.transform.localPosition = Vector3.zero
-        scene.transform.localScale = Vector3.one
-
-        local right_pos = {}
-        for i = 1 , 6 , 1 do 
-            table.insert(right_pos , #right_pos+1 , battle_obj.transform:Find("RightPos/pos"..i))
-        end
-        local left_pos = {}
-        for i = 1 , 6 , 1 do 
-            table.insert(left_pos , #left_pos+1 , battle_obj.transform:Find("LeftPos/pos"..i))
-        end
-
-        local battle_camera = battle_obj.transform:Find("BattleCamera"):GetComponent("Camera")
+        local battle_camera = Battle.node.transform:Find("BattleCamera"):GetComponent("Camera")
 
         main_obj = GameObject.Instantiate(Resources.Load("GUI/ui_battle"))
         main_obj.name = ui_name
@@ -179,9 +162,6 @@ local function create()
         local i = 1
         for i = 1 , #Battle.heros , 1 do
             if Battle.heros[i] ~= nil then
-                Battle.heros[i].object.transform.parent = right_pos[i]
-                Battle.heros[i].object.transform.localPosition = Vector3.zero
-                Battle.heros[i].object.transform.localScale = Vector3.one
                 setInfo(i,Battle.heros[i])
                 local icon_btn = main_obj.transform:Find("icon/icon"..i.."/btn")
                 icon_btn = UI_Event.Get(icon_btn,""..i)
@@ -191,15 +171,6 @@ local function create()
                 end
             else
                 setInfo(i,nil)
-            end
-        end
-
-        -- set enemy model position
-        for i = 1 , #Battle.enemys , 1 do
-            if Battle.enemys[i] ~= nil then
-                Battle.enemys[i].object.transform.parent = left_pos[i]
-                Battle.enemys[i].object.transform.localPosition = Vector3.zero
-                Battle.enemys[i].object.transform.localScale = Vector3.one
             end
         end
 
@@ -231,6 +202,10 @@ local function create()
     end
 
     main_obj = createObj()
+
+    battle_lua.move_start_self()
+    battle_lua.move_start_enemy()
+    setTarget(Battle.get_targetIndex())
 end
 
 local function updateInfo( index , battle_hero )
