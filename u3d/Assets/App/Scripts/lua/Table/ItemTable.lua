@@ -14,7 +14,7 @@ local function create()
     local tmptable = json.decode(str)
 
     for key , val in pairs(tmptable) do
-        ItemTable[""..val.id] = val
+        ItemTable[val.id] = val
     end
     -- print(ItemTable[""..1]["Name"])
 end

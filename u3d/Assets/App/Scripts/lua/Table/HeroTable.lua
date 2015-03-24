@@ -14,7 +14,8 @@ local function create()
     local tmptable = json.decode(str)
 
     for key , val in pairs(tmptable) do
-        HeroTable[""..val.id] = val
+        HeroTable[val.id] = val
+        -- HeroTable[""..val.id] = val
     end
 
     -- print(HeroTable[""..1]["Name"])

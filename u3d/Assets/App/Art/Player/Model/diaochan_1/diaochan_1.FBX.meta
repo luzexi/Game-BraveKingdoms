@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 7d48216f52854e444821478099c05a81
 ModelImporter:
-  serializedVersion: 15
+  serializedVersion: 16
   fileIDToRecycleName:
     100000: arm1_L_Bone004
     100002: arm1_r_Bone004
@@ -106,6 +106,7 @@ ModelImporter:
     7400000: skill
     7400002: attack
     7400004: idle
+    7400006: move
     9500000: //RootNode
     11100000: //RootNode
     13700000: diaochan_hair_model
@@ -119,13 +120,17 @@ ModelImporter:
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
     animationCompression: 1
     animationRotationError: .5
     animationPositionError: .5
     animationScaleError: .5
     animationWrapMode: 0
+    extraExposedTransformPaths: []
     clipAnimations:
-    - name: idle
+    - serializedVersion: 16
+      name: idle
       takeName: Take 001
       firstFrame: 0
       lastFrame: 45
@@ -134,6 +139,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 1
+      loopTime: 1
       loopBlend: 1
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -145,8 +151,12 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
+      events: []
       transformMask: []
-    - name: attack
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: attack
       takeName: Take 001
       firstFrame: 100
       lastFrame: 144
@@ -155,6 +165,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -166,8 +177,12 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
+      events: []
       transformMask: []
-    - name: skill
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: skill
       takeName: Take 001
       firstFrame: 100
       lastFrame: 144
@@ -176,6 +191,7 @@ ModelImporter:
       level: 0
       cycleOffset: 0
       loop: 0
+      loopTime: 0
       loopBlend: 0
       loopBlendOrientation: 0
       loopBlendPositionY: 0
@@ -187,7 +203,127 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
+      events: []
       transformMask: []
+      maskType: 0
+      maskSource: {instanceID: 0}
+    - serializedVersion: 16
+      name: move
+      takeName: Take 001
+      firstFrame: 0
+      lastFrame: .100000001
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: box01
+        weight: 1
+      - path: box01/box02
+        weight: 1
+      - path: box01/box02/arm1_L_Bone004
+        weight: 1
+      - path: box01/box02/arm1_L_Bone004/arm_L_Bone005
+        weight: 1
+      - path: box01/box02/arm1_L_Bone004/arm_L_Bone005/hand_L_Bone006
+        weight: 1
+      - path: box01/box02/arm1_L_Bone004/arm_L_Bone005/hand_L_Bone006/Bone007
+        weight: 1
+      - path: box01/box02/arm1_r_Bone004
+        weight: 1
+      - path: box01/box02/arm1_r_Bone004/arm_r_Bone005
+        weight: 1
+      - path: box01/box02/arm1_r_Bone004/arm_r_Bone005/hand_r_Bone006
+        weight: 1
+      - path: box01/box02/arm1_r_Bone004/arm_r_Bone005/hand_r_Bone006/Bone007 1
+        weight: 1
+      - path: box01/box02/qun_L_Bone019
+        weight: 1
+      - path: box01/box02/qun_L_Bone019/qun_L_Bone020
+        weight: 1
+      - path: box01/box02/qun_L_Bone019/qun_L_Bone020/Bone021
+        weight: 1
+      - path: box01/box02/qun_r_Bone019
+        weight: 1
+      - path: box01/box02/qun_r_Bone019/qun_r_Bone020
+        weight: 1
+      - path: box01/box02/qun_r_Bone019/qun_r_Bone020/Bone021 1
+        weight: 1
+      - path: box01/box02/shanzi_L_Bone030
+        weight: 1
+      - path: box01/box02/shanzi_L_Bone030/Bone031
+        weight: 1
+      - path: box01/box02/shanzi_r_Bone030
+        weight: 1
+      - path: box01/box02/shanzi_r_Bone030/Bone031 1
+        weight: 1
+      - path: box01/box02/xiong_Bone001
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/Bone003
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_Bone008
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_Bone008/hair_Bone009
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_Bone008/hair_Bone009/Bone010
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_L_Bone022
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_L_Bone022/hair_L_Bone023
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_L_Bone022/hair_L_Bone023/Bone024
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_r_Bone022
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_r_Bone022/hair_r_Bone023
+        weight: 1
+      - path: box01/box02/xiong_Bone001/head_Bone002/hair_r_Bone022/hair_r_Bone023/Bone024
+          1
+        weight: 1
+      - path: box01/leg1_L_Bone015
+        weight: 1
+      - path: box01/leg1_L_Bone015/leg_L_Bone016
+        weight: 1
+      - path: box01/leg1_L_Bone015/leg_L_Bone016/foot_L_Bone017
+        weight: 1
+      - path: box01/leg1_L_Bone015/leg_L_Bone016/foot_L_Bone017/Bone018
+        weight: 1
+      - path: box01/leg1_r_Bone015
+        weight: 1
+      - path: box01/leg1_r_Bone015/leg_r_Bone016
+        weight: 1
+      - path: box01/leg1_r_Bone015/leg_r_Bone016/foot_r_Bone017
+        weight: 1
+      - path: box01/leg1_r_Bone015/leg_r_Bone016/foot_r_Bone017/Bone018 1
+        weight: 1
+      - path: diaochan_hair_model
+        weight: 1
+      - path: diaochan_head_model
+        weight: 1
+      - path: diaochan_model
+        weight: 1
+      - path: shanzi_model
+        weight: 1
+      maskType: 0
+      maskSource: {instanceID: 0}
     isReadable: 1
   meshes:
     lODScreenPercentages: []
@@ -214,7 +350,6 @@ ModelImporter:
   humanDescription:
     human: []
     skeleton: []
-    handles: []
     armTwist: .5
     foreArmTwist: .5
     upperLegTwist: .5
@@ -224,6 +359,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  additionalBone: 1
   animationType: 1
+  additionalBone: 1
   userData: 
