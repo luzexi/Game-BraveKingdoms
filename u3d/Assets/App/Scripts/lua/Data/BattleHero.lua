@@ -16,6 +16,7 @@ local function createBattleHero( hero )
     battlehero.maxhp = hero.maxhp
     battlehero.sp = 0
     battlehero.maxsp = 100
+    battlehero.attackNum = 1
 
     local res = HeroTable[hero.tableid].Model
     res = string.sub(res,7,#res)

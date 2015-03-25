@@ -43,7 +43,7 @@ public class MoveBackState : StateBase
     {
         this.m_vecTargetPos = pos;
         this.m_fCostTime = costTime;
-        this.m_fLastTime = Time.fixedTime;
+        this.m_fLastTime = Time.time;
         this.m_vecLastPos = this.m_cObj.transform.localPosition;
     }
 

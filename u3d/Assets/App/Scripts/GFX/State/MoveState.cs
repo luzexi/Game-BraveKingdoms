@@ -40,7 +40,7 @@ public class MoveState : StateBase
         this.m_vecLastPos = from;
         this.m_vecTargetPos = to;
         this.m_fCostTime = costTime;
-        this.m_fLastTime = Time.fixedTime;
+        this.m_fLastTime = Time.time;
     }
 
     /// <summary>

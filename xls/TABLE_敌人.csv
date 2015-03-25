@@ -1,0 +1,2 @@
+主序号;关卡1;序号;NAME(备注);对应角色（ID）;AI类型ID;HP;攻击力;防御力;BB技能ID;BB技能等级;"减益状态(0:无;1:中毒;2:虚弱;3:破甲;4:破刃;5:麻痹;6:封印)";减益概率;减益状态回合数;掉落金钱min;掉落金钱max;金钱几率;掉落农场点min;掉落农场点max;农场点几率;素材掉落率;捕捉率;捕捉ID;毒抗性;虚弱抗性;破甲抗性;破刃抗性;麻痹抗性;封印抗性
+ID;GateID;OrderID;Name_Ps;HeroID;AIType;HP;Attack;Defence;BBSkillID;BBLevel;DEBUF;DEBUF_RATE;DEBUF_ROUND;DropGold_min;DropGold_max;DropGoldRate;DropFarm_min;DropFarm_max;DropFarmRate;ItemDropRate;CateRate;CatchID;OpposeDu;OpposeXuruo;OpposePojia;OpposePoren;OpposeMa;OpposeFengyin
