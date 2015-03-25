@@ -158,7 +158,7 @@ local function create()
 
         updateTop()
 
-        -- set self mode position
+        -- set icon btn event
         local i = 1
         for i = 1 , #Battle.heros , 1 do
             if Battle.heros[i] ~= nil then
@@ -168,6 +168,12 @@ local function create()
                 icon_btn.onClick = function(eventData , go , args)
                     local icon_index = tonumber(args[1])
                     print("icon index " .. icon_index)
+                    if( Battle.heros[i].attackNum > 0 )
+                    {
+                        Battle.heros[i].attackNum = 0
+                        local gfxObj = Battle.heros[i].object:GetComponent("GfxObject")
+                        local attacktable = nil
+                    }
                 end
             else
                 setInfo(i,nil)

@@ -129,6 +129,9 @@ public class StateControl
     //attack
     public void Attack( GfxObject target , Vector3 pos , float[] hit_time1 , float[] hit_time2 , int[] damage , bool ismove )
     {
+        if (this.m_cCurrentState != null &&
+            this.m_cCurrentState.GetStateType() == STATE_TYPE.STATE_ATTACK)
+            return;
         if (this.m_cCurrentState != null)
             this.m_cCurrentState.OnExit();
 
