@@ -13,5 +13,9 @@ function main()
     game_define.create()
     title_scene.create()
     globa_manager.create()
+
+    local hero_table = require("DataTable/Hero.lua")
+    print(hero_table[220].AvatarM)
+    print(hero_table[220].Desc)
 end
 
