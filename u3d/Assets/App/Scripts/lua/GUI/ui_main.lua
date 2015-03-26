@@ -21,6 +21,8 @@ local function create()
     local ratex = SCREEN_WIDE/Screen.width
     local ratey = SCREEN_HEIGHT/Screen.height
 
+    local hero_table = datatable.getTable("Hero")
+
     local function createObj()
         ui_main_obj = GameObject.Instantiate( Resources.Load("GUI/ui_main") )
         ui_main_obj.name = ui_name
@@ -49,7 +51,7 @@ local function create()
             wood.gameObject:SetActive(false)
             ar_property = {fire , water , wood , thunder , light , dark}
             if hero ~= nil then
-                local table = HeroTable[hero.tableid]
+                local table = hero_table[hero.tableid]
                 local property = ar_property[table.Nature]
                 property.gameObject:SetActive(true)
             else
@@ -72,7 +74,7 @@ local function create()
             wood.gameObject:SetActive(false)
             ar_property = {fire , water , wood , thunder , light , dark}
             if hero ~= nil then
-                local table = HeroTable[hero.tableid]
+                local table = hero_table[hero.tableid]
                 local property = ar_property[table.Nature]
                 property.gameObject:SetActive(true)
             end
@@ -81,7 +83,7 @@ local function create()
         local function set_card( trans , hero )
             if hero ~= nil then
                 local ui_img = trans:GetComponent("RawImage")
-                local table = HeroTable[hero.tableid]
+                local table = hero_table[hero.tableid]
                 ui_img.texture = Resources.Load("AvatarL/"..table.AvatarL)
             else
                 trans.gameObject:SetActive(false)

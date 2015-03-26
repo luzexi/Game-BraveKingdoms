@@ -68,14 +68,12 @@ end
 
 local function load_enemy( id , gateid )
     if Battle.enemy_table == nil then
-        local table = Resources.Load("Data/Enemy/Table_Enemy"..id)
-        local json = require "lib/dkjson"
-        Battle.enemy_table = json.decode(table.text)
+        Battle.enemy_table = datatable.getTable("Enemy/Enemy"..id)
     end
 
     for i , val in pairs(Battle.enemy_table) do
-        if Battle.enemy_table[""..i].GateID == gateid then
-            Battle.enemys[Battle.enemy_table[""..i].OrderID] = lua_battlehero.createBattleEnemy(Battle.enemy_table[""..i])
+        if Battle.enemy_table[i].GateID == gateid then
+            Battle.enemys[Battle.enemy_table[i].OrderID] = lua_battlehero.createBattleEnemy(Battle.enemy_table[i])
         end
     end
 end

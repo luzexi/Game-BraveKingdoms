@@ -4,6 +4,8 @@ local Vector3 = UnityEngine.Vector3
 local Resources = UnityEngine.Resources
 
 
+local quest_table = datatable.getTable("Quest")
+
 local function create()
     local main_obj = nil
     local ui_name = "ui_quest"
@@ -21,7 +23,7 @@ local function create()
     local function setup()
         local node = main_obj.transform:Find("node")
         local ui_scroll_list = node:GetComponent("UI_Scroll_List")
-        local node_num , node_num_ = #QuestTable
+        local node_num , node_num_ = #quest_table
         local res_item = Resources.Load("GUI/ui_quest_item")
         if node_num > MAX_NODE then
             node_num = MAX_NODE
@@ -51,7 +53,7 @@ local function create()
                 GameObject.Destroy(main_obj)
                 main_obj = nil
 
-                Battle.quest_table = QuestTable[quest_index]
+                Battle.quest_table = quest_table[quest_index]
                 local battle_scene = require("Scene.BattleScene")
                 battle_scene.create()
             end
@@ -63,10 +65,10 @@ local function create()
             node_node.transform:SetParent(node)
             node_node.transform.localPosition = Vector3(0,233 - (i-1)*153,0)
             node_node.transform.localScale = Vector3.one
-            setup_icon(node_node,QuestTable[i],true,i)
+            setup_icon(node_node,quest_table[i],true,i)
         end
         
-        local max_index , max_index_= #QuestTable
+        local max_index , max_index_= #quest_table
         max_index = max_index - MAX_NODE
         if max_index < 0 then
             max_index = 0
@@ -80,7 +82,7 @@ local function create()
                 now_index = tonumber(go.name) + MAX_NODE
             end
             go.name = ""..now_index
-            setup_icon(go,QuestTable[now_index],true,now_index)
+            setup_icon(go,quest_table[now_index],true,now_index)
         end
 
         local del_onchange = LuaUtil.ToActionGameObjectInt(onChange)

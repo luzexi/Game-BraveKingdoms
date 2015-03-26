@@ -63,7 +63,7 @@ local function create()
         frame_wood.gameObject:SetActive(false)
         local frame_array = {frame_fire , frame_water , frame_wood , frame_thunder , frame_light , frame_dark}
 
-        local table = HeroTable[hero.tableid]
+        local table = datatable.getTable("Hero")[hero.tableid]
         frame_bg_array[table.Nature].gameObject:SetActive(true)
         frame_array[table.Nature].gameObject:SetActive(true)
 
