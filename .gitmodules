@@ -40,3 +40,6 @@
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DuGUIToolkit
 	url = https://github.com/luzexi/Unity3DuGUI-Toolkit.git
+[submodule "Tool/xls2lua"]
+	path = Tool/xls2lua
+	url = https://github.com/luzexi/xls2lua.git
