@@ -44,5 +44,12 @@ public class LuaUtil
             fun.call( arg1 , arg2 );
         });
     }
+
+    public static System.Action<int,int,float,bool> ToActionIntIntFloatBool( LuaFunction fun )
+    {
+        return (System.Action<int,int,float,bool>)(( arg1 , arg2 , arg3 , arg4 )=>{
+            fun.call( arg1 , arg2 , arg3 , arg4 );
+        });
+    }
 }
 

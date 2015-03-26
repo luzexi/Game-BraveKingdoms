@@ -41,9 +41,17 @@ local function initdata()
     for i = 1 , 6 , 1 do 
         table.insert(Battle.right_pos , #Battle.right_pos+1 , Battle.node.transform:Find("RightPos/pos"..i))
     end
+    Battle.right_attack_pos = {}
+    for i = 1 , 6 , 1 do 
+        table.insert(Battle.right_attack_pos , #Battle.right_attack_pos+1 , Battle.node.transform:Find("RightAttackPos/pos"..i))
+    end
     Battle.left_pos = {}
     for i = 1 , 6 , 1 do 
         table.insert(Battle.left_pos , #Battle.left_pos+1 , Battle.node.transform:Find("LeftPos/pos"..i))
+    end
+    Battle.left_attack_pos = {}
+    for i = 1 , 6 , 1 do 
+        table.insert(Battle.left_attack_pos , #Battle.left_attack_pos+1 , Battle.node.transform:Find("LeftAttackPos/pos"..i))
     end
 
     local scene = GameObject.Instantiate(Resources.Load("Battle/Scene/scene_1"))

@@ -127,7 +127,7 @@ public class StateControl
     }
 
     //attack
-    public void Attack( GfxObject target , Vector3 pos , float[] hit_time1 , float[] hit_time2 , int[] damage , bool ismove )
+    public void Attack( GfxObject target , Vector3 pos , int target_index , int self_index , float[] hit_time1 , float[] hit_time2 , float[] hit_rate , System.Action<int,int,float,bool> callback , bool ismove )
     {
         if (this.m_cCurrentState != null &&
             this.m_cCurrentState.GetStateType() == STATE_TYPE.STATE_ATTACK)
@@ -135,7 +135,7 @@ public class StateControl
         if (this.m_cCurrentState != null)
             this.m_cCurrentState.OnExit();
 
-        this.m_cStateWrap.m_cAttackState.Set(target , pos , hit_time1 , hit_time2 , damage , ismove);
+        this.m_cStateWrap.m_cAttackState.Set(target , pos , target_index , self_index , hit_time1 , hit_time2 , hit_rate , callback , ismove);
         this.m_cCurrentState = this.m_cStateWrap.m_cAttackState;
         this.m_cCurrentState.OnEnter();
     }
