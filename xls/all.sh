@@ -9,6 +9,7 @@ python ../Tool/xls2lua/xls2lua.py TABLE_英雄成长表.xlsx ../Data/
 python ../Tool/xls2lua/xls2lua.py TABLE_英雄经验表.xlsx ../Data/
 python ../Tool/xls2lua/xls2lua.py TABLE_角色经验及成长.xlsx ../Data/
 python ../Tool/xls2lua/xls2lua.py TABLE_物品合成表.xlsx ../Data/
+python ../Tool/xls2lua/xls2lua.py TABLE_队长技能.xlsx ../Data/
 
 
 for FILE in ./Enemy/TABLE_Enemy*
