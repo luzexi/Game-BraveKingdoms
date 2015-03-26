@@ -4,6 +4,7 @@
 local function create()
     Battle = {}
     Player = {}
+    require("DataTable.datatable")
 end
 
 

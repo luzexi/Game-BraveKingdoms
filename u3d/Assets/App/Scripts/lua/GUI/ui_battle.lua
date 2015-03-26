@@ -119,7 +119,7 @@ local function setInfo( index ,  battle_hero )
         frame_icon.gameObject:SetActive(true)
         frame_empty.gameObject:SetActive(false)
 
-        local table = HeroTable[battle_hero.tableid]
+        local table = datatable.getTable("Hero")[battle_hero.tableid]
 
         icon_img.gameObject:GetComponent("RawImage").texture = Resources.Load("AvatarM/"..table.AvatarM)
 
@@ -168,12 +168,11 @@ local function create()
                 icon_btn.onClick = function(eventData , go , args)
                     local icon_index = tonumber(args[1])
                     print("icon index " .. icon_index)
-                    if( Battle.heros[i].attackNum > 0 )
-                    {
+                    if Battle.heros[i].attackNum > 0 then
                         Battle.heros[i].attackNum = 0
                         local gfxObj = Battle.heros[i].object:GetComponent("GfxObject")
                         local attacktable = nil
-                    }
+                    end
                 end
             else
                 setInfo(i,nil)

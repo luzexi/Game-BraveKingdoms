@@ -30,7 +30,7 @@ local function create( hero , func )
         local exp = main_obj.transform:Find("heroData/exp/exp_bar")
         local lock = main_obj.transform:Find("heroData/lock")
 
-        local table = HeroTable[hero.tableid]
+        local table = datatable.getTable("Hero")[hero.tableid]
         heroImg.texture = Resources.Load("AvatarA/"..table.AvatarA)
         cost.text = ""..table.Cost
         attack.text = ""..hero.attack

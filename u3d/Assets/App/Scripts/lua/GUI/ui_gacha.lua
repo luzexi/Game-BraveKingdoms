@@ -6,6 +6,8 @@ local Vector3 = UnityEngine.Vector3
 local Screen = UnityEngine.Screen
 
 
+local gacha1_table = datatable.getTable("Gacha1")
+
 local function create()
     local ui_main = require "GUI/ui_main"
     local ui_system_bottom = require("GUI/ui_system_bottom")
@@ -41,11 +43,11 @@ local function create()
 
         local function gacha_low()
             local sum_weight = 0
-            for k,v in pairs(Gacha1Table) do
+            for k,v in pairs(gacha1_table) do
                 sum_weight = sum_weight + v.weight
             end
             local pertable = {}
-            for k,v in pairs(Gacha1Table) do
+            for k,v in pairs(gacha1_table) do
                 table.insert( pertable , #pertable + 1, { id=v.id , per=v.weight/sum_weight} )
             end
             math.randomseed(os.time())

@@ -3,6 +3,7 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 
+local hero_table = datatable.getTable("Hero")
 
 local function createBattleHero( hero )
     local battlehero = {}
@@ -18,7 +19,7 @@ local function createBattleHero( hero )
     battlehero.maxsp = 100
     battlehero.attackNum = 1
 
-    local res = HeroTable[hero.tableid].Model
+    local res = hero_table[hero.tableid].Model
     res = string.sub(res,7,#res)
     battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
     battlehero.object:AddComponent("GfxObject")
@@ -37,7 +38,7 @@ local function createBattleEnemy( hero )
     battlehero.sp = 0
     battlehero.maxsp = 100
 
-    local res = HeroTable[hero.HeroID].Model
+    local res = hero_table[hero.HeroID].Model
     res = string.sub(res,7,#res)
     battlehero.object = GameObject.Instantiate(Resources.Load("Model/"..res))
     battlehero.object:AddComponent("GfxObject")
