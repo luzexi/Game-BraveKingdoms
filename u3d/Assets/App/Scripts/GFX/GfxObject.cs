@@ -67,9 +67,11 @@ public partial class GfxObject : MonoBehaviour
 
     //attack state
     public void AttackState( GfxObject target , Vector3 pos , int target_index , int self_index , 
-        float[] hit_time1 , float[] hit_time2 , float[] hit_rate , System.Action<int,int,float,bool> callback , bool ismove = false )
+        float[] hit_time1 , float[] hit_time2 , float[] hit_rate ,
+        System.Action<int,int,float,bool> callback , System.Action<int> over_callback , bool ismove = false )
     {
-        this.m_cStateControl.Attack( target , pos , target_index , self_index , hit_time1 , hit_time2 , hit_rate , callback , ismove);
+        this.m_cStateControl.Attack( target , pos , target_index , self_index ,
+            hit_time1 , hit_time2 , hit_rate , callback , over_callback , ismove);
     }
 
     //idle state

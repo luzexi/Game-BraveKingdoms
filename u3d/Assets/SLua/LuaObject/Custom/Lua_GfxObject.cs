@@ -92,9 +92,11 @@ public class Lua_GfxObject : LuaObject {
 			checkType(l,8,out a7);
 			System.Action<System.Int32,System.Int32,System.Single,System.Boolean> a8;
 			checkDelegate(l,9,out a8);
-			System.Boolean a9;
-			checkType(l,10,out a9);
-			self.AttackState(a1,a2,a3,a4,a5,a6,a7,a8,a9);
+			System.Action<System.Int32> a9;
+			checkDelegate(l,10,out a9);
+			System.Boolean a10;
+			checkType(l,11,out a10);
+			self.AttackState(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);
 			return 0;
 		}
 		catch(Exception e) {

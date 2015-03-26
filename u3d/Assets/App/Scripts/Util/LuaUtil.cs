@@ -29,6 +29,14 @@ public class LuaUtil
         });
     }
 
+    // cast to the action int function
+    public static System.Action<int> ToActionInt( LuaFunction fun )
+    {
+        return (System.Action<int>)(( arg )=>{
+            fun.call( arg );
+        });
+    }
+
     // cast to the action string function
     public static System.Action<string> ToActionStr( LuaFunction fun )
     {

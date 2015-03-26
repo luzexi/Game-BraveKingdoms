@@ -199,19 +199,22 @@ local function create()
                         end
                         local targetObj = Battle.enemys[target_index].object:GetComponent("GfxObject")
                         local targetPos = Battle.left_attack_pos[target_index].transform.localPosition
-                        local function callback( t_index , s_index , rate , isCombo )
+                        local function hitcallback( t_index , s_index , rate , isCombo )
                             local damage_font = GameObject.Instantiate(Resources.Load("GUI/Font/damage_font")):GetComponent("Text")
                             damage_font.transform:SetParent( main_obj.transform )
                             local random_pos = Vector3(Random.value*100,Random.value*100,0)
                             damage_font.transform.localPosition = enemy_ui_pos[t_index].transform.localPosition + random_pos
                             damage_font.transform.localScale = Vector3.one
                             damage_font.text = math.modf(rate * Random.value * 9999)
+                        end
+                        local function overcallback( s_index )
                             Battle.heros[s_index].attackNum = 1
                         end
-                        hit_callback = LuaUtil.ToActionIntIntFloatBool(callback)
+                        hit_callback = LuaUtil.ToActionIntIntFloatBool(hitcallback)
+                        over_callback = LuaUtil.ToActionInt(overcallback)
                         gfxObj:AttackState( targetObj , targetPos , target_index , icon_index ,
                             array_hit_time1 , array_hit_time2 , array_hit_rate ,
-                            hit_callback , true )
+                            hit_callback , over_callback , true )
                     end
                 end
             else
