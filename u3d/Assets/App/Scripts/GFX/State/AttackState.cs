@@ -28,6 +28,7 @@ public class AttackState : StateBase
     private float m_fMoveCostTime;
     private bool[] m_vecIsHit;
     private System.Action<int,int,float,bool> m_delHitCallback;
+    private System.Action<int> m_delOverCallback;
 
     private enum State
     {
@@ -65,9 +66,12 @@ public class AttackState : StateBase
     /// 设置
     /// </summary>
     /// <param name="target"></param>
-    public void Set(GfxObject target ,Vector3 pos, int target_index , int self_index , float[] hit_time1 , float[] hit_time2 , float[] hit_rate , System.Action<int,int,float,bool> callback , bool ismove)
+    public void Set(GfxObject target ,Vector3 pos, int target_index , int self_index ,
+        float[] hit_time1 , float[] hit_time2 , float[] hit_rate ,
+        System.Action<int,int,float,bool> callback , System.Action<int> over_callback , bool ismove)
     {
         this.m_delHitCallback = callback;
+        this.m_delOverCallback = over_callback;
         this.m_cPos = pos;
         this.m_iTargetIndex = target_index;
         this.m_iSelfIndex = self_index;
@@ -147,6 +151,7 @@ public class AttackState : StateBase
                     if(difTime >= this.m_vecHitTime1[i])
                     {
                         //hit
+                        this.m_cTargetObj.HurtState();
                         this.m_delHitCallback(this.m_iTargetIndex , this.m_iSelfIndex , this.m_vecHitRate[i] , false);
                         this.m_vecIsHit[i] = true;
                     }
@@ -184,6 +189,7 @@ public class AttackState : StateBase
                 this.m_eState++;
                 break;
             case State.End:
+                this.m_delOverCallback(this.m_iSelfIndex);
                 return false;
         }
         return true;
