@@ -67,12 +67,27 @@ public class Lua_LuaUtil : LuaObject {
 			return 0;
 		}
 	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int ToActionIntIntFloatBool_s(IntPtr l) {
+		try{
+			SLua.LuaFunction a1;
+			checkType(l,1,out a1);
+			System.Action<System.Int32,System.Int32,System.Single,System.Boolean> ret=LuaUtil.ToActionIntIntFloatBool(a1);
+			pushValue(l,ret);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
+	}
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"LuaUtil");
 		addMember(l,ToAction_s);
 		addMember(l,ToActionFloat_s);
 		addMember(l,ToActionStr_s);
 		addMember(l,ToActionGameObjectInt_s);
+		addMember(l,ToActionIntIntFloatBool_s);
 		createTypeMetatable(l,constructor, typeof(LuaUtil));
 	}
 }

@@ -80,15 +80,21 @@ public class Lua_GfxObject : LuaObject {
 			checkType(l,2,out a1);
 			UnityEngine.Vector3 a2;
 			checkType(l,3,out a2);
-			System.Single[] a3;
+			System.Int32 a3;
 			checkType(l,4,out a3);
-			System.Single[] a4;
+			System.Int32 a4;
 			checkType(l,5,out a4);
-			System.Int32[] a5;
+			System.Single[] a5;
 			checkType(l,6,out a5);
-			System.Boolean a6;
+			System.Single[] a6;
 			checkType(l,7,out a6);
-			self.AttackState(a1,a2,a3,a4,a5,a6);
+			System.Single[] a7;
+			checkType(l,8,out a7);
+			System.Action<System.Int32,System.Int32,System.Single,System.Boolean> a8;
+			checkDelegate(l,9,out a8);
+			System.Boolean a9;
+			checkType(l,10,out a9);
+			self.AttackState(a1,a2,a3,a4,a5,a6,a7,a8,a9);
 			return 0;
 		}
 		catch(Exception e) {

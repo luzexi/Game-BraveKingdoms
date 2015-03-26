@@ -3,6 +3,8 @@
 local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
+local Random = UnityEngine.Random
+
 
 local battle_lua = require 'Battle.battle'
 
@@ -153,6 +155,17 @@ local function create()
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
 
+        local enemy_ui_pos = {}
+        for i = 1 , 6 , 1 do
+            local pos = main_obj.transform:Find("select/enemy/btn"..i)
+            table.insert(enemy_ui_pos , #enemy_ui_pos+1 , pos)
+        end
+        local self_ui_pos = {}
+        for i = 1 , 6 , 1 do
+            local pos = main_obj.transform:Find("select/self/btn"..i)
+            table.insert(self_ui_pos , #self_ui_pos+1 , pos)
+        end
+
         local rendtexture = main_obj.transform:Find("rendtexture"):GetComponent("RawImage")
         rendtexture.texture = battle_camera.targetTexture
 
@@ -168,10 +181,37 @@ local function create()
                 icon_btn.onClick = function(eventData , go , args)
                     local icon_index = tonumber(args[1])
                     print("icon index " .. icon_index)
-                    if Battle.heros[i].attackNum > 0 then
-                        Battle.heros[i].attackNum = 0
-                        local gfxObj = Battle.heros[i].object:GetComponent("GfxObject")
-                        local attacktable = nil
+                    if Battle.heros[icon_index].attackNum > 0 then
+                        Battle.heros[icon_index].attackNum = 0
+                        local gfxObj = Battle.heros[icon_index].object:GetComponent("GfxObject")
+                        local attacktable = datatable.getTable("HeroAttack")[Battle.heros[icon_index].tableid]
+                        local array_hit_time1 = {}
+                        local array_hit_time2 = {}
+                        local array_hit_rate = {}
+                        local target_index = Battle.get_targetIndex()
+                        for j = 1 , (#attacktable.hit)/3 , 1 do
+                            local hit_time1 = attacktable.hit[(j-1)*3+1] * 0.03333
+                            local hit_time2 = attacktable.hit[(j-1)*3+2] * 0.03333
+                            local hit_rate = attacktable.hit[(j-1)*3+3]
+                            table.insert(array_hit_time1 ,  hit_time1)
+                            table.insert(array_hit_time2 , hit_time2)
+                            table.insert(array_hit_rate , hit_rate)
+                        end
+                        local targetObj = Battle.enemys[target_index].object:GetComponent("GfxObject")
+                        local targetPos = Battle.left_attack_pos[target_index].transform.localPosition
+                        local function callback( t_index , s_index , rate , isCombo )
+                            local damage_font = GameObject.Instantiate(Resources.Load("GUI/Font/damage_font")):GetComponent("Text")
+                            damage_font.transform:SetParent( main_obj.transform )
+                            local random_pos = Vector3(Random.value*100,Random.value*100,0)
+                            damage_font.transform.localPosition = enemy_ui_pos[t_index].transform.localPosition + random_pos
+                            damage_font.transform.localScale = Vector3.one
+                            damage_font.text = math.modf(rate * Random.value * 9999)
+                            Battle.heros[s_index].attackNum = 1
+                        end
+                        hit_callback = LuaUtil.ToActionIntIntFloatBool(callback)
+                        gfxObj:AttackState( targetObj , targetPos , target_index , icon_index ,
+                            array_hit_time1 , array_hit_time2 , array_hit_rate ,
+                            hit_callback , true )
                     end
                 end
             else

@@ -12,19 +12,22 @@ using UnityEngine;
 /// </summary>
 public class AttackState : StateBase
 {
-    private const float MOVE_SPEED = 3;
-    private const float MOVE_BACK_COST = 0.5f;
+    private const float MOVE_SPEED = 20;
+    private const float MOVE_BACK_COST = 0.3f;
     private GfxObject m_cTargetObj;
     private float[] m_vecHitTime1;
     private float[] m_vecHitTime2;
-    private int[] m_vecDamage;
+    private float[] m_vecHitRate;
     private bool m_bIsMove;
     private Vector3 m_cPos;
+    private int m_iTargetIndex;
+    private int m_iSelfIndex;
 
     private Vector3 m_cStartPos;
     private float m_fStartTime;
     private float m_fMoveCostTime;
     private bool[] m_vecIsHit;
+    private System.Action<int,int,float,bool> m_delHitCallback;
 
     private enum State
     {
@@ -62,13 +65,16 @@ public class AttackState : StateBase
     /// 设置
     /// </summary>
     /// <param name="target"></param>
-    public void Set(GfxObject target ,Vector3 pos, float[] hit_time1 , float[] hit_time2 , int[] damage , bool ismove)
+    public void Set(GfxObject target ,Vector3 pos, int target_index , int self_index , float[] hit_time1 , float[] hit_time2 , float[] hit_rate , System.Action<int,int,float,bool> callback , bool ismove)
     {
+        this.m_delHitCallback = callback;
         this.m_cPos = pos;
+        this.m_iTargetIndex = target_index;
+        this.m_iSelfIndex = self_index;
         this.m_cTargetObj = target;
         this.m_vecHitTime1 = hit_time1;
         this.m_vecHitTime2 = hit_time2;
-        this.m_vecDamage = damage;
+        this.m_vecHitRate = hit_rate;
         this.m_bIsMove = ismove;
     }
 
@@ -141,6 +147,7 @@ public class AttackState : StateBase
                     if(difTime >= this.m_vecHitTime1[i])
                     {
                         //hit
+                        this.m_delHitCallback(this.m_iTargetIndex , this.m_iSelfIndex , this.m_vecHitRate[i] , false);
                         this.m_vecIsHit[i] = true;
                     }
                 }
