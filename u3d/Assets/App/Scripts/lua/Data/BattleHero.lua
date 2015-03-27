@@ -6,6 +6,9 @@ local Vector3 = UnityEngine.Vector3
 local hero_table = datatable.getTable("Hero")
 
 local function createBattleHero( hero )
+    if hero == nil or hero == -1 then
+        return -1
+    end
     local battlehero = {}
     battlehero.tableid = hero.tableid
     battlehero.equip = hero.equip
@@ -13,8 +16,8 @@ local function createBattleHero( hero )
     battlehero.defence = hero.defence
     battlehero.recover = hero.recover
     battlehero.hp = hero.maxhp
-    battlehero.dead = false
     battlehero.maxhp = hero.maxhp
+    battlehero.dead = false
     battlehero.sp = 0
     battlehero.maxsp = 100
     battlehero.attackNum = 1
@@ -27,6 +30,9 @@ local function createBattleHero( hero )
 end
 
 local function createBattleEnemy( hero )
+    if hero == nil or hero == -1 then
+        return -1
+    end
     local battlehero = {}
     battlehero.tableid = hero.HeroID
     battlehero.equip = 0
@@ -35,8 +41,10 @@ local function createBattleEnemy( hero )
     battlehero.recover = 0
     battlehero.hp = hero.HP
     battlehero.maxhp = hero.HP
+    battlehero.dead = false
     battlehero.sp = 0
     battlehero.maxsp = 100
+    battlehero.attackNum = 1
 
     local res = hero_table[hero.HeroID].Model
     res = string.sub(res,7,#res)

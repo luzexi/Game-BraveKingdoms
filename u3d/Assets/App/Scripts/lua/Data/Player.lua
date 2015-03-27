@@ -163,7 +163,7 @@ local function init()
         local grouphero = {}
         local i = 1
         for i = 1 , #Player.group ,1 do
-            local hero = nil
+            local hero = -1
             if Player.group[i] > 0 then
                 hero = Player.gethero_by_group(i)
             end
