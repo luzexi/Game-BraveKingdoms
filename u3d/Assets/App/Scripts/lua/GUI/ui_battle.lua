@@ -11,6 +11,9 @@ local battle_lua = require 'Battle.battle'
 local main_obj = nil
 local battle_obj = nil
 
+local enemy_ui_pos = {}
+local self_ui_pos = {}
+
 
 -- update top num
 local function updateTop()
@@ -31,7 +34,6 @@ end
 
 -- select target index
 local function setTarget( index )
-    print("target btn" .. index )
     local target_icon = main_obj.transform:Find("battle/target")
     if not Battle.autoTarget and index == Battle.targetIndex then
         target_icon.gameObject:SetActive(false)
@@ -70,6 +72,7 @@ local function setInfo( index ,  battle_hero )
     local sp_text = icon:Find("sp/sp_img/sp_text")
     local sp_bar = icon:Find("sp/Scrollbar")
     local name = icon:Find("name")
+    local cover_black = icon:Find("cover_black")
     local empty = icon:Find("empty")
     local dead = icon:Find("dead")
     local frame_icon = icon:Find("frame/frame")
@@ -106,6 +109,8 @@ local function setInfo( index ,  battle_hero )
     property_light.gameObject:SetActive(false)
     property_dark.gameObject:SetActive(false)
 
+
+    cover_black.gameObject:SetActive(false)
     if battle_hero == nil then
         icon_img.gameObject:SetActive(false)
         frame_bg_black.gameObject:SetActive(true)
@@ -137,6 +142,56 @@ local function setInfo( index ,  battle_hero )
     end
 end
 
+
+local function updateInfo( index ,  battle_hero )
+    local icon_obj = main_obj.transform:Find("icon")
+
+    local icon = icon_obj:Find("icon"..index)
+    local hp_text = icon:Find("hp/hp_img/hp_text")
+    local hp_bar = icon:Find("hp/Scrollbar")
+    local sp_text = icon:Find("sp/sp_img/sp_text")
+    local sp_bar = icon:Find("sp/Scrollbar")
+    local dead = icon:Find("dead")
+    local cover_black = icon:Find("cover_black")
+
+    if battle_hero ~= nil and battle_hero ~= -1 then
+
+        local table = datatable.getTable("Hero")[battle_hero.tableid]
+
+        if battle_hero.dead then
+            dead.gameObject:SetActive(true)
+        else
+            dead.gameObject:SetActive(false)
+        end
+
+        if battle_hero.attackNum > 0 then
+            cover_black.gameObject:SetActive(false)
+        else
+            cover_black.gameObject:SetActive(true)
+        end
+        hp_text:GetComponent("Text").text = ""..battle_hero.hp.."/"..battle_hero.maxhp
+        hp_bar:GetComponent("Scrollbar").size = battle_hero.hp / battle_hero.maxhp
+        sp_text:GetComponent("Text").text = ""..battle_hero.sp.."/"..battle_hero.maxsp
+        sp_bar:GetComponent("Scrollbar").size = battle_hero.sp / battle_hero.maxsp
+    end
+end
+
+
+local function hitcallback( t_index , s_index , rate , isCombo )
+    local damage_font = GameObject.Instantiate(Resources.Load("GUI/Font/damage_font")):GetComponent("Text")
+    damage_font.transform:SetParent( main_obj.transform )
+    local random_pos = Vector3(Random.value*100,Random.value*100,0)
+    damage_font.transform.localPosition = enemy_ui_pos[t_index].transform.localPosition + random_pos
+    damage_font.transform.localScale = Vector3.one
+    damage_font.text = math.modf(rate * Random.value * 9999)
+end
+
+local function overcallback( s_index )
+    Battle.heros[s_index].attackNum = 1
+    updateInfo(s_index , Battle.heros[s_index])
+end
+
+
 local function create()
     local ui_name = "ui_battle"
 
@@ -155,12 +210,12 @@ local function create()
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
 
-        local enemy_ui_pos = {}
+        enemy_ui_pos = {}
         for i = 1 , 6 , 1 do
             local pos = main_obj.transform:Find("select/enemy/btn"..i)
             table.insert(enemy_ui_pos , #enemy_ui_pos+1 , pos)
         end
-        local self_ui_pos = {}
+        self_ui_pos = {}
         for i = 1 , 6 , 1 do
             local pos = main_obj.transform:Find("select/self/btn"..i)
             table.insert(self_ui_pos , #self_ui_pos+1 , pos)
@@ -174,15 +229,15 @@ local function create()
         -- set icon btn event
         local i = 1
         for i = 1 , #Battle.heros , 1 do
-            if Battle.heros[i] ~= nil then
+            if Battle.heros[i] ~= -1 then
                 setInfo(i,Battle.heros[i])
                 local icon_btn = main_obj.transform:Find("icon/icon"..i.."/btn")
                 icon_btn = UI_Event.Get(icon_btn,""..i)
                 icon_btn.onClick = function(eventData , go , args)
                     local icon_index = tonumber(args[1])
-                    print("icon index " .. icon_index)
                     if Battle.heros[icon_index].attackNum > 0 then
                         Battle.heros[icon_index].attackNum = 0
+                        updateInfo(icon_index , Battle.heros[icon_index])
                         local gfxObj = Battle.heros[icon_index].object:GetComponent("GfxObject")
                         local attacktable = datatable.getTable("HeroAttack")[Battle.heros[icon_index].tableid]
                         local array_hit_time1 = {}
@@ -199,17 +254,7 @@ local function create()
                         end
                         local targetObj = Battle.enemys[target_index].object:GetComponent("GfxObject")
                         local targetPos = Battle.left_attack_pos[target_index].transform.localPosition
-                        local function hitcallback( t_index , s_index , rate , isCombo )
-                            local damage_font = GameObject.Instantiate(Resources.Load("GUI/Font/damage_font")):GetComponent("Text")
-                            damage_font.transform:SetParent( main_obj.transform )
-                            local random_pos = Vector3(Random.value*100,Random.value*100,0)
-                            damage_font.transform.localPosition = enemy_ui_pos[t_index].transform.localPosition + random_pos
-                            damage_font.transform.localScale = Vector3.one
-                            damage_font.text = math.modf(rate * Random.value * 9999)
-                        end
-                        local function overcallback( s_index )
-                            Battle.heros[s_index].attackNum = 1
-                        end
+
                         hit_callback = LuaUtil.ToActionIntIntFloatBool(hitcallback)
                         over_callback = LuaUtil.ToActionInt(overcallback)
                         gfxObj:AttackState( targetObj , targetPos , target_index , icon_index ,
@@ -254,10 +299,6 @@ local function create()
     battle_lua.move_start_self()
     battle_lua.move_start_enemy()
     setTarget(Battle.get_targetIndex())
-end
-
-local function updateInfo( index , battle_hero )
-    --
 end
 
 local t = {}

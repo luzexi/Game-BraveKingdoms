@@ -12,19 +12,20 @@ local function initdata()
     Battle.soul = 83344
     Battle.crystal = 3433
     Battle.catch_heros = {}
-    Battle.heros = {nil,nil,nil,nil,nil}
-    Battle.enemys = {nil,nil,nil,nil,nil}
+    Battle.heros = {-1,-1,-1,-1,-1,-1}
+    Battle.enemys = {-1,-1,-1,-1,-1,-1}
     Battle.gate = 1
     Battle.targetIndex = 1
     Battle.autoTarget = true
     Battle.autoIndex = -1
     Battle.get_targetIndex = function()
         if Battle.autoTarget then
-            if Battle.enemys[autoIndex] ~= nil and not Battle.enemys[autoIndex].dead then
+            if Battle.autoIndex >= 1 and Battle.autoIndex <= #Battle.enemys and
+                Battle.enemys[Battle.autoIndex] ~= -1 and not Battle.enemys[Battle.autoIndex].dead then
                 return Battle.autoIndex
             end
             for i = 1 , #Battle.enemys , 1 do
-                if Battle.enemys[i] ~= nil and not Battle.enemys[i].dead then
+                if Battle.enemys[i] ~= -1 and not Battle.enemys[i].dead then
                     Battle.autoIndex = i
                     return Battle.autoIndex
                 end
@@ -88,7 +89,7 @@ end
 
 local function move_start_self()
     for i = 1 , #Battle.heros , 1 do
-        if Battle.heros[i] ~= nil then
+        if Battle.heros[i] ~= -1 then
             Battle.heros[i].object.transform.parent = Battle.node.transform
             Battle.heros[i].object.transform.localPosition = Battle.right_pos[i].localPosition
             Battle.heros[i].object.transform.localScale = Battle.right_pos[i].localScale
@@ -105,7 +106,7 @@ end
 local function move_start_enemy()
     -- set enemy model position
     for i = 1 , #Battle.enemys , 1 do
-        if Battle.enemys[i] ~= nil then
+        if Battle.enemys[i] ~= -1 then
             Battle.enemys[i].object.transform.parent = Battle.node.transform
             Battle.enemys[i].object.transform.localPosition = Battle.left_pos[i].localPosition
             Battle.enemys[i].object.transform.localScale = Battle.left_pos[i].localScale
