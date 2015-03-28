@@ -191,8 +191,18 @@ local function hitcallback( t_index , s_index , rate , isCombo )
 end
 
 local function overcallback( s_index )
-    Battle.heros[s_index].attackNum = 1
-    updateInfo(s_index , Battle.heros[s_index])
+    Battle.heros[s_index].enable = false
+    -- updateInfo(s_index , Battle.heros[s_index])
+    local finish = true
+    for i = 1 , #Battle.heros , 1 do
+        if Battle.heros[i] ~= -1 and ( Battle.heros[i].attackNum > 0 or Battle.heros[i].enable ) then
+            finish = false
+        end
+    end
+
+    if finish then
+        print(" ok its for ai")
+    end
 end
 
 
@@ -216,7 +226,7 @@ local function create()
 
         front_collider = main_obj.transform:Find("front_collider")
         local c=coroutine.create(function()
-            Yield(WaitForSeconds(2))
+            Yield(WaitForSeconds(1.2))
             front_collider.gameObject:SetActive(false)
         end)
         coroutine.resume(c)
