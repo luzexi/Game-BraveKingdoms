@@ -1,5 +1,3 @@
-﻿
-print("Start. Let's go.")
 
 
 local ui_manager = require "Manager.UIManager"

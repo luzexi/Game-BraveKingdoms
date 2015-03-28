@@ -192,16 +192,21 @@ end
 
 local function overcallback( s_index )
     Battle.heros[s_index].enable = false
-    -- updateInfo(s_index , Battle.heros[s_index])
     local finish = true
     for i = 1 , #Battle.heros , 1 do
-        if Battle.heros[i] ~= -1 and ( Battle.heros[i].attackNum > 0 or Battle.heros[i].enable ) then
+        if Battle.heros[i] ~= -1 and not Battle.heros[i].dead and ( Battle.heros[i].attackNum > 0 or Battle.heros[i].enable ) then
             finish = false
         end
     end
 
     if finish then
-        print(" ok its for ai")
+        local ai = require 'Battle/AI/NormalAI'
+        local ui_data = {}
+        ui_data.self_ui_pos = self_ui_pos
+        ui_data.front_collider = front_collider
+        ui_data.ui_main = main_obj
+        ui_data.updateInfo = updateInfo
+        ai.create(ui_data)
     end
 end
 
@@ -276,8 +281,8 @@ local function create()
                         local targetObj = Battle.enemys[target_index].object:GetComponent("GfxObject")
                         local targetPos = Battle.left_attack_pos[target_index].transform.localPosition
 
-                        hit_callback = LuaUtil.ToActionIntIntFloatBool(hitcallback)
-                        over_callback = LuaUtil.ToActionInt(overcallback)
+                        local hit_callback = LuaUtil.ToActionIntIntFloatBool(hitcallback)
+                        local over_callback = LuaUtil.ToActionInt(overcallback)
                         gfxObj:AttackState( targetObj , targetPos , target_index , icon_index ,
                             array_hit_time1 , array_hit_time2 , array_hit_rate ,
                             hit_callback , over_callback , true )

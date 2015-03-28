@@ -186,11 +186,16 @@ public class AttackState : StateBase
                 this.m_cObj.transform.localPosition = Vector3.Lerp(this.m_cPos, this.m_cStartPos, difTime / MOVE_BACK_COST);
                 break;
             case State.MoveBack_End:
+                this.m_cObj.m_cAni["idle"].wrapMode = WrapMode.Loop;
+                this.m_cObj.m_cAni.Play("idle");
                 this.m_eState++;
                 break;
             case State.End:
                 this.m_delOverCallback(this.m_iSelfIndex);
-                return false;
+                this.m_eState++;
+                break;
+            default:
+                break;
         }
         return true;
     }

@@ -5,15 +5,8 @@ using SLua;
 using System.Collections.Generic;
 public class Lua_iTween : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int constructor(IntPtr l) {
-		iTween o;
-		o=new iTween();
-		pushObject(l,o);
-		return 1;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ClearInvalidTweeens_s(IntPtr l) {
-		try{
+		try {
 			iTween.ClearInvalidTweeens();
 			return 0;
 		}
@@ -24,7 +17,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Init_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.GameObject a1;
 			checkType(l,1,out a1);
 			iTween.Init(a1);
@@ -37,7 +30,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				System.Single a1;
@@ -63,7 +56,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				System.Single a1;
@@ -89,7 +82,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ValueTo_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.GameObject a1;
 			checkType(l,1,out a1);
 			System.Collections.Hashtable a2;
@@ -104,7 +97,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int FadeFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -134,7 +127,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int FadeTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -164,7 +157,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ColorFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -194,7 +187,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ColorTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -224,7 +217,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AudioFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==4){
 				UnityEngine.GameObject a1;
@@ -256,7 +249,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AudioTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==4){
 				UnityEngine.GameObject a1;
@@ -288,7 +281,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Stab_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -318,7 +311,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int LookFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -348,7 +341,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int LookTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -378,7 +371,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -408,7 +401,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -438,7 +431,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveAdd_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -468,7 +461,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveBy_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -498,7 +491,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ScaleTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -528,7 +521,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ScaleFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -558,7 +551,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ScaleAdd_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -588,7 +581,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ScaleBy_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -618,7 +611,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RotateTo_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -648,7 +641,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RotateFrom_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -678,7 +671,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RotateAdd_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -708,7 +701,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RotateBy_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -738,7 +731,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ShakePosition_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -768,7 +761,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ShakeScale_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -798,7 +791,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ShakeRotation_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -828,7 +821,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PunchPosition_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -858,7 +851,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PunchRotation_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -888,7 +881,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PunchScale_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==3){
 				UnityEngine.GameObject a1;
@@ -918,7 +911,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RectUpdate_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.Rect a1;
 			checkType(l,1,out a1);
 			UnityEngine.Rect a2;
@@ -936,7 +929,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Vector3Update_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.Vector3 a1;
 			checkType(l,1,out a1);
 			UnityEngine.Vector3 a2;
@@ -954,7 +947,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Vector2Update_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.Vector2 a1;
 			checkType(l,1,out a1);
 			UnityEngine.Vector2 a2;
@@ -972,7 +965,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int FloatUpdate_s(IntPtr l) {
-		try{
+		try {
 			System.Single a1;
 			checkType(l,1,out a1);
 			System.Single a2;
@@ -990,7 +983,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int FadeUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1020,7 +1013,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ColorUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1050,7 +1043,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AudioUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1082,7 +1075,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int RotateUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1112,7 +1105,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ScaleUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1142,7 +1135,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1172,7 +1165,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int LookUpdate_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.GameObject a1;
@@ -1202,7 +1195,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PathLength_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Transform[]))){
 				UnityEngine.Transform[] a1;
@@ -1228,7 +1221,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraTexture_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.Color a1;
 			checkType(l,1,out a1);
 			UnityEngine.Texture2D ret=iTween.CameraTexture(a1);
@@ -1242,7 +1235,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PutOnPath_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.GameObject),typeof(UnityEngine.Vector3[]),typeof(float))){
 				UnityEngine.GameObject a1;
@@ -1294,7 +1287,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int PointOnPath_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Transform[]),typeof(float))){
 				UnityEngine.Transform[] a1;
@@ -1324,7 +1317,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawLine_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1364,7 +1357,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawLineGizmos_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1404,7 +1397,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawLineHandles_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1444,7 +1437,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawPath_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1484,7 +1477,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawPathGizmos_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1524,7 +1517,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int DrawPathHandles_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Vector3[]))){
 				UnityEngine.Vector3[] a1;
@@ -1564,7 +1557,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeDepth_s(IntPtr l) {
-		try{
+		try {
 			System.Int32 a1;
 			checkType(l,1,out a1);
 			iTween.CameraFadeDepth(a1);
@@ -1577,7 +1570,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeDestroy_s(IntPtr l) {
-		try{
+		try {
 			iTween.CameraFadeDestroy();
 			return 0;
 		}
@@ -1588,7 +1581,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeSwap_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.Texture2D a1;
 			checkType(l,1,out a1);
 			iTween.CameraFadeSwap(a1);
@@ -1601,7 +1594,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int CameraFadeAdd_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==2){
 				UnityEngine.Texture2D a1;
@@ -1634,7 +1627,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Resume_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.GameObject))){
 				UnityEngine.GameObject a1;
@@ -1688,7 +1681,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Pause_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.GameObject))){
 				UnityEngine.GameObject a1;
@@ -1742,7 +1735,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Count_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==0){
 				System.Int32 ret=iTween.Count();
@@ -1782,7 +1775,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Stop_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==0){
 				iTween.Stop();
@@ -1836,7 +1829,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int StopByName_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(argc==1){
 				System.String a1;
@@ -1872,7 +1865,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int StopAndCompleteByName_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.GameObject a1;
 			checkType(l,1,out a1);
 			System.String a2;
@@ -1887,7 +1880,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int IsRunningByName_s(IntPtr l) {
-		try{
+		try {
 			UnityEngine.GameObject a1;
 			checkType(l,1,out a1);
 			System.String a2;
@@ -1903,7 +1896,7 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Hash_s(IntPtr l) {
-		try{
+		try {
 			System.Object[] a1;
 			checkParams(l,1,out a1);
 			System.Collections.Hashtable ret=iTween.Hash(a1);
@@ -1917,155 +1910,287 @@ public class Lua_iTween : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_tweens(IntPtr l) {
-		pushValue(l,iTween.tweens);
-		return 1;
+		try {
+			pushValue(l,iTween.tweens);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_tweens(IntPtr l) {
-		System.Collections.ArrayList v;
-		checkType(l,2,out v);
-		iTween.tweens=v;
-		return 0;
+		try {
+			System.Collections.ArrayList v;
+			checkType(l,2,out v);
+			iTween.tweens=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_id(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.id);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.id);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_id(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.String v;
-		checkType(l,2,out v);
-		o.id=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.String v;
+			checkType(l,2,out v);
+			self.id=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_type(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.type);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.type);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_type(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.String v;
-		checkType(l,2,out v);
-		o.type=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.String v;
+			checkType(l,2,out v);
+			self.type=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_method(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.method);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.method);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_method(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.String v;
-		checkType(l,2,out v);
-		o.method=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.String v;
+			checkType(l,2,out v);
+			self.method=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_easeType(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushEnum(l,(int)o.easeType);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushEnum(l,(int)self.easeType);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_easeType(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		iTween.EaseType v;
-		checkEnum(l,2,out v);
-		o.easeType=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			iTween.EaseType v;
+			checkEnum(l,2,out v);
+			self.easeType=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_time(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.time);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.time);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_time(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.Single v;
-		checkType(l,2,out v);
-		o.time=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.Single v;
+			checkType(l,2,out v);
+			self.time=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_delay(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.delay);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.delay);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_delay(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.Single v;
-		checkType(l,2,out v);
-		o.delay=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.Single v;
+			checkType(l,2,out v);
+			self.delay=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_loopType(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushEnum(l,(int)o.loopType);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushEnum(l,(int)self.loopType);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_loopType(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		iTween.LoopType v;
-		checkEnum(l,2,out v);
-		o.loopType=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			iTween.LoopType v;
+			checkEnum(l,2,out v);
+			self.loopType=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_isRunning(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.isRunning);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.isRunning);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_isRunning(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.Boolean v;
-		checkType(l,2,out v);
-		o.isRunning=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.Boolean v;
+			checkType(l,2,out v);
+			self.isRunning=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_isPaused(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o.isPaused);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self.isPaused);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_isPaused(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.Boolean v;
-		checkType(l,2,out v);
-		o.isPaused=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.Boolean v;
+			checkType(l,2,out v);
+			self.isPaused=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get__name(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		pushValue(l,o._name);
-		return 1;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			pushValue(l,self._name);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set__name(IntPtr l) {
-		iTween o = (iTween)checkSelf(l);
-		System.String v;
-		checkType(l,2,out v);
-		o._name=v;
-		return 0;
+		try {
+			iTween self=(iTween)checkSelf(l);
+			System.String v;
+			checkType(l,2,out v);
+			self._name=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"iTween");
@@ -2145,6 +2270,6 @@ public class Lua_iTween : LuaObject {
 		addMember(l,"isRunning",get_isRunning,set_isRunning,true);
 		addMember(l,"isPaused",get_isPaused,set_isPaused,true);
 		addMember(l,"_name",get__name,set__name,true);
-		createTypeMetatable(l,constructor, typeof(iTween),typeof(UnityEngine.MonoBehaviour));
+		createTypeMetatable(l,null, typeof(iTween),typeof(UnityEngine.MonoBehaviour));
 	}
 }

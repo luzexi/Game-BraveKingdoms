@@ -5,15 +5,8 @@ using SLua;
 using System.Collections.Generic;
 public class Lua_UI_Scroll_List : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int constructor(IntPtr l) {
-		UI_Scroll_List o;
-		o=new UI_Scroll_List();
-		pushObject(l,o);
-		return 1;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Init(IntPtr l) {
-		try{
+		try {
 			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
 			self.Init();
 			return 0;
@@ -25,7 +18,7 @@ public class Lua_UI_Scroll_List : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AddDragEvent(IntPtr l) {
-		try{
+		try {
 			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
 			UnityEngine.GameObject a1;
 			checkType(l,2,out a1);
@@ -39,125 +32,227 @@ public class Lua_UI_Scroll_List : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_moveType(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushEnum(l,(int)o.moveType);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushEnum(l,(int)self.moveType);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_moveType(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		UI_Scroll_List.Movement v;
-		checkEnum(l,2,out v);
-		o.moveType=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			UI_Scroll_List.Movement v;
+			checkEnum(l,2,out v);
+			self.moveType=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MaxSpeed(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.MaxSpeed);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.MaxSpeed);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MaxSpeed(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Single v;
-		checkType(l,2,out v);
-		o.MaxSpeed=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Single v;
+			checkType(l,2,out v);
+			self.MaxSpeed=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MinFixSpeed(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.MinFixSpeed);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.MinFixSpeed);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MinFixSpeed(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Single v;
-		checkType(l,2,out v);
-		o.MinFixSpeed=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Single v;
+			checkType(l,2,out v);
+			self.MinFixSpeed=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MaxIndex(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.MaxIndex);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.MaxIndex);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MaxIndex(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Int32 v;
-		checkType(l,2,out v);
-		o.MaxIndex=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Int32 v;
+			checkType(l,2,out v);
+			self.MaxIndex=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MaxFixPos(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.MaxFixPos);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.MaxFixPos);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MaxFixPos(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Int32 v;
-		checkType(l,2,out v);
-		o.MaxFixPos=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Int32 v;
+			checkType(l,2,out v);
+			self.MaxFixPos=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MinFixPos(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.MinFixPos);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.MinFixPos);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MinFixPos(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Int32 v;
-		checkType(l,2,out v);
-		o.MinFixPos=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Int32 v;
+			checkType(l,2,out v);
+			self.MinFixPos=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_ItemNum(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.ItemNum);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.ItemNum);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_ItemNum(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Int32 v;
-		checkType(l,2,out v);
-		o.ItemNum=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Int32 v;
+			checkType(l,2,out v);
+			self.ItemNum=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_ItemCost(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		pushValue(l,o.ItemCost);
-		return 1;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			pushValue(l,self.ItemCost);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_ItemCost(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Int32 v;
-		checkType(l,2,out v);
-		o.ItemCost=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Int32 v;
+			checkType(l,2,out v);
+			self.ItemCost=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onChange(IntPtr l) {
-		UI_Scroll_List o = (UI_Scroll_List)checkSelf(l);
-		System.Action<UnityEngine.GameObject,System.Int32> v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onChange=v;
-		else if(op==1) o.onChange+=v;
-		else if(op==2) o.onChange-=v;
-		return 0;
+		try {
+			UI_Scroll_List self=(UI_Scroll_List)checkSelf(l);
+			System.Action<UnityEngine.GameObject,System.Int32> v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onChange=v;
+			else if(op==1) self.onChange+=v;
+			else if(op==2) self.onChange-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"UI_Scroll_List");
@@ -172,6 +267,6 @@ public class Lua_UI_Scroll_List : LuaObject {
 		addMember(l,"ItemNum",get_ItemNum,set_ItemNum,true);
 		addMember(l,"ItemCost",get_ItemCost,set_ItemCost,true);
 		addMember(l,"onChange",null,set_onChange,true);
-		createTypeMetatable(l,constructor, typeof(UI_Scroll_List),typeof(UnityEngine.MonoBehaviour));
+		createTypeMetatable(l,null, typeof(UI_Scroll_List),typeof(UnityEngine.MonoBehaviour));
 	}
 }
