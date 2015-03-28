@@ -4,12 +4,16 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 local Random = UnityEngine.Random
+local Yield = UnityEngine.Yield
+local WaitForSeconds = UnityEngine.WaitForSeconds
 
 
 local battle_lua = require 'Battle.battle'
 
 local main_obj = nil
 local battle_obj = nil
+
+local front_collider = nil
 
 local enemy_ui_pos = {}
 local self_ui_pos = {}
@@ -209,6 +213,13 @@ local function create()
         main_obj.transform:SetParent(UI_Root)
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
+
+        front_collider = main_obj.transform:Find("front_collider")
+        local c=coroutine.create(function()
+            Yield(WaitForSeconds(2))
+            front_collider.gameObject:SetActive(false)
+        end)
+        coroutine.resume(c)
 
         enemy_ui_pos = {}
         for i = 1 , 6 , 1 do

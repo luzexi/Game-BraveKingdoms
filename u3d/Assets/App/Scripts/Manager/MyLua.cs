@@ -4,14 +4,13 @@ using System;
 using System.Reflection;
 using SLua;
 
-
 //  MyLua.cs
 //  Author: Lu Zexi
 //  2015-02-01
 
 
 //my lua
-public class MyLua
+public class MyLua : MonoBehaviour
 {
     private static MyLua s_cInstance;
     public static MyLua sInstance
@@ -19,7 +18,10 @@ public class MyLua
         get
         {
             if(s_cInstance == null)
-                s_cInstance = new MyLua();
+            {
+                GameObject go = new GameObject("MyLua");
+                s_cInstance = go.AddComponent<MyLua>();
+            }
             return s_cInstance;
         }
     }
@@ -45,20 +47,23 @@ public class MyLua
         Bind("BindUnityUI");
         Bind("BindCustom");
 
+        LuaTimer.reg(this.m_cLuaState.L);
+        LuaCoroutine.reg(this.m_cLuaState.L, this);
+
         this.m_cLuaState.doFile("Main");
         LuaFunction func = (LuaFunction)this.m_cLuaState["main"];
         func.call();
     }
 
     //update
-    public void Update()
+    void Update()
     {
         if(this.m_cLuaState != null)
             this.m_cLuaState.checkRef();
     }
 
     //on destroy
-    public void OnDestroy()
+    void OnDestroy()
     {
         if(this.m_cLuaState != null)
             this.m_cLuaState.Close();

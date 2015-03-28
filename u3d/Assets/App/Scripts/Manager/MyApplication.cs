@@ -29,7 +29,7 @@ public class MyApplication : MonoBehaviour
 
     void OnDestroy()
     {
-        MyLua.sInstance.OnDestroy();
+        //
     }
 
     void Init()
@@ -40,7 +40,7 @@ public class MyApplication : MonoBehaviour
     //update
     void Update()
     {
-        MyLua.sInstance.Update();
+        //
     }
 
     //fixed update
