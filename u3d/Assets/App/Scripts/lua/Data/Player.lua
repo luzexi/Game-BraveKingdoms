@@ -33,152 +33,43 @@ local function init()
     local tmpHero5 = hero.create(195)
     table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
 
-    --
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(77)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(77)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(77)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(77)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(77)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(66)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(66)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(66)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(66)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(66)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(99)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    -- tmpHero5 = hero.create(195)
-    -- table.insert( Player.heros ,#Player.heros + 1, tmpHero5)
-    
-    --
-
     -- create group
     Player.group = { tmpHero1.id , tmpHero2.id , tmpHero3.id , tmpHero4.id , tmpHero5.id }
     Player.leaderid = tmpHero2.id
-    Player.gethero_by_group = function( index )
-        local id = Player.group[index]
-        local i
-        for i = 1 , #Player.heros , 1 do
-            if Player.heros[i].id == id then
-                return Player.heros[i]
-            end
-        end
-        return nil
-    end
-    Player.getgroup_hero = function()
-        local grouphero = {}
-        local i = 1
-        for i = 1 , #Player.group ,1 do
-            local hero = -1
-            if Player.group[i] > 0 then
-                hero = Player.gethero_by_group(i)
-            end
-            table.insert(grouphero , #grouphero+1 , hero)
-        end
-        return grouphero
-    end
     -- for i=0,4,1 do
     --     local group = { tmpHero1 , tmpHero2 , tmpHero3 , tmpHero4 , tmpHero5 }
     --     Player.groups[i] = group
     -- end
 end
 
+local function gethero_by_group( index )
+    local id = Player.group[index]
+    local i
+    for i = 1 , #Player.heros , 1 do
+        if Player.heros[i].id == id then
+            return Player.heros[i]
+        end
+    end
+    return nil
+end
+
+
+local function getgroup_hero()
+    local grouphero = {}
+    local i = 1
+    for i = 1 , #Player.group ,1 do
+        local hero = -1
+        if Player.group[i] > 0 then
+            hero = gethero_by_group(i)
+        end
+        table.insert(grouphero , #grouphero+1 , hero)
+    end
+    return grouphero
+end
 
 
 local t = {}
 t.init = init
+t.gethero_by_group = gethero_by_group
+t.getgroup_hero = getgroup_hero
 return t

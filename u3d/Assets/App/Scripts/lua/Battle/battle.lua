@@ -4,6 +4,7 @@ local Resources = UnityEngine.Resources;
 local Vector3 = UnityEngine.Vector3;
 
 local lua_hero = require 'Data.Hero'
+local lua_player = require 'Data.Player'
 local lua_battlehero = require 'Data.BattleHero'
 
 
@@ -73,7 +74,7 @@ end
 
 
 local function load_self()
-    local self_group_hero = Player.getgroup_hero()
+    local self_group_hero = lua_player.getgroup_hero()
     for i = 1 , #self_group_hero , 1 do
         Battle.heros[i] = lua_battlehero.createBattleHero(self_group_hero[i])
     end
