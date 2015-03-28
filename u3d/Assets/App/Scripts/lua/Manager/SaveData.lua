@@ -9,6 +9,14 @@ local CONST_PLAYER_DATA = "player_data"
 local CONST_HERO_INDEX = "hero_index"
 local CONST_ITEM_INDEX = "item_index"
 
+local function save()
+    PlayerPrefs.SetInt( CONST_HERO_INDEX , HERO_GENERATE_INDEX )
+    PlayerPrefs.SetInt( CONST_ITEM_INDEX , ITEM_GENERATE_INDEX )
+
+    local player_data = json.encode(Player)
+    print("save data player " .. player_data)
+    PlayerPrefs.SetString( CONST_PLAYER_DATA , player_data)
+end
 
 
 local function start()
@@ -22,19 +30,11 @@ local function start()
         Player = json.decode(player_data)
     end
 
+    save()
 end
 
 local function set_str( key , value )
     PlayerPrefs.SetString( key , value )
-end
-
-local function save()
-    PlayerPrefs.SetInt( CONST_HERO_INDEX , HERO_GENERATE_INDEX )
-    PlayerPrefs.SetInt( CONST_ITEM_INDEX , ITEM_GENERATE_INDEX )
-
-    local player_data = json.encode(Player,{indent=false})
-    print("save data player " .. player_data)
-    PlayerPrefs.SetString( CONST_PLAYER_DATA , player_data)
 end
 
 

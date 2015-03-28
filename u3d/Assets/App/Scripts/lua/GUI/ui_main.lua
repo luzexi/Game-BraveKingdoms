@@ -5,6 +5,7 @@ local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 local Screen = UnityEngine.Screen
 
+local player_lua = require 'Data.Player'
 
 
 
@@ -96,11 +97,11 @@ local function create()
         local icon4 = ui_main_obj.transform:Find("icon/icon4")
         local icon5 = ui_main_obj.transform:Find("icon/icon5")
 
-        set_icon(icon1 , Player.gethero_by_group(1))
-        set_icon(icon2 , Player.gethero_by_group(2))
-        set_icon(icon3 , Player.gethero_by_group(3))
-        set_icon(icon4 , Player.gethero_by_group(4))
-        set_icon(icon5 , Player.gethero_by_group(5))
+        set_icon(icon1 , player_lua.gethero_by_group(1))
+        set_icon(icon2 , player_lua.gethero_by_group(2))
+        set_icon(icon3 , player_lua.gethero_by_group(3))
+        set_icon(icon4 , player_lua.gethero_by_group(4))
+        set_icon(icon5 , player_lua.gethero_by_group(5))
 
         local card1 = ui_main_obj.transform:Find("icon/card1")
         local card2 = ui_main_obj.transform:Find("icon/card2")
@@ -108,11 +109,11 @@ local function create()
         local card4 = ui_main_obj.transform:Find("icon/card4")
         local card5 = ui_main_obj.transform:Find("icon/card5")
 
-        set_card( card1 , Player.gethero_by_group(1) )
-        set_card( card2 , Player.gethero_by_group(2) )
-        set_card( card3 , Player.gethero_by_group(3) )
-        set_card( card4 , Player.gethero_by_group(4) )
-        set_card( card5 , Player.gethero_by_group(5) )
+        set_card( card1 , player_lua.gethero_by_group(1) )
+        set_card( card2 , player_lua.gethero_by_group(2) )
+        set_card( card3 , player_lua.gethero_by_group(3) )
+        set_card( card4 , player_lua.gethero_by_group(4) )
+        set_card( card5 , player_lua.gethero_by_group(5) )
 
         local property1 = ui_main_obj.transform:Find("icon/property1")
         local property2 = ui_main_obj.transform:Find("icon/property2")
@@ -120,11 +121,11 @@ local function create()
         local property4 = ui_main_obj.transform:Find("icon/property4")
         local property5 = ui_main_obj.transform:Find("icon/property5")
 
-        set_property(property1 , Player.gethero_by_group(1))
-        set_property(property2 , Player.gethero_by_group(2))
-        set_property(property3 , Player.gethero_by_group(3))
-        set_property(property4 , Player.gethero_by_group(4))
-        set_property(property5 , Player.gethero_by_group(5))
+        set_property(property1 , player_lua.gethero_by_group(1))
+        set_property(property2 , player_lua.gethero_by_group(2))
+        set_property(property3 , player_lua.gethero_by_group(3))
+        set_property(property4 , player_lua.gethero_by_group(4))
+        set_property(property5 , player_lua.gethero_by_group(5))
     end
 
     local function regEvent()
@@ -135,7 +136,7 @@ local function create()
                 ev.onClick = {"+=", function( eventData , go , args )
                     GameObject.Destroy(ui_main_obj)
 
-                    ui_hero_detail.create( Player.gethero_by_group(i) , function()
+                    ui_hero_detail.create( player_lua.gethero_by_group(i) , function()
                         ui_system_bottom.show()
                         createObj()
                         updateInfo()

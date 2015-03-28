@@ -4,6 +4,11 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 local Screen = UnityEngine.Screen
+local Random = UnityEngine.Random
+
+local hero_lua = require("Data/Hero")
+
+local savedata = require("Manager/SaveData")
 
 
 local gacha1_table = datatable.getTable("Gacha1")
@@ -50,24 +55,22 @@ local function create()
             for k,v in pairs(gacha1_table) do
                 table.insert( pertable , #pertable + 1, { id=v.id , per=v.weight/sum_weight} )
             end
-            math.randomseed(os.time())
-            local randomPer = math.random()
-            local randomIndex = math.random(0 , #pertable-1)
+            local randomPer = Random.value
+            local randomIndex = math.modf(Random.Range(0 , #pertable-1))
             local i = 0
             local tmpSum = 0
             local result = 0
             for i = 1 , #pertable , 1 do
-                tmpSum = tmpSum + pertable[randomIndex+1].per
+                tmpSum = tmpSum + pertable[(randomIndex+i)%(#pertable)+1].per
                 if tmpSum >= randomPer then
                     result = i
                     break
                 end
                 randomIndex = (randomIndex+1)%(#pertable)
             end
-
-            local hero_lua = require("Data/Hero")
             local hero = hero_lua.create( pertable[result].id )
             table.insert(Player.heros , #Player.heros + 1 , hero)
+            savedata.save()
             GameObject.Destroy(main_obj)
             local ui_hero_detail = require("GUI/ui_hero_detail")
             ui_system_bottom.hiden()
