@@ -26,6 +26,18 @@ public class Lua_UnityEngine_UI_GraphicRaycaster : LuaObject {
 		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int get_sortOrderPriority(IntPtr l) {
+		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
+		pushValue(l,o.sortOrderPriority);
+		return 1;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int get_renderOrderPriority(IntPtr l) {
+		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
+		pushValue(l,o.renderOrderPriority);
+		return 1;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_ignoreReversedGraphics(IntPtr l) {
 		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
 		pushValue(l,o.ignoreReversedGraphics);
@@ -34,7 +46,7 @@ public class Lua_UnityEngine_UI_GraphicRaycaster : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_ignoreReversedGraphics(IntPtr l) {
 		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
-		System.Boolean v;
+		bool v;
 		checkType(l,2,out v);
 		o.ignoreReversedGraphics=v;
 		return 0;
@@ -54,18 +66,6 @@ public class Lua_UnityEngine_UI_GraphicRaycaster : LuaObject {
 		return 0;
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int get_sortOrderPriority(IntPtr l) {
-		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
-		pushValue(l,o.sortOrderPriority);
-		return 1;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int get_renderOrderPriority(IntPtr l) {
-		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
-		pushValue(l,o.renderOrderPriority);
-		return 1;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_eventCamera(IntPtr l) {
 		UnityEngine.UI.GraphicRaycaster o = (UnityEngine.UI.GraphicRaycaster)checkSelf(l);
 		pushValue(l,o.eventCamera);
@@ -74,10 +74,10 @@ public class Lua_UnityEngine_UI_GraphicRaycaster : LuaObject {
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"UnityEngine.UI.GraphicRaycaster");
 		addMember(l,Raycast);
-		addMember(l,"ignoreReversedGraphics",get_ignoreReversedGraphics,set_ignoreReversedGraphics,true);
-		addMember(l,"blockingObjects",get_blockingObjects,set_blockingObjects,true);
 		addMember(l,"sortOrderPriority",get_sortOrderPriority,null,true);
 		addMember(l,"renderOrderPriority",get_renderOrderPriority,null,true);
+		addMember(l,"ignoreReversedGraphics",get_ignoreReversedGraphics,set_ignoreReversedGraphics,true);
+		addMember(l,"blockingObjects",get_blockingObjects,set_blockingObjects,true);
 		addMember(l,"eventCamera",get_eventCamera,null,true);
 		createTypeMetatable(l,constructor, typeof(UnityEngine.UI.GraphicRaycaster),typeof(UnityEngine.EventSystems.BaseRaycaster));
 	}

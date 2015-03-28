@@ -7,6 +7,24 @@ local lua_hero = require 'Data.Hero'
 local lua_battlehero = require 'Data.BattleHero'
 
 
+--get target index
+local function get_targetIndex()
+    if Battle.autoTarget then
+        if Battle.autoIndex >= 1 and Battle.autoIndex <= #Battle.enemys and
+            Battle.enemys[Battle.autoIndex] ~= -1 and not Battle.enemys[Battle.autoIndex].dead then
+            return Battle.autoIndex
+        end
+        for i = 1 , #Battle.enemys , 1 do
+            if Battle.enemys[i] ~= -1 and not Battle.enemys[i].dead then
+                Battle.autoIndex = i
+                return Battle.autoIndex
+            end
+        end
+    end
+    return Battle.targetIndex
+end
+
+
 local function initdata()
     Battle.gold = 23888
     Battle.soul = 83344
@@ -18,21 +36,8 @@ local function initdata()
     Battle.targetIndex = 1
     Battle.autoTarget = true
     Battle.autoIndex = -1
-    Battle.get_targetIndex = function()
-        if Battle.autoTarget then
-            if Battle.autoIndex >= 1 and Battle.autoIndex <= #Battle.enemys and
-                Battle.enemys[Battle.autoIndex] ~= -1 and not Battle.enemys[Battle.autoIndex].dead then
-                return Battle.autoIndex
-            end
-            for i = 1 , #Battle.enemys , 1 do
-                if Battle.enemys[i] ~= -1 and not Battle.enemys[i].dead then
-                    Battle.autoIndex = i
-                    return Battle.autoIndex
-                end
-            end
-        end
-        return Battle.targetIndex
-    end
+    Battle.get_targetIndex = get_targetIndex
+        
 
     Battle.node = GameObject.Instantiate(Resources.Load("Battle/BattleObj"))
     Battle.node.transform.localPosition = Vector3.zero;

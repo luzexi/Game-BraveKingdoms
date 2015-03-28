@@ -4,12 +4,16 @@ local GameObject = UnityEngine.GameObject
 local Resources = UnityEngine.Resources
 local Vector3 = UnityEngine.Vector3
 local Random = UnityEngine.Random
+local Yield = UnityEngine.Yield
+local WaitForSeconds = UnityEngine.WaitForSeconds
 
 
 local battle_lua = require 'Battle.battle'
 
 local main_obj = nil
 local battle_obj = nil
+
+local front_collider = nil
 
 local enemy_ui_pos = {}
 local self_ui_pos = {}
@@ -187,8 +191,18 @@ local function hitcallback( t_index , s_index , rate , isCombo )
 end
 
 local function overcallback( s_index )
-    Battle.heros[s_index].attackNum = 1
-    updateInfo(s_index , Battle.heros[s_index])
+    Battle.heros[s_index].enable = false
+    -- updateInfo(s_index , Battle.heros[s_index])
+    local finish = true
+    for i = 1 , #Battle.heros , 1 do
+        if Battle.heros[i] ~= -1 and ( Battle.heros[i].attackNum > 0 or Battle.heros[i].enable ) then
+            finish = false
+        end
+    end
+
+    if finish then
+        print(" ok its for ai")
+    end
 end
 
 
@@ -209,6 +223,13 @@ local function create()
         main_obj.transform:SetParent(UI_Root)
         main_obj.transform.localPosition = Vector3.zero
         main_obj.transform.localScale = Vector3.one
+
+        front_collider = main_obj.transform:Find("front_collider")
+        local c=coroutine.create(function()
+            Yield(WaitForSeconds(1.2))
+            front_collider.gameObject:SetActive(false)
+        end)
+        coroutine.resume(c)
 
         enemy_ui_pos = {}
         for i = 1 , 6 , 1 do

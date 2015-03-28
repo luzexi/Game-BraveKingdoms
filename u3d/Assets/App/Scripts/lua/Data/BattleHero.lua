@@ -21,6 +21,7 @@ local function createBattleHero( hero )
     battlehero.sp = 0
     battlehero.maxsp = 100
     battlehero.attackNum = 1
+    battlehero.enable = true
 
     local res = hero_table[hero.tableid].Model
     res = string.sub(res,7,#res)
@@ -45,6 +46,7 @@ local function createBattleEnemy( hero )
     battlehero.sp = 0
     battlehero.maxsp = 100
     battlehero.attackNum = 1
+    battlehero.enable = true
 
     local res = hero_table[hero.HeroID].Model
     res = string.sub(res,7,#res)

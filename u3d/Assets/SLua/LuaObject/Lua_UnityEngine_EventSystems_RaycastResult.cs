@@ -83,6 +83,36 @@ public class Lua_UnityEngine_EventSystems_RaycastResult : LuaObject {
 		return 0;
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int get_sortingLayer(IntPtr l) {
+		UnityEngine.EventSystems.RaycastResult o = (UnityEngine.EventSystems.RaycastResult)checkSelf(l);
+		pushValue(l,o.sortingLayer);
+		return 1;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int set_sortingLayer(IntPtr l) {
+		UnityEngine.EventSystems.RaycastResult o = (UnityEngine.EventSystems.RaycastResult)checkSelf(l);
+		System.Int32 v;
+		checkType(l,2,out v);
+		o.sortingLayer=v;
+		setBack(l,o);
+		return 0;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int get_sortingOrder(IntPtr l) {
+		UnityEngine.EventSystems.RaycastResult o = (UnityEngine.EventSystems.RaycastResult)checkSelf(l);
+		pushValue(l,o.sortingOrder);
+		return 1;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int set_sortingOrder(IntPtr l) {
+		UnityEngine.EventSystems.RaycastResult o = (UnityEngine.EventSystems.RaycastResult)checkSelf(l);
+		System.Int32 v;
+		checkType(l,2,out v);
+		o.sortingOrder=v;
+		setBack(l,o);
+		return 0;
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_gameObject(IntPtr l) {
 		UnityEngine.EventSystems.RaycastResult o = (UnityEngine.EventSystems.RaycastResult)checkSelf(l);
 		pushValue(l,o.gameObject);
@@ -110,6 +140,8 @@ public class Lua_UnityEngine_EventSystems_RaycastResult : LuaObject {
 		addMember(l,"distance",get_distance,set_distance,true);
 		addMember(l,"index",get_index,set_index,true);
 		addMember(l,"depth",get_depth,set_depth,true);
+		addMember(l,"sortingLayer",get_sortingLayer,set_sortingLayer,true);
+		addMember(l,"sortingOrder",get_sortingOrder,set_sortingOrder,true);
 		addMember(l,"gameObject",get_gameObject,set_gameObject,true);
 		addMember(l,"isValid",get_isValid,null,true);
 		createTypeMetatable(l,constructor, typeof(UnityEngine.EventSystems.RaycastResult));
