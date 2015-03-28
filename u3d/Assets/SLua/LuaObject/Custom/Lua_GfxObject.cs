@@ -5,15 +5,8 @@ using SLua;
 using System.Collections.Generic;
 public class Lua_GfxObject : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int constructor(IntPtr l) {
-		GfxObject o;
-		o=new GfxObject();
-		pushObject(l,o);
-		return 1;
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Awake(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.Awake();
 			return 0;
@@ -25,7 +18,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Start(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.Start();
 			return 0;
@@ -37,7 +30,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Destory(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.Destory();
 			return 0;
@@ -49,7 +42,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Update(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.Update();
 			return 0;
@@ -61,7 +54,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int IsDieOrIdle(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			System.Boolean ret=self.IsDieOrIdle();
 			pushValue(l,ret);
@@ -74,7 +67,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int AttackState(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			GfxObject a1;
 			checkType(l,2,out a1);
@@ -106,7 +99,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int IdleState(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.IdleState();
 			return 0;
@@ -118,7 +111,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int MoveState(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			UnityEngine.Vector3 a1;
 			checkType(l,2,out a1);
@@ -136,7 +129,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int HurtState(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.HurtState();
 			return 0;
@@ -148,7 +141,7 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int SkillState(IntPtr l) {
-		try{
+		try {
 			GfxObject self=(GfxObject)checkSelf(l);
 			self.SkillState();
 			return 0;
@@ -160,129 +153,237 @@ public class Lua_GfxObject : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_m_cStateControl(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.m_cStateControl);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.m_cStateControl);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_m_cStateControl(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		StateControl v;
-		checkType(l,2,out v);
-		o.m_cStateControl=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			StateControl v;
+			checkType(l,2,out v);
+			self.m_cStateControl=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_m_cAni(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.m_cAni);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.m_cAni);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_m_cAni(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		UnityEngine.Animation v;
-		checkType(l,2,out v);
-		o.m_cAni=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			UnityEngine.Animation v;
+			checkType(l,2,out v);
+			self.m_cAni=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_Hp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.Hp);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.Hp);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_Hp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.Hp=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.Hp=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MaxHp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.MaxHp);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.MaxHp);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MaxHp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.MaxHp=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.MaxHp=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_Mp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.Mp);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.Mp);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_Mp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.Mp=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.Mp=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_MaxMp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.MaxMp);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.MaxMp);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_MaxMp(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.MaxMp=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.MaxMp=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_Atk(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.Atk);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.Atk);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_Atk(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.Atk=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.Atk=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_Def(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.Def);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.Def);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_Def(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.Def=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.Def=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_Hit(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		pushValue(l,o.Hit);
-		return 1;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			pushValue(l,self.Hit);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_Hit(IntPtr l) {
-		GfxObject o = (GfxObject)checkSelf(l);
-		XorInt v;
-		checkType(l,2,out v);
-		o.Hit=v;
-		return 0;
+		try {
+			GfxObject self=(GfxObject)checkSelf(l);
+			XorInt v;
+			checkType(l,2,out v);
+			self.Hit=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"GfxObject");
@@ -305,6 +406,6 @@ public class Lua_GfxObject : LuaObject {
 		addMember(l,"Atk",get_Atk,set_Atk,true);
 		addMember(l,"Def",get_Def,set_Def,true);
 		addMember(l,"Hit",get_Hit,set_Hit,true);
-		createTypeMetatable(l,constructor, typeof(GfxObject),typeof(UnityEngine.MonoBehaviour));
+		createTypeMetatable(l,null, typeof(GfxObject),typeof(UnityEngine.MonoBehaviour));
 	}
 }

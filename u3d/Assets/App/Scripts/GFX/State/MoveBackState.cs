@@ -71,6 +71,7 @@ public class MoveBackState : StateBase
         if (disTime >= this.m_fCostTime)
         {
             this.m_cObj.transform.localPosition = this.m_vecTargetPos;
+            this.m_cObj.m_cAni.Play("idle");
             return false;
         }
         Vector3 pos = Vector3.Lerp(this.m_vecLastPos, this.m_vecTargetPos, disTime / this.m_fCostTime);

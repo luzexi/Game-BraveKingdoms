@@ -76,6 +76,7 @@ public class MoveState : StateBase
         if (disTime >= this.m_fCostTime)
         {
             this.m_cObj.transform.localPosition = this.m_vecTargetPos;
+            this.m_cObj.m_cAni.Play("idle");
             return false;
         }
         else

@@ -6,14 +6,20 @@ using System.Collections.Generic;
 public class Lua_UI_Event : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int constructor(IntPtr l) {
-		UI_Event o;
-		o=new UI_Event();
-		pushObject(l,o);
-		return 1;
+		try {
+			UI_Event o;
+			o=new UI_Event();
+			pushValue(l,o);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnDeselect(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.BaseEventData a1;
 			checkType(l,2,out a1);
@@ -27,7 +33,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnDrag(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -41,7 +47,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnDrop(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -55,7 +61,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnMove(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.AxisEventData a1;
 			checkType(l,2,out a1);
@@ -69,7 +75,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnPointerClick(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -83,7 +89,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnPointerDown(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -97,7 +103,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnPointerEnter(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -111,7 +117,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnPointerExit(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -125,7 +131,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnPointerUp(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -139,7 +145,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnScroll(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.PointerEventData a1;
 			checkType(l,2,out a1);
@@ -153,7 +159,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnSelect(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.BaseEventData a1;
 			checkType(l,2,out a1);
@@ -167,7 +173,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int OnUpdateSelected(IntPtr l) {
-		try{
+		try {
 			UI_Event self=(UI_Event)checkSelf(l);
 			UnityEngine.EventSystems.BaseEventData a1;
 			checkType(l,2,out a1);
@@ -181,7 +187,7 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Get_s(IntPtr l) {
-		try{
+		try {
 			int argc = LuaDLL.lua_gettop(l);
 			if(matchType(l,argc,1,typeof(UnityEngine.Transform))){
 				UnityEngine.Transform a1;
@@ -241,137 +247,221 @@ public class Lua_UI_Event : LuaObject {
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int get_m_vecArg(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		pushValue(l,o.m_vecArg);
-		return 1;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			pushValue(l,self.m_vecArg);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_m_vecArg(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		System.String[] v;
-		checkType(l,2,out v);
-		o.m_vecArg=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			System.String[] v;
+			checkType(l,2,out v);
+			self.m_vecArg=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onDeselect(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.BaseEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onDeselect=v;
-		else if(op==1) o.onDeselect+=v;
-		else if(op==2) o.onDeselect-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.BaseEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onDeselect=v;
+			else if(op==1) self.onDeselect+=v;
+			else if(op==2) self.onDeselect-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onDrag(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onDrag=v;
-		else if(op==1) o.onDrag+=v;
-		else if(op==2) o.onDrag-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onDrag=v;
+			else if(op==1) self.onDrag+=v;
+			else if(op==2) self.onDrag-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onDrop(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onDrop=v;
-		else if(op==1) o.onDrop+=v;
-		else if(op==2) o.onDrop-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onDrop=v;
+			else if(op==1) self.onDrop+=v;
+			else if(op==2) self.onDrop-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onMove(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.AxisEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onMove=v;
-		else if(op==1) o.onMove+=v;
-		else if(op==2) o.onMove-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.AxisEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onMove=v;
+			else if(op==1) self.onMove+=v;
+			else if(op==2) self.onMove-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onClick(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onClick=v;
-		else if(op==1) o.onClick+=v;
-		else if(op==2) o.onClick-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onClick=v;
+			else if(op==1) self.onClick+=v;
+			else if(op==2) self.onClick-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onDown(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onDown=v;
-		else if(op==1) o.onDown+=v;
-		else if(op==2) o.onDown-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onDown=v;
+			else if(op==1) self.onDown+=v;
+			else if(op==2) self.onDown-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onEnter(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onEnter=v;
-		else if(op==1) o.onEnter+=v;
-		else if(op==2) o.onEnter-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onEnter=v;
+			else if(op==1) self.onEnter+=v;
+			else if(op==2) self.onEnter-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onExit(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onExit=v;
-		else if(op==1) o.onExit+=v;
-		else if(op==2) o.onExit-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onExit=v;
+			else if(op==1) self.onExit+=v;
+			else if(op==2) self.onExit-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onUp(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onUp=v;
-		else if(op==1) o.onUp+=v;
-		else if(op==2) o.onUp-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onUp=v;
+			else if(op==1) self.onUp+=v;
+			else if(op==2) self.onUp-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onScroll(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.PointerEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onScroll=v;
-		else if(op==1) o.onScroll+=v;
-		else if(op==2) o.onScroll-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.PointerEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onScroll=v;
+			else if(op==1) self.onScroll+=v;
+			else if(op==2) self.onScroll-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onSelect(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.BaseEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onSelect=v;
-		else if(op==1) o.onSelect+=v;
-		else if(op==2) o.onSelect-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.BaseEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onSelect=v;
+			else if(op==1) self.onSelect+=v;
+			else if(op==2) self.onSelect-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int set_onUpdateSelect(IntPtr l) {
-		UI_Event o = (UI_Event)checkSelf(l);
-		UI_Event.BaseEventDelegate v;
-		int op=checkDelegate(l,2,out v);
-		if(op==0) o.onUpdateSelect=v;
-		else if(op==1) o.onUpdateSelect+=v;
-		else if(op==2) o.onUpdateSelect-=v;
-		return 0;
+		try {
+			UI_Event self=(UI_Event)checkSelf(l);
+			UI_Event.BaseEventDelegate v;
+			int op=checkDelegate(l,2,out v);
+			if(op==0) self.onUpdateSelect=v;
+			else if(op==1) self.onUpdateSelect+=v;
+			else if(op==2) self.onUpdateSelect-=v;
+			return 0;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	static public void reg(IntPtr l) {
 		getTypeTable(l,"UI_Event");

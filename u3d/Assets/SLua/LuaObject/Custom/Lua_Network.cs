@@ -6,14 +6,20 @@ using System.Collections.Generic;
 public class Lua_Network : LuaObject {
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int constructor(IntPtr l) {
-		Network o;
-		o=new Network();
-		pushObject(l,o);
-		return 1;
+		try {
+			Network o;
+			o=new Network();
+			pushValue(l,o);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Request_s(IntPtr l) {
-		try{
+		try {
 			System.String a1;
 			checkType(l,1,out a1);
 			System.String a2;

@@ -66,7 +66,7 @@ public class StateControl
         {
             if (!this.m_cCurrentState.Update())
             {
-                Idle();
+                //
             }
         }
         return true;
@@ -131,9 +131,6 @@ public class StateControl
         float[] hit_time1 , float[] hit_time2 , float[] hit_rate ,
         System.Action<int,int,float,bool> callback , System.Action<int> over_callback , bool ismove )
     {
-        if (this.m_cCurrentState != null &&
-            this.m_cCurrentState.GetStateType() == STATE_TYPE.STATE_ATTACK)
-            return;
         if (this.m_cCurrentState != null)
             this.m_cCurrentState.OnExit();
 
