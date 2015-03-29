@@ -1,6 +1,3 @@
-[submodule "u3d/Assets/App/Scripts/submodule/Unity3DDefineTool"]
-	path = u3d/Assets/App/Scripts/submodule/Unity3DDefineTool
-	url = https://github.com/luzexi/Unity3DDefineTool.git
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DUtil"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DUtil
 	url = https://github.com/luzexi/Unity3DUtil.git
@@ -22,9 +19,6 @@
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DNetwork-http
 	url = https://github.com/luzexi/Unity3DNetwork-http.git
-[submodule "u3d/Assets/App/Scripts/submodule/Unity3DMVC"]
-	path = u3d/Assets/App/Scripts/submodule/Unity3DMVC
-	url = https://github.com/luzexi/Unity3DMVC.git
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DTable"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DTable
 	url = https://github.com/luzexi/Unity3DTable.git
@@ -43,3 +37,6 @@
 [submodule "Tool/xls2lua"]
 	path = Tool/xls2lua
 	url = https://github.com/luzexi/xls2lua.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3Dmacro"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3Dmacro
+	url = https://github.com/luzexi/Unity3Dmacro.git

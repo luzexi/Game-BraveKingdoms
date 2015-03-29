@@ -81,6 +81,12 @@ public class MyLua : MonoBehaviour
         LuaTimer.tick(Time.deltaTime);
     }
 
+    //destory
+    public void Destroy()
+    {
+        OnDestroy();
+    }
+
     //on destroy
     void OnDestroy()
     {
@@ -94,7 +100,11 @@ public class MyLua : MonoBehaviour
     {
         try
         {
+#if UNITY_EDITOR
             string WorkPath =  Application.dataPath + "/App/Scripts/lua/";
+#else
+            string WorkPath =  Application.persistentDataPath + "/lua/";
+#endif
             byte[] bytes;
             {
                 if (fn.EndsWith(".txt") || fn.EndsWith(".lua"))

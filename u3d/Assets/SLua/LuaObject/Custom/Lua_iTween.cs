@@ -1864,37 +1864,6 @@ public class Lua_iTween : LuaObject {
 		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int StopAndCompleteByName_s(IntPtr l) {
-		try {
-			UnityEngine.GameObject a1;
-			checkType(l,1,out a1);
-			System.String a2;
-			checkType(l,2,out a2);
-			iTween.StopAndCompleteByName(a1,a2);
-			return 0;
-		}
-		catch(Exception e) {
-			LuaDLL.luaL_error(l, e.ToString());
-			return 0;
-		}
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
-	static public int IsRunningByName_s(IntPtr l) {
-		try {
-			UnityEngine.GameObject a1;
-			checkType(l,1,out a1);
-			System.String a2;
-			checkType(l,2,out a2);
-			System.Boolean ret=iTween.IsRunningByName(a1,a2);
-			pushValue(l,ret);
-			return 1;
-		}
-		catch(Exception e) {
-			LuaDLL.luaL_error(l, e.ToString());
-			return 0;
-		}
-	}
-	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int Hash_s(IntPtr l) {
 		try {
 			System.Object[] a1;
@@ -2256,8 +2225,6 @@ public class Lua_iTween : LuaObject {
 		addMember(l,Count_s);
 		addMember(l,Stop_s);
 		addMember(l,StopByName_s);
-		addMember(l,StopAndCompleteByName_s);
-		addMember(l,IsRunningByName_s);
 		addMember(l,Hash_s);
 		addMember(l,"tweens",get_tweens,set_tweens,false);
 		addMember(l,"id",get_id,set_id,true);
