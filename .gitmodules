@@ -40,3 +40,6 @@
 [submodule "Tool/xls2lua"]
 	path = Tool/xls2lua
 	url = https://github.com/luzexi/xls2lua.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3Dmacro"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3Dmacro
+	url = https://github.com/luzexi/Unity3Dmacro.git
