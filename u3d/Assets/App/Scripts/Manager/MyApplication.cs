@@ -34,13 +34,16 @@ public class MyApplication : MonoBehaviour
 
     void Init()
     {
-        MyLua.sInstance.Init();
+        CScene.Switch<Init1stScene>();
     }
 
     //update
     void Update()
     {
-        //
+        if( CScene.s_cCurrentScene != null)
+        {
+            CScene.s_cCurrentScene.Update();
+        }
     }
 
     //fixed update
