@@ -1,6 +1,3 @@
-[submodule "u3d/Assets/App/Scripts/submodule/Unity3DDefineTool"]
-	path = u3d/Assets/App/Scripts/submodule/Unity3DDefineTool
-	url = https://github.com/luzexi/Unity3DDefineTool.git
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3DUtil"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3DUtil
 	url = https://github.com/luzexi/Unity3DUtil.git
