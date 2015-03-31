@@ -13,6 +13,7 @@ local function create()
     local ui_store = require "GUI/ui_store"
     local ui_hero_menu = require "GUI/ui_hero_menu"
     local ui_gacha = require "GUI/ui_gacha"
+    local ui_friend = require 'GUI/ui_friend'
 
     local obj = UI_SystemRoot:Find(UI_Name)
     if obj ~= nil then
@@ -56,6 +57,13 @@ local function create()
             ui_gacha.create()
         end
         }
+
+        local btn_friend = main.transform:Find("frame/btn_friend")
+        ev = UI_Event.Get(btn_friend)
+        ev.onClick = function( eventData , go , args )
+            GameObject.Destroy(UI_Master)
+            ui_friend.create()
+        end
     end
 
     regEvent()

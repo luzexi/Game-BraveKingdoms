@@ -20,6 +20,7 @@ local function init()
     Player.heros = {}
     Player.group = {}
     Player.mails = {}
+    Player.friends = {}
 
     -- create hero
     local tmpHero1 = hero.create(11)
