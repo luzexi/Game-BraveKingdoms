@@ -40,3 +40,6 @@
 [submodule "u3d/Assets/App/Scripts/submodule/Unity3Dmacro"]
 	path = u3d/Assets/App/Scripts/submodule/Unity3Dmacro
 	url = https://github.com/luzexi/Unity3Dmacro.git
+[submodule "u3d/Assets/App/Scripts/submodule/Unity3D-bluetooth"]
+	path = u3d/Assets/App/Scripts/submodule/Unity3D-bluetooth
+	url = https://github.com/luzexi/Unity3D-bluetooth.git
