@@ -86,6 +86,7 @@ local function create()
             CBluetooth.Log("btn stop")
             CBluetooth.StopAdvertising(nil)
         end
+        btn_stop.gameObject:SetActive(false)
     end
 
     regEvent()
