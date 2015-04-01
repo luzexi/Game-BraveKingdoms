@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>5176267D-8CCC-4202-862D-4B7159BCA2EF</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Unity-iPhone</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>C950BE5DA24671A9ADCF72182339774D6823798A</key>
+		<string>gitlabchina.com:pstage/pstage_client.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>builder-ios/nosdk/Unity-iPhone.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>C950BE5DA24671A9ADCF72182339774D6823798A</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>gitlabchina.com:pstage/pstage_client.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>C950BE5DA24671A9ADCF72182339774D6823798A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>C950BE5DA24671A9ADCF72182339774D6823798A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>client</string>
+		</dict>
+	</array>
+</dict>
+</plist>
