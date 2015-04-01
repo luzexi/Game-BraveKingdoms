@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Text;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -14,6 +15,11 @@ using UnityEngine;
 [CustomLuaClassAttribute]
 public class CBluetooth
 {
+    public static void Log(string message)
+    {
+        BluetoothLEHardwareInterface.Log(message);
+    }
+
     public static BluetoothDeviceScript Initialize(bool asCentral, bool asPeripheral, Action action, Action<string> errorAction)
     {
         return BluetoothLEHardwareInterface.Initialize(asCentral, asPeripheral, action, errorAction);
@@ -69,9 +75,16 @@ public class CBluetooth
         BluetoothLEHardwareInterface.WriteCharacteristic(name, service, characteristic, data, length, withResponse, action);
     }
 
-    public static void SubscribeCharacteristic(string name, string service, string characteristic, Action<string> notificationAction, Action<string, byte[]> action)
+    public static void SubscribeCharacteristic(string name, string service, string characteristic, Action<string> notificationAction, Action<string, string> action)
     {
-        BluetoothLEHardwareInterface.SubscribeCharacteristic(name, service, characteristic, notificationAction, action);
+        Action<string,byte[]> callback = (Action<string,byte[]>)((uid,val)=>{
+            string str = Encoding.UTF8.GetString(val);
+            if(action != null)
+            {
+                action(uid, str);
+            }
+        });
+        BluetoothLEHardwareInterface.SubscribeCharacteristic(name, service, characteristic, notificationAction, callback);
     }
 
     public static void UnSubscribeCharacteristic(string name, string service, string characteristic, Action<string> action)
@@ -104,6 +117,37 @@ public class CBluetooth
         BluetoothLEHardwareInterface.CreateCharacteristic(uuid, properties, permissions, data, length, action);
     }
 
+    public static void CreateReadCharacteristic(string uuid, string content, Action<string, string> action)
+    {
+        byte[] data = Encoding.UTF8.GetBytes(content);
+        int length = data.Length;
+        Action<string,byte[]> callback = (Action<string,byte[]>)((uid,val)=>{
+            string str = Encoding.UTF8.GetString(val);
+            if(action != null)
+            {
+                action(uid, str);
+            }
+        });
+        CreateCharacteristic(uuid, BluetoothLEHardwareInterface.CBCharacteristicProperties.CBCharacteristicPropertyRead |
+                            BluetoothLEHardwareInterface.CBCharacteristicProperties.CBCharacteristicPropertyNotify, 
+                            BluetoothLEHardwareInterface.CBAttributePermissions.CBAttributePermissionsReadable, data, length, callback);
+    }
+
+    public static void CreateWriteCharacteristic(string uuid, string content, Action<string, string> action)
+    {
+        byte[] data = Encoding.UTF8.GetBytes(content);
+        int length = data.Length;
+        Action<string,byte[]> callback = (Action<string,byte[]>)((uid,val)=>{
+            string str = Encoding.UTF8.GetString(val);
+            if(action != null)
+            {
+                action(uid, str);
+            }
+        });
+        CreateCharacteristic(uuid, BluetoothLEHardwareInterface.CBCharacteristicProperties.CBCharacteristicPropertyWrite,  
+                            BluetoothLEHardwareInterface.CBAttributePermissions.CBAttributePermissionsWriteable, data, length, callback);
+    }
+
     public static void RemoveCharacteristic(string uuid)
     {
         BluetoothLEHardwareInterface.RemoveCharacteristic(uuid);
@@ -124,8 +168,10 @@ public class CBluetooth
         BluetoothLEHardwareInterface.StopAdvertising(action);
     }
 
-    public static void UpdateCharacteristicValue(string uuid, byte[] data, int length)
+    public static void UpdateCharacteristicValue(string uuid, string content)
     {
+        byte[] data = Encoding.UTF8.GetBytes(content);
+        int length = data.Length;
         BluetoothLEHardwareInterface.UpdateCharacteristicValue(uuid, data, length);
     }
 

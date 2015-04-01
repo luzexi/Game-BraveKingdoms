@@ -74,6 +74,34 @@ public class Lua_LuaUtil : LuaObject {
 		}
 	}
 	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int ToActionStrStr_s(IntPtr l) {
+		try {
+			SLua.LuaFunction a1;
+			checkType(l,1,out a1);
+			System.Action<System.String,System.String> ret=LuaUtil.ToActionStrStr(a1);
+			pushValue(l,ret);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
+	static public int ToActionStrStrStr_s(IntPtr l) {
+		try {
+			SLua.LuaFunction a1;
+			checkType(l,1,out a1);
+			System.Action<System.String,System.String,System.String> ret=LuaUtil.ToActionStrStrStr(a1);
+			pushValue(l,ret);
+			return 1;
+		}
+		catch(Exception e) {
+			LuaDLL.luaL_error(l, e.ToString());
+			return 0;
+		}
+	}
+	[MonoPInvokeCallbackAttribute(typeof(LuaCSFunction))]
 	static public int ToActionGameObjectInt_s(IntPtr l) {
 		try {
 			SLua.LuaFunction a1;
@@ -107,6 +135,8 @@ public class Lua_LuaUtil : LuaObject {
 		addMember(l,ToActionFloat_s);
 		addMember(l,ToActionInt_s);
 		addMember(l,ToActionStr_s);
+		addMember(l,ToActionStrStr_s);
+		addMember(l,ToActionStrStrStr_s);
 		addMember(l,ToActionGameObjectInt_s);
 		addMember(l,ToActionIntIntFloatBool_s);
 		createTypeMetatable(l,constructor, typeof(LuaUtil));

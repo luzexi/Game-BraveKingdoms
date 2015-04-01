@@ -45,6 +45,22 @@ public class LuaUtil
         });
     }
 
+    // cast to the action string string function
+    public static System.Action<string,string> ToActionStrStr( LuaFunction fun )
+    {
+        return (System.Action<string,string>)(( arg1, arg2 )=>{
+            fun.call( arg1, arg2 );
+        });
+    }
+
+    // cast to the action string string function
+    public static System.Action<string,string,string> ToActionStrStrStr( LuaFunction fun )
+    {
+        return (System.Action<string,string,string>)(( arg1, arg2, arg3 )=>{
+            fun.call( arg1, arg2, arg3 );
+        });
+    }
+
     // cast to the action string function
     public static System.Action<GameObject,int> ToActionGameObjectInt( LuaFunction fun )
     {
