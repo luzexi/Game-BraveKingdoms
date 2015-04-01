@@ -49,8 +49,10 @@ local function create()
         ev = UI_Event.Get(btn_search_start)
         ev.onClick = function(eventData , go , args)
             print("start search")
-            for server_item in servers do
-                GameObject.Destroy(server_item.obj)
+            if #servers > 0 then
+                for server_item in servers do
+                    GameObject.Destroy(server_item.obj)
+                end
             end
             servers = {}
             local scan_start_callback = function(arg1 , arg2)
@@ -104,11 +106,15 @@ local function create()
         ev.onClick = function(eventData , go , args)
             print("stop search")
             CBluetooth.StopScan()
-            for server_item in servers do
-                GameObject.Destroy(server_item.obj)
+            if #servers > 0 then
+                for server_item in servers do
+                    GameObject.Destroy(server_item.obj)
+                end
             end
             servers = {}
         end
+
+        btn_search_stop.gameObject:SetActive(false)
 
         local btn_player_apply = main_obj.transform:Find("player/btn_apply")
         ev = UI_Event.Get(btn_player_apply)
