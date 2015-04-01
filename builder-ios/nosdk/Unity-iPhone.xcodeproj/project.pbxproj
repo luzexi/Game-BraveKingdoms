@@ -73,6 +73,8 @@
 		8AF7756017997D2700341121 /* AppDelegateListener.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AF7755F17997D1300341121 /* AppDelegateListener.mm */; };
 		8AFA69D9161605E7009663A5 /* iPhone_OrientationSupport.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8AFA69D8161605E7009663A5 /* iPhone_OrientationSupport.mm */; };
 		8E4EA93E1AC84A8C00E45EA5 /* WebView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E4EA93D1AC84A8C00E45EA5 /* WebView.mm */; };
+		8E964C1D1ACC55C8004AF53F /* UnityBluetoothLE.mm in Sources */ = {isa = PBXBuildFile; fileRef = 8E964C1C1ACC55C8004AF53F /* UnityBluetoothLE.mm */; };
+		8E964C1F1ACC55D4004AF53F /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E964C1E1ACC55D4004AF53F /* CoreBluetooth.framework */; };
 		97DC4F4DB41B9841DF6BB66E /* System.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = 648E4C428B658C249D893B39 /* System.dll.s */; };
 		9A7C4162AE269A4BAEBA0F3F /* ICSharpCode.SharpZipLib.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = EEFE435A8FC6465AF7EC718B /* ICSharpCode.SharpZipLib.dll.s */; };
 		A00F47F0A980CFA72F238B5C /* DOTween.dll.s in Sources */ = {isa = PBXBuildFile; fileRef = B521427CA09B95722DBBEAC4 /* DOTween.dll.s */; };
@@ -212,6 +214,9 @@
 		8C5A4C45894A70635A1AA8E8 /* System.Core.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = System.Core.dll.s; path = Libraries/System.Core.dll.s; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E4EA93D1AC84A8C00E45EA5 /* WebView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = WebView.mm; sourceTree = "<group>"; };
+		8E964C1B1ACC55C8004AF53F /* UnityBluetoothLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UnityBluetoothLE.h; path = ../../UnityBluetoothLE.h; sourceTree = "<group>"; };
+		8E964C1C1ACC55C8004AF53F /* UnityBluetoothLE.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = UnityBluetoothLE.mm; path = ../../UnityBluetoothLE.mm; sourceTree = "<group>"; };
+		8E964C1E1ACC55D4004AF53F /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
 		9FE444538276589645861609 /* Pathfinding.JsonFx.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = Pathfinding.JsonFx.dll.s; path = Libraries/Pathfinding.JsonFx.dll.s; sourceTree = SOURCE_ROOT; };
 		A871432D81DF15A348E20E42 /* Assembly-CSharp.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = "Assembly-CSharp.dll.s"; path = "Libraries/Assembly-CSharp.dll.s"; sourceTree = SOURCE_ROOT; };
 		A8DC4F9D95AFF9CD1432FE66 /* Pathfinding.Ionic.Zip.Reduced.dll.s */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.asm; name = Pathfinding.Ionic.Zip.Reduced.dll.s; path = Libraries/Pathfinding.Ionic.Zip.Reduced.dll.s; sourceTree = SOURCE_ROOT; };
@@ -243,6 +248,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E964C1F1ACC55D4004AF53F /* CoreBluetooth.framework in Frameworks */,
 				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
 				830B5C110E5ED4C100C7819F /* UIKit.framework in Frameworks */,
 				83B256E20E62FEA000468741 /* OpenGLES.framework in Frameworks */,
@@ -308,6 +314,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8E964C1E1ACC55D4004AF53F /* CoreBluetooth.framework */,
 				8358D1B70ED1CC3700E3A684 /* AudioToolbox.framework */,
 				7F36C11013C5C673007FBDD9 /* AVFoundation.framework */,
 				56FD43950ED4745200FE3770 /* CFNetwork.framework */,
@@ -421,6 +428,8 @@
 		D82DCFB50E8000A5005D6AD8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				8E964C1B1ACC55C8004AF53F /* UnityBluetoothLE.h */,
+				8E964C1C1ACC55C8004AF53F /* UnityBluetoothLE.mm */,
 				8E4EA93D1AC84A8C00E45EA5 /* WebView.mm */,
 				8A5C148F174E662D0006EB36 /* PluginBase */,
 				8A3EDDC51615B7C1001839E9 /* UI */,
@@ -647,6 +656,7 @@
 				3FF547A486A4C4074CA0C86C /* System.Core.dll.s in Sources */,
 				97DC4F4DB41B9841DF6BB66E /* System.dll.s in Sources */,
 				D4CE409BBE3F5BB0B1D1616C /* UnityEngine.UI.dll.s in Sources */,
+				8E964C1D1ACC55C8004AF53F /* UnityBluetoothLE.mm in Sources */,
 				257042F18E610B8831FA210A /* UnityEngine.dll.s in Sources */,
 				E3EC4FE1B3D96A049C5EF526 /* mscorlib.dll.s in Sources */,
 			);
